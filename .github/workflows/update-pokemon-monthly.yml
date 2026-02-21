@@ -1,0 +1,38 @@
+name: Update Pokemon Map (monthly)
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 8 1 * *"  # día 1 de cada mes 08:00 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  updater:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run updater
+        run: node scripts/update_pokemon_map.js
+        env:
+          POKEMON_POOL: "5"
+
+      - name: Commit & push if changed
+        run: |
+          if git status --porcelain | grep .; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add public/pokemon/manifest.json public/pokemon/*.json
+            git commit -m "chore(pokemon): update map"
+            git push
+          else
+            echo "No changes."
+          fi
