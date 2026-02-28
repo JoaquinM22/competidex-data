@@ -1,0 +1,1837 @@
+{
+  "stench": {
+    "id": 1,
+    "gen": "generation-iii",
+    "display": "Hedor"
+  },
+  "damp": {
+    "id": 6,
+    "gen": "generation-iii",
+    "display": "Humedad"
+  },
+  "speed-boost": {
+    "id": 3,
+    "gen": "generation-iii",
+    "display": "Impulso"
+  },
+  "drizzle": {
+    "id": 2,
+    "gen": "generation-iii",
+    "display": "Llovizna"
+  },
+  "battle-armor": {
+    "id": 4,
+    "gen": "generation-iii",
+    "display": "Armadura Batalla"
+  },
+  "limber": {
+    "id": 7,
+    "gen": "generation-iii",
+    "display": "Flexibilidad"
+  },
+  "sand-veil": {
+    "id": 8,
+    "gen": "generation-iii",
+    "display": "Velo Arena"
+  },
+  "volt-absorb": {
+    "id": 10,
+    "gen": "generation-iii",
+    "display": "Absorbe Elec"
+  },
+  "water-absorb": {
+    "id": 11,
+    "gen": "generation-iii",
+    "display": "Absorbe Agua"
+  },
+  "sturdy": {
+    "id": 5,
+    "gen": "generation-iii",
+    "display": "Robustez"
+  },
+  "oblivious": {
+    "id": 12,
+    "gen": "generation-iii",
+    "display": "Despiste"
+  },
+  "cloud-nine": {
+    "id": 13,
+    "gen": "generation-iii",
+    "display": "Aclimatación"
+  },
+  "compound-eyes": {
+    "id": 14,
+    "gen": "generation-iii",
+    "display": "Ojo Compuesto"
+  },
+  "insomnia": {
+    "id": 15,
+    "gen": "generation-iii",
+    "display": "Insomnio"
+  },
+  "color-change": {
+    "id": 16,
+    "gen": "generation-iii",
+    "display": "Cambio Color"
+  },
+  "static": {
+    "id": 9,
+    "gen": "generation-iii",
+    "display": "Elec. Estática"
+  },
+  "flash-fire": {
+    "id": 18,
+    "gen": "generation-iii",
+    "display": "Absorbe Fuego"
+  },
+  "own-tempo": {
+    "id": 20,
+    "gen": "generation-iii",
+    "display": "Ritmo Propio"
+  },
+  "suction-cups": {
+    "id": 21,
+    "gen": "generation-iii",
+    "display": "Ventosas"
+  },
+  "shadow-tag": {
+    "id": 23,
+    "gen": "generation-iii",
+    "display": "Sombra Trampa"
+  },
+  "rough-skin": {
+    "id": 24,
+    "gen": "generation-iii",
+    "display": "Piel Tosca"
+  },
+  "wonder-guard": {
+    "id": 25,
+    "gen": "generation-iii",
+    "display": "Superguarda"
+  },
+  "levitate": {
+    "id": 26,
+    "gen": "generation-iii",
+    "display": "Levitación"
+  },
+  "shield-dust": {
+    "id": 19,
+    "gen": "generation-iii",
+    "display": "Polvo Escudo"
+  },
+  "intimidate": {
+    "id": 22,
+    "gen": "generation-iii",
+    "display": "Intimidación"
+  },
+  "effect-spore": {
+    "id": 27,
+    "gen": "generation-iii",
+    "display": "Efecto Espora"
+  },
+  "synchronize": {
+    "id": 28,
+    "gen": "generation-iii",
+    "display": "Sincronía"
+  },
+  "clear-body": {
+    "id": 29,
+    "gen": "generation-iii",
+    "display": "Cuerpo Puro"
+  },
+  "natural-cure": {
+    "id": 30,
+    "gen": "generation-iii",
+    "display": "Cura Natural"
+  },
+  "lightning-rod": {
+    "id": 31,
+    "gen": "generation-iii",
+    "display": "Pararrayos"
+  },
+  "serene-grace": {
+    "id": 32,
+    "gen": "generation-iii",
+    "display": "Dicha"
+  },
+  "swift-swim": {
+    "id": 33,
+    "gen": "generation-iii",
+    "display": "Nado Rápido"
+  },
+  "chlorophyll": {
+    "id": 34,
+    "gen": "generation-iii",
+    "display": "Clorofila"
+  },
+  "illuminate": {
+    "id": 35,
+    "gen": "generation-iii",
+    "display": "Iluminación"
+  },
+  "trace": {
+    "id": 36,
+    "gen": "generation-iii",
+    "display": "Rastro"
+  },
+  "huge-power": {
+    "id": 37,
+    "gen": "generation-iii",
+    "display": "Potencia"
+  },
+  "poison-point": {
+    "id": 38,
+    "gen": "generation-iii",
+    "display": "Punto Tóxico"
+  },
+  "magma-armor": {
+    "id": 40,
+    "gen": "generation-iii",
+    "display": "Escudo Magma"
+  },
+  "water-veil": {
+    "id": 41,
+    "gen": "generation-iii",
+    "display": "Velo Agua"
+  },
+  "magnet-pull": {
+    "id": 42,
+    "gen": "generation-iii",
+    "display": "Imán"
+  },
+  "soundproof": {
+    "id": 43,
+    "gen": "generation-iii",
+    "display": "Insonorizar"
+  },
+  "inner-focus": {
+    "id": 39,
+    "gen": "generation-iii",
+    "display": "Foco Interno"
+  },
+  "pressure": {
+    "id": 46,
+    "gen": "generation-iii",
+    "display": "Presión"
+  },
+  "sand-stream": {
+    "id": 45,
+    "gen": "generation-iii",
+    "display": "Chorro Arena"
+  },
+  "thick-fat": {
+    "id": 47,
+    "gen": "generation-iii",
+    "display": "Sebo"
+  },
+  "early-bird": {
+    "id": 48,
+    "gen": "generation-iii",
+    "display": "Madrugar"
+  },
+  "rain-dish": {
+    "id": 44,
+    "gen": "generation-iii",
+    "display": "Cura Lluvia"
+  },
+  "flame-body": {
+    "id": 49,
+    "gen": "generation-iii",
+    "display": "Cuerpo Llama"
+  },
+  "run-away": {
+    "id": 50,
+    "gen": "generation-iii",
+    "display": "Fuga"
+  },
+  "keen-eye": {
+    "id": 51,
+    "gen": "generation-iii",
+    "display": "Vista Lince"
+  },
+  "hyper-cutter": {
+    "id": 52,
+    "gen": "generation-iii",
+    "display": "Corte Fuerte"
+  },
+  "pickup": {
+    "id": 53,
+    "gen": "generation-iii",
+    "display": "Recogida"
+  },
+  "hustle": {
+    "id": 55,
+    "gen": "generation-iii",
+    "display": "Entusiasmo"
+  },
+  "cute-charm": {
+    "id": 56,
+    "gen": "generation-iii",
+    "display": "Gran Encanto"
+  },
+  "truant": {
+    "id": 54,
+    "gen": "generation-iii",
+    "display": "Ausente"
+  },
+  "plus": {
+    "id": 57,
+    "gen": "generation-iii",
+    "display": "Más"
+  },
+  "minus": {
+    "id": 58,
+    "gen": "generation-iii",
+    "display": "Menos"
+  },
+  "forecast": {
+    "id": 59,
+    "gen": "generation-iii",
+    "display": "Predicción"
+  },
+  "shed-skin": {
+    "id": 61,
+    "gen": "generation-iii",
+    "display": "Mudar"
+  },
+  "sticky-hold": {
+    "id": 60,
+    "gen": "generation-iii",
+    "display": "Viscosidad"
+  },
+  "marvel-scale": {
+    "id": 63,
+    "gen": "generation-iii",
+    "display": "Escama Especial"
+  },
+  "guts": {
+    "id": 62,
+    "gen": "generation-iii",
+    "display": "Agallas"
+  },
+  "overgrow": {
+    "id": 65,
+    "gen": "generation-iii",
+    "display": "Espesura"
+  },
+  "liquid-ooze": {
+    "id": 64,
+    "gen": "generation-iii",
+    "display": "Lodo Líquido"
+  },
+  "blaze": {
+    "id": 66,
+    "gen": "generation-iii",
+    "display": "Mar Llamas"
+  },
+  "torrent": {
+    "id": 67,
+    "gen": "generation-iii",
+    "display": "Torrente"
+  },
+  "swarm": {
+    "id": 68,
+    "gen": "generation-iii",
+    "display": "Enjambre"
+  },
+  "rock-head": {
+    "id": 69,
+    "gen": "generation-iii",
+    "display": "Cabeza Roca"
+  },
+  "drought": {
+    "id": 70,
+    "gen": "generation-iii",
+    "display": "Sequía"
+  },
+  "arena-trap": {
+    "id": 71,
+    "gen": "generation-iii",
+    "display": "Trampa Arena"
+  },
+  "vital-spirit": {
+    "id": 72,
+    "gen": "generation-iii",
+    "display": "Espíritu Vital"
+  },
+  "white-smoke": {
+    "id": 73,
+    "gen": "generation-iii",
+    "display": "Humo Blanco"
+  },
+  "pure-power": {
+    "id": 74,
+    "gen": "generation-iii",
+    "display": "Energía Pura"
+  },
+  "shell-armor": {
+    "id": 75,
+    "gen": "generation-iii",
+    "display": "Caparazón"
+  },
+  "air-lock": {
+    "id": 76,
+    "gen": "generation-iii",
+    "display": "Bucle Aire"
+  },
+  "motor-drive": {
+    "id": 78,
+    "gen": "generation-iv",
+    "display": "Electromotor"
+  },
+  "rivalry": {
+    "id": 79,
+    "gen": "generation-iv",
+    "display": "Rivalidad"
+  },
+  "gluttony": {
+    "id": 82,
+    "gen": "generation-iv",
+    "display": "Gula"
+  },
+  "anger-point": {
+    "id": 83,
+    "gen": "generation-iv",
+    "display": "Irascible"
+  },
+  "steadfast": {
+    "id": 80,
+    "gen": "generation-iv",
+    "display": "Impasible"
+  },
+  "unburden": {
+    "id": 84,
+    "gen": "generation-iv",
+    "display": "Liviano"
+  },
+  "snow-cloak": {
+    "id": 81,
+    "gen": "generation-iv",
+    "display": "Manto Níveo"
+  },
+  "heatproof": {
+    "id": 85,
+    "gen": "generation-iv",
+    "display": "Ignífugo"
+  },
+  "simple": {
+    "id": 86,
+    "gen": "generation-iv",
+    "display": "Simple"
+  },
+  "dry-skin": {
+    "id": 87,
+    "gen": "generation-iv",
+    "display": "Piel Seca"
+  },
+  "iron-fist": {
+    "id": 89,
+    "gen": "generation-iv",
+    "display": "Puño Férreo"
+  },
+  "poison-heal": {
+    "id": 90,
+    "gen": "generation-iv",
+    "display": "Antídoto"
+  },
+  "skill-link": {
+    "id": 92,
+    "gen": "generation-iv",
+    "display": "Encadenado"
+  },
+  "adaptability": {
+    "id": 91,
+    "gen": "generation-iv",
+    "display": "Adaptable"
+  },
+  "solar-power": {
+    "id": 94,
+    "gen": "generation-iv",
+    "display": "Poder Solar"
+  },
+  "download": {
+    "id": 88,
+    "gen": "generation-iv",
+    "display": "Descarga"
+  },
+  "hydration": {
+    "id": 93,
+    "gen": "generation-iv",
+    "display": "Hidratación"
+  },
+  "quick-feet": {
+    "id": 95,
+    "gen": "generation-iv",
+    "display": "Pies Rápidos"
+  },
+  "normalize": {
+    "id": 96,
+    "gen": "generation-iv",
+    "display": "Normalidad"
+  },
+  "sniper": {
+    "id": 97,
+    "gen": "generation-iv",
+    "display": "Francotirador"
+  },
+  "magic-guard": {
+    "id": 98,
+    "gen": "generation-iv",
+    "display": "Muro Mágico"
+  },
+  "no-guard": {
+    "id": 99,
+    "gen": "generation-iv",
+    "display": "Indefenso"
+  },
+  "stall": {
+    "id": 100,
+    "gen": "generation-iv",
+    "display": "Rezagado"
+  },
+  "technician": {
+    "id": 101,
+    "gen": "generation-iv",
+    "display": "Experto"
+  },
+  "leaf-guard": {
+    "id": 102,
+    "gen": "generation-iv",
+    "display": "Defensa Hoja"
+  },
+  "klutz": {
+    "id": 103,
+    "gen": "generation-iv",
+    "display": "Zoquete"
+  },
+  "mold-breaker": {
+    "id": 104,
+    "gen": "generation-iv",
+    "display": "Rompemoldes"
+  },
+  "aftermath": {
+    "id": 106,
+    "gen": "generation-iv",
+    "display": "Detonación"
+  },
+  "super-luck": {
+    "id": 105,
+    "gen": "generation-iv",
+    "display": "Afortunado"
+  },
+  "immunity": {
+    "id": 17,
+    "gen": "generation-iii",
+    "display": "Inmunidad"
+  },
+  "anticipation": {
+    "id": 107,
+    "gen": "generation-iv",
+    "display": "Anticipación"
+  },
+  "unaware": {
+    "id": 109,
+    "gen": "generation-iv",
+    "display": "Ignorante"
+  },
+  "tinted-lens": {
+    "id": 110,
+    "gen": "generation-iv",
+    "display": "Cromolente"
+  },
+  "filter": {
+    "id": 111,
+    "gen": "generation-iv",
+    "display": "Filtro"
+  },
+  "slow-start": {
+    "id": 112,
+    "gen": "generation-iv",
+    "display": "Inicio Lento"
+  },
+  "scrappy": {
+    "id": 113,
+    "gen": "generation-iv",
+    "display": "Intrépido"
+  },
+  "ice-body": {
+    "id": 115,
+    "gen": "generation-iv",
+    "display": "Gélido"
+  },
+  "forewarn": {
+    "id": 108,
+    "gen": "generation-iv",
+    "display": "Alerta"
+  },
+  "snow-warning": {
+    "id": 117,
+    "gen": "generation-iv",
+    "display": "Nevada"
+  },
+  "honey-gather": {
+    "id": 118,
+    "gen": "generation-iv",
+    "display": "Recogemiel"
+  },
+  "frisk": {
+    "id": 119,
+    "gen": "generation-iv",
+    "display": "Cacheo"
+  },
+  "reckless": {
+    "id": 120,
+    "gen": "generation-iv",
+    "display": "Audaz"
+  },
+  "multitype": {
+    "id": 121,
+    "gen": "generation-iv",
+    "display": "Multitipo"
+  },
+  "flower-gift": {
+    "id": 122,
+    "gen": "generation-iv",
+    "display": "Don Floral"
+  },
+  "pickpocket": {
+    "id": 124,
+    "gen": "generation-v",
+    "display": "Hurto"
+  },
+  "sheer-force": {
+    "id": 125,
+    "gen": "generation-v",
+    "display": "Potencia Bruta"
+  },
+  "tangled-feet": {
+    "id": 77,
+    "gen": "generation-iv",
+    "display": "Tumbos"
+  },
+  "contrary": {
+    "id": 126,
+    "gen": "generation-v",
+    "display": "Respondón"
+  },
+  "bad-dreams": {
+    "id": 123,
+    "gen": "generation-iv",
+    "display": "Mal Sueño"
+  },
+  "unnerve": {
+    "id": 127,
+    "gen": "generation-v",
+    "display": "Nerviosismo"
+  },
+  "defiant": {
+    "id": 128,
+    "gen": "generation-v",
+    "display": "Competitivo"
+  },
+  "defeatist": {
+    "id": 129,
+    "gen": "generation-v",
+    "display": "Flaqueza"
+  },
+  "cursed-body": {
+    "id": 130,
+    "gen": "generation-v",
+    "display": "Cuerpo Maldito"
+  },
+  "healer": {
+    "id": 131,
+    "gen": "generation-v",
+    "display": "Alma Cura"
+  },
+  "friend-guard": {
+    "id": 132,
+    "gen": "generation-v",
+    "display": "Compiescolta"
+  },
+  "weak-armor": {
+    "id": 133,
+    "gen": "generation-v",
+    "display": "Armadura Frágil"
+  },
+  "light-metal": {
+    "id": 135,
+    "gen": "generation-v",
+    "display": "Metal Liviano"
+  },
+  "multiscale": {
+    "id": 136,
+    "gen": "generation-v",
+    "display": "Multiescamas"
+  },
+  "toxic-boost": {
+    "id": 137,
+    "gen": "generation-v",
+    "display": "Ímpetu Tóxico"
+  },
+  "heavy-metal": {
+    "id": 134,
+    "gen": "generation-v",
+    "display": "Metal Pesado"
+  },
+  "harvest": {
+    "id": 139,
+    "gen": "generation-v",
+    "display": "Cosecha"
+  },
+  "flare-boost": {
+    "id": 138,
+    "gen": "generation-v",
+    "display": "Ímpetu Ardiente"
+  },
+  "telepathy": {
+    "id": 140,
+    "gen": "generation-v",
+    "display": "Telepatía"
+  },
+  "moody": {
+    "id": 141,
+    "gen": "generation-v",
+    "display": "Veleta"
+  },
+  "overcoat": {
+    "id": 142,
+    "gen": "generation-v",
+    "display": "Funda"
+  },
+  "regenerator": {
+    "id": 144,
+    "gen": "generation-v",
+    "display": "Regeneración"
+  },
+  "poison-touch": {
+    "id": 143,
+    "gen": "generation-v",
+    "display": "Toque Tóxico"
+  },
+  "big-pecks": {
+    "id": 145,
+    "gen": "generation-v",
+    "display": "Sacapecho"
+  },
+  "sand-rush": {
+    "id": 146,
+    "gen": "generation-v",
+    "display": "Ímpetu Arena"
+  },
+  "wonder-skin": {
+    "id": 147,
+    "gen": "generation-v",
+    "display": "Piel Milagro"
+  },
+  "illusion": {
+    "id": 149,
+    "gen": "generation-v",
+    "display": "Ilusión"
+  },
+  "imposter": {
+    "id": 150,
+    "gen": "generation-v",
+    "display": "Impostor"
+  },
+  "infiltrator": {
+    "id": 151,
+    "gen": "generation-v",
+    "display": "Allanamiento"
+  },
+  "mummy": {
+    "id": 152,
+    "gen": "generation-v",
+    "display": "Momia"
+  },
+  "moxie": {
+    "id": 153,
+    "gen": "generation-v",
+    "display": "Autoestima"
+  },
+  "justified": {
+    "id": 154,
+    "gen": "generation-v",
+    "display": "Justiciero"
+  },
+  "rattled": {
+    "id": 155,
+    "gen": "generation-v",
+    "display": "Cobardía"
+  },
+  "magic-bounce": {
+    "id": 156,
+    "gen": "generation-v",
+    "display": "Espejo Mágico"
+  },
+  "prankster": {
+    "id": 158,
+    "gen": "generation-v",
+    "display": "Bromista"
+  },
+  "sand-force": {
+    "id": 159,
+    "gen": "generation-v",
+    "display": "Poder Arena"
+  },
+  "sap-sipper": {
+    "id": 157,
+    "gen": "generation-v",
+    "display": "Herbívoro"
+  },
+  "iron-barbs": {
+    "id": 160,
+    "gen": "generation-v",
+    "display": "Punta Acero"
+  },
+  "zen-mode": {
+    "id": 161,
+    "gen": "generation-v",
+    "display": "Modo Daruma"
+  },
+  "victory-star": {
+    "id": 162,
+    "gen": "generation-v",
+    "display": "Tinovictoria"
+  },
+  "solid-rock": {
+    "id": 116,
+    "gen": "generation-iv",
+    "display": "Roca Sólida"
+  },
+  "teravolt": {
+    "id": 164,
+    "gen": "generation-v",
+    "display": "Terravoltaje"
+  },
+  "turboblaze": {
+    "id": 163,
+    "gen": "generation-v",
+    "display": "Turbollama"
+  },
+  "aroma-veil": {
+    "id": 165,
+    "gen": "generation-vi",
+    "display": "Velo Aroma"
+  },
+  "flower-veil": {
+    "id": 166,
+    "gen": "generation-vi",
+    "display": "Velo Flor"
+  },
+  "cheek-pouch": {
+    "id": 167,
+    "gen": "generation-vi",
+    "display": "Carrillo"
+  },
+  "protean": {
+    "id": 168,
+    "gen": "generation-vi",
+    "display": "Mutatipo"
+  },
+  "fur-coat": {
+    "id": 169,
+    "gen": "generation-vi",
+    "display": "Pelaje Recio"
+  },
+  "magician": {
+    "id": 170,
+    "gen": "generation-vi",
+    "display": "Prestidigitador"
+  },
+  "bulletproof": {
+    "id": 171,
+    "gen": "generation-vi",
+    "display": "Antibalas"
+  },
+  "competitive": {
+    "id": 172,
+    "gen": "generation-vi",
+    "display": "Tenacidad"
+  },
+  "strong-jaw": {
+    "id": 173,
+    "gen": "generation-vi",
+    "display": "Mandíbula Fuerte"
+  },
+  "refrigerate": {
+    "id": 174,
+    "gen": "generation-vi",
+    "display": "Piel Helada"
+  },
+  "stance-change": {
+    "id": 176,
+    "gen": "generation-vi",
+    "display": "Cambio Táctico"
+  },
+  "sweet-veil": {
+    "id": 175,
+    "gen": "generation-vi",
+    "display": "Velo Dulce"
+  },
+  "mega-launcher": {
+    "id": 178,
+    "gen": "generation-vi",
+    "display": "Megadisparador"
+  },
+  "grass-pelt": {
+    "id": 179,
+    "gen": "generation-vi",
+    "display": "Manto Frondoso"
+  },
+  "symbiosis": {
+    "id": 180,
+    "gen": "generation-vi",
+    "display": "Simbiosis"
+  },
+  "tough-claws": {
+    "id": 181,
+    "gen": "generation-vi",
+    "display": "Garra Dura"
+  },
+  "pixilate": {
+    "id": 182,
+    "gen": "generation-vi",
+    "display": "Piel Feérica"
+  },
+  "gooey": {
+    "id": 183,
+    "gen": "generation-vi",
+    "display": "Baba"
+  },
+  "storm-drain": {
+    "id": 114,
+    "gen": "generation-iv",
+    "display": "Colector"
+  },
+  "aerilate": {
+    "id": 184,
+    "gen": "generation-vi",
+    "display": "Piel Celeste"
+  },
+  "dark-aura": {
+    "id": 186,
+    "gen": "generation-vi",
+    "display": "Aura Oscura"
+  },
+  "fairy-aura": {
+    "id": 187,
+    "gen": "generation-vi",
+    "display": "Aura Feérica"
+  },
+  "aura-break": {
+    "id": 188,
+    "gen": "generation-vi",
+    "display": "Rompeaura"
+  },
+  "primordial-sea": {
+    "id": 189,
+    "gen": "generation-vi",
+    "display": "Mar del Albor"
+  },
+  "desolate-land": {
+    "id": 190,
+    "gen": "generation-vi",
+    "display": "Tierra del Ocaso"
+  },
+  "stamina": {
+    "id": 192,
+    "gen": "generation-vii",
+    "display": "Firmeza"
+  },
+  "wimp-out": {
+    "id": 193,
+    "gen": "generation-vii",
+    "display": "Huida"
+  },
+  "emergency-exit": {
+    "id": 194,
+    "gen": "generation-vii",
+    "display": "Retirada"
+  },
+  "water-compaction": {
+    "id": 195,
+    "gen": "generation-vii",
+    "display": "Hidrorrefuerzo"
+  },
+  "merciless": {
+    "id": 196,
+    "gen": "generation-vii",
+    "display": "Ensañamiento"
+  },
+  "shields-down": {
+    "id": 197,
+    "gen": "generation-vii",
+    "display": "Escudo Limitado"
+  },
+  "stakeout": {
+    "id": 198,
+    "gen": "generation-vii",
+    "display": "Vigilante"
+  },
+  "water-bubble": {
+    "id": 199,
+    "gen": "generation-vii",
+    "display": "Pompa"
+  },
+  "steelworker": {
+    "id": 200,
+    "gen": "generation-vii",
+    "display": "Acero Templado"
+  },
+  "analytic": {
+    "id": 148,
+    "gen": "generation-v",
+    "display": "Cálculo Final"
+  },
+  "slush-rush": {
+    "id": 202,
+    "gen": "generation-vii",
+    "display": "Quitanieves"
+  },
+  "berserk": {
+    "id": 201,
+    "gen": "generation-vii",
+    "display": "Cólera"
+  },
+  "liquid-voice": {
+    "id": 204,
+    "gen": "generation-vii",
+    "display": "Voz Fluida"
+  },
+  "long-reach": {
+    "id": 203,
+    "gen": "generation-vii",
+    "display": "Remoto"
+  },
+  "triage": {
+    "id": 205,
+    "gen": "generation-vii",
+    "display": "Primer Auxilio"
+  },
+  "galvanize": {
+    "id": 206,
+    "gen": "generation-vii",
+    "display": "Piel Eléctrica"
+  },
+  "surge-surfer": {
+    "id": 207,
+    "gen": "generation-vii",
+    "display": "Cola Surf"
+  },
+  "schooling": {
+    "id": 208,
+    "gen": "generation-vii",
+    "display": "Banco"
+  },
+  "disguise": {
+    "id": 209,
+    "gen": "generation-vii",
+    "display": "Disfraz"
+  },
+  "battle-bond": {
+    "id": 210,
+    "gen": "generation-vii",
+    "display": "Fuerte Afecto"
+  },
+  "power-construct": {
+    "id": 211,
+    "gen": "generation-vii",
+    "display": "Agrupamiento"
+  },
+  "comatose": {
+    "id": 213,
+    "gen": "generation-vii",
+    "display": "Letargo Perenne"
+  },
+  "queenly-majesty": {
+    "id": 214,
+    "gen": "generation-vii",
+    "display": "Regia Presencia"
+  },
+  "innards-out": {
+    "id": 215,
+    "gen": "generation-vii",
+    "display": "Revés"
+  },
+  "dancer": {
+    "id": 216,
+    "gen": "generation-vii",
+    "display": "Pareja de Baile"
+  },
+  "delta-stream": {
+    "id": 191,
+    "gen": "generation-vi",
+    "display": "Ráfaga Delta"
+  },
+  "battery": {
+    "id": 217,
+    "gen": "generation-vii",
+    "display": "Batería"
+  },
+  "fluffy": {
+    "id": 218,
+    "gen": "generation-vii",
+    "display": "Peluche"
+  },
+  "dazzling": {
+    "id": 219,
+    "gen": "generation-vii",
+    "display": "Cuerpo Vívido"
+  },
+  "gale-wings": {
+    "id": 177,
+    "gen": "generation-vi",
+    "display": "Alas Vendaval"
+  },
+  "soul-heart": {
+    "id": 220,
+    "gen": "generation-vii",
+    "display": "Coránima"
+  },
+  "parental-bond": {
+    "id": 185,
+    "gen": "generation-vi",
+    "display": "Amor Filial"
+  },
+  "tangling-hair": {
+    "id": 221,
+    "gen": "generation-vii",
+    "display": "Rizos Rebeldes"
+  },
+  "receiver": {
+    "id": 222,
+    "gen": "generation-vii",
+    "display": "Receptor"
+  },
+  "power-of-alchemy": {
+    "id": 223,
+    "gen": "generation-vii",
+    "display": "Reacción Química"
+  },
+  "beast-boost": {
+    "id": 224,
+    "gen": "generation-vii",
+    "display": "Ultraimpulso"
+  },
+  "rks-system": {
+    "id": 225,
+    "gen": "generation-vii",
+    "display": "Sistema Alfa"
+  },
+  "electric-surge": {
+    "id": 226,
+    "gen": "generation-vii",
+    "display": "Electrogénesis"
+  },
+  "psychic-surge": {
+    "id": 227,
+    "gen": "generation-vii",
+    "display": "Psicogénesis"
+  },
+  "misty-surge": {
+    "id": 228,
+    "gen": "generation-vii",
+    "display": "Nebulogénesis"
+  },
+  "grassy-surge": {
+    "id": 229,
+    "gen": "generation-vii",
+    "display": "Herbogénesis"
+  },
+  "shadow-shield": {
+    "id": 231,
+    "gen": "generation-vii",
+    "display": "Guardia Espectro"
+  },
+  "full-metal-body": {
+    "id": 230,
+    "gen": "generation-vii",
+    "display": "Guardia Metálica"
+  },
+  "neuroforce": {
+    "id": 233,
+    "gen": "generation-vii",
+    "display": "Fuerza Cerebral"
+  },
+  "intrepid-sword": {
+    "id": 234,
+    "gen": "generation-viii",
+    "display": "Espada Indómita"
+  },
+  "dauntless-shield": {
+    "id": 235,
+    "gen": "generation-viii",
+    "display": "Escudo Recio"
+  },
+  "libero": {
+    "id": 236,
+    "gen": "generation-viii",
+    "display": "Líbero"
+  },
+  "ball-fetch": {
+    "id": 237,
+    "gen": "generation-viii",
+    "display": "Recogebolas"
+  },
+  "cotton-down": {
+    "id": 238,
+    "gen": "generation-viii",
+    "display": "Pelusa"
+  },
+  "propeller-tail": {
+    "id": 239,
+    "gen": "generation-viii",
+    "display": "Hélice Caudal"
+  },
+  "stalwart": {
+    "id": 242,
+    "gen": "generation-viii",
+    "display": "Acérrimo"
+  },
+  "gulp-missile": {
+    "id": 241,
+    "gen": "generation-viii",
+    "display": "Tragamisil"
+  },
+  "steam-engine": {
+    "id": 243,
+    "gen": "generation-viii",
+    "display": "Combustible"
+  },
+  "punk-rock": {
+    "id": 244,
+    "gen": "generation-viii",
+    "display": "Punk Rock"
+  },
+  "sand-spit": {
+    "id": 245,
+    "gen": "generation-viii",
+    "display": "Expulsarena"
+  },
+  "ice-scales": {
+    "id": 246,
+    "gen": "generation-viii",
+    "display": "Escama de Hielo"
+  },
+  "ripen": {
+    "id": 247,
+    "gen": "generation-viii",
+    "display": "Maduración"
+  },
+  "ice-face": {
+    "id": 248,
+    "gen": "generation-viii",
+    "display": "Cara de Hielo"
+  },
+  "power-spot": {
+    "id": 249,
+    "gen": "generation-viii",
+    "display": "Fuente Energía"
+  },
+  "mimicry": {
+    "id": 250,
+    "gen": "generation-viii",
+    "display": "Mimetismo"
+  },
+  "steely-spirit": {
+    "id": 252,
+    "gen": "generation-viii",
+    "display": "Alma Acerada"
+  },
+  "perish-body": {
+    "id": 253,
+    "gen": "generation-viii",
+    "display": "Cuerpo Mortal"
+  },
+  "corrosion": {
+    "id": 212,
+    "gen": "generation-vii",
+    "display": "Corrosión"
+  },
+  "wandering-spirit": {
+    "id": 254,
+    "gen": "generation-viii",
+    "display": "Alma Errante"
+  },
+  "gorilla-tactics": {
+    "id": 255,
+    "gen": "generation-viii",
+    "display": "Monotema"
+  },
+  "neutralizing-gas": {
+    "id": 256,
+    "gen": "generation-viii",
+    "display": "Gas Reactivo"
+  },
+  "pastel-veil": {
+    "id": 257,
+    "gen": "generation-viii",
+    "display": "Velo Pastel"
+  },
+  "quick-draw": {
+    "id": 259,
+    "gen": "generation-viii",
+    "display": "Mano Rápida"
+  },
+  "unseen-fist": {
+    "id": 260,
+    "gen": "generation-viii",
+    "display": "Puño Invisible"
+  },
+  "curious-medicine": {
+    "id": 261,
+    "gen": "generation-viii",
+    "display": "Medicina Extraña"
+  },
+  "transistor": {
+    "id": 262,
+    "gen": "generation-viii",
+    "display": "Transistor"
+  },
+  "dragons-maw": {
+    "id": 263,
+    "gen": "generation-viii",
+    "display": "Mandíbula Dragón"
+  },
+  "chilling-neigh": {
+    "id": 264,
+    "gen": "generation-viii",
+    "display": "Relincho Blanco"
+  },
+  "grim-neigh": {
+    "id": 265,
+    "gen": "generation-viii",
+    "display": "Relincho Negro"
+  },
+  "as-one-glastrier": {
+    "id": 266,
+    "gen": "generation-viii",
+    "display": "Unidad Ecuestre"
+  },
+  "as-one-spectrier": {
+    "id": 267,
+    "gen": "generation-viii",
+    "display": "Unidad Ecuestre"
+  },
+  "lingering-aroma": {
+    "id": 268,
+    "gen": "generation-ix",
+    "display": "Olor Persistente"
+  },
+  "seed-sower": {
+    "id": 269,
+    "gen": "generation-ix",
+    "display": "Disemillar"
+  },
+  "screen-cleaner": {
+    "id": 251,
+    "gen": "generation-viii",
+    "display": "Antibarrera"
+  },
+  "mirror-armor": {
+    "id": 240,
+    "gen": "generation-viii",
+    "display": "Coraza Reflejo"
+  },
+  "thermal-exchange": {
+    "id": 270,
+    "gen": "generation-ix",
+    "display": "Termoscambio"
+  },
+  "anger-shell": {
+    "id": 271,
+    "gen": "generation-ix",
+    "display": "Coraza Ira"
+  },
+  "purifying-salt": {
+    "id": 272,
+    "gen": "generation-ix",
+    "display": "Sal Purificadora"
+  },
+  "well-baked-body": {
+    "id": 273,
+    "gen": "generation-ix",
+    "display": "Cuerpo Horneado"
+  },
+  "wind-rider": {
+    "id": 274,
+    "gen": "generation-ix",
+    "display": "Surcavientos"
+  },
+  "guard-dog": {
+    "id": 275,
+    "gen": "generation-ix",
+    "display": "Perro Guardián"
+  },
+  "rocky-payload": {
+    "id": 276,
+    "gen": "generation-ix",
+    "display": "Transportarrocas"
+  },
+  "zero-to-hero": {
+    "id": 278,
+    "gen": "generation-ix",
+    "display": "Cambio Heroico"
+  },
+  "wind-power": {
+    "id": 277,
+    "gen": "generation-ix",
+    "display": "Energía Eólica"
+  },
+  "hunger-switch": {
+    "id": 258,
+    "gen": "generation-viii",
+    "display": "Mutapetito"
+  },
+  "commander": {
+    "id": 279,
+    "gen": "generation-ix",
+    "display": "Comandar"
+  },
+  "electromorphosis": {
+    "id": 280,
+    "gen": "generation-ix",
+    "display": "Dinamo"
+  },
+  "protosynthesis": {
+    "id": 281,
+    "gen": "generation-ix",
+    "display": "Paleosíntesis"
+  },
+  "quark-drive": {
+    "id": 282,
+    "gen": "generation-ix",
+    "display": "Carga Cuark"
+  },
+  "good-as-gold": {
+    "id": 283,
+    "gen": "generation-ix",
+    "display": "Cuerpo Áureo"
+  },
+  "vessel-of-ruin": {
+    "id": 284,
+    "gen": "generation-ix",
+    "display": "Caldero Debacle"
+  },
+  "sword-of-ruin": {
+    "id": 285,
+    "gen": "generation-ix",
+    "display": "Espada Debacle"
+  },
+  "tablets-of-ruin": {
+    "id": 286,
+    "gen": "generation-ix",
+    "display": "Tablilla Debacle"
+  },
+  "beads-of-ruin": {
+    "id": 287,
+    "gen": "generation-ix",
+    "display": "Abalorio Debacle"
+  },
+  "orichalcum-pulse": {
+    "id": 288,
+    "gen": "generation-ix",
+    "display": "Latido Oricalco"
+  },
+  "hadron-engine": {
+    "id": 289,
+    "gen": "generation-ix",
+    "display": "Motor Hadrónico"
+  },
+  "opportunist": {
+    "id": 290,
+    "gen": "generation-ix",
+    "display": "Oportunista"
+  },
+  "cud-chew": {
+    "id": 291,
+    "gen": "generation-ix",
+    "display": "Rumia"
+  },
+  "sharpness": {
+    "id": 292,
+    "gen": "generation-ix",
+    "display": "Cortante"
+  },
+  "supreme-overlord": {
+    "id": 293,
+    "gen": "generation-ix",
+    "display": "General Supremo"
+  },
+  "costar": {
+    "id": 294,
+    "gen": "generation-ix",
+    "display": "Unísono"
+  },
+  "toxic-debris": {
+    "id": 295,
+    "gen": "generation-ix",
+    "display": "Capa Tóxica"
+  },
+  "armor-tail": {
+    "id": 296,
+    "gen": "generation-ix",
+    "display": "Cola Armadura"
+  },
+  "earth-eater": {
+    "id": 297,
+    "gen": "generation-ix",
+    "display": "Geofagia"
+  },
+  "minds-eye": {
+    "id": 299,
+    "gen": "generation-ix",
+    "display": "Ojo Mental "
+  },
+  "supersweet-syrup": {
+    "id": 300,
+    "gen": "generation-ix",
+    "display": "Néctar Dulce"
+  },
+  "mycelium-might": {
+    "id": 298,
+    "gen": "generation-ix",
+    "display": "Poder Fúngico"
+  },
+  "hospitality": {
+    "id": 301,
+    "gen": "generation-ix",
+    "display": "Hospitalidad"
+  },
+  "toxic-chain": {
+    "id": 302,
+    "gen": "generation-ix",
+    "display": "Cadena Tóxica"
+  },
+  "embody-aspect": {
+    "id": 303,
+    "gen": "generation-ix",
+    "display": "Evocarrecuerdos"
+  },
+  "tera-shift": {
+    "id": 304,
+    "gen": "generation-ix",
+    "display": "Teracambio"
+  },
+  "tera-shell": {
+    "id": 305,
+    "gen": "generation-ix",
+    "display": "Teracaparazón"
+  },
+  "teraform-zero": {
+    "id": 306,
+    "gen": "generation-ix",
+    "display": "Teraformación 0"
+  },
+  "mountaineer": {
+    "id": 10001,
+    "gen": "generation-v",
+    "display": "Mountaineer"
+  },
+  "poison-puppeteer": {
+    "id": 307,
+    "gen": "generation-ix",
+    "display": "Títere Tóxico"
+  },
+  "wave-rider": {
+    "id": 10002,
+    "gen": "generation-v",
+    "display": "Wave Rider"
+  },
+  "skater": {
+    "id": 10003,
+    "gen": "generation-v",
+    "display": "Skater"
+  },
+  "perception": {
+    "id": 10005,
+    "gen": "generation-v",
+    "display": "Perception"
+  },
+  "parry": {
+    "id": 10006,
+    "gen": "generation-v",
+    "display": "Parry"
+  },
+  "instinct": {
+    "id": 10007,
+    "gen": "generation-v",
+    "display": "Instinct"
+  },
+  "dodge": {
+    "id": 10008,
+    "gen": "generation-v",
+    "display": "Dodge"
+  },
+  "jagged-edge": {
+    "id": 10009,
+    "gen": "generation-v",
+    "display": "Jagged Edge"
+  },
+  "tenacity": {
+    "id": 10011,
+    "gen": "generation-v",
+    "display": "Tenacity"
+  },
+  "frostbite": {
+    "id": 10010,
+    "gen": "generation-v",
+    "display": "Frostbite"
+  },
+  "pride": {
+    "id": 10012,
+    "gen": "generation-v",
+    "display": "Pride"
+  },
+  "power-nap": {
+    "id": 10014,
+    "gen": "generation-v",
+    "display": "Power Nap"
+  },
+  "deep-sleep": {
+    "id": 10013,
+    "gen": "generation-v",
+    "display": "Deep Sleep"
+  },
+  "spirit": {
+    "id": 10015,
+    "gen": "generation-v",
+    "display": "Spirit"
+  },
+  "warm-blanket": {
+    "id": 10016,
+    "gen": "generation-v",
+    "display": "Warm Blanket"
+  },
+  "gulp": {
+    "id": 10017,
+    "gen": "generation-v",
+    "display": "Gulp"
+  },
+  "herbivore": {
+    "id": 10018,
+    "gen": "generation-v",
+    "display": "Herbivore"
+  },
+  "sandpit": {
+    "id": 10019,
+    "gen": "generation-v",
+    "display": "Sandpit"
+  },
+  "hot-blooded": {
+    "id": 10020,
+    "gen": "generation-v",
+    "display": "Hot Blooded"
+  },
+  "life-force": {
+    "id": 10022,
+    "gen": "generation-v",
+    "display": "Life Force"
+  },
+  "lunchbox": {
+    "id": 10023,
+    "gen": "generation-v",
+    "display": "Lunchbox"
+  },
+  "nurse": {
+    "id": 10024,
+    "gen": "generation-v",
+    "display": "Nurse"
+  },
+  "melee": {
+    "id": 10025,
+    "gen": "generation-v",
+    "display": "Melee"
+  },
+  "sponge": {
+    "id": 10026,
+    "gen": "generation-v",
+    "display": "Sponge"
+  },
+  "bodyguard": {
+    "id": 10027,
+    "gen": "generation-v",
+    "display": "Bodyguard"
+  },
+  "hero": {
+    "id": 10028,
+    "gen": "generation-v",
+    "display": "Hero"
+  },
+  "stealth": {
+    "id": 10030,
+    "gen": "generation-v",
+    "display": "Stealth"
+  },
+  "last-bastion": {
+    "id": 10029,
+    "gen": "generation-v",
+    "display": "Last Bastion"
+  },
+  "vanguard": {
+    "id": 10031,
+    "gen": "generation-v",
+    "display": "Vanguard"
+  },
+  "sequence": {
+    "id": 10033,
+    "gen": "generation-v",
+    "display": "Sequence"
+  },
+  "grass-cloak": {
+    "id": 10034,
+    "gen": "generation-v",
+    "display": "Grass Cloak"
+  },
+  "celebrate": {
+    "id": 10035,
+    "gen": "generation-v",
+    "display": "Celebrate"
+  },
+  "lullaby": {
+    "id": 10036,
+    "gen": "generation-v",
+    "display": "Lullaby"
+  },
+  "calming": {
+    "id": 10037,
+    "gen": "generation-v",
+    "display": "Calming"
+  },
+  "daze": {
+    "id": 10038,
+    "gen": "generation-v",
+    "display": "Daze"
+  },
+  "frighten": {
+    "id": 10039,
+    "gen": "generation-v",
+    "display": "Frighten"
+  },
+  "interference": {
+    "id": 10040,
+    "gen": "generation-v",
+    "display": "Interference"
+  },
+  "thrust": {
+    "id": 10004,
+    "gen": "generation-v",
+    "display": "Thrust"
+  },
+  "mood-maker": {
+    "id": 10041,
+    "gen": "generation-v",
+    "display": "Mood Maker"
+  },
+  "confidence": {
+    "id": 10042,
+    "gen": "generation-v",
+    "display": "Confidence"
+  },
+  "fortune": {
+    "id": 10043,
+    "gen": "generation-v",
+    "display": "Fortune"
+  },
+  "bonanza": {
+    "id": 10044,
+    "gen": "generation-v",
+    "display": "Bonanza"
+  },
+  "explode": {
+    "id": 10045,
+    "gen": "generation-v",
+    "display": "Explode"
+  },
+  "omnipotent": {
+    "id": 10046,
+    "gen": "generation-v",
+    "display": "Omnipotent"
+  },
+  "share": {
+    "id": 10047,
+    "gen": "generation-v",
+    "display": "Share"
+  },
+  "prism-armor": {
+    "id": 232,
+    "gen": "generation-vii",
+    "display": "Armadura Prisma"
+  },
+  "black-hole": {
+    "id": 10048,
+    "gen": "generation-v",
+    "display": "Black Hole"
+  },
+  "shadow-dash": {
+    "id": 10049,
+    "gen": "generation-v",
+    "display": "Shadow Dash"
+  },
+  "sprint": {
+    "id": 10050,
+    "gen": "generation-v",
+    "display": "Sprint"
+  },
+  "disgust": {
+    "id": 10051,
+    "gen": "generation-v",
+    "display": "Disgust"
+  },
+  "high-rise": {
+    "id": 10052,
+    "gen": "generation-v",
+    "display": "High-rise"
+  },
+  "climber": {
+    "id": 10053,
+    "gen": "generation-v",
+    "display": "Climber"
+  },
+  "aqua-boost": {
+    "id": 10055,
+    "gen": "generation-v",
+    "display": "Aqua Boost"
+  },
+  "flame-boost": {
+    "id": 10054,
+    "gen": "generation-v",
+    "display": "Flame Boost"
+  },
+  "run-up": {
+    "id": 10056,
+    "gen": "generation-v",
+    "display": "Run Up"
+  },
+  "shackle": {
+    "id": 10058,
+    "gen": "generation-v",
+    "display": "Shackle"
+  },
+  "nomad": {
+    "id": 10032,
+    "gen": "generation-v",
+    "display": "Nomad"
+  },
+  "conqueror": {
+    "id": 10057,
+    "gen": "generation-v",
+    "display": "Conqueror"
+  },
+  "decoy": {
+    "id": 10059,
+    "gen": "generation-v",
+    "display": "Decoy"
+  },
+  "shield": {
+    "id": 10060,
+    "gen": "generation-v",
+    "display": "Shield"
+  },
+  "medic": {
+    "id": 10021,
+    "gen": "generation-v",
+    "display": "Medic"
+  }
+}
