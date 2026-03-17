@@ -1,0 +1,8662 @@
+{
+  "master-ball": {
+    "id": 1,
+    "display": "Master Ball"
+  },
+  "ultra-ball": {
+    "id": 2,
+    "display": "Ultra Ball"
+  },
+  "great-ball": {
+    "id": 3,
+    "display": "Super Ball"
+  },
+  "poke-ball": {
+    "id": 4,
+    "display": "Poké Ball"
+  },
+  "safari-ball": {
+    "id": 5,
+    "display": "Safari Ball"
+  },
+  "net-ball": {
+    "id": 6,
+    "display": "Malla Ball"
+  },
+  "dive-ball": {
+    "id": 7,
+    "display": "Buceo Ball"
+  },
+  "nest-ball": {
+    "id": 8,
+    "display": "Nido Ball"
+  },
+  "repeat-ball": {
+    "id": 9,
+    "display": "Acopio Ball"
+  },
+  "timer-ball": {
+    "id": 10,
+    "display": "Turno Ball"
+  },
+  "luxury-ball": {
+    "id": 11,
+    "display": "Lujo Ball"
+  },
+  "premier-ball": {
+    "id": 12,
+    "display": "Honor Ball"
+  },
+  "dusk-ball": {
+    "id": 13,
+    "display": "Ocaso Ball"
+  },
+  "heal-ball": {
+    "id": 14,
+    "display": "Sana Ball"
+  },
+  "quick-ball": {
+    "id": 15,
+    "display": "Veloz Ball"
+  },
+  "cherish-ball": {
+    "id": 16,
+    "display": "Gloria Ball"
+  },
+  "potion": {
+    "id": 17,
+    "display": "Poción"
+  },
+  "antidote": {
+    "id": 18,
+    "display": "Antídoto"
+  },
+  "burn-heal": {
+    "id": 19,
+    "display": "Antiquemar"
+  },
+  "ice-heal": {
+    "id": 20,
+    "display": "Antihielo"
+  },
+  "awakening": {
+    "id": 21,
+    "display": "Despertar"
+  },
+  "paralyze-heal": {
+    "id": 22,
+    "display": "Antiparalizador"
+  },
+  "full-restore": {
+    "id": 23,
+    "display": "Restaurar Todo"
+  },
+  "max-potion": {
+    "id": 24,
+    "display": "Poción Máxima"
+  },
+  "hyper-potion": {
+    "id": 25,
+    "display": "Hiperpoción"
+  },
+  "super-potion": {
+    "id": 26,
+    "display": "Superpoción"
+  },
+  "full-heal": {
+    "id": 27,
+    "display": "Cura Total"
+  },
+  "revive": {
+    "id": 28,
+    "display": "Revivir"
+  },
+  "max-revive": {
+    "id": 29,
+    "display": "Revivir Máximo"
+  },
+  "fresh-water": {
+    "id": 30,
+    "display": "Agua Fresca"
+  },
+  "soda-pop": {
+    "id": 31,
+    "display": "Refresco"
+  },
+  "lemonade": {
+    "id": 32,
+    "display": "Limonada"
+  },
+  "moomoo-milk": {
+    "id": 33,
+    "display": "Leche Mu-mu"
+  },
+  "energy-powder": {
+    "id": 34,
+    "display": "Polvo Energía"
+  },
+  "energy-root": {
+    "id": 35,
+    "display": "Raíz Energía"
+  },
+  "heal-powder": {
+    "id": 36,
+    "display": "Polvo Curación"
+  },
+  "revival-herb": {
+    "id": 37,
+    "display": "Hierba Revivir"
+  },
+  "ether": {
+    "id": 38,
+    "display": "Éter"
+  },
+  "max-ether": {
+    "id": 39,
+    "display": "Éter Máximo"
+  },
+  "elixir": {
+    "id": 40,
+    "display": "Elixir"
+  },
+  "max-elixir": {
+    "id": 41,
+    "display": "Elixir Máximo"
+  },
+  "lava-cookie": {
+    "id": 42,
+    "display": "Galleta Lava"
+  },
+  "berry-juice": {
+    "id": 43,
+    "display": "Zumo de Baya"
+  },
+  "sacred-ash": {
+    "id": 44,
+    "display": "Ceniza Sagrada"
+  },
+  "hp-up": {
+    "id": 45,
+    "display": "Más PS"
+  },
+  "protein": {
+    "id": 46,
+    "display": "Proteína"
+  },
+  "iron": {
+    "id": 47,
+    "display": "Hierro"
+  },
+  "carbos": {
+    "id": 48,
+    "display": "Carburante"
+  },
+  "calcium": {
+    "id": 49,
+    "display": "Calcio"
+  },
+  "rare-candy": {
+    "id": 50,
+    "display": "Caramelo Raro"
+  },
+  "pp-up": {
+    "id": 51,
+    "display": "Más PP"
+  },
+  "zinc": {
+    "id": 52,
+    "display": "Zinc"
+  },
+  "pp-max": {
+    "id": 53,
+    "display": "PP Máximos"
+  },
+  "old-gateau": {
+    "id": 54,
+    "display": "Barrita Plus"
+  },
+  "guard-spec": {
+    "id": 55,
+    "display": "Protección X"
+  },
+  "dire-hit": {
+    "id": 56,
+    "display": "Crítico X"
+  },
+  "x-attack": {
+    "id": 57,
+    "display": "Ataque X"
+  },
+  "x-defense": {
+    "id": 58,
+    "display": "Defensa X"
+  },
+  "x-speed": {
+    "id": 59,
+    "display": "Velocidad X"
+  },
+  "x-accuracy": {
+    "id": 60,
+    "display": "Precisión X"
+  },
+  "x-sp-atk": {
+    "id": 61,
+    "display": "At. Especial X"
+  },
+  "x-sp-def": {
+    "id": 62,
+    "display": "Def. Especial X"
+  },
+  "poke-doll": {
+    "id": 63,
+    "display": "Poké Muñeco"
+  },
+  "fluffy-tail": {
+    "id": 64,
+    "display": "Cola Skitty"
+  },
+  "blue-flute": {
+    "id": 65,
+    "display": "Flauta Azul"
+  },
+  "yellow-flute": {
+    "id": 66,
+    "display": "Flauta Amarilla"
+  },
+  "red-flute": {
+    "id": 67,
+    "display": "Flauta Roja"
+  },
+  "black-flute": {
+    "id": 68,
+    "display": "Flauta Negra"
+  },
+  "white-flute": {
+    "id": 69,
+    "display": "Flauta Blanca"
+  },
+  "shoal-salt": {
+    "id": 70,
+    "display": "Sal Cardumen"
+  },
+  "shoal-shell": {
+    "id": 71,
+    "display": "Concha Cardumen"
+  },
+  "red-shard": {
+    "id": 72,
+    "display": "Parte Roja"
+  },
+  "blue-shard": {
+    "id": 73,
+    "display": "Parte Azul"
+  },
+  "yellow-shard": {
+    "id": 74,
+    "display": "Parte Amarilla"
+  },
+  "green-shard": {
+    "id": 75,
+    "display": "Parte Verde"
+  },
+  "super-repel": {
+    "id": 76,
+    "display": "Superrepelente"
+  },
+  "max-repel": {
+    "id": 77,
+    "display": "Repelente Máximo"
+  },
+  "escape-rope": {
+    "id": 78,
+    "display": "Cuerda Huida"
+  },
+  "repel": {
+    "id": 79,
+    "display": "Repelente"
+  },
+  "sun-stone": {
+    "id": 80,
+    "display": "Piedra Solar"
+  },
+  "moon-stone": {
+    "id": 81,
+    "display": "Piedra Lunar"
+  },
+  "fire-stone": {
+    "id": 82,
+    "display": "Piedra Fuego"
+  },
+  "thunder-stone": {
+    "id": 83,
+    "display": "Piedra Trueno"
+  },
+  "water-stone": {
+    "id": 84,
+    "display": "Piedra Agua"
+  },
+  "leaf-stone": {
+    "id": 85,
+    "display": "Piedra Hoja"
+  },
+  "tiny-mushroom": {
+    "id": 86,
+    "display": "Miniseta"
+  },
+  "big-mushroom": {
+    "id": 87,
+    "display": "Seta Grande"
+  },
+  "pearl": {
+    "id": 88,
+    "display": "Perla"
+  },
+  "big-pearl": {
+    "id": 89,
+    "display": "Perla Grande"
+  },
+  "stardust": {
+    "id": 90,
+    "display": "Polvo Estelar"
+  },
+  "star-piece": {
+    "id": 91,
+    "display": "Trozo Estrella"
+  },
+  "nugget": {
+    "id": 92,
+    "display": "Pepita"
+  },
+  "heart-scale": {
+    "id": 93,
+    "display": "Escama Corazón"
+  },
+  "honey": {
+    "id": 94,
+    "display": "Miel"
+  },
+  "growth-mulch": {
+    "id": 95,
+    "display": "Abono Rápido"
+  },
+  "damp-mulch": {
+    "id": 96,
+    "display": "Abono Lento"
+  },
+  "stable-mulch": {
+    "id": 97,
+    "display": "Abono Fijador"
+  },
+  "gooey-mulch": {
+    "id": 98,
+    "display": "Abono Brote"
+  },
+  "root-fossil": {
+    "id": 99,
+    "display": "Fósil Raíz"
+  },
+  "claw-fossil": {
+    "id": 100,
+    "display": "Fósil Garra"
+  },
+  "helix-fossil": {
+    "id": 101,
+    "display": "Fósil Hélix"
+  },
+  "dome-fossil": {
+    "id": 102,
+    "display": "Fósil Domo"
+  },
+  "old-amber": {
+    "id": 103,
+    "display": "Ámbar Viejo"
+  },
+  "armor-fossil": {
+    "id": 104,
+    "display": "Fósil Coraza"
+  },
+  "skull-fossil": {
+    "id": 105,
+    "display": "Fósil Cráneo"
+  },
+  "rare-bone": {
+    "id": 106,
+    "display": "Hueso Raro"
+  },
+  "shiny-stone": {
+    "id": 107,
+    "display": "Piedra Día"
+  },
+  "dusk-stone": {
+    "id": 108,
+    "display": "Piedra Noche"
+  },
+  "dawn-stone": {
+    "id": 109,
+    "display": "Piedra Alba"
+  },
+  "oval-stone": {
+    "id": 110,
+    "display": "Piedra Oval"
+  },
+  "odd-keystone": {
+    "id": 111,
+    "display": "Piedra Espíritu"
+  },
+  "adamant-orb": {
+    "id": 112,
+    "display": "Diamansfera"
+  },
+  "lustrous-orb": {
+    "id": 113,
+    "display": "Lustresfera"
+  },
+  "grass-mail": {
+    "id": 114,
+    "display": "Carta Hierba"
+  },
+  "flame-mail": {
+    "id": 115,
+    "display": "Carta Fuego"
+  },
+  "bubble-mail": {
+    "id": 116,
+    "display": "Carta Pompas"
+  },
+  "bloom-mail": {
+    "id": 117,
+    "display": "Carta Flores"
+  },
+  "tunnel-mail": {
+    "id": 118,
+    "display": "Carta Mina"
+  },
+  "steel-mail": {
+    "id": 119,
+    "display": "Carta Acero"
+  },
+  "heart-mail": {
+    "id": 120,
+    "display": "Car. Corazón"
+  },
+  "snow-mail": {
+    "id": 121,
+    "display": "Carta Nieve"
+  },
+  "space-mail": {
+    "id": 122,
+    "display": "Car. Sideral"
+  },
+  "air-mail": {
+    "id": 123,
+    "display": "Carta Aérea"
+  },
+  "mosaic-mail": {
+    "id": 124,
+    "display": "Car. Mosaico"
+  },
+  "brick-mail": {
+    "id": 125,
+    "display": "Carta Pared"
+  },
+  "cheri-berry": {
+    "id": 126,
+    "display": "Baya Zreza"
+  },
+  "chesto-berry": {
+    "id": 127,
+    "display": "Baya Atania"
+  },
+  "pecha-berry": {
+    "id": 128,
+    "display": "Baya Meloc"
+  },
+  "rawst-berry": {
+    "id": 129,
+    "display": "Baya Safre"
+  },
+  "aspear-berry": {
+    "id": 130,
+    "display": "Baya Perasi"
+  },
+  "leppa-berry": {
+    "id": 131,
+    "display": "Baya Zanama"
+  },
+  "oran-berry": {
+    "id": 132,
+    "display": "Baya Aranja"
+  },
+  "persim-berry": {
+    "id": 133,
+    "display": "Baya Caquic"
+  },
+  "lum-berry": {
+    "id": 134,
+    "display": "Baya Ziuela"
+  },
+  "sitrus-berry": {
+    "id": 135,
+    "display": "Baya Zidra"
+  },
+  "figy-berry": {
+    "id": 136,
+    "display": "Baya Higog"
+  },
+  "wiki-berry": {
+    "id": 137,
+    "display": "Baya Wiki"
+  },
+  "mago-berry": {
+    "id": 138,
+    "display": "Baya Ango"
+  },
+  "aguav-berry": {
+    "id": 139,
+    "display": "Baya Guaya"
+  },
+  "iapapa-berry": {
+    "id": 140,
+    "display": "Baya Pabaya"
+  },
+  "razz-berry": {
+    "id": 141,
+    "display": "Baya Frambu"
+  },
+  "bluk-berry": {
+    "id": 142,
+    "display": "Baya Oram"
+  },
+  "nanab-berry": {
+    "id": 143,
+    "display": "Baya Latano"
+  },
+  "wepear-berry": {
+    "id": 144,
+    "display": "Baya Peragu"
+  },
+  "pinap-berry": {
+    "id": 145,
+    "display": "Baya Pinia"
+  },
+  "pomeg-berry": {
+    "id": 146,
+    "display": "Baya Grana"
+  },
+  "kelpsy-berry": {
+    "id": 147,
+    "display": "Baya Algama"
+  },
+  "qualot-berry": {
+    "id": 148,
+    "display": "Baya Ispero"
+  },
+  "hondew-berry": {
+    "id": 149,
+    "display": "Baya Meluce"
+  },
+  "grepa-berry": {
+    "id": 150,
+    "display": "Baya Uvav"
+  },
+  "tamato-berry": {
+    "id": 151,
+    "display": "Baya Tamate"
+  },
+  "cornn-berry": {
+    "id": 152,
+    "display": "Baya Mais"
+  },
+  "magost-berry": {
+    "id": 153,
+    "display": "Baya Aostan"
+  },
+  "rabuta-berry": {
+    "id": 154,
+    "display": "Baya Rautan"
+  },
+  "nomel-berry": {
+    "id": 155,
+    "display": "Baya Monli"
+  },
+  "spelon-berry": {
+    "id": 156,
+    "display": "Baya Wikano"
+  },
+  "pamtre-berry": {
+    "id": 157,
+    "display": "Baya Plama"
+  },
+  "watmel-berry": {
+    "id": 158,
+    "display": "Baya Sambia"
+  },
+  "durin-berry": {
+    "id": 159,
+    "display": "Baya Rudion"
+  },
+  "belue-berry": {
+    "id": 160,
+    "display": "Baya Andano"
+  },
+  "occa-berry": {
+    "id": 161,
+    "display": "Baya Caoca"
+  },
+  "passho-berry": {
+    "id": 162,
+    "display": "Baya Pasio"
+  },
+  "wacan-berry": {
+    "id": 163,
+    "display": "Baya Gualot"
+  },
+  "rindo-berry": {
+    "id": 164,
+    "display": "Baya Tamar"
+  },
+  "yache-berry": {
+    "id": 165,
+    "display": "Baya Rimoya"
+  },
+  "chople-berry": {
+    "id": 166,
+    "display": "Baya Pomaro"
+  },
+  "kebia-berry": {
+    "id": 167,
+    "display": "Baya Kebia"
+  },
+  "shuca-berry": {
+    "id": 168,
+    "display": "Baya Acardo"
+  },
+  "coba-berry": {
+    "id": 169,
+    "display": "Baya Kouba"
+  },
+  "payapa-berry": {
+    "id": 170,
+    "display": "Baya Payapa"
+  },
+  "tanga-berry": {
+    "id": 171,
+    "display": "Baya Yecana"
+  },
+  "charti-berry": {
+    "id": 172,
+    "display": "Baya Alcho"
+  },
+  "kasib-berry": {
+    "id": 173,
+    "display": "Baya Drasi"
+  },
+  "haban-berry": {
+    "id": 174,
+    "display": "Baya Anjiro"
+  },
+  "colbur-berry": {
+    "id": 175,
+    "display": "Baya Dillo"
+  },
+  "babiri-berry": {
+    "id": 176,
+    "display": "Baya Baribá"
+  },
+  "chilan-berry": {
+    "id": 177,
+    "display": "Baya Chilan"
+  },
+  "liechi-berry": {
+    "id": 178,
+    "display": "Baya Lichi"
+  },
+  "ganlon-berry": {
+    "id": 179,
+    "display": "Baya Gonlan"
+  },
+  "salac-berry": {
+    "id": 180,
+    "display": "Baya Aslac"
+  },
+  "petaya-berry": {
+    "id": 181,
+    "display": "Baya Yapati"
+  },
+  "apicot-berry": {
+    "id": 182,
+    "display": "Baya Aricoc"
+  },
+  "lansat-berry": {
+    "id": 183,
+    "display": "Baya Zonlan"
+  },
+  "starf-berry": {
+    "id": 184,
+    "display": "Baya Arabol"
+  },
+  "enigma-berry": {
+    "id": 185,
+    "display": "Baya Enigma"
+  },
+  "micle-berry": {
+    "id": 186,
+    "display": "Baya Lagro"
+  },
+  "custap-berry": {
+    "id": 187,
+    "display": "Baya Chiri"
+  },
+  "jaboca-berry": {
+    "id": 188,
+    "display": "Baya Jaboca"
+  },
+  "rowap-berry": {
+    "id": 189,
+    "display": "Baya Magua"
+  },
+  "bright-powder": {
+    "id": 190,
+    "display": "Polvo Brillo"
+  },
+  "white-herb": {
+    "id": 191,
+    "display": "Hierba Blanca"
+  },
+  "macho-brace": {
+    "id": 192,
+    "display": "Brazal Firme"
+  },
+  "exp-share": {
+    "id": 193,
+    "display": "Repartir Exp"
+  },
+  "quick-claw": {
+    "id": 194,
+    "display": "Garra Rápida"
+  },
+  "soothe-bell": {
+    "id": 195,
+    "display": "Cascabel Alivio"
+  },
+  "mental-herb": {
+    "id": 196,
+    "display": "Hierba Mental"
+  },
+  "choice-band": {
+    "id": 197,
+    "display": "Cinta Elección"
+  },
+  "kings-rock": {
+    "id": 198,
+    "display": "Roca del Rey"
+  },
+  "silver-powder": {
+    "id": 199,
+    "display": "Polvo Plata"
+  },
+  "amulet-coin": {
+    "id": 200,
+    "display": "Moneda Amuleto"
+  },
+  "cleanse-tag": {
+    "id": 201,
+    "display": "Amuleto"
+  },
+  "soul-dew": {
+    "id": 202,
+    "display": "Rocío Bondad"
+  },
+  "deep-sea-tooth": {
+    "id": 203,
+    "display": "Diente Marino"
+  },
+  "deep-sea-scale": {
+    "id": 204,
+    "display": "Escama Marina"
+  },
+  "smoke-ball": {
+    "id": 205,
+    "display": "Bola de Humo"
+  },
+  "everstone": {
+    "id": 206,
+    "display": "Piedra Eterna"
+  },
+  "focus-band": {
+    "id": 207,
+    "display": "Cinta Focus"
+  },
+  "lucky-egg": {
+    "id": 208,
+    "display": "Huevo Suerte"
+  },
+  "scope-lens": {
+    "id": 209,
+    "display": "Periscopio"
+  },
+  "metal-coat": {
+    "id": 210,
+    "display": "Revest. Metálico"
+  },
+  "leftovers": {
+    "id": 211,
+    "display": "Restos"
+  },
+  "dragon-scale": {
+    "id": 212,
+    "display": "Escama Dragón"
+  },
+  "light-ball": {
+    "id": 213,
+    "display": "Bola Luminosa"
+  },
+  "soft-sand": {
+    "id": 214,
+    "display": "Arena Fina"
+  },
+  "hard-stone": {
+    "id": 215,
+    "display": "Piedra Dura"
+  },
+  "miracle-seed": {
+    "id": 216,
+    "display": "Semilla Milagro"
+  },
+  "black-glasses": {
+    "id": 217,
+    "display": "Gafas de Sol"
+  },
+  "black-belt": {
+    "id": 218,
+    "display": "Cinturón Negro"
+  },
+  "magnet": {
+    "id": 219,
+    "display": "Imán"
+  },
+  "mystic-water": {
+    "id": 220,
+    "display": "Agua Mística"
+  },
+  "sharp-beak": {
+    "id": 221,
+    "display": "Pico Afilado"
+  },
+  "poison-barb": {
+    "id": 222,
+    "display": "Flecha Venenosa"
+  },
+  "never-melt-ice": {
+    "id": 223,
+    "display": "Antiderretir"
+  },
+  "spell-tag": {
+    "id": 224,
+    "display": "Hechizo"
+  },
+  "twisted-spoon": {
+    "id": 225,
+    "display": "Cuchara Torcida"
+  },
+  "charcoal": {
+    "id": 226,
+    "display": "Carbón"
+  },
+  "dragon-fang": {
+    "id": 227,
+    "display": "Colmillo Dragón"
+  },
+  "silk-scarf": {
+    "id": 228,
+    "display": "Pañuelo de Seda"
+  },
+  "up-grade": {
+    "id": 229,
+    "display": "Mejora"
+  },
+  "shell-bell": {
+    "id": 230,
+    "display": "Cascabel Concha"
+  },
+  "sea-incense": {
+    "id": 231,
+    "display": "Incienso Marino"
+  },
+  "lax-incense": {
+    "id": 232,
+    "display": "Incienso Suave"
+  },
+  "lucky-punch": {
+    "id": 233,
+    "display": "Puño Suerte"
+  },
+  "metal-powder": {
+    "id": 234,
+    "display": "Polvo Metálico"
+  },
+  "thick-club": {
+    "id": 235,
+    "display": "Hueso Grueso"
+  },
+  "stick": {
+    "id": 236,
+    "display": "Puerro"
+  },
+  "red-scarf": {
+    "id": 237,
+    "display": "Pañuelo Rojo"
+  },
+  "blue-scarf": {
+    "id": 238,
+    "display": "Pañuelo Azul"
+  },
+  "pink-scarf": {
+    "id": 239,
+    "display": "Pañuelo Rosa"
+  },
+  "green-scarf": {
+    "id": 240,
+    "display": "Pañuelo Verde"
+  },
+  "yellow-scarf": {
+    "id": 241,
+    "display": "Pañuelo Amarillo"
+  },
+  "wide-lens": {
+    "id": 242,
+    "display": "Lupa"
+  },
+  "muscle-band": {
+    "id": 243,
+    "display": "Cinta Fuerte"
+  },
+  "wise-glasses": {
+    "id": 244,
+    "display": "Gafas Especiales"
+  },
+  "expert-belt": {
+    "id": 245,
+    "display": "Cinta Experto"
+  },
+  "light-clay": {
+    "id": 246,
+    "display": "Refleluz"
+  },
+  "life-orb": {
+    "id": 247,
+    "display": "Vidasfera"
+  },
+  "power-herb": {
+    "id": 248,
+    "display": "Hierba Única"
+  },
+  "toxic-orb": {
+    "id": 249,
+    "display": "Toxisfera"
+  },
+  "flame-orb": {
+    "id": 250,
+    "display": "Llamasfera"
+  },
+  "quick-powder": {
+    "id": 251,
+    "display": "Polvo Veloz"
+  },
+  "focus-sash": {
+    "id": 252,
+    "display": "Banda Focus"
+  },
+  "zoom-lens": {
+    "id": 253,
+    "display": "Telescopio"
+  },
+  "metronome": {
+    "id": 254,
+    "display": "Metrónomo"
+  },
+  "iron-ball": {
+    "id": 255,
+    "display": "Bola Férrea"
+  },
+  "lagging-tail": {
+    "id": 256,
+    "display": "Cola Plúmbea"
+  },
+  "destiny-knot": {
+    "id": 257,
+    "display": "Lazo Destino"
+  },
+  "black-sludge": {
+    "id": 258,
+    "display": "Lodo Negro"
+  },
+  "icy-rock": {
+    "id": 259,
+    "display": "Roca Helada"
+  },
+  "smooth-rock": {
+    "id": 260,
+    "display": "Roca Suave"
+  },
+  "heat-rock": {
+    "id": 261,
+    "display": "Roca Calor"
+  },
+  "damp-rock": {
+    "id": 262,
+    "display": "Roca Lluvia"
+  },
+  "grip-claw": {
+    "id": 263,
+    "display": "Garra Garfio"
+  },
+  "choice-scarf": {
+    "id": 264,
+    "display": "Pañuelo Elección"
+  },
+  "sticky-barb": {
+    "id": 265,
+    "display": "Toxiestrella"
+  },
+  "power-bracer": {
+    "id": 266,
+    "display": "Brazal Recio"
+  },
+  "power-belt": {
+    "id": 267,
+    "display": "Cinto Recio"
+  },
+  "power-lens": {
+    "id": 268,
+    "display": "Lente Recia"
+  },
+  "power-band": {
+    "id": 269,
+    "display": "Banda Recia"
+  },
+  "power-anklet": {
+    "id": 270,
+    "display": "Franja Recia"
+  },
+  "power-weight": {
+    "id": 271,
+    "display": "Pesa Recia"
+  },
+  "shed-shell": {
+    "id": 272,
+    "display": "Muda Concha"
+  },
+  "big-root": {
+    "id": 273,
+    "display": "Raíz Grande"
+  },
+  "choice-specs": {
+    "id": 274,
+    "display": "Gafas Elección"
+  },
+  "flame-plate": {
+    "id": 275,
+    "display": "Tabla Llama"
+  },
+  "splash-plate": {
+    "id": 276,
+    "display": "Tabla Linfa"
+  },
+  "zap-plate": {
+    "id": 277,
+    "display": "Tabla Trueno"
+  },
+  "meadow-plate": {
+    "id": 278,
+    "display": "Tabla Pradal"
+  },
+  "icicle-plate": {
+    "id": 279,
+    "display": "Tabla Helada"
+  },
+  "fist-plate": {
+    "id": 280,
+    "display": "Tabla Fuerte"
+  },
+  "toxic-plate": {
+    "id": 281,
+    "display": "Tabla Tóxica"
+  },
+  "earth-plate": {
+    "id": 282,
+    "display": "Tabla Terrax"
+  },
+  "sky-plate": {
+    "id": 283,
+    "display": "Tabla Cielo"
+  },
+  "mind-plate": {
+    "id": 284,
+    "display": "Tabla Mental"
+  },
+  "insect-plate": {
+    "id": 285,
+    "display": "Tabla Bicho"
+  },
+  "stone-plate": {
+    "id": 286,
+    "display": "Tabla Pétrea"
+  },
+  "spooky-plate": {
+    "id": 287,
+    "display": "Tabla Terror"
+  },
+  "draco-plate": {
+    "id": 288,
+    "display": "Tabla Draco"
+  },
+  "dread-plate": {
+    "id": 289,
+    "display": "Tabla Oscura"
+  },
+  "iron-plate": {
+    "id": 290,
+    "display": "Tabla Acero"
+  },
+  "odd-incense": {
+    "id": 291,
+    "display": "Incienso Raro"
+  },
+  "rock-incense": {
+    "id": 292,
+    "display": "Incienso Roca"
+  },
+  "full-incense": {
+    "id": 293,
+    "display": "Incienso Lento"
+  },
+  "wave-incense": {
+    "id": 294,
+    "display": "Incienso Acua"
+  },
+  "rose-incense": {
+    "id": 295,
+    "display": "Incienso Floral"
+  },
+  "luck-incense": {
+    "id": 296,
+    "display": "Incienso Duplo"
+  },
+  "pure-incense": {
+    "id": 297,
+    "display": "Incienso Puro"
+  },
+  "protector": {
+    "id": 298,
+    "display": "Protector"
+  },
+  "electirizer": {
+    "id": 299,
+    "display": "Electrizador"
+  },
+  "magmarizer": {
+    "id": 300,
+    "display": "Magmatizador"
+  },
+  "dubious-disc": {
+    "id": 301,
+    "display": "Disco Extraño"
+  },
+  "reaper-cloth": {
+    "id": 302,
+    "display": "Tela Terrible"
+  },
+  "razor-claw": {
+    "id": 303,
+    "display": "Garra Afilada"
+  },
+  "razor-fang": {
+    "id": 304,
+    "display": "Colmillo Agudo"
+  },
+  "tm01": {
+    "id": 305,
+    "display": "MT01"
+  },
+  "tm02": {
+    "id": 306,
+    "display": "MT02"
+  },
+  "tm03": {
+    "id": 307,
+    "display": "MT03"
+  },
+  "tm04": {
+    "id": 308,
+    "display": "MT04"
+  },
+  "tm05": {
+    "id": 309,
+    "display": "MT05"
+  },
+  "tm06": {
+    "id": 310,
+    "display": "MT06"
+  },
+  "tm07": {
+    "id": 311,
+    "display": "MT07"
+  },
+  "tm08": {
+    "id": 312,
+    "display": "MT08"
+  },
+  "tm09": {
+    "id": 313,
+    "display": "MT09"
+  },
+  "tm10": {
+    "id": 314,
+    "display": "MT10"
+  },
+  "tm11": {
+    "id": 315,
+    "display": "MT11"
+  },
+  "tm12": {
+    "id": 316,
+    "display": "MT12"
+  },
+  "tm13": {
+    "id": 317,
+    "display": "MT13"
+  },
+  "tm14": {
+    "id": 318,
+    "display": "MT14"
+  },
+  "tm15": {
+    "id": 319,
+    "display": "MT15"
+  },
+  "tm16": {
+    "id": 320,
+    "display": "MT16"
+  },
+  "tm17": {
+    "id": 321,
+    "display": "MT17"
+  },
+  "tm18": {
+    "id": 322,
+    "display": "MT18"
+  },
+  "tm19": {
+    "id": 323,
+    "display": "MT19"
+  },
+  "tm20": {
+    "id": 324,
+    "display": "MT20"
+  },
+  "tm21": {
+    "id": 325,
+    "display": "MT21"
+  },
+  "tm22": {
+    "id": 326,
+    "display": "MT22"
+  },
+  "tm23": {
+    "id": 327,
+    "display": "MT23"
+  },
+  "tm24": {
+    "id": 328,
+    "display": "MT24"
+  },
+  "tm25": {
+    "id": 329,
+    "display": "MT25"
+  },
+  "tm26": {
+    "id": 330,
+    "display": "MT26"
+  },
+  "tm27": {
+    "id": 331,
+    "display": "MT27"
+  },
+  "tm28": {
+    "id": 332,
+    "display": "MT28"
+  },
+  "tm29": {
+    "id": 333,
+    "display": "MT29"
+  },
+  "tm30": {
+    "id": 334,
+    "display": "MT30"
+  },
+  "tm31": {
+    "id": 335,
+    "display": "MT31"
+  },
+  "tm32": {
+    "id": 336,
+    "display": "MT32"
+  },
+  "tm33": {
+    "id": 337,
+    "display": "MT33"
+  },
+  "tm34": {
+    "id": 338,
+    "display": "MT34"
+  },
+  "tm35": {
+    "id": 339,
+    "display": "MT35"
+  },
+  "tm36": {
+    "id": 340,
+    "display": "MT36"
+  },
+  "tm37": {
+    "id": 341,
+    "display": "MT37"
+  },
+  "tm38": {
+    "id": 342,
+    "display": "MT38"
+  },
+  "tm39": {
+    "id": 343,
+    "display": "MT39"
+  },
+  "tm40": {
+    "id": 344,
+    "display": "MT40"
+  },
+  "tm41": {
+    "id": 345,
+    "display": "MT41"
+  },
+  "tm42": {
+    "id": 346,
+    "display": "MT42"
+  },
+  "tm43": {
+    "id": 347,
+    "display": "MT43"
+  },
+  "tm44": {
+    "id": 348,
+    "display": "MT44"
+  },
+  "tm45": {
+    "id": 349,
+    "display": "MT45"
+  },
+  "tm46": {
+    "id": 350,
+    "display": "MT46"
+  },
+  "tm47": {
+    "id": 351,
+    "display": "MT47"
+  },
+  "tm48": {
+    "id": 352,
+    "display": "MT48"
+  },
+  "tm49": {
+    "id": 353,
+    "display": "MT49"
+  },
+  "tm50": {
+    "id": 354,
+    "display": "MT50"
+  },
+  "tm51": {
+    "id": 355,
+    "display": "MT51"
+  },
+  "tm52": {
+    "id": 356,
+    "display": "MT52"
+  },
+  "tm53": {
+    "id": 357,
+    "display": "MT53"
+  },
+  "tm54": {
+    "id": 358,
+    "display": "MT54"
+  },
+  "tm55": {
+    "id": 359,
+    "display": "MT55"
+  },
+  "tm56": {
+    "id": 360,
+    "display": "MT56"
+  },
+  "tm57": {
+    "id": 361,
+    "display": "MT57"
+  },
+  "tm58": {
+    "id": 362,
+    "display": "MT58"
+  },
+  "tm59": {
+    "id": 363,
+    "display": "MT59"
+  },
+  "tm60": {
+    "id": 364,
+    "display": "MT60"
+  },
+  "tm61": {
+    "id": 365,
+    "display": "MT61"
+  },
+  "tm62": {
+    "id": 366,
+    "display": "MT62"
+  },
+  "tm63": {
+    "id": 367,
+    "display": "MT63"
+  },
+  "tm64": {
+    "id": 368,
+    "display": "MT64"
+  },
+  "tm65": {
+    "id": 369,
+    "display": "MT65"
+  },
+  "tm66": {
+    "id": 370,
+    "display": "MT66"
+  },
+  "tm67": {
+    "id": 371,
+    "display": "MT67"
+  },
+  "tm68": {
+    "id": 372,
+    "display": "MT68"
+  },
+  "tm69": {
+    "id": 373,
+    "display": "MT69"
+  },
+  "tm70": {
+    "id": 374,
+    "display": "MT70"
+  },
+  "tm71": {
+    "id": 375,
+    "display": "MT71"
+  },
+  "tm72": {
+    "id": 376,
+    "display": "MT72"
+  },
+  "tm73": {
+    "id": 377,
+    "display": "MT73"
+  },
+  "tm74": {
+    "id": 378,
+    "display": "MT74"
+  },
+  "tm75": {
+    "id": 379,
+    "display": "MT75"
+  },
+  "tm76": {
+    "id": 380,
+    "display": "MT76"
+  },
+  "tm77": {
+    "id": 381,
+    "display": "MT77"
+  },
+  "tm78": {
+    "id": 382,
+    "display": "MT78"
+  },
+  "tm79": {
+    "id": 383,
+    "display": "MT79"
+  },
+  "tm80": {
+    "id": 384,
+    "display": "MT80"
+  },
+  "tm81": {
+    "id": 385,
+    "display": "MT81"
+  },
+  "tm82": {
+    "id": 386,
+    "display": "MT82"
+  },
+  "tm83": {
+    "id": 387,
+    "display": "MT83"
+  },
+  "tm84": {
+    "id": 388,
+    "display": "MT84"
+  },
+  "tm85": {
+    "id": 389,
+    "display": "MT85"
+  },
+  "tm86": {
+    "id": 390,
+    "display": "MT86"
+  },
+  "tm87": {
+    "id": 391,
+    "display": "MT87"
+  },
+  "tm88": {
+    "id": 392,
+    "display": "MT88"
+  },
+  "tm89": {
+    "id": 393,
+    "display": "MT89"
+  },
+  "tm90": {
+    "id": 394,
+    "display": "MT90"
+  },
+  "tm91": {
+    "id": 395,
+    "display": "MT91"
+  },
+  "tm92": {
+    "id": 396,
+    "display": "MT92"
+  },
+  "hm01": {
+    "id": 397,
+    "display": "MO01"
+  },
+  "hm02": {
+    "id": 398,
+    "display": "MO02"
+  },
+  "hm03": {
+    "id": 399,
+    "display": "MO03"
+  },
+  "hm04": {
+    "id": 400,
+    "display": "MO04"
+  },
+  "hm05": {
+    "id": 401,
+    "display": "MO05"
+  },
+  "hm06": {
+    "id": 402,
+    "display": "MO06"
+  },
+  "hm07": {
+    "id": 403,
+    "display": "MO07"
+  },
+  "hm08": {
+    "id": 404,
+    "display": "MO08"
+  },
+  "explorer-kit": {
+    "id": 405,
+    "display": "Kit Explorador"
+  },
+  "loot-sack": {
+    "id": 406,
+    "display": "Saca Botín"
+  },
+  "rule-book": {
+    "id": 407,
+    "display": "Reglamento"
+  },
+  "poke-radar": {
+    "id": 408,
+    "display": "Pokéradar"
+  },
+  "point-card": {
+    "id": 409,
+    "display": "Tarjeta Puntos"
+  },
+  "journal": {
+    "id": 410,
+    "display": "Diario"
+  },
+  "seal-case": {
+    "id": 411,
+    "display": "Caja Sellos"
+  },
+  "fashion-case": {
+    "id": 412,
+    "display": "Caja Corazón"
+  },
+  "seal-bag": {
+    "id": 413,
+    "display": "Bolsa Sellos"
+  },
+  "pal-pad": {
+    "id": 414,
+    "display": "Bloc amigos"
+  },
+  "works-key": {
+    "id": 415,
+    "display": "Llave Central"
+  },
+  "old-charm": {
+    "id": 416,
+    "display": "Talismán"
+  },
+  "galactic-key": {
+    "id": 417,
+    "display": "Llave Galaxia"
+  },
+  "red-chain": {
+    "id": 418,
+    "display": "Cadena Roja"
+  },
+  "town-map": {
+    "id": 419,
+    "display": "Mapa"
+  },
+  "vs-seeker": {
+    "id": 420,
+    "display": "Buscapelea"
+  },
+  "coin-case": {
+    "id": 421,
+    "display": "Monedero"
+  },
+  "old-rod": {
+    "id": 422,
+    "display": "Caña Vieja"
+  },
+  "good-rod": {
+    "id": 423,
+    "display": "Caña Buena"
+  },
+  "super-rod": {
+    "id": 424,
+    "display": "Supercaña"
+  },
+  "sprayduck": {
+    "id": 425,
+    "display": "Psydugadera"
+  },
+  "poffin-case": {
+    "id": 426,
+    "display": "Pokochera"
+  },
+  "bicycle": {
+    "id": 427,
+    "display": "Bici"
+  },
+  "suite-key": {
+    "id": 428,
+    "display": "Llave Suite"
+  },
+  "oaks-letter": {
+    "id": 429,
+    "display": "Carta Prof. Oak"
+  },
+  "lunar-wing": {
+    "id": 430,
+    "display": "Pluma Lunar"
+  },
+  "member-card": {
+    "id": 431,
+    "display": "Carné Socio"
+  },
+  "azure-flute": {
+    "id": 432,
+    "display": "Flauta Azur"
+  },
+  "ss-ticket": {
+    "id": 433,
+    "display": "Ticket Barco"
+  },
+  "contest-pass": {
+    "id": 434,
+    "display": "Pase Concurso"
+  },
+  "magma-stone": {
+    "id": 435,
+    "display": "Piedra Magma"
+  },
+  "parcel": {
+    "id": 436,
+    "display": "Paquete"
+  },
+  "coupon-1": {
+    "id": 437,
+    "display": "Cupón 1"
+  },
+  "coupon-2": {
+    "id": 438,
+    "display": "Cupón 2"
+  },
+  "coupon-3": {
+    "id": 439,
+    "display": "Cupón 3"
+  },
+  "storage-key": {
+    "id": 440,
+    "display": "Llave Almacén"
+  },
+  "secret-potion": {
+    "id": 441,
+    "display": "Poción Secreta"
+  },
+  "griseous-orb": {
+    "id": 442,
+    "display": "Griseosfera"
+  },
+  "vs-recorder": {
+    "id": 443,
+    "display": "Cámara Lucha"
+  },
+  "gracidea": {
+    "id": 444,
+    "display": "Gracídea"
+  },
+  "secret-key": {
+    "id": 445,
+    "display": "Llave Secreta"
+  },
+  "apricorn-box": {
+    "id": 446,
+    "display": "Caja Bonguri"
+  },
+  "berry-pots": {
+    "id": 447,
+    "display": "Plantabayas"
+  },
+  "squirt-bottle": {
+    "id": 448,
+    "display": "Regadera"
+  },
+  "lure-ball": {
+    "id": 449,
+    "display": "Cebo Ball"
+  },
+  "level-ball": {
+    "id": 450,
+    "display": "Nivel Ball"
+  },
+  "moon-ball": {
+    "id": 451,
+    "display": "Luna Ball"
+  },
+  "heavy-ball": {
+    "id": 452,
+    "display": "Peso Ball"
+  },
+  "fast-ball": {
+    "id": 453,
+    "display": "Rapid Ball"
+  },
+  "friend-ball": {
+    "id": 454,
+    "display": "Amigo Ball"
+  },
+  "love-ball": {
+    "id": 455,
+    "display": "Amor Ball"
+  },
+  "park-ball": {
+    "id": 456,
+    "display": "Parque Ball"
+  },
+  "sport-ball": {
+    "id": 457,
+    "display": "Competi Ball"
+  },
+  "red-apricorn": {
+    "id": 458,
+    "display": "Bonguri Rojo"
+  },
+  "blue-apricorn": {
+    "id": 459,
+    "display": "Bonguri Azul"
+  },
+  "yellow-apricorn": {
+    "id": 460,
+    "display": "Bonguri Amarillo"
+  },
+  "green-apricorn": {
+    "id": 461,
+    "display": "Bonguri Verde"
+  },
+  "pink-apricorn": {
+    "id": 462,
+    "display": "Bonguri Rosa"
+  },
+  "white-apricorn": {
+    "id": 463,
+    "display": "Bonguri Blanco"
+  },
+  "black-apricorn": {
+    "id": 464,
+    "display": "Bonguri Negro"
+  },
+  "dowsing-machine": {
+    "id": 465,
+    "display": "Zahorí"
+  },
+  "rage-candy-bar": {
+    "id": 466,
+    "display": "Caramelo Furia"
+  },
+  "red-orb": {
+    "id": 467,
+    "display": "Prisma Rojo"
+  },
+  "blue-orb": {
+    "id": 468,
+    "display": "Prisma Azul"
+  },
+  "jade-orb": {
+    "id": 469,
+    "display": "Esfera Verde"
+  },
+  "enigma-stone": {
+    "id": 470,
+    "display": "Misticristal"
+  },
+  "unown-report": {
+    "id": 471,
+    "display": "Bloc Unown"
+  },
+  "blue-card": {
+    "id": 472,
+    "display": "Tarjeta Azul"
+  },
+  "slowpoke-tail": {
+    "id": 473,
+    "display": "Cola Slowpoke"
+  },
+  "clear-bell": {
+    "id": 474,
+    "display": "Cascabel Claro"
+  },
+  "card-key": {
+    "id": 475,
+    "display": "Llave Magnética"
+  },
+  "basement-key": {
+    "id": 476,
+    "display": "Llave Sótano"
+  },
+  "red-scale": {
+    "id": 477,
+    "display": "Escama Roja"
+  },
+  "lost-item": {
+    "id": 478,
+    "display": "Objeto Perdido"
+  },
+  "pass": {
+    "id": 479,
+    "display": "Magnetopase"
+  },
+  "machine-part": {
+    "id": 480,
+    "display": "Maquinaria"
+  },
+  "silver-wing": {
+    "id": 481,
+    "display": "Ala Plateada"
+  },
+  "rainbow-wing": {
+    "id": 482,
+    "display": "Ala Arcoíris"
+  },
+  "mystery-egg": {
+    "id": 483,
+    "display": "Huevo Misterioso"
+  },
+  "gb-sounds": {
+    "id": 484,
+    "display": "Lector GB"
+  },
+  "tidal-bell": {
+    "id": 485,
+    "display": "Cascabel Oleaje"
+  },
+  "data-card-01": {
+    "id": 486,
+    "display": "Tarjeta Datos 01"
+  },
+  "data-card-02": {
+    "id": 487,
+    "display": "Tarjeta Datos 02"
+  },
+  "data-card-03": {
+    "id": 488,
+    "display": "Tarjeta Datos 03"
+  },
+  "data-card-04": {
+    "id": 489,
+    "display": "Tarjeta Datos 04"
+  },
+  "data-card-05": {
+    "id": 490,
+    "display": "Tarjeta Datos 05"
+  },
+  "data-card-06": {
+    "id": 491,
+    "display": "Tarjeta Datos 06"
+  },
+  "data-card-07": {
+    "id": 492,
+    "display": "Tarjeta Datos 07"
+  },
+  "data-card-08": {
+    "id": 493,
+    "display": "Tarjeta Datos 08"
+  },
+  "data-card-09": {
+    "id": 494,
+    "display": "Tarjeta Datos 09"
+  },
+  "data-card-10": {
+    "id": 495,
+    "display": "Tarjeta Datos 10"
+  },
+  "data-card-11": {
+    "id": 496,
+    "display": "Tarjeta Datos 11"
+  },
+  "data-card-12": {
+    "id": 497,
+    "display": "Tarjeta Datos 12"
+  },
+  "data-card-13": {
+    "id": 498,
+    "display": "Tarjeta Datos 13"
+  },
+  "data-card-14": {
+    "id": 499,
+    "display": "Tarjeta Datos 14"
+  },
+  "data-card-15": {
+    "id": 500,
+    "display": "Tarjeta Datos 15"
+  },
+  "data-card-16": {
+    "id": 501,
+    "display": "Tarjeta Datos 16"
+  },
+  "data-card-17": {
+    "id": 502,
+    "display": "Tarjeta Datos 17"
+  },
+  "data-card-18": {
+    "id": 503,
+    "display": "Tarjeta Datos 18"
+  },
+  "data-card-19": {
+    "id": 504,
+    "display": "Tarjeta Datos 19"
+  },
+  "data-card-20": {
+    "id": 505,
+    "display": "Tarjeta Datos 20"
+  },
+  "data-card-21": {
+    "id": 506,
+    "display": "Tarjeta Datos 21"
+  },
+  "data-card-22": {
+    "id": 507,
+    "display": "Tarjeta Datos 22"
+  },
+  "data-card-23": {
+    "id": 508,
+    "display": "Tarjeta Datos 23"
+  },
+  "data-card-24": {
+    "id": 509,
+    "display": "Tarjeta Datos 24"
+  },
+  "data-card-25": {
+    "id": 510,
+    "display": "Tarjeta Datos 25"
+  },
+  "data-card-26": {
+    "id": 511,
+    "display": "Tarjeta Datos 26"
+  },
+  "data-card-27": {
+    "id": 512,
+    "display": "Tarjeta Datos 27"
+  },
+  "lock-capsule": {
+    "id": 513,
+    "display": "Cápsula Candado"
+  },
+  "photo-album": {
+    "id": 514,
+    "display": "Álbum"
+  },
+  "orange-mail": {
+    "id": 515,
+    "display": "Car. Naranja"
+  },
+  "harbor-mail": {
+    "id": 516,
+    "display": "Carta Puerto"
+  },
+  "glitter-mail": {
+    "id": 517,
+    "display": "Carta Brillo"
+  },
+  "mech-mail": {
+    "id": 518,
+    "display": "Carta Imán"
+  },
+  "wood-mail": {
+    "id": 519,
+    "display": "Carta Madera"
+  },
+  "wave-mail": {
+    "id": 520,
+    "display": "Carta Ola"
+  },
+  "bead-mail": {
+    "id": 521,
+    "display": "Carta Imagen"
+  },
+  "shadow-mail": {
+    "id": 522,
+    "display": "Carta Sombra"
+  },
+  "tropic-mail": {
+    "id": 523,
+    "display": "Car. Tropic."
+  },
+  "dream-mail": {
+    "id": 524,
+    "display": "Carta Sueño"
+  },
+  "fab-mail": {
+    "id": 525,
+    "display": "Carta Fab."
+  },
+  "retro-mail": {
+    "id": 526,
+    "display": "Carta Retro."
+  },
+  "mach-bike": {
+    "id": 527,
+    "display": "Bici de Carreras"
+  },
+  "acro-bike": {
+    "id": 528,
+    "display": "Bici Acrobática"
+  },
+  "wailmer-pail": {
+    "id": 529,
+    "display": "Wailmegadera"
+  },
+  "devon-goods": {
+    "id": 530,
+    "display": "Piezas Devon"
+  },
+  "soot-sack": {
+    "id": 531,
+    "display": "Saco Hollín"
+  },
+  "pokeblock-case": {
+    "id": 532,
+    "display": "Tubo Pokécubos"
+  },
+  "letter": {
+    "id": 533,
+    "display": "Carta a Máximo"
+  },
+  "eon-ticket": {
+    "id": 534,
+    "display": "Ticket Eón"
+  },
+  "scanner": {
+    "id": 535,
+    "display": "Escáner"
+  },
+  "go-goggles": {
+    "id": 536,
+    "display": "Gafas Aislantes"
+  },
+  "meteorite": {
+    "id": 537,
+    "display": "Meteorito"
+  },
+  "rm-1-key": {
+    "id": 538,
+    "display": "Ll. Cabina 1"
+  },
+  "rm-2-key": {
+    "id": 539,
+    "display": "Ll. Cabina 2"
+  },
+  "rm-4-key": {
+    "id": 540,
+    "display": "Ll. Cabina 4"
+  },
+  "rm-6-key": {
+    "id": 541,
+    "display": "Ll. Cabina 6"
+  },
+  "devon-scope": {
+    "id": 542,
+    "display": "Detector Devon"
+  },
+  "oaks-parcel": {
+    "id": 543,
+    "display": "Correo-Oak"
+  },
+  "poke-flute": {
+    "id": 544,
+    "display": "Poké Flauta"
+  },
+  "bike-voucher": {
+    "id": 545,
+    "display": "Bono Bici"
+  },
+  "gold-teeth": {
+    "id": 546,
+    "display": "Dentadura de Oro"
+  },
+  "lift-key": {
+    "id": 547,
+    "display": "Llave Ascensor"
+  },
+  "silph-scope": {
+    "id": 548,
+    "display": "Visor Silph"
+  },
+  "fame-checker": {
+    "id": 549,
+    "display": "Memorín"
+  },
+  "tm-case": {
+    "id": 550,
+    "display": "Estuche de MT"
+  },
+  "berry-pouch": {
+    "id": 551,
+    "display": "Saco Bayas"
+  },
+  "teachy-tv": {
+    "id": 552,
+    "display": "Poké Tele"
+  },
+  "tri-pass": {
+    "id": 553,
+    "display": "Tri-Ticket"
+  },
+  "rainbow-pass": {
+    "id": 554,
+    "display": "Iris-Ticket"
+  },
+  "tea": {
+    "id": 555,
+    "display": "Té"
+  },
+  "mysticticket": {
+    "id": 556,
+    "display": "Misti-Ticket"
+  },
+  "auroraticket": {
+    "id": 557,
+    "display": "Ori-Ticket"
+  },
+  "powder-jar": {
+    "id": 558,
+    "display": "Bote Polvos"
+  },
+  "ruby": {
+    "id": 559,
+    "display": "Rubí"
+  },
+  "sapphire": {
+    "id": 560,
+    "display": "Zafiro"
+  },
+  "magma-emblem": {
+    "id": 561,
+    "display": "Signo Magma"
+  },
+  "old-sea-map": {
+    "id": 562,
+    "display": "Mapa Viejo"
+  },
+  "douse-drive": {
+    "id": 563,
+    "display": "HidroROM"
+  },
+  "shock-drive": {
+    "id": 564,
+    "display": "FulgoROM"
+  },
+  "burn-drive": {
+    "id": 565,
+    "display": "PiroROM"
+  },
+  "chill-drive": {
+    "id": 566,
+    "display": "CrioROM"
+  },
+  "sweet-heart": {
+    "id": 567,
+    "display": "Corazón Dulce"
+  },
+  "greet-mail": {
+    "id": 568,
+    "display": "Carta Inicial"
+  },
+  "favored-mail": {
+    "id": 569,
+    "display": "Carta Favoritos"
+  },
+  "rsvp-mail": {
+    "id": 570,
+    "display": "Carta Invitar"
+  },
+  "thanks-mail": {
+    "id": 571,
+    "display": "Carta Gracias"
+  },
+  "inquiry-mail": {
+    "id": 572,
+    "display": "Carta Pregunta"
+  },
+  "like-mail": {
+    "id": 573,
+    "display": "Carta Gustos"
+  },
+  "reply-mail": {
+    "id": 574,
+    "display": "Carta Respuesta"
+  },
+  "bridge-mail-s": {
+    "id": 575,
+    "display": "Carta Puente S"
+  },
+  "bridge-mail-d": {
+    "id": 576,
+    "display": "Carta Puente F"
+  },
+  "bridge-mail-t": {
+    "id": 577,
+    "display": "Carta Puente A"
+  },
+  "bridge-mail-v": {
+    "id": 578,
+    "display": "Carta Puente V"
+  },
+  "bridge-mail-m": {
+    "id": 579,
+    "display": "Carta Puente P"
+  },
+  "prism-scale": {
+    "id": 580,
+    "display": "Escama Bella"
+  },
+  "eviolite": {
+    "id": 581,
+    "display": "Mineral Evol"
+  },
+  "float-stone": {
+    "id": 582,
+    "display": "Piedra Pómez"
+  },
+  "rocky-helmet": {
+    "id": 583,
+    "display": "Casco Dentado"
+  },
+  "air-balloon": {
+    "id": 584,
+    "display": "Globo Helio"
+  },
+  "red-card": {
+    "id": 585,
+    "display": "Tarjeta Roja"
+  },
+  "ring-target": {
+    "id": 586,
+    "display": "Blanco"
+  },
+  "binding-band": {
+    "id": 587,
+    "display": "Banda Atadura"
+  },
+  "absorb-bulb": {
+    "id": 588,
+    "display": "Tubérculo"
+  },
+  "cell-battery": {
+    "id": 589,
+    "display": "Pila"
+  },
+  "eject-button": {
+    "id": 590,
+    "display": "Botón Escape"
+  },
+  "fire-gem": {
+    "id": 591,
+    "display": "Gema Fuego"
+  },
+  "water-gem": {
+    "id": 592,
+    "display": "Gema Agua"
+  },
+  "electric-gem": {
+    "id": 593,
+    "display": "Gema Eléctrica"
+  },
+  "grass-gem": {
+    "id": 594,
+    "display": "Gema Planta"
+  },
+  "ice-gem": {
+    "id": 595,
+    "display": "Gema Hielo"
+  },
+  "fighting-gem": {
+    "id": 596,
+    "display": "Gema Lucha"
+  },
+  "poison-gem": {
+    "id": 597,
+    "display": "Gema Veneno"
+  },
+  "ground-gem": {
+    "id": 598,
+    "display": "Gema Tierra"
+  },
+  "flying-gem": {
+    "id": 599,
+    "display": "Gema Voladora"
+  },
+  "psychic-gem": {
+    "id": 600,
+    "display": "Gema Psíquica"
+  },
+  "bug-gem": {
+    "id": 601,
+    "display": "Gema Bicho"
+  },
+  "rock-gem": {
+    "id": 602,
+    "display": "Gema Roca"
+  },
+  "ghost-gem": {
+    "id": 603,
+    "display": "Gema Fantasma"
+  },
+  "dark-gem": {
+    "id": 604,
+    "display": "Gema Siniestra"
+  },
+  "steel-gem": {
+    "id": 605,
+    "display": "Gema Acero"
+  },
+  "health-wing": {
+    "id": 606,
+    "display": "Pluma Vigor"
+  },
+  "muscle-wing": {
+    "id": 607,
+    "display": "Pluma Músculo"
+  },
+  "resist-wing": {
+    "id": 608,
+    "display": "Pluma Aguante"
+  },
+  "genius-wing": {
+    "id": 609,
+    "display": "Pluma Intelecto"
+  },
+  "clever-wing": {
+    "id": 610,
+    "display": "Pluma Mente"
+  },
+  "swift-wing": {
+    "id": 611,
+    "display": "Pluma Ímpetu"
+  },
+  "pretty-wing": {
+    "id": 612,
+    "display": "Pluma Bella"
+  },
+  "cover-fossil": {
+    "id": 613,
+    "display": "Fósil Tapa"
+  },
+  "plume-fossil": {
+    "id": 614,
+    "display": "Fósil Pluma"
+  },
+  "liberty-pass": {
+    "id": 615,
+    "display": "Tarjeta Libertad"
+  },
+  "pass-orb": {
+    "id": 616,
+    "display": "Regalosfera"
+  },
+  "dream-ball": {
+    "id": 617,
+    "display": "Ensueño Ball"
+  },
+  "poke-toy": {
+    "id": 618,
+    "display": "Pokéseñuelo"
+  },
+  "prop-case": {
+    "id": 619,
+    "display": "Neceser"
+  },
+  "dragon-skull": {
+    "id": 620,
+    "display": "Cráneo Dragón"
+  },
+  "balm-mushroom": {
+    "id": 621,
+    "display": "Seta Aroma"
+  },
+  "big-nugget": {
+    "id": 622,
+    "display": "Maxipepita"
+  },
+  "pearl-string": {
+    "id": 623,
+    "display": "Sarta Perlas"
+  },
+  "comet-shard": {
+    "id": 624,
+    "display": "Fragmento Cometa"
+  },
+  "relic-copper": {
+    "id": 625,
+    "display": "Real Cobre"
+  },
+  "relic-silver": {
+    "id": 626,
+    "display": "Real Plata"
+  },
+  "relic-gold": {
+    "id": 627,
+    "display": "Real Oro"
+  },
+  "relic-vase": {
+    "id": 628,
+    "display": "Ánfora"
+  },
+  "relic-band": {
+    "id": 629,
+    "display": "Brazal"
+  },
+  "relic-statue": {
+    "id": 630,
+    "display": "Efigie Antigua"
+  },
+  "relic-crown": {
+    "id": 631,
+    "display": "Corona Antigua"
+  },
+  "casteliacone": {
+    "id": 632,
+    "display": "Porcehelado"
+  },
+  "dire-hit-2": {
+    "id": 633,
+    "display": "Crítico X 2"
+  },
+  "x-speed-2": {
+    "id": 634,
+    "display": "Velocidad X 2"
+  },
+  "x-sp-atk-2": {
+    "id": 635,
+    "display": "At. Esp. X 2"
+  },
+  "x-sp-def-2": {
+    "id": 636,
+    "display": "Def. Esp. X 2"
+  },
+  "x-defense-2": {
+    "id": 637,
+    "display": "Defensa X 2"
+  },
+  "x-attack-2": {
+    "id": 638,
+    "display": "Ataque X 2"
+  },
+  "x-accuracy-2": {
+    "id": 639,
+    "display": "Precisión X 2"
+  },
+  "x-speed-3": {
+    "id": 640,
+    "display": "Velocidad X 3"
+  },
+  "x-sp-atk-3": {
+    "id": 641,
+    "display": "At. Esp. X 3"
+  },
+  "x-sp-def-3": {
+    "id": 642,
+    "display": "Def. Esp. X 3"
+  },
+  "x-defense-3": {
+    "id": 643,
+    "display": "Defensa X 3"
+  },
+  "x-attack-3": {
+    "id": 644,
+    "display": "Ataque X 3"
+  },
+  "x-accuracy-3": {
+    "id": 645,
+    "display": "Precisión X 3"
+  },
+  "x-speed-6": {
+    "id": 646,
+    "display": "Velocidad X 6"
+  },
+  "x-sp-atk-6": {
+    "id": 647,
+    "display": "At. Esp. X 6"
+  },
+  "x-sp-def-6": {
+    "id": 648,
+    "display": "Def. Esp. X 6"
+  },
+  "x-defense-6": {
+    "id": 649,
+    "display": "Defensa X 6"
+  },
+  "x-attack-6": {
+    "id": 650,
+    "display": "Ataque X 6"
+  },
+  "x-accuracy-6": {
+    "id": 651,
+    "display": "Precisión X 6"
+  },
+  "ability-urge": {
+    "id": 652,
+    "display": "Habilitador"
+  },
+  "item-drop": {
+    "id": 653,
+    "display": "Tiraobjeto"
+  },
+  "item-urge": {
+    "id": 654,
+    "display": "Activaobjeto"
+  },
+  "reset-urge": {
+    "id": 655,
+    "display": "Quitaestado"
+  },
+  "dire-hit-3": {
+    "id": 656,
+    "display": "Crítico X 3"
+  },
+  "light-stone": {
+    "id": 657,
+    "display": "Orbe Claro"
+  },
+  "dark-stone": {
+    "id": 658,
+    "display": "Orbe Oscuro"
+  },
+  "tm93": {
+    "id": 659,
+    "display": "MT93"
+  },
+  "tm94": {
+    "id": 660,
+    "display": "MT94"
+  },
+  "tm95": {
+    "id": 661,
+    "display": "MT95"
+  },
+  "xtransceiver": {
+    "id": 662,
+    "display": "Videomisor"
+  },
+  "god-stone": {
+    "id": 663,
+    "display": "god stone"
+  },
+  "gram-1": {
+    "id": 664,
+    "display": "Envío 1"
+  },
+  "gram-2": {
+    "id": 665,
+    "display": "Envío 2"
+  },
+  "gram-3": {
+    "id": 666,
+    "display": "Envío 3"
+  },
+  "dragon-gem": {
+    "id": 668,
+    "display": "Gema Dragón"
+  },
+  "normal-gem": {
+    "id": 669,
+    "display": "Gema Normal"
+  },
+  "medal-box": {
+    "id": 670,
+    "display": "Caja Insignias"
+  },
+  "dna-splicers": {
+    "id": 671,
+    "display": "Punta ADN"
+  },
+  "permit": {
+    "id": 673,
+    "display": "Pase"
+  },
+  "oval-charm": {
+    "id": 674,
+    "display": "Amuleto Oval"
+  },
+  "shiny-charm": {
+    "id": 675,
+    "display": "Amuleto Iris"
+  },
+  "plasma-card": {
+    "id": 676,
+    "display": "Tarjeta Plasma"
+  },
+  "grubby-hanky": {
+    "id": 677,
+    "display": "Pañuelo Sucio"
+  },
+  "colress-machine": {
+    "id": 678,
+    "display": "Acromáquina"
+  },
+  "dropped-item": {
+    "id": 679,
+    "display": "Objeto Perdido"
+  },
+  "reveal-glass": {
+    "id": 681,
+    "display": "Espejo Veraz"
+  },
+  "weakness-policy": {
+    "id": 682,
+    "display": "Seguro Debilidad"
+  },
+  "assault-vest": {
+    "id": 683,
+    "display": "Chaleco Asalto"
+  },
+  "pixie-plate": {
+    "id": 684,
+    "display": "Tabla Duende"
+  },
+  "ability-capsule": {
+    "id": 685,
+    "display": "Cáps. Habilidad"
+  },
+  "whipped-dream": {
+    "id": 686,
+    "display": "Dulce de Nata"
+  },
+  "sachet": {
+    "id": 687,
+    "display": "Saquito Fragante"
+  },
+  "luminous-moss": {
+    "id": 688,
+    "display": "Musgo Brillante"
+  },
+  "snowball": {
+    "id": 689,
+    "display": "Bola de Nieve"
+  },
+  "safety-goggles": {
+    "id": 690,
+    "display": "Gafa Protectora"
+  },
+  "rich-mulch": {
+    "id": 691,
+    "display": "Abono Fértil"
+  },
+  "surprise-mulch": {
+    "id": 692,
+    "display": "Abono Sorpresa"
+  },
+  "boost-mulch": {
+    "id": 693,
+    "display": "Abono Fructífero"
+  },
+  "amaze-mulch": {
+    "id": 694,
+    "display": "Abono Insólito"
+  },
+  "gengarite": {
+    "id": 695,
+    "display": "Gengarita"
+  },
+  "gardevoirite": {
+    "id": 696,
+    "display": "Gardevoirita"
+  },
+  "ampharosite": {
+    "id": 697,
+    "display": "Ampharosita"
+  },
+  "venusaurite": {
+    "id": 698,
+    "display": "Venusaurita"
+  },
+  "charizardite-x": {
+    "id": 699,
+    "display": "Charizardita X"
+  },
+  "blastoisinite": {
+    "id": 700,
+    "display": "Blastoisita"
+  },
+  "mewtwonite-x": {
+    "id": 701,
+    "display": "Mewtwoita X"
+  },
+  "mewtwonite-y": {
+    "id": 702,
+    "display": "Mewtwoita Y"
+  },
+  "blazikenite": {
+    "id": 703,
+    "display": "Blazikenita"
+  },
+  "medichamite": {
+    "id": 704,
+    "display": "Medichamita"
+  },
+  "houndoominite": {
+    "id": 705,
+    "display": "Houndoomita"
+  },
+  "aggronite": {
+    "id": 706,
+    "display": "Aggronita"
+  },
+  "banettite": {
+    "id": 707,
+    "display": "Banettita"
+  },
+  "tyranitarite": {
+    "id": 708,
+    "display": "Tyranitarita"
+  },
+  "scizorite": {
+    "id": 709,
+    "display": "Scizorita"
+  },
+  "pinsirite": {
+    "id": 710,
+    "display": "Pinsirita"
+  },
+  "aerodactylite": {
+    "id": 711,
+    "display": "Aerodactylita"
+  },
+  "lucarionite": {
+    "id": 712,
+    "display": "Lucarita"
+  },
+  "abomasite": {
+    "id": 713,
+    "display": "Abomasnowita"
+  },
+  "kangaskhanite": {
+    "id": 714,
+    "display": "Kangaskhanita"
+  },
+  "gyaradosite": {
+    "id": 715,
+    "display": "Gyaradosita"
+  },
+  "absolite": {
+    "id": 716,
+    "display": "Absolita"
+  },
+  "charizardite-y": {
+    "id": 717,
+    "display": "Charizardita Y"
+  },
+  "alakazite": {
+    "id": 718,
+    "display": "Alakazamita"
+  },
+  "heracronite": {
+    "id": 719,
+    "display": "Heracrossita"
+  },
+  "mawilite": {
+    "id": 720,
+    "display": "Mawilita"
+  },
+  "manectite": {
+    "id": 721,
+    "display": "Manectricita"
+  },
+  "garchompite": {
+    "id": 722,
+    "display": "Garchompita"
+  },
+  "roseli-berry": {
+    "id": 723,
+    "display": "Baya Hibis"
+  },
+  "kee-berry": {
+    "id": 724,
+    "display": "Baya Biglia"
+  },
+  "maranga-berry": {
+    "id": 725,
+    "display": "Baya Maranga"
+  },
+  "discount-coupon": {
+    "id": 726,
+    "display": "Vale Descuento"
+  },
+  "strange-souvenir": {
+    "id": 727,
+    "display": "Estatuilla Rara"
+  },
+  "lumiose-galette": {
+    "id": 728,
+    "display": "Crêpe Luminalia"
+  },
+  "jaw-fossil": {
+    "id": 729,
+    "display": "Fósil Mandíbula"
+  },
+  "sail-fossil": {
+    "id": 730,
+    "display": "Fósil Aleta"
+  },
+  "fairy-gem": {
+    "id": 731,
+    "display": "Gema Hada"
+  },
+  "adventure-rules": {
+    "id": 732,
+    "display": "Guía de Aventura"
+  },
+  "elevator-key": {
+    "id": 733,
+    "display": "Llave Ascensor"
+  },
+  "holo-caster": {
+    "id": 734,
+    "display": "Holomisor"
+  },
+  "honor-of-kalos": {
+    "id": 735,
+    "display": "Emblema Kalos"
+  },
+  "intriguing-stone": {
+    "id": 736,
+    "display": "Piedra Insólita"
+  },
+  "lens-case": {
+    "id": 737,
+    "display": "Portalentillas"
+  },
+  "looker-ticket": {
+    "id": 738,
+    "display": "Boleto Handsome"
+  },
+  "mega-ring": {
+    "id": 739,
+    "display": "Mega-Aro"
+  },
+  "power-plant-pass": {
+    "id": 740,
+    "display": "Pase Central"
+  },
+  "profs-letter": {
+    "id": 741,
+    "display": "Carta Profesor"
+  },
+  "roller-skates": {
+    "id": 742,
+    "display": "Patines"
+  },
+  "sprinklotad": {
+    "id": 743,
+    "display": "Lotadgadera"
+  },
+  "tmv-pass": {
+    "id": 744,
+    "display": "Abono del TMV"
+  },
+  "tm96": {
+    "id": 745,
+    "display": "MT96"
+  },
+  "tm97": {
+    "id": 746,
+    "display": "MT97"
+  },
+  "tm98": {
+    "id": 747,
+    "display": "MT98"
+  },
+  "tm99": {
+    "id": 748,
+    "display": "MT99"
+  },
+  "tm100": {
+    "id": 749,
+    "display": "MT100"
+  },
+  "latiasite": {
+    "id": 760,
+    "display": "Latiasita"
+  },
+  "latiosite": {
+    "id": 761,
+    "display": "Latiosita"
+  },
+  "common-stone": {
+    "id": 762,
+    "display": "Piedra Común"
+  },
+  "makeup-bag": {
+    "id": 763,
+    "display": "Kit Maquillaje"
+  },
+  "travel-trunk": {
+    "id": 764,
+    "display": "Maleta"
+  },
+  "shalour-sable": {
+    "id": 765,
+    "display": "Galleta Yantra"
+  },
+  "mega-charm": {
+    "id": 768,
+    "display": "Megacolgante"
+  },
+  "mega-glove": {
+    "id": 769,
+    "display": "Megaguante"
+  },
+  "devon-parts": {
+    "id": 770,
+    "display": "Piezas Devon"
+  },
+  "pokeblock-kit": {
+    "id": 772,
+    "display": "Kit de Pokécubos"
+  },
+  "key-to-room-1": {
+    "id": 773,
+    "display": "Ll. Habitación 1"
+  },
+  "key-to-room-2": {
+    "id": 774,
+    "display": "Ll. Habitación 2"
+  },
+  "key-to-room-4": {
+    "id": 775,
+    "display": "Ll. Habitación 4"
+  },
+  "key-to-room-6": {
+    "id": 776,
+    "display": "Ll. Habitación 6"
+  },
+  "devon-scuba-gear": {
+    "id": 779,
+    "display": "Bombona Devon"
+  },
+  "contest-costume--jacket": {
+    "id": 780,
+    "display": "Traje de Gala"
+  },
+  "magma-suit": {
+    "id": 782,
+    "display": "Traje Magma"
+  },
+  "aqua-suit": {
+    "id": 783,
+    "display": "Traje Aqua"
+  },
+  "pair-of-tickets": {
+    "id": 784,
+    "display": "Entrada para dos"
+  },
+  "mega-bracelet": {
+    "id": 785,
+    "display": "Megapulsera"
+  },
+  "mega-pendant": {
+    "id": 786,
+    "display": "Megacollar"
+  },
+  "mega-glasses": {
+    "id": 787,
+    "display": "Megagafas"
+  },
+  "mega-anchor": {
+    "id": 788,
+    "display": "Megaancla"
+  },
+  "mega-stickpin": {
+    "id": 789,
+    "display": "Megabroche"
+  },
+  "mega-tiara": {
+    "id": 790,
+    "display": "Megatiara"
+  },
+  "mega-anklet": {
+    "id": 791,
+    "display": "Megatobillera"
+  },
+  "swampertite": {
+    "id": 793,
+    "display": "Swampertita"
+  },
+  "sceptilite": {
+    "id": 794,
+    "display": "Sceptilita"
+  },
+  "sablenite": {
+    "id": 795,
+    "display": "Sableynita"
+  },
+  "altarianite": {
+    "id": 796,
+    "display": "Altarianita"
+  },
+  "galladite": {
+    "id": 797,
+    "display": "Galladita"
+  },
+  "audinite": {
+    "id": 798,
+    "display": "Audinita"
+  },
+  "metagrossite": {
+    "id": 799,
+    "display": "Metagrossita"
+  },
+  "sharpedonite": {
+    "id": 800,
+    "display": "Sharpedonita"
+  },
+  "slowbronite": {
+    "id": 801,
+    "display": "Slowbronita"
+  },
+  "steelixite": {
+    "id": 802,
+    "display": "Steelixita"
+  },
+  "pidgeotite": {
+    "id": 803,
+    "display": "Pidgeotita"
+  },
+  "glalitite": {
+    "id": 804,
+    "display": "Glalita"
+  },
+  "diancite": {
+    "id": 805,
+    "display": "Diancita"
+  },
+  "prison-bottle": {
+    "id": 806,
+    "display": "Vasija Castigo"
+  },
+  "mega-cuff": {
+    "id": 807,
+    "display": "Megabrazalete"
+  },
+  "cameruptite": {
+    "id": 808,
+    "display": "Cameruptita"
+  },
+  "lopunnite": {
+    "id": 809,
+    "display": "Lopunnita"
+  },
+  "salamencite": {
+    "id": 810,
+    "display": "Salamencita"
+  },
+  "beedrillite": {
+    "id": 811,
+    "display": "Beedrillita"
+  },
+  "key-stone": {
+    "id": 814,
+    "display": "Piedra Activadora"
+  },
+  "meteorite-shard": {
+    "id": 815,
+    "display": "Frag. Meteorito"
+  },
+  "eon-flute": {
+    "id": 816,
+    "display": "Flauta Eón"
+  },
+  "normalium-z--held": {
+    "id": 817,
+    "display": "Normastal Z"
+  },
+  "firium-z--held": {
+    "id": 818,
+    "display": "Pirostal Z"
+  },
+  "waterium-z--held": {
+    "id": 819,
+    "display": "Hidrostal Z"
+  },
+  "electrium-z--held": {
+    "id": 820,
+    "display": "Electrostal Z"
+  },
+  "grassium-z--held": {
+    "id": 821,
+    "display": "Fitostal Z"
+  },
+  "icium-z--held": {
+    "id": 822,
+    "display": "Criostal Z"
+  },
+  "fightinium-z--held": {
+    "id": 823,
+    "display": "Lizastal Z"
+  },
+  "poisonium-z--held": {
+    "id": 824,
+    "display": "Toxistal Z"
+  },
+  "groundium-z--held": {
+    "id": 825,
+    "display": "Geostal Z"
+  },
+  "flyinium-z--held": {
+    "id": 826,
+    "display": "Aerostal Z"
+  },
+  "psychium-z--held": {
+    "id": 827,
+    "display": "Psicostal Z"
+  },
+  "buginium-z--held": {
+    "id": 828,
+    "display": "Insectostal Z"
+  },
+  "rockium-z--held": {
+    "id": 829,
+    "display": "Litostal Z"
+  },
+  "ghostium-z--held": {
+    "id": 830,
+    "display": "Espectrostal Z"
+  },
+  "dragonium-z--held": {
+    "id": 831,
+    "display": "Dracostal Z"
+  },
+  "darkinium-z--held": {
+    "id": 832,
+    "display": "Nictostal Z"
+  },
+  "steelium-z--held": {
+    "id": 833,
+    "display": "Metalostal Z"
+  },
+  "fairium-z--held": {
+    "id": 834,
+    "display": "Feeristal Z"
+  },
+  "pikanium-z--held": {
+    "id": 835,
+    "display": "Pikastal Z"
+  },
+  "bottle-cap": {
+    "id": 836,
+    "display": "Chapa Plateada"
+  },
+  "gold-bottle-cap": {
+    "id": 837,
+    "display": "Chapa Dorada"
+  },
+  "z-ring": {
+    "id": 838,
+    "display": "Pulsera Z"
+  },
+  "decidium-z--held": {
+    "id": 839,
+    "display": "Dueyestal Z"
+  },
+  "incinium-z--held": {
+    "id": 840,
+    "display": "Incinostal Z"
+  },
+  "primarium-z--held": {
+    "id": 841,
+    "display": "Primastal Z"
+  },
+  "tapunium-z--held": {
+    "id": 842,
+    "display": "Tapistal Z"
+  },
+  "marshadium-z--held": {
+    "id": 843,
+    "display": "Marshastal Z"
+  },
+  "aloraichium-z--held": {
+    "id": 844,
+    "display": "Alo-Raistal Z"
+  },
+  "snorlium-z--held": {
+    "id": 845,
+    "display": "Snorlastal Z"
+  },
+  "eevium-z--held": {
+    "id": 846,
+    "display": "Eeveestal Z"
+  },
+  "mewnium-z--held": {
+    "id": 847,
+    "display": "Mewstal Z"
+  },
+  "pikashunium-z--held": {
+    "id": 877,
+    "display": "Ash-Pikastal Z"
+  },
+  "forage-bag": {
+    "id": 878,
+    "display": "Zurrón"
+  },
+  "fishing-rod": {
+    "id": 879,
+    "display": "Caña"
+  },
+  "professors-mask": {
+    "id": 880,
+    "display": "Máscara Profesor"
+  },
+  "festival-ticket": {
+    "id": 881,
+    "display": "Festicupón"
+  },
+  "sparkling-stone": {
+    "id": 882,
+    "display": "Piedra Brillante"
+  },
+  "adrenaline-orb": {
+    "id": 883,
+    "display": "Nerviosfera"
+  },
+  "zygarde-cube": {
+    "id": 884,
+    "display": "Arca de Zygarde"
+  },
+  "ice-stone": {
+    "id": 885,
+    "display": "Piedra Hielo"
+  },
+  "ride-pager": {
+    "id": 886,
+    "display": "Buscamontura"
+  },
+  "beast-ball": {
+    "id": 887,
+    "display": "Ente Ball"
+  },
+  "big-malasada": {
+    "id": 888,
+    "display": "Malasada Maxi"
+  },
+  "red-nectar": {
+    "id": 889,
+    "display": "Néctar Rojo"
+  },
+  "yellow-nectar": {
+    "id": 890,
+    "display": "Néctar Amarillo"
+  },
+  "pink-nectar": {
+    "id": 891,
+    "display": "Néctar Rosa"
+  },
+  "purple-nectar": {
+    "id": 892,
+    "display": "Néctar Violeta"
+  },
+  "sun-flute": {
+    "id": 893,
+    "display": "Flauta Solar"
+  },
+  "moon-flute": {
+    "id": 894,
+    "display": "Flauta Lunar"
+  },
+  "enigmatic-card": {
+    "id": 895,
+    "display": "Nota Intrigante"
+  },
+  "terrain-extender": {
+    "id": 896,
+    "display": "Cubresuelos"
+  },
+  "protective-pads": {
+    "id": 897,
+    "display": "Paracontacto"
+  },
+  "electric-seed": {
+    "id": 898,
+    "display": "Semilla Electro"
+  },
+  "psychic-seed": {
+    "id": 899,
+    "display": "Semilla Psique"
+  },
+  "misty-seed": {
+    "id": 900,
+    "display": "Semilla Bruma"
+  },
+  "grassy-seed": {
+    "id": 901,
+    "display": "Semilla Hierba"
+  },
+  "fighting-memory": {
+    "id": 902,
+    "display": "Disco Lucha"
+  },
+  "flying-memory": {
+    "id": 903,
+    "display": "Disco Volador"
+  },
+  "poison-memory": {
+    "id": 904,
+    "display": "Disco Veneno"
+  },
+  "ground-memory": {
+    "id": 905,
+    "display": "Disco Tierra"
+  },
+  "rock-memory": {
+    "id": 906,
+    "display": "Disco Roca"
+  },
+  "bug-memory": {
+    "id": 907,
+    "display": "Disco Bicho"
+  },
+  "ghost-memory": {
+    "id": 908,
+    "display": "Disco Fantasma"
+  },
+  "steel-memory": {
+    "id": 909,
+    "display": "Disco Acero"
+  },
+  "fire-memory": {
+    "id": 910,
+    "display": "Disco Fuego"
+  },
+  "water-memory": {
+    "id": 911,
+    "display": "Disco Agua"
+  },
+  "grass-memory": {
+    "id": 912,
+    "display": "Disco Planta"
+  },
+  "electric-memory": {
+    "id": 913,
+    "display": "Disco Eléctrico"
+  },
+  "psychic-memory": {
+    "id": 914,
+    "display": "Disco Psíquico"
+  },
+  "ice-memory": {
+    "id": 915,
+    "display": "Disco Hielo"
+  },
+  "dragon-memory": {
+    "id": 916,
+    "display": "Disco Dragón"
+  },
+  "dark-memory": {
+    "id": 917,
+    "display": "Disco Siniestro"
+  },
+  "fairy-memory": {
+    "id": 918,
+    "display": "Disco Hada"
+  },
+  "bike--green": {
+    "id": 919,
+    "display": "Bici"
+  },
+  "storage-key--galactic-warehouse": {
+    "id": 920,
+    "display": "Llave Almacén"
+  },
+  "basement-key--goldenrod": {
+    "id": 921,
+    "display": "Llave Sótano"
+  },
+  "xtransceiver--red": {
+    "id": 922,
+    "display": "Videomisor"
+  },
+  "xtransceiver--yellow": {
+    "id": 923,
+    "display": "Videomisor"
+  },
+  "dna-splicers--merge": {
+    "id": 924,
+    "display": "Punta ADN"
+  },
+  "dna-splicers--split": {
+    "id": 925,
+    "display": "Punta ADN"
+  },
+  "dropped-item--red": {
+    "id": 926,
+    "display": "Objeto Perdido"
+  },
+  "dropped-item--yellow": {
+    "id": 927,
+    "display": "Objeto Perdido"
+  },
+  "holo-caster--green": {
+    "id": 928,
+    "display": "Holomisor"
+  },
+  "bike--yellow": {
+    "id": 929,
+    "display": "Bici"
+  },
+  "holo-caster--red": {
+    "id": 930,
+    "display": "Holomisor"
+  },
+  "basement-key--new-mauville": {
+    "id": 931,
+    "display": "Llave del Sótano"
+  },
+  "storage-key--sea-mauville": {
+    "id": 932,
+    "display": "Llave Almacén"
+  },
+  "ss-ticket--hoenn": {
+    "id": 933,
+    "display": "Ticket Barco"
+  },
+  "contest-costume--dress": {
+    "id": 934,
+    "display": "Vestido de Gala"
+  },
+  "meteorite--2": {
+    "id": 935,
+    "display": "Meteorito"
+  },
+  "meteorite--3": {
+    "id": 936,
+    "display": "Meteorito"
+  },
+  "meteorite--4": {
+    "id": 937,
+    "display": "Meteorito"
+  },
+  "normalium-z--bag": {
+    "id": 938,
+    "display": "Normastal Z"
+  },
+  "firium-z--bag": {
+    "id": 939,
+    "display": "Pirostal Z"
+  },
+  "waterium-z--bag": {
+    "id": 940,
+    "display": "Hidrostal Z"
+  },
+  "electrium-z--bag": {
+    "id": 941,
+    "display": "Electrostal Z"
+  },
+  "grassium-z--bag": {
+    "id": 942,
+    "display": "Fitostal Z"
+  },
+  "icium-z--bag": {
+    "id": 943,
+    "display": "Criostal Z"
+  },
+  "fightinium-z--bag": {
+    "id": 944,
+    "display": "Lizastal Z"
+  },
+  "poisonium-z--bag": {
+    "id": 945,
+    "display": "Toxistal Z"
+  },
+  "groundium-z--bag": {
+    "id": 946,
+    "display": "Geostal Z"
+  },
+  "flyinium-z--bag": {
+    "id": 947,
+    "display": "Aerostal Z"
+  },
+  "psychium-z--bag": {
+    "id": 948,
+    "display": "Psicostal Z"
+  },
+  "buginium-z--bag": {
+    "id": 949,
+    "display": "Insectostal Z"
+  },
+  "rockium-z--bag": {
+    "id": 950,
+    "display": "Litostal Z"
+  },
+  "ghostium-z--bag": {
+    "id": 951,
+    "display": "Espectrostal Z"
+  },
+  "dragonium-z--bag": {
+    "id": 952,
+    "display": "Dracostal Z"
+  },
+  "darkinium-z--bag": {
+    "id": 953,
+    "display": "Nictostal Z"
+  },
+  "steelium-z--bag": {
+    "id": 954,
+    "display": "Metalostal Z"
+  },
+  "fairium-z--bag": {
+    "id": 955,
+    "display": "Feeristal Z"
+  },
+  "pikanium-z--bag": {
+    "id": 956,
+    "display": "Pikastal Z"
+  },
+  "decidium-z--bag": {
+    "id": 957,
+    "display": "Dueyestal Z"
+  },
+  "incinium-z--bag": {
+    "id": 958,
+    "display": "Incinostal Z"
+  },
+  "primarium-z--bag": {
+    "id": 959,
+    "display": "Primastal Z"
+  },
+  "tapunium-z--bag": {
+    "id": 960,
+    "display": "Tapistal Z"
+  },
+  "marshadium-z--bag": {
+    "id": 961,
+    "display": "Marshastal Z"
+  },
+  "aloraichium-z--bag": {
+    "id": 962,
+    "display": "Alo-Raistal Z"
+  },
+  "snorlium-z--bag": {
+    "id": 963,
+    "display": "Snorlastal Z"
+  },
+  "eevium-z--bag": {
+    "id": 964,
+    "display": "Eeveestal Z"
+  },
+  "mewnium-z--bag": {
+    "id": 965,
+    "display": "Mewstal Z"
+  },
+  "pikashunium-z--bag": {
+    "id": 966,
+    "display": "Ash-Pikastal Z"
+  },
+  "solganium-z--held": {
+    "id": 967,
+    "display": "Solgaleostal Z"
+  },
+  "lunalium-z--held": {
+    "id": 968,
+    "display": "Lunalastal Z"
+  },
+  "ultranecrozium-z--held": {
+    "id": 969,
+    "display": "Ultranecrostal Z"
+  },
+  "mimikium-z--held": {
+    "id": 970,
+    "display": "Mimikyustal Z"
+  },
+  "lycanium-z--held": {
+    "id": 971,
+    "display": "Lycanrostal Z"
+  },
+  "kommonium-z--held": {
+    "id": 972,
+    "display": "Kommostal Z"
+  },
+  "solganium-z--bag": {
+    "id": 973,
+    "display": "Solgaleostal Z"
+  },
+  "lunalium-z--bag": {
+    "id": 974,
+    "display": "Lunalastal Z"
+  },
+  "ultranecrozium-z--bag": {
+    "id": 975,
+    "display": "Ultranecrostal Z"
+  },
+  "mimikium-z--bag": {
+    "id": 976,
+    "display": "Mimikyustal Z"
+  },
+  "lycanium-z--bag": {
+    "id": 977,
+    "display": "Lycanrostal Z"
+  },
+  "kommonium-z--bag": {
+    "id": 978,
+    "display": "Kommostal Z"
+  },
+  "z-power-ring": {
+    "id": 979,
+    "display": "Superpulsera Z"
+  },
+  "pink-petal": {
+    "id": 980,
+    "display": "Pétalo Rosa"
+  },
+  "orange-petal": {
+    "id": 981,
+    "display": "Pétalo Naranja"
+  },
+  "blue-petal": {
+    "id": 982,
+    "display": "Pétalo Azul"
+  },
+  "red-petal": {
+    "id": 983,
+    "display": "Pétalo Rojo"
+  },
+  "green-petal": {
+    "id": 984,
+    "display": "Pétalo Verde"
+  },
+  "yellow-petal": {
+    "id": 985,
+    "display": "Pétalo Amarillo"
+  },
+  "purple-petal": {
+    "id": 986,
+    "display": "Pétalo Violeta"
+  },
+  "rainbow-flower": {
+    "id": 987,
+    "display": "Flor Irisada"
+  },
+  "surge-badge": {
+    "id": 988,
+    "display": "Medalla Fulgor"
+  },
+  "n-solarizer--merge": {
+    "id": 989,
+    "display": "Necrosol"
+  },
+  "n-lunarizer--merge": {
+    "id": 990,
+    "display": "Necroluna"
+  },
+  "n-solarizer--split": {
+    "id": 991,
+    "display": "Necrosol"
+  },
+  "n-lunarizer--split": {
+    "id": 992,
+    "display": "Necroluna"
+  },
+  "ilimas-normalium-z": {
+    "id": 993,
+    "display": "Cristal Z (Liam)"
+  },
+  "left-poke-ball": {
+    "id": 994,
+    "display": "Poké Ball Ajena"
+  },
+  "roto-hatch": {
+    "id": 995,
+    "display": "Cupón Eclosión"
+  },
+  "roto-bargain": {
+    "id": 996,
+    "display": "Cupón Rebaja"
+  },
+  "roto-prize-money": {
+    "id": 997,
+    "display": "Cupón Botín"
+  },
+  "roto-exp-points": {
+    "id": 998,
+    "display": "Cupón Exp"
+  },
+  "roto-friendship": {
+    "id": 999,
+    "display": "Cupón Amistad"
+  },
+  "roto-encounter": {
+    "id": 1000,
+    "display": "Cupón Reclamo"
+  },
+  "roto-stealth": {
+    "id": 1001,
+    "display": "Cupón Sigilo"
+  },
+  "roto-hp-restore": {
+    "id": 1002,
+    "display": "Cupón PS"
+  },
+  "roto-pp-restore": {
+    "id": 1003,
+    "display": "Cupón PP"
+  },
+  "roto-boost": {
+    "id": 1004,
+    "display": "Cupón Refuerzo"
+  },
+  "roto-catch": {
+    "id": 1005,
+    "display": "Cupón Captura"
+  },
+  "autograph": {
+    "id": 1006,
+    "display": "Autógrafo"
+  },
+  "pokemon-box": {
+    "id": 1007,
+    "display": "Caja de Pokémon"
+  },
+  "medicine-pocket": {
+    "id": 1008,
+    "display": "Botiquín"
+  },
+  "candy-jar": {
+    "id": 1009,
+    "display": "Tarro de Caramelos"
+  },
+  "power-up-pocket": {
+    "id": 1010,
+    "display": "Bolsillo Mejoras"
+  },
+  "clothing-trunk": {
+    "id": 1011,
+    "display": "Maleta"
+  },
+  "catching-pocket": {
+    "id": 1012,
+    "display": "Bolsillo Captura"
+  },
+  "battle-pocket": {
+    "id": 1013,
+    "display": "Bolsillo Combate"
+  },
+  "silver-razz-berry": {
+    "id": 1014,
+    "display": "Baya Frambu Plateada"
+  },
+  "golden-razz-berry": {
+    "id": 1015,
+    "display": "Baya Frambu Dorada"
+  },
+  "silver-nanab-berry": {
+    "id": 1016,
+    "display": "Baya Latano Plateada"
+  },
+  "golden-nanab-berry": {
+    "id": 1017,
+    "display": "Baya Latano Dorada"
+  },
+  "silver-pinap-berry": {
+    "id": 1018,
+    "display": "Baya Pinia Plateada"
+  },
+  "golden-pinap-berry": {
+    "id": 1019,
+    "display": "Baya Pinia Dorada"
+  },
+  "secret-key--letsgo": {
+    "id": 1020,
+    "display": "Llave Secreta"
+  },
+  "ss-ticket--letsgo": {
+    "id": 1021,
+    "display": "Ticket del Barco"
+  },
+  "parcel--letsgo": {
+    "id": 1022,
+    "display": "Paquete"
+  },
+  "card-key--letsgo": {
+    "id": 1023,
+    "display": "Llave Magnética"
+  },
+  "stretchy-spring": {
+    "id": 1024,
+    "display": "Muelle Estirado"
+  },
+  "chalky-stone": {
+    "id": 1025,
+    "display": "Tiza"
+  },
+  "marble": {
+    "id": 1026,
+    "display": "Canica"
+  },
+  "lone-earring": {
+    "id": 1027,
+    "display": "Pendiente"
+  },
+  "beach-glass": {
+    "id": 1028,
+    "display": "Cristal Marino"
+  },
+  "gold-leaf": {
+    "id": 1029,
+    "display": "Hoja de Oro"
+  },
+  "silver-leaf": {
+    "id": 1030,
+    "display": "Hoja de Plata"
+  },
+  "polished-mud-ball": {
+    "id": 1031,
+    "display": "Bola de Arcilla"
+  },
+  "tropical-shell": {
+    "id": 1032,
+    "display": "Concha Tropical"
+  },
+  "leaf-letter--pikachu": {
+    "id": 1033,
+    "display": "Hoja Escrita"
+  },
+  "leaf-letter--eevee": {
+    "id": 1034,
+    "display": "Hoja Escrita"
+  },
+  "small-bouquet": {
+    "id": 1035,
+    "display": "Ramo Pequeño"
+  },
+  "lure": {
+    "id": 1036,
+    "display": "Colonia"
+  },
+  "super-lure": {
+    "id": 1037,
+    "display": "Supercolonia"
+  },
+  "max-lure": {
+    "id": 1038,
+    "display": "Colonia Máxima"
+  },
+  "pewter-crunchies": {
+    "id": 1039,
+    "display": "Rokikos"
+  },
+  "health-candy": {
+    "id": 1040,
+    "display": "Caramelo Vigor"
+  },
+  "mighty-candy": {
+    "id": 1041,
+    "display": "Caramelo Músculo"
+  },
+  "tough-candy": {
+    "id": 1042,
+    "display": "Caramelo Aguante"
+  },
+  "smart-candy": {
+    "id": 1043,
+    "display": "Caramelo Intelecto"
+  },
+  "courage-candy": {
+    "id": 1044,
+    "display": "Caramelo Mente"
+  },
+  "quick-candy": {
+    "id": 1045,
+    "display": "Caramelo Ímpetu"
+  },
+  "health-candy-l": {
+    "id": 1046,
+    "display": "Caramelo Vigor +"
+  },
+  "mighty-candy-l": {
+    "id": 1047,
+    "display": "Caramelo Músculo +"
+  },
+  "tough-candy-l": {
+    "id": 1048,
+    "display": "Caramelo Aguante +"
+  },
+  "smart-candy-l": {
+    "id": 1049,
+    "display": "Caramelo Intelecto +"
+  },
+  "courage-candy-l": {
+    "id": 1050,
+    "display": "Caramelo Mente +"
+  },
+  "quick-candy-l": {
+    "id": 1051,
+    "display": "Caramelo Ímpetu +"
+  },
+  "health-candy-xl": {
+    "id": 1052,
+    "display": "Caramelo Vigor ++"
+  },
+  "mighty-candy-xl": {
+    "id": 1053,
+    "display": "Caramelo Músculo ++"
+  },
+  "tough-candy-xl": {
+    "id": 1054,
+    "display": "Caramelo Aguante ++"
+  },
+  "smart-candy-xl": {
+    "id": 1055,
+    "display": "Caramelo Intelecto ++"
+  },
+  "courage-candy-xl": {
+    "id": 1056,
+    "display": "Caramelo Mente ++"
+  },
+  "quick-candy-xl": {
+    "id": 1057,
+    "display": "Caramelo Ímpetu ++"
+  },
+  "bulbasaur-candy": {
+    "id": 1058,
+    "display": "Caramelo Bulbasaur"
+  },
+  "charmander-candy": {
+    "id": 1059,
+    "display": "Caramelo Charmander"
+  },
+  "squirtle-candy": {
+    "id": 1060,
+    "display": "Caramelo Squirtle"
+  },
+  "caterpie-candy": {
+    "id": 1061,
+    "display": "Caramelo Caterpie"
+  },
+  "weedle-candy": {
+    "id": 1062,
+    "display": "Caramelo Weedle"
+  },
+  "pidgey-candy": {
+    "id": 1063,
+    "display": "Caramelo Pidgey"
+  },
+  "rattata-candy": {
+    "id": 1064,
+    "display": "Caramelo Rattata"
+  },
+  "spearow-candy": {
+    "id": 1065,
+    "display": "Caramelo Spearow"
+  },
+  "ekans-candy": {
+    "id": 1066,
+    "display": "Caramelo Ekans"
+  },
+  "pikachu-candy": {
+    "id": 1067,
+    "display": "Caramelo Pikachu"
+  },
+  "sandshrew-candy": {
+    "id": 1068,
+    "display": "Caramelo Sandshrew"
+  },
+  "nidoran-f-candy": {
+    "id": 1069,
+    "display": "Caramelo Nidoran♀"
+  },
+  "nidoran-m-candy": {
+    "id": 1070,
+    "display": "Caramelo Nidoran♂"
+  },
+  "clefairy-candy": {
+    "id": 1071,
+    "display": "Caramelo Clefairy"
+  },
+  "vulpix-candy": {
+    "id": 1072,
+    "display": "Caramelo Vulpix"
+  },
+  "jigglypuff-candy": {
+    "id": 1073,
+    "display": "Caramelo Jigglypuff"
+  },
+  "zubat-candy": {
+    "id": 1074,
+    "display": "Caramelo Zubat"
+  },
+  "oddish-candy": {
+    "id": 1075,
+    "display": "Caramelo Oddish"
+  },
+  "paras-candy": {
+    "id": 1076,
+    "display": "Caramelo Paras"
+  },
+  "venonat-candy": {
+    "id": 1077,
+    "display": "Caramelo Venonat"
+  },
+  "diglett-candy": {
+    "id": 1078,
+    "display": "Caramelo Diglett"
+  },
+  "meowth-candy": {
+    "id": 1079,
+    "display": "Caramelo Meowth"
+  },
+  "psyduck-candy": {
+    "id": 1080,
+    "display": "Caramelo Psyduck"
+  },
+  "mankey-candy": {
+    "id": 1081,
+    "display": "Caramelo Mankey"
+  },
+  "growlithe-candy": {
+    "id": 1082,
+    "display": "Caramelo Growlithe"
+  },
+  "poliwag-candy": {
+    "id": 1083,
+    "display": "Caramelo Poliwag"
+  },
+  "abra-candy": {
+    "id": 1084,
+    "display": "Caramelo Abra"
+  },
+  "machop-candy": {
+    "id": 1085,
+    "display": "Caramelo Machop"
+  },
+  "bellsprout-candy": {
+    "id": 1086,
+    "display": "Caramelo Bellsprout"
+  },
+  "tentacool-candy": {
+    "id": 1087,
+    "display": "Caramelo Tentacool"
+  },
+  "geodude-candy": {
+    "id": 1088,
+    "display": "Caramelo Geodude"
+  },
+  "ponyta-candy": {
+    "id": 1089,
+    "display": "Caramelo Ponyta"
+  },
+  "slowpoke-candy": {
+    "id": 1090,
+    "display": "Caramelo Slowpoke"
+  },
+  "magnemite-candy": {
+    "id": 1091,
+    "display": "Caramelo Magnemite"
+  },
+  "farfetchd-candy": {
+    "id": 1092,
+    "display": "Caramelo Farfetch’d"
+  },
+  "doduo-candy": {
+    "id": 1093,
+    "display": "Caramelo Doduo"
+  },
+  "seel-candy": {
+    "id": 1094,
+    "display": "Caramelo Seel"
+  },
+  "grimer-candy": {
+    "id": 1095,
+    "display": "Caramelo Grimer"
+  },
+  "shellder-candy": {
+    "id": 1096,
+    "display": "Caramelo Shellder"
+  },
+  "gastly-candy": {
+    "id": 1097,
+    "display": "Caramelo Gastly"
+  },
+  "onix-candy": {
+    "id": 1098,
+    "display": "Caramelo Onix"
+  },
+  "drowzee-candy": {
+    "id": 1099,
+    "display": "Caramelo Drowzee"
+  },
+  "krabby-candy": {
+    "id": 1100,
+    "display": "Caramelo Krabby"
+  },
+  "voltorb-candy": {
+    "id": 1101,
+    "display": "Caramelo Voltorb"
+  },
+  "exeggcute-candy": {
+    "id": 1102,
+    "display": "Caramelo Exeggcute"
+  },
+  "cubone-candy": {
+    "id": 1103,
+    "display": "Caramelo Cubone"
+  },
+  "hitmonlee-candy": {
+    "id": 1104,
+    "display": "Caramelo Hitmonlee"
+  },
+  "hitmonchan-candy": {
+    "id": 1105,
+    "display": "Caramelo Hitmonchan"
+  },
+  "lickitung-candy": {
+    "id": 1106,
+    "display": "Caramelo Lickitung"
+  },
+  "koffing-candy": {
+    "id": 1107,
+    "display": "Caramelo Koffing"
+  },
+  "rhyhorn-candy": {
+    "id": 1108,
+    "display": "Caramelo Rhyhorn"
+  },
+  "chansey-candy": {
+    "id": 1109,
+    "display": "Caramelo Chansey"
+  },
+  "tangela-candy": {
+    "id": 1110,
+    "display": "Caramelo Tangela"
+  },
+  "kangaskhan-candy": {
+    "id": 1111,
+    "display": "Caramelo Kangaskhan"
+  },
+  "horsea-candy": {
+    "id": 1112,
+    "display": "Caramelo Horsea"
+  },
+  "goldeen-candy": {
+    "id": 1113,
+    "display": "Caramelo Goldeen"
+  },
+  "staryu-candy": {
+    "id": 1114,
+    "display": "Caramelo Staryu"
+  },
+  "mr-mime-candy": {
+    "id": 1115,
+    "display": "Caramelo Mr. Mime"
+  },
+  "scyther-candy": {
+    "id": 1116,
+    "display": "Caramelo Scyther"
+  },
+  "jynx-candy": {
+    "id": 1117,
+    "display": "Caramelo Jynx"
+  },
+  "electabuzz-candy": {
+    "id": 1118,
+    "display": "Caramelo Electabuzz"
+  },
+  "pinsir-candy": {
+    "id": 1119,
+    "display": "Caramelo Pinsir"
+  },
+  "tauros-candy": {
+    "id": 1120,
+    "display": "Caramelo Tauros"
+  },
+  "magikarp-candy": {
+    "id": 1121,
+    "display": "Caramelo Magikarp"
+  },
+  "lapras-candy": {
+    "id": 1122,
+    "display": "Caramelo Lapras"
+  },
+  "ditto-candy": {
+    "id": 1123,
+    "display": "Caramelo Ditto"
+  },
+  "eevee-candy": {
+    "id": 1124,
+    "display": "Caramelo Eevee"
+  },
+  "porygon-candy": {
+    "id": 1125,
+    "display": "Caramelo Porygon"
+  },
+  "omanyte-candy": {
+    "id": 1126,
+    "display": "Caramelo Omanyte"
+  },
+  "kabuto-candy": {
+    "id": 1127,
+    "display": "Caramelo Kabuto"
+  },
+  "aerodactyl-candy": {
+    "id": 1128,
+    "display": "Caramelo Aerodactyl"
+  },
+  "snorlax-candy": {
+    "id": 1129,
+    "display": "Caramelo Snorlax"
+  },
+  "articuno-candy": {
+    "id": 1130,
+    "display": "Caramelo Articuno"
+  },
+  "zapdos-candy": {
+    "id": 1131,
+    "display": "Caramelo Zapdos"
+  },
+  "moltres-candy": {
+    "id": 1132,
+    "display": "Caramelo Moltres"
+  },
+  "dratini-candy": {
+    "id": 1133,
+    "display": "Caramelo Dratini"
+  },
+  "mewtwo-candy": {
+    "id": 1134,
+    "display": "Caramelo Mewtwo"
+  },
+  "mew-candy": {
+    "id": 1135,
+    "display": "Caramelo Mew"
+  },
+  "meltan-candy": {
+    "id": 1136,
+    "display": "Caramelo Meltan"
+  },
+  "magmar-candy": {
+    "id": 1137,
+    "display": "Caramelo Magmar"
+  },
+  "endorsement": {
+    "id": 1138,
+    "display": "Recomendación"
+  },
+  "pokemon-box-link": {
+    "id": 1139,
+    "display": "Caja de Pokémon"
+  },
+  "wishing-star": {
+    "id": 1140,
+    "display": "Estrella Deseo"
+  },
+  "dynamax-band": {
+    "id": 1141,
+    "display": "Maximuñequera"
+  },
+  "fishing-rod--galar": {
+    "id": 1142,
+    "display": "Caña"
+  },
+  "rotom-bike": {
+    "id": 1143,
+    "display": "Bici Rotom"
+  },
+  "sausages": {
+    "id": 1144,
+    "display": "Salchichas"
+  },
+  "bobs-food-tin": {
+    "id": 1145,
+    "display": "Lata de Darren"
+  },
+  "bachs-food-tin": {
+    "id": 1146,
+    "display": "Lata de Bach"
+  },
+  "tin-of-beans": {
+    "id": 1147,
+    "display": "Lata de Habas"
+  },
+  "bread": {
+    "id": 1148,
+    "display": "Pan de Molde"
+  },
+  "pasta": {
+    "id": 1149,
+    "display": "Pasta"
+  },
+  "mixed-mushrooms": {
+    "id": 1150,
+    "display": "Setas"
+  },
+  "smoke-poke-tail": {
+    "id": 1151,
+    "display": "Cola Ahumada"
+  },
+  "large-leek": {
+    "id": 1152,
+    "display": "Puerro Grueso"
+  },
+  "fancy-apple": {
+    "id": 1153,
+    "display": "Manzana Selecta"
+  },
+  "brittle-bones": {
+    "id": 1154,
+    "display": "Huesos Finos"
+  },
+  "pack-of-potatoes": {
+    "id": 1155,
+    "display": "Patatas"
+  },
+  "pungent-root": {
+    "id": 1156,
+    "display": "Hierba Intensa"
+  },
+  "salad-mix": {
+    "id": 1157,
+    "display": "Verduras"
+  },
+  "fried-food": {
+    "id": 1158,
+    "display": "Frituras"
+  },
+  "boiled-egg": {
+    "id": 1159,
+    "display": "Huevo Duro"
+  },
+  "camping-gear": {
+    "id": 1160,
+    "display": "Kit de Acampada"
+  },
+  "rusted-sword": {
+    "id": 1161,
+    "display": "Espada Oxidada"
+  },
+  "rusted-shield": {
+    "id": 1162,
+    "display": "Escudo Oxidado"
+  },
+  "fossilized-bird": {
+    "id": 1163,
+    "display": "Ornitofósil"
+  },
+  "fossilized-fish": {
+    "id": 1164,
+    "display": "Ictiofósil"
+  },
+  "fossilized-drake": {
+    "id": 1165,
+    "display": "Dracofósil"
+  },
+  "fossilized-dino": {
+    "id": 1166,
+    "display": "Plesiofósil"
+  },
+  "strawberry-sweet": {
+    "id": 1167,
+    "display": "Confite Fresa"
+  },
+  "love-sweet": {
+    "id": 1168,
+    "display": "Confite Corazón"
+  },
+  "berry-sweet": {
+    "id": 1169,
+    "display": "Confite Fruto"
+  },
+  "clover-sweet": {
+    "id": 1170,
+    "display": "Confite Trébol"
+  },
+  "flower-sweet": {
+    "id": 1171,
+    "display": "Confite Flor"
+  },
+  "star-sweet": {
+    "id": 1172,
+    "display": "Confite Estrella"
+  },
+  "ribbon-sweet": {
+    "id": 1173,
+    "display": "Confite Lazo"
+  },
+  "sweet-apple": {
+    "id": 1174,
+    "display": "Manzana Dulce"
+  },
+  "tart-apple": {
+    "id": 1175,
+    "display": "Manzana Ácida"
+  },
+  "throat-spray": {
+    "id": 1176,
+    "display": "Espray Bucal"
+  },
+  "eject-pack": {
+    "id": 1177,
+    "display": "Mochila Escape"
+  },
+  "heavy-duty-boots": {
+    "id": 1178,
+    "display": "Botas Gruesas"
+  },
+  "blunder-policy": {
+    "id": 1179,
+    "display": "Seguro Fallo"
+  },
+  "room-service": {
+    "id": 1180,
+    "display": "Servicio Raro"
+  },
+  "utility-umbrella": {
+    "id": 1181,
+    "display": "Parasol Multiuso"
+  },
+  "exp-candy-xs": {
+    "id": 1182,
+    "display": "Caramelo Exp. XS"
+  },
+  "exp-candy-s": {
+    "id": 1183,
+    "display": "Caramelo Exp. S"
+  },
+  "exp-candy-m": {
+    "id": 1184,
+    "display": "Caramelo Exp. M"
+  },
+  "exp-candy-l": {
+    "id": 1185,
+    "display": "Caramelo Exp. L"
+  },
+  "exp-candy-xl": {
+    "id": 1186,
+    "display": "Caramelo Exp. XL"
+  },
+  "dynamax-candy": {
+    "id": 1187,
+    "display": "Caramelo Dinamax"
+  },
+  "tr00": {
+    "id": 1188,
+    "display": "DT00"
+  },
+  "tr01": {
+    "id": 1189,
+    "display": "DT01"
+  },
+  "tr02": {
+    "id": 1190,
+    "display": "DT02"
+  },
+  "tr03": {
+    "id": 1191,
+    "display": "DT03"
+  },
+  "tr04": {
+    "id": 1192,
+    "display": "DT04"
+  },
+  "tr05": {
+    "id": 1193,
+    "display": "DT05"
+  },
+  "tr06": {
+    "id": 1194,
+    "display": "DT06"
+  },
+  "tr07": {
+    "id": 1195,
+    "display": "DT07"
+  },
+  "tr08": {
+    "id": 1196,
+    "display": "DT08"
+  },
+  "tr09": {
+    "id": 1197,
+    "display": "DT09"
+  },
+  "tr10": {
+    "id": 1198,
+    "display": "DT10"
+  },
+  "tr11": {
+    "id": 1199,
+    "display": "DT11"
+  },
+  "tr12": {
+    "id": 1200,
+    "display": "DT12"
+  },
+  "tr13": {
+    "id": 1201,
+    "display": "DT13"
+  },
+  "tr14": {
+    "id": 1202,
+    "display": "DT14"
+  },
+  "tr15": {
+    "id": 1203,
+    "display": "DT15"
+  },
+  "tr16": {
+    "id": 1204,
+    "display": "DT16"
+  },
+  "tr17": {
+    "id": 1205,
+    "display": "DT17"
+  },
+  "tr18": {
+    "id": 1206,
+    "display": "DT18"
+  },
+  "tr19": {
+    "id": 1207,
+    "display": "DT19"
+  },
+  "tr20": {
+    "id": 1208,
+    "display": "DT20"
+  },
+  "tr21": {
+    "id": 1209,
+    "display": "DT21"
+  },
+  "tr22": {
+    "id": 1210,
+    "display": "DT22"
+  },
+  "tr23": {
+    "id": 1211,
+    "display": "DT23"
+  },
+  "tr24": {
+    "id": 1212,
+    "display": "DT24"
+  },
+  "tr25": {
+    "id": 1213,
+    "display": "DT25"
+  },
+  "tr26": {
+    "id": 1214,
+    "display": "DT26"
+  },
+  "tr27": {
+    "id": 1215,
+    "display": "DT27"
+  },
+  "tr28": {
+    "id": 1216,
+    "display": "DT28"
+  },
+  "tr29": {
+    "id": 1217,
+    "display": "DT29"
+  },
+  "tr30": {
+    "id": 1218,
+    "display": "DT30"
+  },
+  "tr31": {
+    "id": 1219,
+    "display": "DT31"
+  },
+  "tr32": {
+    "id": 1220,
+    "display": "DT32"
+  },
+  "tr33": {
+    "id": 1221,
+    "display": "DT33"
+  },
+  "tr34": {
+    "id": 1222,
+    "display": "DT34"
+  },
+  "tr35": {
+    "id": 1223,
+    "display": "DT35"
+  },
+  "tr36": {
+    "id": 1224,
+    "display": "DT36"
+  },
+  "tr37": {
+    "id": 1225,
+    "display": "DT37"
+  },
+  "tr38": {
+    "id": 1226,
+    "display": "DT38"
+  },
+  "tr39": {
+    "id": 1227,
+    "display": "DT39"
+  },
+  "tr40": {
+    "id": 1228,
+    "display": "DT40"
+  },
+  "tr41": {
+    "id": 1229,
+    "display": "DT41"
+  },
+  "tr42": {
+    "id": 1230,
+    "display": "DT42"
+  },
+  "tr43": {
+    "id": 1231,
+    "display": "DT43"
+  },
+  "tr44": {
+    "id": 1232,
+    "display": "DT44"
+  },
+  "tr45": {
+    "id": 1233,
+    "display": "DT45"
+  },
+  "tr46": {
+    "id": 1234,
+    "display": "DT46"
+  },
+  "tr47": {
+    "id": 1235,
+    "display": "DT47"
+  },
+  "tr48": {
+    "id": 1236,
+    "display": "DT48"
+  },
+  "tr49": {
+    "id": 1237,
+    "display": "DT49"
+  },
+  "tr50": {
+    "id": 1238,
+    "display": "DT50"
+  },
+  "tr51": {
+    "id": 1239,
+    "display": "DT51"
+  },
+  "tr52": {
+    "id": 1240,
+    "display": "DT52"
+  },
+  "tr53": {
+    "id": 1241,
+    "display": "DT53"
+  },
+  "tr54": {
+    "id": 1242,
+    "display": "DT54"
+  },
+  "tr55": {
+    "id": 1243,
+    "display": "DT55"
+  },
+  "tr56": {
+    "id": 1244,
+    "display": "DT56"
+  },
+  "tr57": {
+    "id": 1245,
+    "display": "DT57"
+  },
+  "tr58": {
+    "id": 1246,
+    "display": "DT58"
+  },
+  "tr59": {
+    "id": 1247,
+    "display": "DT59"
+  },
+  "tr60": {
+    "id": 1248,
+    "display": "DT60"
+  },
+  "tr61": {
+    "id": 1249,
+    "display": "DT61"
+  },
+  "tr62": {
+    "id": 1250,
+    "display": "DT62"
+  },
+  "tr63": {
+    "id": 1251,
+    "display": "DT63"
+  },
+  "tr64": {
+    "id": 1252,
+    "display": "DT64"
+  },
+  "tr65": {
+    "id": 1253,
+    "display": "DT65"
+  },
+  "tr66": {
+    "id": 1254,
+    "display": "DT66"
+  },
+  "tr67": {
+    "id": 1255,
+    "display": "DT67"
+  },
+  "tr68": {
+    "id": 1256,
+    "display": "DT68"
+  },
+  "tr69": {
+    "id": 1257,
+    "display": "DT69"
+  },
+  "tr70": {
+    "id": 1258,
+    "display": "DT70"
+  },
+  "tr71": {
+    "id": 1259,
+    "display": "DT71"
+  },
+  "tr72": {
+    "id": 1260,
+    "display": "DT72"
+  },
+  "tr73": {
+    "id": 1261,
+    "display": "DT73"
+  },
+  "tr74": {
+    "id": 1262,
+    "display": "DT74"
+  },
+  "tr75": {
+    "id": 1263,
+    "display": "DT75"
+  },
+  "tr76": {
+    "id": 1264,
+    "display": "DT76"
+  },
+  "tr77": {
+    "id": 1265,
+    "display": "DT77"
+  },
+  "tr78": {
+    "id": 1266,
+    "display": "DT78"
+  },
+  "tr79": {
+    "id": 1267,
+    "display": "DT79"
+  },
+  "tr80": {
+    "id": 1268,
+    "display": "DT80"
+  },
+  "tr81": {
+    "id": 1269,
+    "display": "DT81"
+  },
+  "tr82": {
+    "id": 1270,
+    "display": "DT82"
+  },
+  "tr83": {
+    "id": 1271,
+    "display": "DT83"
+  },
+  "tr84": {
+    "id": 1272,
+    "display": "DT84"
+  },
+  "tr85": {
+    "id": 1273,
+    "display": "DT85"
+  },
+  "tr86": {
+    "id": 1274,
+    "display": "DT86"
+  },
+  "tr87": {
+    "id": 1275,
+    "display": "DT87"
+  },
+  "tr88": {
+    "id": 1276,
+    "display": "DT88"
+  },
+  "tr89": {
+    "id": 1277,
+    "display": "DT89"
+  },
+  "tr90": {
+    "id": 1278,
+    "display": "DT90"
+  },
+  "tr91": {
+    "id": 1279,
+    "display": "DT91"
+  },
+  "tr92": {
+    "id": 1280,
+    "display": "DT92"
+  },
+  "tr93": {
+    "id": 1281,
+    "display": "DT93"
+  },
+  "tr94": {
+    "id": 1282,
+    "display": "DT94"
+  },
+  "tr95": {
+    "id": 1283,
+    "display": "DT95"
+  },
+  "tr96": {
+    "id": 1284,
+    "display": "DT96"
+  },
+  "tr97": {
+    "id": 1285,
+    "display": "DT97"
+  },
+  "tr98": {
+    "id": 1286,
+    "display": "DT98"
+  },
+  "tr99": {
+    "id": 1287,
+    "display": "DT99"
+  },
+  "tm00": {
+    "id": 1288,
+    "display": "MT00"
+  },
+  "lonely-mint": {
+    "id": 1289,
+    "display": "Menta Huraña"
+  },
+  "adamant-mint": {
+    "id": 1290,
+    "display": "Menta Firme"
+  },
+  "naughty-mint": {
+    "id": 1291,
+    "display": "Menta Pícara"
+  },
+  "brave-mint": {
+    "id": 1292,
+    "display": "Menta Audaz"
+  },
+  "bold-mint": {
+    "id": 1293,
+    "display": "Menta Osada"
+  },
+  "impish-mint": {
+    "id": 1294,
+    "display": "Menta Agitada"
+  },
+  "lax-mint": {
+    "id": 1295,
+    "display": "Menta Floja"
+  },
+  "relaxed-mint": {
+    "id": 1296,
+    "display": "Menta Plácida"
+  },
+  "modest-mint": {
+    "id": 1297,
+    "display": "Menta Modesta"
+  },
+  "mild-mint": {
+    "id": 1298,
+    "display": "Menta Afable"
+  },
+  "rash-mint": {
+    "id": 1299,
+    "display": "Menta Alocada"
+  },
+  "quiet-mint": {
+    "id": 1300,
+    "display": "Menta Mansa"
+  },
+  "calm-mint": {
+    "id": 1301,
+    "display": "Menta Serena"
+  },
+  "gentle-mint": {
+    "id": 1302,
+    "display": "Menta Amable"
+  },
+  "careful-mint": {
+    "id": 1303,
+    "display": "Menta Cauta"
+  },
+  "sassy-mint": {
+    "id": 1304,
+    "display": "Menta Grosera"
+  },
+  "timid-mint": {
+    "id": 1305,
+    "display": "Menta Miedosa"
+  },
+  "hasty-mint": {
+    "id": 1306,
+    "display": "Menta Activa"
+  },
+  "jolly-mint": {
+    "id": 1307,
+    "display": "Menta Alegre"
+  },
+  "naive-mint": {
+    "id": 1308,
+    "display": "Menta Ingenua"
+  },
+  "serious-mint": {
+    "id": 1309,
+    "display": "Menta Seria"
+  },
+  "wishing-piece": {
+    "id": 1310,
+    "display": "Trozo Deseo"
+  },
+  "cracked-pot": {
+    "id": 1311,
+    "display": "Tetera Agrietada"
+  },
+  "chipped-pot": {
+    "id": 1312,
+    "display": "Tetera Rota"
+  },
+  "hi-tech-earbuds": {
+    "id": 1313,
+    "display": "Supertapones"
+  },
+  "fruit-bunch": {
+    "id": 1314,
+    "display": "Fruta Tropical"
+  },
+  "moomoo-cheese": {
+    "id": 1315,
+    "display": "Queso Mu-mu"
+  },
+  "spice-mix": {
+    "id": 1316,
+    "display": "Especias"
+  },
+  "fresh-cream": {
+    "id": 1317,
+    "display": "Nata Fresca"
+  },
+  "packaged-curry": {
+    "id": 1318,
+    "display": "Curri de Bote"
+  },
+  "coconut-milk": {
+    "id": 1319,
+    "display": "Leche de Coco"
+  },
+  "instant-noodles": {
+    "id": 1320,
+    "display": "Fideos de Bote"
+  },
+  "precooked-burger": {
+    "id": 1321,
+    "display": "Hamburguesas"
+  },
+  "gigantamix": {
+    "id": 1322,
+    "display": "Especias Gigamax"
+  },
+  "wishing-chip": {
+    "id": 1323,
+    "display": "Trocito Deseo"
+  },
+  "rotom-bike--water-mode": {
+    "id": 1324,
+    "display": "Bici Rotom"
+  },
+  "catching-charm": {
+    "id": 1325,
+    "display": "Amuleto Captura"
+  },
+  "old-letter": {
+    "id": 1326,
+    "display": "Carta Ajada"
+  },
+  "band-autograph": {
+    "id": 1327,
+    "display": "Autógrafo Grupo"
+  },
+  "sonias-book": {
+    "id": 1328,
+    "display": "Libro de Sonia"
+  },
+  "rotom-catalog": {
+    "id": 1329,
+    "display": "Catálogo Rotom"
+  },
+  "dynamax-crystal-and458": {
+    "id": 1330,
+    "display": "★And458"
+  },
+  "dynamax-crystal-and15": {
+    "id": 1331,
+    "display": "★And15"
+  },
+  "dynamax-crystal-and337": {
+    "id": 1332,
+    "display": "★And337"
+  },
+  "dynamax-crystal-and603": {
+    "id": 1333,
+    "display": "★And603"
+  },
+  "dynamax-crystal-and390": {
+    "id": 1334,
+    "display": "★And390"
+  },
+  "dynamax-crystal-sgr6879": {
+    "id": 1335,
+    "display": "★Sgr6879"
+  },
+  "dynamax-crystal-sgr6859": {
+    "id": 1336,
+    "display": "★Sgr6859"
+  },
+  "dynamax-crystal-sgr6913": {
+    "id": 1337,
+    "display": "★Sgr6913"
+  },
+  "dynamax-crystal-sgr7348": {
+    "id": 1338,
+    "display": "★Sgr7348"
+  },
+  "dynamax-crystal-sgr7121": {
+    "id": 1339,
+    "display": "★Sgr7121"
+  },
+  "dynamax-crystal-sgr6746": {
+    "id": 1340,
+    "display": "★Sgr6746"
+  },
+  "dynamax-crystal-sgr7194": {
+    "id": 1341,
+    "display": "★Sgr7194"
+  },
+  "dynamax-crystal-sgr7337": {
+    "id": 1342,
+    "display": "★Sgr7337"
+  },
+  "dynamax-crystal-sgr7343": {
+    "id": 1343,
+    "display": "★Sgr7343"
+  },
+  "dynamax-crystal-sgr6812": {
+    "id": 1344,
+    "display": "★Sgr6812"
+  },
+  "dynamax-crystal-sgr7116": {
+    "id": 1345,
+    "display": "★Sgr7116"
+  },
+  "dynamax-crystal-sgr7264": {
+    "id": 1346,
+    "display": "★Sgr7264"
+  },
+  "dynamax-crystal-sgr7597": {
+    "id": 1347,
+    "display": "★Sgr7597"
+  },
+  "dynamax-crystal-del7882": {
+    "id": 1348,
+    "display": "★Del7882"
+  },
+  "dynamax-crystal-del7906": {
+    "id": 1349,
+    "display": "★Del7906"
+  },
+  "dynamax-crystal-del7852": {
+    "id": 1350,
+    "display": "★Del7852"
+  },
+  "dynamax-crystal-psc596": {
+    "id": 1351,
+    "display": "★Psc596"
+  },
+  "dynamax-crystal-psc361": {
+    "id": 1352,
+    "display": "★Psc361"
+  },
+  "dynamax-crystal-psc510": {
+    "id": 1353,
+    "display": "★Psc510"
+  },
+  "dynamax-crystal-psc437": {
+    "id": 1354,
+    "display": "★Psc437"
+  },
+  "dynamax-crystal-psc8773": {
+    "id": 1355,
+    "display": "★Psc8773"
+  },
+  "dynamax-crystal-lep1865": {
+    "id": 1356,
+    "display": "★Lep1865"
+  },
+  "dynamax-crystal-lep1829": {
+    "id": 1357,
+    "display": "★Lep1829"
+  },
+  "dynamax-crystal-boo5340": {
+    "id": 1358,
+    "display": "★Boo5340"
+  },
+  "dynamax-crystal-boo5506": {
+    "id": 1359,
+    "display": "★Boo5506"
+  },
+  "dynamax-crystal-boo5435": {
+    "id": 1360,
+    "display": "★Boo5435"
+  },
+  "dynamax-crystal-boo5602": {
+    "id": 1361,
+    "display": "★Boo5602"
+  },
+  "dynamax-crystal-boo5733": {
+    "id": 1362,
+    "display": "★Boo5733"
+  },
+  "dynamax-crystal-boo5235": {
+    "id": 1363,
+    "display": "★Boo5235"
+  },
+  "dynamax-crystal-boo5351": {
+    "id": 1364,
+    "display": "★Boo5351"
+  },
+  "dynamax-crystal-hya3748": {
+    "id": 1365,
+    "display": "★Hya3748"
+  },
+  "dynamax-crystal-hya3903": {
+    "id": 1366,
+    "display": "★Hya3903"
+  },
+  "dynamax-crystal-hya3418": {
+    "id": 1367,
+    "display": "★Hya3418"
+  },
+  "dynamax-crystal-hya3482": {
+    "id": 1368,
+    "display": "★Hya3482"
+  },
+  "dynamax-crystal-hya3845": {
+    "id": 1369,
+    "display": "★Hya3845"
+  },
+  "dynamax-crystal-eri1084": {
+    "id": 1370,
+    "display": "★Eri1084"
+  },
+  "dynamax-crystal-eri472": {
+    "id": 1371,
+    "display": "★Eri472"
+  },
+  "dynamax-crystal-eri1666": {
+    "id": 1372,
+    "display": "★Eri1666"
+  },
+  "dynamax-crystal-eri897": {
+    "id": 1373,
+    "display": "★Eri897"
+  },
+  "dynamax-crystal-eri1231": {
+    "id": 1374,
+    "display": "★Eri1231"
+  },
+  "dynamax-crystal-eri874": {
+    "id": 1375,
+    "display": "★Eri874"
+  },
+  "dynamax-crystal-eri1298": {
+    "id": 1376,
+    "display": "★Eri1298"
+  },
+  "dynamax-crystal-eri1325": {
+    "id": 1377,
+    "display": "★Eri1325"
+  },
+  "dynamax-crystal-eri984": {
+    "id": 1378,
+    "display": "★Eri984"
+  },
+  "dynamax-crystal-eri1464": {
+    "id": 1379,
+    "display": "★Eri1464"
+  },
+  "dynamax-crystal-eri1393": {
+    "id": 1380,
+    "display": "★Eri1393"
+  },
+  "dynamax-crystal-eri850": {
+    "id": 1381,
+    "display": "★Eri850"
+  },
+  "dynamax-crystal-tau1409": {
+    "id": 1382,
+    "display": "★Tau1409"
+  },
+  "dynamax-crystal-tau1457": {
+    "id": 1383,
+    "display": "★Tau1457"
+  },
+  "dynamax-crystal-tau1165": {
+    "id": 1384,
+    "display": "★Tau1165"
+  },
+  "dynamax-crystal-tau1791": {
+    "id": 1385,
+    "display": "★Tau1791"
+  },
+  "dynamax-crystal-tau1910": {
+    "id": 1386,
+    "display": "★Tau1910"
+  },
+  "dynamax-crystal-tau1346": {
+    "id": 1387,
+    "display": "★Tau1346"
+  },
+  "dynamax-crystal-tau1373": {
+    "id": 1388,
+    "display": "★Tau1373"
+  },
+  "dynamax-crystal-tau1412": {
+    "id": 1389,
+    "display": "★Tau1412"
+  },
+  "dynamax-crystal-cma2491": {
+    "id": 1390,
+    "display": "★CMa2491"
+  },
+  "dynamax-crystal-cma2693": {
+    "id": 1391,
+    "display": "★CMa2693"
+  },
+  "dynamax-crystal-cma2294": {
+    "id": 1392,
+    "display": "★CMa2294"
+  },
+  "dynamax-crystal-cma2827": {
+    "id": 1393,
+    "display": "★CMa2827"
+  },
+  "dynamax-crystal-cma2282": {
+    "id": 1394,
+    "display": "★CMa2282"
+  },
+  "dynamax-crystal-cma2618": {
+    "id": 1395,
+    "display": "★CMa2618"
+  },
+  "dynamax-crystal-cma2657": {
+    "id": 1396,
+    "display": "★CMa2657"
+  },
+  "dynamax-crystal-cma2646": {
+    "id": 1397,
+    "display": "★CMa2646"
+  },
+  "dynamax-crystal-uma4905": {
+    "id": 1398,
+    "display": "★UMa4905"
+  },
+  "dynamax-crystal-uma4301": {
+    "id": 1399,
+    "display": "★UMa4301"
+  },
+  "dynamax-crystal-uma5191": {
+    "id": 1400,
+    "display": "★UMa5191"
+  },
+  "dynamax-crystal-uma5054": {
+    "id": 1401,
+    "display": "★UMa5054"
+  },
+  "dynamax-crystal-uma4295": {
+    "id": 1402,
+    "display": "★UMa4295"
+  },
+  "dynamax-crystal-uma4660": {
+    "id": 1403,
+    "display": "★UMa4660"
+  },
+  "dynamax-crystal-uma4554": {
+    "id": 1404,
+    "display": "★UMa4554"
+  },
+  "dynamax-crystal-uma4069": {
+    "id": 1405,
+    "display": "★UMa4069"
+  },
+  "dynamax-crystal-uma3569": {
+    "id": 1406,
+    "display": "★UMa3569"
+  },
+  "dynamax-crystal-uma3323": {
+    "id": 1407,
+    "display": "★UMa3323"
+  },
+  "dynamax-crystal-uma4033": {
+    "id": 1408,
+    "display": "★UMa4033"
+  },
+  "dynamax-crystal-uma4377": {
+    "id": 1409,
+    "display": "★UMa4377"
+  },
+  "dynamax-crystal-uma4375": {
+    "id": 1410,
+    "display": "★UMa4375"
+  },
+  "dynamax-crystal-uma4518": {
+    "id": 1411,
+    "display": "★UMa4518"
+  },
+  "dynamax-crystal-uma3594": {
+    "id": 1412,
+    "display": "★UMa3594"
+  },
+  "dynamax-crystal-vir5056": {
+    "id": 1413,
+    "display": "★Vir5056"
+  },
+  "dynamax-crystal-vir4825": {
+    "id": 1414,
+    "display": "★Vir4825"
+  },
+  "dynamax-crystal-vir4932": {
+    "id": 1415,
+    "display": "★Vir4932"
+  },
+  "dynamax-crystal-vir4540": {
+    "id": 1416,
+    "display": "★Vir4540"
+  },
+  "dynamax-crystal-vir4689": {
+    "id": 1417,
+    "display": "★Vir4689"
+  },
+  "dynamax-crystal-vir5338": {
+    "id": 1418,
+    "display": "★Vir5338"
+  },
+  "dynamax-crystal-vir4910": {
+    "id": 1419,
+    "display": "★Vir4910"
+  },
+  "dynamax-crystal-vir5315": {
+    "id": 1420,
+    "display": "★Vir5315"
+  },
+  "dynamax-crystal-vir5359": {
+    "id": 1421,
+    "display": "★Vir5359"
+  },
+  "dynamax-crystal-vir5409": {
+    "id": 1422,
+    "display": "★Vir5409"
+  },
+  "dynamax-crystal-vir5107": {
+    "id": 1423,
+    "display": "★Vir5107"
+  },
+  "dynamax-crystal-ari617": {
+    "id": 1424,
+    "display": "★Ari617"
+  },
+  "dynamax-crystal-ari553": {
+    "id": 1425,
+    "display": "★Ari553"
+  },
+  "dynamax-crystal-ari546": {
+    "id": 1426,
+    "display": "★Ari546"
+  },
+  "dynamax-crystal-ari951": {
+    "id": 1427,
+    "display": "★Ari951"
+  },
+  "dynamax-crystal-ori1713": {
+    "id": 1428,
+    "display": "★Ori1713"
+  },
+  "dynamax-crystal-ori2061": {
+    "id": 1429,
+    "display": "★Ori2061"
+  },
+  "dynamax-crystal-ori1790": {
+    "id": 1430,
+    "display": "★Ori1790"
+  },
+  "dynamax-crystal-ori1903": {
+    "id": 1431,
+    "display": "★Ori1903"
+  },
+  "dynamax-crystal-ori1948": {
+    "id": 1432,
+    "display": "★Ori1948"
+  },
+  "dynamax-crystal-ori2004": {
+    "id": 1433,
+    "display": "★Ori2004"
+  },
+  "dynamax-crystal-ori1852": {
+    "id": 1434,
+    "display": "★Ori1852"
+  },
+  "dynamax-crystal-ori1879": {
+    "id": 1435,
+    "display": "★Ori1879"
+  },
+  "dynamax-crystal-ori1899": {
+    "id": 1436,
+    "display": "★Ori1899"
+  },
+  "dynamax-crystal-ori1543": {
+    "id": 1437,
+    "display": "★Ori1543"
+  },
+  "dynamax-crystal-cas21": {
+    "id": 1438,
+    "display": "★Cas21"
+  },
+  "dynamax-crystal-cas168": {
+    "id": 1439,
+    "display": "★Cas168"
+  },
+  "dynamax-crystal-cas403": {
+    "id": 1440,
+    "display": "★Cas403"
+  },
+  "dynamax-crystal-cas153": {
+    "id": 1441,
+    "display": "★Cas153"
+  },
+  "dynamax-crystal-cas542": {
+    "id": 1442,
+    "display": "★Cas542"
+  },
+  "dynamax-crystal-cas219": {
+    "id": 1443,
+    "display": "★Cas219"
+  },
+  "dynamax-crystal-cas265": {
+    "id": 1444,
+    "display": "★Cas265"
+  },
+  "dynamax-crystal-cnc3572": {
+    "id": 1445,
+    "display": "★Cnc3572"
+  },
+  "dynamax-crystal-cnc3208": {
+    "id": 1446,
+    "display": "★Cnc3208"
+  },
+  "dynamax-crystal-cnc3461": {
+    "id": 1447,
+    "display": "★Cnc3461"
+  },
+  "dynamax-crystal-cnc3449": {
+    "id": 1448,
+    "display": "★Cnc3449"
+  },
+  "dynamax-crystal-cnc3429": {
+    "id": 1449,
+    "display": "★Cnc3429"
+  },
+  "dynamax-crystal-cnc3627": {
+    "id": 1450,
+    "display": "★Cnc3627"
+  },
+  "dynamax-crystal-cnc3268": {
+    "id": 1451,
+    "display": "★Cnc3268"
+  },
+  "dynamax-crystal-cnc3249": {
+    "id": 1452,
+    "display": "★Cnc3249"
+  },
+  "dynamax-crystal-com4968": {
+    "id": 1453,
+    "display": "★Com4968"
+  },
+  "dynamax-crystal-crv4757": {
+    "id": 1454,
+    "display": "★Crv4757"
+  },
+  "dynamax-crystal-crv4623": {
+    "id": 1455,
+    "display": "★Crv4623"
+  },
+  "dynamax-crystal-crv4662": {
+    "id": 1456,
+    "display": "★Crv4662"
+  },
+  "dynamax-crystal-crv4786": {
+    "id": 1457,
+    "display": "★Crv4786"
+  },
+  "dynamax-crystal-aur1708": {
+    "id": 1458,
+    "display": "★Aur1708"
+  },
+  "dynamax-crystal-aur2088": {
+    "id": 1459,
+    "display": "★Aur2088"
+  },
+  "dynamax-crystal-aur1605": {
+    "id": 1460,
+    "display": "★Aur1605"
+  },
+  "dynamax-crystal-aur2095": {
+    "id": 1461,
+    "display": "★Aur2095"
+  },
+  "dynamax-crystal-aur1577": {
+    "id": 1462,
+    "display": "★Aur1577"
+  },
+  "dynamax-crystal-aur1641": {
+    "id": 1463,
+    "display": "★Aur1641"
+  },
+  "dynamax-crystal-aur1612": {
+    "id": 1464,
+    "display": "★Aur1612"
+  },
+  "dynamax-crystal-pav7790": {
+    "id": 1465,
+    "display": "★Pav7790"
+  },
+  "dynamax-crystal-cet911": {
+    "id": 1466,
+    "display": "★Cet911"
+  },
+  "dynamax-crystal-cet681": {
+    "id": 1467,
+    "display": "★Cet681"
+  },
+  "dynamax-crystal-cet188": {
+    "id": 1468,
+    "display": "★Cet188"
+  },
+  "dynamax-crystal-cet539": {
+    "id": 1469,
+    "display": "★Cet539"
+  },
+  "dynamax-crystal-cet804": {
+    "id": 1470,
+    "display": "★Cet804"
+  },
+  "dynamax-crystal-cep8974": {
+    "id": 1471,
+    "display": "★Cep8974"
+  },
+  "dynamax-crystal-cep8162": {
+    "id": 1472,
+    "display": "★Cep8162"
+  },
+  "dynamax-crystal-cep8238": {
+    "id": 1473,
+    "display": "★Cep8238"
+  },
+  "dynamax-crystal-cep8417": {
+    "id": 1474,
+    "display": "★Cep8417"
+  },
+  "dynamax-crystal-cen5267": {
+    "id": 1475,
+    "display": "★Cen5267"
+  },
+  "dynamax-crystal-cen5288": {
+    "id": 1476,
+    "display": "★Cen5288"
+  },
+  "dynamax-crystal-cen551": {
+    "id": 1477,
+    "display": "★Cen551"
+  },
+  "dynamax-crystal-cen5459": {
+    "id": 1478,
+    "display": "★Cen5459"
+  },
+  "dynamax-crystal-cen5460": {
+    "id": 1479,
+    "display": "★Cen5460"
+  },
+  "dynamax-crystal-cmi2943": {
+    "id": 1480,
+    "display": "★CMi2943"
+  },
+  "dynamax-crystal-cmi2845": {
+    "id": 1481,
+    "display": "★CMi2845"
+  },
+  "dynamax-crystal-equ8131": {
+    "id": 1482,
+    "display": "★Equ8131"
+  },
+  "dynamax-crystal-vul7405": {
+    "id": 1483,
+    "display": "★Vul7405"
+  },
+  "dynamax-crystal-umi424": {
+    "id": 1484,
+    "display": "★UMi424"
+  },
+  "dynamax-crystal-umi5563": {
+    "id": 1485,
+    "display": "★UMi5563"
+  },
+  "dynamax-crystal-umi5735": {
+    "id": 1486,
+    "display": "★UMi5735"
+  },
+  "dynamax-crystal-umi6789": {
+    "id": 1487,
+    "display": "★UMi6789"
+  },
+  "dynamax-crystal-crt4287": {
+    "id": 1488,
+    "display": "★Crt4287"
+  },
+  "dynamax-crystal-lyr7001": {
+    "id": 1489,
+    "display": "★Lyr7001"
+  },
+  "dynamax-crystal-lyr7178": {
+    "id": 1490,
+    "display": "★Lyr7178"
+  },
+  "dynamax-crystal-lyr7106": {
+    "id": 1491,
+    "display": "★Lyr7106"
+  },
+  "dynamax-crystal-lyr7298": {
+    "id": 1492,
+    "display": "★Lyr7298"
+  },
+  "dynamax-crystal-ara6585": {
+    "id": 1493,
+    "display": "★Ara6585"
+  },
+  "dynamax-crystal-sco6134": {
+    "id": 1494,
+    "display": "★Sco6134"
+  },
+  "dynamax-crystal-sco6527": {
+    "id": 1495,
+    "display": "★Sco6527"
+  },
+  "dynamax-crystal-sco6553": {
+    "id": 1496,
+    "display": "★Sco6553"
+  },
+  "dynamax-crystal-sco5953": {
+    "id": 1497,
+    "display": "★Sco5953"
+  },
+  "dynamax-crystal-sco5984": {
+    "id": 1498,
+    "display": "★Sco5984"
+  },
+  "dynamax-crystal-sco6508": {
+    "id": 1499,
+    "display": "★Sco6508"
+  },
+  "dynamax-crystal-sco6084": {
+    "id": 1500,
+    "display": "★Sco6084"
+  },
+  "dynamax-crystal-sco5944": {
+    "id": 1501,
+    "display": "★Sco5944"
+  },
+  "dynamax-crystal-sco6630": {
+    "id": 1502,
+    "display": "★Sco6630"
+  },
+  "dynamax-crystal-sco6027": {
+    "id": 1503,
+    "display": "★Sco6027"
+  },
+  "dynamax-crystal-sco6247": {
+    "id": 1504,
+    "display": "★Sco6247"
+  },
+  "dynamax-crystal-sco6252": {
+    "id": 1505,
+    "display": "★Sco6252"
+  },
+  "dynamax-crystal-sco5928": {
+    "id": 1506,
+    "display": "★Sco5928"
+  },
+  "dynamax-crystal-sco6241": {
+    "id": 1507,
+    "display": "★Sco6241"
+  },
+  "dynamax-crystal-sco6165": {
+    "id": 1508,
+    "display": "★Sco6165"
+  },
+  "dynamax-crystal-tri544": {
+    "id": 1509,
+    "display": "★Tri544"
+  },
+  "dynamax-crystal-leo3982": {
+    "id": 1510,
+    "display": "★Leo3982"
+  },
+  "dynamax-crystal-leo4534": {
+    "id": 1511,
+    "display": "★Leo4534"
+  },
+  "dynamax-crystal-leo4357": {
+    "id": 1512,
+    "display": "★Leo4357"
+  },
+  "dynamax-crystal-leo4057": {
+    "id": 1513,
+    "display": "★Leo4057"
+  },
+  "dynamax-crystal-leo4359": {
+    "id": 1514,
+    "display": "★Leo4359"
+  },
+  "dynamax-crystal-leo4031": {
+    "id": 1515,
+    "display": "★Leo4031"
+  },
+  "dynamax-crystal-leo3852": {
+    "id": 1516,
+    "display": "★Leo3852"
+  },
+  "dynamax-crystal-leo3905": {
+    "id": 1517,
+    "display": "★Leo3905"
+  },
+  "dynamax-crystal-leo3773": {
+    "id": 1518,
+    "display": "★Leo3773"
+  },
+  "dynamax-crystal-gru8425": {
+    "id": 1519,
+    "display": "★Gru8425"
+  },
+  "dynamax-crystal-gru8636": {
+    "id": 1520,
+    "display": "★Gru8636"
+  },
+  "dynamax-crystal-gru8353": {
+    "id": 1521,
+    "display": "★Gru8353"
+  },
+  "dynamax-crystal-lib5685": {
+    "id": 1522,
+    "display": "★Lib5685"
+  },
+  "dynamax-crystal-lib5531": {
+    "id": 1523,
+    "display": "★Lib5531"
+  },
+  "dynamax-crystal-lib5787": {
+    "id": 1524,
+    "display": "★Lib5787"
+  },
+  "dynamax-crystal-lib5603": {
+    "id": 1525,
+    "display": "★Lib5603"
+  },
+  "dynamax-crystal-pup3165": {
+    "id": 1526,
+    "display": "★Pup3165"
+  },
+  "dynamax-crystal-pup3185": {
+    "id": 1527,
+    "display": "★Pup3185"
+  },
+  "dynamax-crystal-pup3045": {
+    "id": 1528,
+    "display": "★Pup3045"
+  },
+  "dynamax-crystal-cyg7924": {
+    "id": 1529,
+    "display": "★Cyg7924"
+  },
+  "dynamax-crystal-cyg7417": {
+    "id": 1530,
+    "display": "★Cyg7417"
+  },
+  "dynamax-crystal-cyg7796": {
+    "id": 1531,
+    "display": "★Cyg7796"
+  },
+  "dynamax-crystal-cyg8301": {
+    "id": 1532,
+    "display": "★Cyg8301"
+  },
+  "dynamax-crystal-cyg7949": {
+    "id": 1533,
+    "display": "★Cyg7949"
+  },
+  "dynamax-crystal-cyg7528": {
+    "id": 1534,
+    "display": "★Cyg7528"
+  },
+  "dynamax-crystal-oct7228": {
+    "id": 1535,
+    "display": "★Oct7228"
+  },
+  "dynamax-crystal-col1956": {
+    "id": 1536,
+    "display": "★Col1956"
+  },
+  "dynamax-crystal-col2040": {
+    "id": 1537,
+    "display": "★Col2040"
+  },
+  "dynamax-crystal-col2177": {
+    "id": 1538,
+    "display": "★Col2177"
+  },
+  "dynamax-crystal-gem2990": {
+    "id": 1539,
+    "display": "★Gem2990"
+  },
+  "dynamax-crystal-gem2891": {
+    "id": 1540,
+    "display": "★Gem2891"
+  },
+  "dynamax-crystal-gem2421": {
+    "id": 1541,
+    "display": "★Gem2421"
+  },
+  "dynamax-crystal-gem2473": {
+    "id": 1542,
+    "display": "★Gem2473"
+  },
+  "dynamax-crystal-gem2216": {
+    "id": 1543,
+    "display": "★Gem2216"
+  },
+  "dynamax-crystal-gem2777": {
+    "id": 1544,
+    "display": "★Gem2777"
+  },
+  "dynamax-crystal-gem2650": {
+    "id": 1545,
+    "display": "★Gem2650"
+  },
+  "dynamax-crystal-gem2286": {
+    "id": 1546,
+    "display": "★Gem2286"
+  },
+  "dynamax-crystal-gem2484": {
+    "id": 1547,
+    "display": "★Gem2484"
+  },
+  "dynamax-crystal-gem2930": {
+    "id": 1548,
+    "display": "★Gem2930"
+  },
+  "dynamax-crystal-peg8775": {
+    "id": 1549,
+    "display": "★Peg8775"
+  },
+  "dynamax-crystal-peg8781": {
+    "id": 1550,
+    "display": "★Peg8781"
+  },
+  "dynamax-crystal-peg39": {
+    "id": 1551,
+    "display": "★Peg39"
+  },
+  "dynamax-crystal-peg8308": {
+    "id": 1552,
+    "display": "★Peg8308"
+  },
+  "dynamax-crystal-peg8650": {
+    "id": 1553,
+    "display": "★Peg8650"
+  },
+  "dynamax-crystal-peg8634": {
+    "id": 1554,
+    "display": "★Peg8634"
+  },
+  "dynamax-crystal-peg8684": {
+    "id": 1555,
+    "display": "★Peg8684"
+  },
+  "dynamax-crystal-peg8450": {
+    "id": 1556,
+    "display": "★Peg8450"
+  },
+  "dynamax-crystal-peg8880": {
+    "id": 1557,
+    "display": "★Peg8880"
+  },
+  "dynamax-crystal-peg8905": {
+    "id": 1558,
+    "display": "★Peg8905"
+  },
+  "dynamax-crystal-oph6556": {
+    "id": 1559,
+    "display": "★Oph6556"
+  },
+  "dynamax-crystal-oph6378": {
+    "id": 1560,
+    "display": "★Oph6378"
+  },
+  "dynamax-crystal-oph6603": {
+    "id": 1561,
+    "display": "★Oph6603"
+  },
+  "dynamax-crystal-oph6149": {
+    "id": 1562,
+    "display": "★Oph6149"
+  },
+  "dynamax-crystal-oph6056": {
+    "id": 1563,
+    "display": "★Oph6056"
+  },
+  "dynamax-crystal-oph6075": {
+    "id": 1564,
+    "display": "★Oph6075"
+  },
+  "dynamax-crystal-ser5854": {
+    "id": 1565,
+    "display": "★Ser5854"
+  },
+  "dynamax-crystal-ser7141": {
+    "id": 1566,
+    "display": "★Ser7141"
+  },
+  "dynamax-crystal-ser5879": {
+    "id": 1567,
+    "display": "★Ser5879"
+  },
+  "dynamax-crystal-her6406": {
+    "id": 1568,
+    "display": "★Her6406"
+  },
+  "dynamax-crystal-her6148": {
+    "id": 1569,
+    "display": "★Her6148"
+  },
+  "dynamax-crystal-her6410": {
+    "id": 1570,
+    "display": "★Her6410"
+  },
+  "dynamax-crystal-her6526": {
+    "id": 1571,
+    "display": "★Her6526"
+  },
+  "dynamax-crystal-her6117": {
+    "id": 1572,
+    "display": "★Her6117"
+  },
+  "dynamax-crystal-her6008": {
+    "id": 1573,
+    "display": "★Her6008"
+  },
+  "dynamax-crystal-per936": {
+    "id": 1574,
+    "display": "★Per936"
+  },
+  "dynamax-crystal-per1017": {
+    "id": 1575,
+    "display": "★Per1017"
+  },
+  "dynamax-crystal-per1131": {
+    "id": 1576,
+    "display": "★Per1131"
+  },
+  "dynamax-crystal-per1228": {
+    "id": 1577,
+    "display": "★Per1228"
+  },
+  "dynamax-crystal-per834": {
+    "id": 1578,
+    "display": "★Per834"
+  },
+  "dynamax-crystal-per941": {
+    "id": 1579,
+    "display": "★Per941"
+  },
+  "dynamax-crystal-phe99": {
+    "id": 1580,
+    "display": "★Phe99"
+  },
+  "dynamax-crystal-phe338": {
+    "id": 1581,
+    "display": "★Phe338"
+  },
+  "dynamax-crystal-vel3634": {
+    "id": 1582,
+    "display": "★Vel3634"
+  },
+  "dynamax-crystal-vel3485": {
+    "id": 1583,
+    "display": "★Vel3485"
+  },
+  "dynamax-crystal-vel3734": {
+    "id": 1584,
+    "display": "★Vel3734"
+  },
+  "dynamax-crystal-aqr8232": {
+    "id": 1585,
+    "display": "★Aqr8232"
+  },
+  "dynamax-crystal-aqr8414": {
+    "id": 1586,
+    "display": "★Aqr8414"
+  },
+  "dynamax-crystal-aqr8709": {
+    "id": 1587,
+    "display": "★Aqr8709"
+  },
+  "dynamax-crystal-aqr8518": {
+    "id": 1588,
+    "display": "★Aqr8518"
+  },
+  "dynamax-crystal-aqr7950": {
+    "id": 1589,
+    "display": "★Aqr7950"
+  },
+  "dynamax-crystal-aqr8499": {
+    "id": 1590,
+    "display": "★Aqr8499"
+  },
+  "dynamax-crystal-aqr8610": {
+    "id": 1591,
+    "display": "★Aqr8610"
+  },
+  "dynamax-crystal-aqr8264": {
+    "id": 1592,
+    "display": "★Aqr8264"
+  },
+  "dynamax-crystal-cru4853": {
+    "id": 1593,
+    "display": "★Cru4853"
+  },
+  "dynamax-crystal-cru4730": {
+    "id": 1594,
+    "display": "★Cru4730"
+  },
+  "dynamax-crystal-cru4763": {
+    "id": 1595,
+    "display": "★Cru4763"
+  },
+  "dynamax-crystal-cru4700": {
+    "id": 1596,
+    "display": "★Cru4700"
+  },
+  "dynamax-crystal-cru4656": {
+    "id": 1597,
+    "display": "★Cru4656"
+  },
+  "dynamax-crystal-psa8728": {
+    "id": 1598,
+    "display": "★PsA8728"
+  },
+  "dynamax-crystal-tra6217": {
+    "id": 1599,
+    "display": "★TrA6217"
+  },
+  "dynamax-crystal-cap7776": {
+    "id": 1600,
+    "display": "★Cap7776"
+  },
+  "dynamax-crystal-cap7754": {
+    "id": 1601,
+    "display": "★Cap7754"
+  },
+  "dynamax-crystal-cap8278": {
+    "id": 1602,
+    "display": "★Cap8278"
+  },
+  "dynamax-crystal-cap8322": {
+    "id": 1603,
+    "display": "★Cap8322"
+  },
+  "dynamax-crystal-cap7773": {
+    "id": 1604,
+    "display": "★Cap7773"
+  },
+  "dynamax-crystal-sge7479": {
+    "id": 1605,
+    "display": "★Sge7479"
+  },
+  "dynamax-crystal-car2326": {
+    "id": 1606,
+    "display": "★Car2326"
+  },
+  "dynamax-crystal-car3685": {
+    "id": 1607,
+    "display": "★Car3685"
+  },
+  "dynamax-crystal-car3307": {
+    "id": 1608,
+    "display": "★Car3307"
+  },
+  "dynamax-crystal-car3699": {
+    "id": 1609,
+    "display": "★Car3699"
+  },
+  "dynamax-crystal-dra5744": {
+    "id": 1610,
+    "display": "★Dra5744"
+  },
+  "dynamax-crystal-dra5291": {
+    "id": 1611,
+    "display": "★Dra5291"
+  },
+  "dynamax-crystal-dra6705": {
+    "id": 1612,
+    "display": "★Dra6705"
+  },
+  "dynamax-crystal-dra6536": {
+    "id": 1613,
+    "display": "★Dra6536"
+  },
+  "dynamax-crystal-dra7310": {
+    "id": 1614,
+    "display": "★Dra7310"
+  },
+  "dynamax-crystal-dra6688": {
+    "id": 1615,
+    "display": "★Dra6688"
+  },
+  "dynamax-crystal-dra4434": {
+    "id": 1616,
+    "display": "★Dra4434"
+  },
+  "dynamax-crystal-dra6370": {
+    "id": 1617,
+    "display": "★Dra6370"
+  },
+  "dynamax-crystal-dra7462": {
+    "id": 1618,
+    "display": "★Dra7462"
+  },
+  "dynamax-crystal-dra6396": {
+    "id": 1619,
+    "display": "★Dra6396"
+  },
+  "dynamax-crystal-dra6132": {
+    "id": 1620,
+    "display": "★Dra6132"
+  },
+  "dynamax-crystal-dra6636": {
+    "id": 1621,
+    "display": "★Dra6636"
+  },
+  "dynamax-crystal-cvn4915": {
+    "id": 1622,
+    "display": "★CVn4915"
+  },
+  "dynamax-crystal-cvn4785": {
+    "id": 1623,
+    "display": "★CVn4785"
+  },
+  "dynamax-crystal-cvn4846": {
+    "id": 1624,
+    "display": "★CVn4846"
+  },
+  "dynamax-crystal-aql7595": {
+    "id": 1625,
+    "display": "★Aql7595"
+  },
+  "dynamax-crystal-aql7557": {
+    "id": 1626,
+    "display": "★Aql7557"
+  },
+  "dynamax-crystal-aql7525": {
+    "id": 1627,
+    "display": "★Aql7525"
+  },
+  "dynamax-crystal-aql7602": {
+    "id": 1628,
+    "display": "★Aql7602"
+  },
+  "dynamax-crystal-aql7235": {
+    "id": 1629,
+    "display": "★Aql7235"
+  },
+  "max-honey": {
+    "id": 1630,
+    "display": "Maxipanal"
+  },
+  "max-mushrooms": {
+    "id": 1631,
+    "display": "Maxiseta"
+  },
+  "galarica-twig": {
+    "id": 1632,
+    "display": "Rama de Galanuez"
+  },
+  "galarica-cuff": {
+    "id": 1633,
+    "display": "Brazal Galanuez"
+  },
+  "style-card": {
+    "id": 1634,
+    "display": "Tarjeta Chic"
+  },
+  "armor-pass": {
+    "id": 1635,
+    "display": "Pase Armadura"
+  },
+  "rotom-bike--sparkling-white": {
+    "id": 1636,
+    "display": "Bici Rotom"
+  },
+  "rotom-bike--glistening-black": {
+    "id": 1637,
+    "display": "Bici Rotom"
+  },
+  "exp-charm": {
+    "id": 1638,
+    "display": "Amuleto Exp"
+  },
+  "armorite-ore": {
+    "id": 1639,
+    "display": "Duralium"
+  },
+  "mark-charm": {
+    "id": 1640,
+    "display": "Amuleto Emblema"
+  },
+  "reins-of-unity--merge": {
+    "id": 1641,
+    "display": "Riendas Unión"
+  },
+  "reins-of-unity--split": {
+    "id": 1642,
+    "display": "Riendas Unión"
+  },
+  "galarica-wreath": {
+    "id": 1643,
+    "display": "Corona Galanuez"
+  },
+  "legendary-clue-1": {
+    "id": 1644,
+    "display": "Leyenda 1"
+  },
+  "legendary-clue-2": {
+    "id": 1645,
+    "display": "Leyenda 2"
+  },
+  "legendary-clue-3": {
+    "id": 1646,
+    "display": "Leyenda 3"
+  },
+  "legendary-clue-question": {
+    "id": 1647,
+    "display": "Leyenda (?)"
+  },
+  "crown-pass": {
+    "id": 1648,
+    "display": "Pase Corona"
+  },
+  "wooden-crown": {
+    "id": 1649,
+    "display": "Corona Tallada"
+  },
+  "radiant-petal": {
+    "id": 1650,
+    "display": "Pétalo Fulgor"
+  },
+  "white-mane-hair": {
+    "id": 1651,
+    "display": "Crin Blanca"
+  },
+  "black-mane-hair": {
+    "id": 1652,
+    "display": "Crin Negra"
+  },
+  "iceroot-carrot": {
+    "id": 1653,
+    "display": "Zanahoria Nívea"
+  },
+  "shaderoot-carrot": {
+    "id": 1654,
+    "display": "Zanahoria Oscura"
+  },
+  "dynite-ore": {
+    "id": 1655,
+    "display": "Maxinium"
+  },
+  "carrot-seeds": {
+    "id": 1656,
+    "display": "Sem. Zanahoria"
+  },
+  "ability-patch": {
+    "id": 1657,
+    "display": "Parche Habilidad"
+  },
+  "reins-of-unity": {
+    "id": 1658,
+    "display": "Riendas Unión"
+  },
+  "adamant-crystal": {
+    "id": 1659,
+    "display": "Adamant Crystal"
+  },
+  "lustrous-globe": {
+    "id": 1660,
+    "display": "Lustrous Globe"
+  },
+  "griseous-core": {
+    "id": 1661,
+    "display": "Griseous Core"
+  },
+  "blank-plate": {
+    "id": 1662,
+    "display": "Blank Plate"
+  },
+  "strange-ball": {
+    "id": 1663,
+    "display": "Strange Ball"
+  },
+  "legend-plate": {
+    "id": 1664,
+    "display": "Legend Plate"
+  },
+  "rotom-phone": {
+    "id": 1665,
+    "display": "Rotom Phone"
+  },
+  "sandwich": {
+    "id": 1666,
+    "display": "Sandwich"
+  },
+  "koraidons-poke-ball": {
+    "id": 1667,
+    "display": "Koraidon’s Poké Ball"
+  },
+  "miraidons-poke-ball": {
+    "id": 1668,
+    "display": "Miraidon’s Poké Ball"
+  },
+  "tera-orb": {
+    "id": 1669,
+    "display": "Tera Orb"
+  },
+  "scarlet-book": {
+    "id": 1670,
+    "display": "Scarlet Book"
+  },
+  "violet-book": {
+    "id": 1671,
+    "display": "Violet Book"
+  },
+  "tiny-bamboo-shoot": {
+    "id": 1673,
+    "display": "Tiny Bamboo Shoot"
+  },
+  "big-bamboo-shoot": {
+    "id": 1674,
+    "display": "Big Bamboo Shoot"
+  },
+  "scroll-of-darkness": {
+    "id": 1675,
+    "display": "Scroll of Darkness"
+  },
+  "scroll-of-waters": {
+    "id": 1676,
+    "display": "Scroll of Waters"
+  },
+  "malicious-armor": {
+    "id": 1677,
+    "display": "Malicious Armor"
+  },
+  "normal-tera-shard": {
+    "id": 1678,
+    "display": "Normal Tera Shard"
+  },
+  "fire-tera-shard": {
+    "id": 1679,
+    "display": "Fire Tera Shard"
+  },
+  "water-tera-shard": {
+    "id": 1680,
+    "display": "Water Tera Shard"
+  },
+  "electric-tera-shard": {
+    "id": 1681,
+    "display": "Electric Tera Shard"
+  },
+  "grass-tera-shard": {
+    "id": 1682,
+    "display": "Grass Tera Shard"
+  },
+  "ice-tera-shard": {
+    "id": 1683,
+    "display": "Ice Tera Shard"
+  },
+  "fighting-tera-shard": {
+    "id": 1684,
+    "display": "Fighting Tera Shard"
+  },
+  "poison-tera-shard": {
+    "id": 1685,
+    "display": "Poison Tera Shard"
+  },
+  "ground-tera-shard": {
+    "id": 1686,
+    "display": "Ground Tera Shard"
+  },
+  "flying-tera-shard": {
+    "id": 1687,
+    "display": "Flying Tera Shard"
+  },
+  "psychic-tera-shard": {
+    "id": 1688,
+    "display": "Psychic Tera Shard"
+  },
+  "bug-tera-shard": {
+    "id": 1689,
+    "display": "Bug Tera Shard"
+  },
+  "rock-tera-shard": {
+    "id": 1690,
+    "display": "Rock Tera Shard"
+  },
+  "ghost-tera-shard": {
+    "id": 1691,
+    "display": "Ghost Tera Shard"
+  },
+  "dragon-tera-shard": {
+    "id": 1692,
+    "display": "Dragon Tera Shard"
+  },
+  "dark-tera-shard": {
+    "id": 1693,
+    "display": "Dark Tera Shard"
+  },
+  "steel-tera-shard": {
+    "id": 1694,
+    "display": "Steel Tera Shard"
+  },
+  "fairy-tera-shard": {
+    "id": 1695,
+    "display": "Fairy Tera Shard"
+  },
+  "booster-energy": {
+    "id": 1696,
+    "display": "Booster Energy"
+  },
+  "ability-shield": {
+    "id": 1697,
+    "display": "Ability Shield"
+  },
+  "clear-amulet": {
+    "id": 1698,
+    "display": "Clear Amulet"
+  },
+  "mirror-herb": {
+    "id": 1699,
+    "display": "Mirror Herb"
+  },
+  "punching-glove": {
+    "id": 1700,
+    "display": "Punching Glove"
+  },
+  "covert-cloak": {
+    "id": 1701,
+    "display": "Covert Cloak"
+  },
+  "loaded-dice": {
+    "id": 1702,
+    "display": "Loaded Dice"
+  },
+  "baguette": {
+    "id": 1703,
+    "display": "Baguette"
+  },
+  "mayonnaise": {
+    "id": 1704,
+    "display": "Mayonnaise"
+  },
+  "ketchup": {
+    "id": 1705,
+    "display": "Ketchup"
+  },
+  "mustard": {
+    "id": 1706,
+    "display": "Mustard"
+  },
+  "butter": {
+    "id": 1707,
+    "display": "Butter"
+  },
+  "peanut-butter": {
+    "id": 1708,
+    "display": "Peanut Butter"
+  },
+  "chili-sauce": {
+    "id": 1709,
+    "display": "Chili Sauce"
+  },
+  "salt": {
+    "id": 1710,
+    "display": "Salt"
+  },
+  "pepper": {
+    "id": 1711,
+    "display": "Pepper"
+  },
+  "yogurt": {
+    "id": 1712,
+    "display": "Yogurt"
+  },
+  "whipped-cream": {
+    "id": 1713,
+    "display": "Whipped Cream"
+  },
+  "cream-cheese": {
+    "id": 1714,
+    "display": "Cream Cheese"
+  },
+  "jam": {
+    "id": 1715,
+    "display": "Jam"
+  },
+  "marmalade": {
+    "id": 1716,
+    "display": "Marmalade"
+  },
+  "olive-oil": {
+    "id": 1717,
+    "display": "Olive Oil"
+  },
+  "vinegar": {
+    "id": 1718,
+    "display": "Vinegar"
+  },
+  "sweet-herba-mystica": {
+    "id": 1719,
+    "display": "Sweet Herba Mystica"
+  },
+  "salty-herba-mystica": {
+    "id": 1720,
+    "display": "Salty Herba Mystica"
+  },
+  "sour-herba-mystica": {
+    "id": 1721,
+    "display": "Sour Herba Mystica"
+  },
+  "bitter-herba-mystica": {
+    "id": 1722,
+    "display": "Bitter Herba Mystica"
+  },
+  "spicy-herba-mystica": {
+    "id": 1723,
+    "display": "Spicy Herba Mystica"
+  },
+  "lettuce": {
+    "id": 1724,
+    "display": "Lettuce"
+  },
+  "tomato": {
+    "id": 1725,
+    "display": "Tomato"
+  },
+  "cherry-tomatoes": {
+    "id": 1726,
+    "display": "Cherry Tomatoes"
+  },
+  "cucumber": {
+    "id": 1727,
+    "display": "Cucumber"
+  },
+  "pickle": {
+    "id": 1728,
+    "display": "Pickle"
+  },
+  "onion": {
+    "id": 1729,
+    "display": "Onion"
+  },
+  "red-onion": {
+    "id": 1730,
+    "display": "Red Onion"
+  },
+  "green-bell-pepper": {
+    "id": 1731,
+    "display": "Green Bell Pepper"
+  },
+  "red-bell-pepper": {
+    "id": 1732,
+    "display": "Red Bell Pepper"
+  },
+  "yellow-bell-pepper": {
+    "id": 1733,
+    "display": "Yellow Bell Pepper"
+  },
+  "avocado": {
+    "id": 1734,
+    "display": "Avocado"
+  },
+  "bacon": {
+    "id": 1735,
+    "display": "Bacon"
+  },
+  "ham": {
+    "id": 1736,
+    "display": "Ham"
+  },
+  "prosciutto": {
+    "id": 1737,
+    "display": "Prosciutto"
+  },
+  "chorizo": {
+    "id": 1738,
+    "display": "Chorizo"
+  },
+  "herbed-sausage": {
+    "id": 1739,
+    "display": "Herbed Sausage"
+  },
+  "hamburger": {
+    "id": 1740,
+    "display": "Hamburger"
+  },
+  "klawf-stick": {
+    "id": 1741,
+    "display": "Klawf Stick"
+  },
+  "smoked-fillet": {
+    "id": 1742,
+    "display": "Smoked Fillet"
+  },
+  "fried-fillet": {
+    "id": 1743,
+    "display": "Fried Fillet"
+  },
+  "egg": {
+    "id": 1744,
+    "display": "Egg"
+  },
+  "potato-tortilla": {
+    "id": 1745,
+    "display": "Potato Tortilla"
+  },
+  "tofu": {
+    "id": 1746,
+    "display": "Tofu"
+  },
+  "rice": {
+    "id": 1747,
+    "display": "Rice"
+  },
+  "noodles": {
+    "id": 1748,
+    "display": "Noodles"
+  },
+  "potato-salad": {
+    "id": 1749,
+    "display": "Potato Salad"
+  },
+  "cheese": {
+    "id": 1750,
+    "display": "Cheese"
+  },
+  "banana": {
+    "id": 1751,
+    "display": "Banana"
+  },
+  "strawberry": {
+    "id": 1752,
+    "display": "Strawberry"
+  },
+  "apple": {
+    "id": 1753,
+    "display": "Apple"
+  },
+  "kiwi": {
+    "id": 1754,
+    "display": "Kiwi"
+  },
+  "pineapple": {
+    "id": 1755,
+    "display": "Pineapple"
+  },
+  "horseradish": {
+    "id": 1757,
+    "display": "Horseradish"
+  },
+  "curry-powder": {
+    "id": 1758,
+    "display": "Curry Powder"
+  },
+  "wasabi": {
+    "id": 1759,
+    "display": "Wasabi"
+  },
+  "watercress": {
+    "id": 1760,
+    "display": "Watercress"
+  },
+  "basil": {
+    "id": 1761,
+    "display": "Basil"
+  },
+  "venonat-fang": {
+    "id": 1762,
+    "display": "Venonat Fang"
+  },
+  "diglett-dirt": {
+    "id": 1763,
+    "display": "Diglett Dirt"
+  },
+  "meowth-fur": {
+    "id": 1764,
+    "display": "Meowth Fur"
+  },
+  "psyduck-down": {
+    "id": 1765,
+    "display": "Psyduck Down"
+  },
+  "mankey-fur": {
+    "id": 1766,
+    "display": "Mankey Fur"
+  },
+  "growlithe-fur": {
+    "id": 1767,
+    "display": "Growlithe Fur"
+  },
+  "slowpoke-claw": {
+    "id": 1768,
+    "display": "Slowpoke Claw"
+  },
+  "magnemite-screw": {
+    "id": 1769,
+    "display": "Magnemite Screw"
+  },
+  "grimer-toxin": {
+    "id": 1770,
+    "display": "Grimer Toxin"
+  },
+  "shellder-pearl": {
+    "id": 1771,
+    "display": "Shellder Pearl"
+  },
+  "gastly-gas": {
+    "id": 1772,
+    "display": "Gastly Gas"
+  },
+  "drowzee-fur": {
+    "id": 1773,
+    "display": "Drowzee Fur"
+  },
+  "voltorb-sparks": {
+    "id": 1774,
+    "display": "Voltorb Sparks"
+  },
+  "scyther-claw": {
+    "id": 1775,
+    "display": "Scyther Claw"
+  },
+  "tauros-hair": {
+    "id": 1776,
+    "display": "Tauros Hair"
+  },
+  "magikarp-scales": {
+    "id": 1777,
+    "display": "Magikarp Scales"
+  },
+  "ditto-goo": {
+    "id": 1778,
+    "display": "Ditto Goo"
+  },
+  "eevee-fur": {
+    "id": 1779,
+    "display": "Eevee Fur"
+  },
+  "dratini-scales": {
+    "id": 1780,
+    "display": "Dratini Scales"
+  },
+  "pichu-fur": {
+    "id": 1781,
+    "display": "Pichu Fur"
+  },
+  "igglybuff-fluff": {
+    "id": 1782,
+    "display": "Igglybuff Fluff"
+  },
+  "mareep-wool": {
+    "id": 1783,
+    "display": "Mareep Wool"
+  },
+  "hoppip-leaf": {
+    "id": 1784,
+    "display": "Hoppip Leaf"
+  },
+  "sunkern-leaf": {
+    "id": 1785,
+    "display": "Sunkern Leaf"
+  },
+  "murkrow-bauble": {
+    "id": 1786,
+    "display": "Murkrow Bauble"
+  },
+  "misdreavus-tears": {
+    "id": 1787,
+    "display": "Misdreavus Tears"
+  },
+  "girafarig-fur": {
+    "id": 1788,
+    "display": "Girafarig Fur"
+  },
+  "pineco-husk": {
+    "id": 1789,
+    "display": "Pineco Husk"
+  },
+  "dunsparce-scales": {
+    "id": 1790,
+    "display": "Dunsparce Scales"
+  },
+  "qwilfish-spines": {
+    "id": 1791,
+    "display": "Qwilfish Spines"
+  },
+  "heracross-claw": {
+    "id": 1792,
+    "display": "Heracross Claw"
+  },
+  "sneasel-claw": {
+    "id": 1793,
+    "display": "Sneasel Claw"
+  },
+  "teddiursa-claw": {
+    "id": 1794,
+    "display": "Teddiursa Claw"
+  },
+  "delibird-parcel": {
+    "id": 1795,
+    "display": "Delibird Parcel"
+  },
+  "houndour-fang": {
+    "id": 1796,
+    "display": "Houndour Fang"
+  },
+  "phanpy-nail": {
+    "id": 1797,
+    "display": "Phanpy Nail"
+  },
+  "stantler-hair": {
+    "id": 1798,
+    "display": "Stantler Hair"
+  },
+  "larvitar-claw": {
+    "id": 1799,
+    "display": "Larvitar Claw"
+  },
+  "wingull-feather": {
+    "id": 1800,
+    "display": "Wingull Feather"
+  },
+  "ralts-dust": {
+    "id": 1801,
+    "display": "Ralts Dust"
+  },
+  "surskit-syrup": {
+    "id": 1802,
+    "display": "Surskit Syrup"
+  },
+  "shroomish-spores": {
+    "id": 1803,
+    "display": "Shroomish Spores"
+  },
+  "slakoth-fur": {
+    "id": 1804,
+    "display": "Slakoth Fur"
+  },
+  "makuhita-sweat": {
+    "id": 1805,
+    "display": "Makuhita Sweat"
+  },
+  "azurill-fur": {
+    "id": 1806,
+    "display": "Azurill Fur"
+  },
+  "sableye-gem": {
+    "id": 1807,
+    "display": "Sableye Gem"
+  },
+  "meditite-sweat": {
+    "id": 1808,
+    "display": "Meditite Sweat"
+  },
+  "gulpin-mucus": {
+    "id": 1809,
+    "display": "Gulpin Mucus"
+  },
+  "numel-lava": {
+    "id": 1810,
+    "display": "Numel Lava"
+  },
+  "torkoal-coal": {
+    "id": 1811,
+    "display": "Torkoal Coal"
+  },
+  "spoink-pearl": {
+    "id": 1812,
+    "display": "Spoink Pearl"
+  },
+  "cacnea-needle": {
+    "id": 1813,
+    "display": "Cacnea Needle"
+  },
+  "swablu-fluff": {
+    "id": 1814,
+    "display": "Swablu Fluff"
+  },
+  "zangoose-claw": {
+    "id": 1815,
+    "display": "Zangoose Claw"
+  },
+  "seviper-fang": {
+    "id": 1816,
+    "display": "Seviper Fang"
+  },
+  "barboach-slime": {
+    "id": 1817,
+    "display": "Barboach Slime"
+  },
+  "shuppet-scrap": {
+    "id": 1818,
+    "display": "Shuppet Scrap"
+  },
+  "tropius-leaf": {
+    "id": 1819,
+    "display": "Tropius Leaf"
+  },
+  "snorunt-fur": {
+    "id": 1820,
+    "display": "Snorunt Fur"
+  },
+  "luvdisc-scales": {
+    "id": 1821,
+    "display": "Luvdisc Scales"
+  },
+  "bagon-scales": {
+    "id": 1822,
+    "display": "Bagon Scales"
+  },
+  "starly-feather": {
+    "id": 1823,
+    "display": "Starly Feather"
+  },
+  "kricketot-shell": {
+    "id": 1824,
+    "display": "Kricketot Shell"
+  },
+  "shinx-fang": {
+    "id": 1825,
+    "display": "Shinx Fang"
+  },
+  "combee-honey": {
+    "id": 1826,
+    "display": "Combee Honey"
+  },
+  "pachirisu-fur": {
+    "id": 1827,
+    "display": "Pachirisu Fur"
+  },
+  "buizel-fur": {
+    "id": 1828,
+    "display": "Buizel Fur"
+  },
+  "shellos-mucus": {
+    "id": 1829,
+    "display": "Shellos Mucus"
+  },
+  "drifloon-gas": {
+    "id": 1830,
+    "display": "Drifloon Gas"
+  },
+  "stunky-fur": {
+    "id": 1831,
+    "display": "Stunky Fur"
+  },
+  "bronzor-fragment": {
+    "id": 1832,
+    "display": "Bronzor Fragment"
+  },
+  "bonsly-tears": {
+    "id": 1833,
+    "display": "Bonsly Tears"
+  },
+  "happiny-dust": {
+    "id": 1834,
+    "display": "Happiny Dust"
+  },
+  "spiritomb-fragment": {
+    "id": 1835,
+    "display": "Spiritomb Fragment"
+  },
+  "gible-scales": {
+    "id": 1836,
+    "display": "Gible Scales"
+  },
+  "riolu-fur": {
+    "id": 1837,
+    "display": "Riolu Fur"
+  },
+  "hippopotas-sand": {
+    "id": 1838,
+    "display": "Hippopotas Sand"
+  },
+  "croagunk-poison": {
+    "id": 1839,
+    "display": "Croagunk Poison"
+  },
+  "finneon-scales": {
+    "id": 1840,
+    "display": "Finneon Scales"
+  },
+  "snover-berries": {
+    "id": 1841,
+    "display": "Snover Berries"
+  },
+  "rotom-sparks": {
+    "id": 1842,
+    "display": "Rotom Sparks"
+  },
+  "petilil-leaf": {
+    "id": 1843,
+    "display": "Petilil Leaf"
+  },
+  "basculin-fang": {
+    "id": 1844,
+    "display": "Basculin Fang"
+  },
+  "sandile-claw": {
+    "id": 1845,
+    "display": "Sandile Claw"
+  },
+  "zorua-fur": {
+    "id": 1846,
+    "display": "Zorua Fur"
+  },
+  "gothita-eyelash": {
+    "id": 1847,
+    "display": "Gothita Eyelash"
+  },
+  "deerling-hair": {
+    "id": 1848,
+    "display": "Deerling Hair"
+  },
+  "foongus-spores": {
+    "id": 1849,
+    "display": "Foongus Spores"
+  },
+  "alomomola-mucus": {
+    "id": 1850,
+    "display": "Alomomola Mucus"
+  },
+  "tynamo-slime": {
+    "id": 1851,
+    "display": "Tynamo Slime"
+  },
+  "axew-scales": {
+    "id": 1852,
+    "display": "Axew Scales"
+  },
+  "cubchoo-fur": {
+    "id": 1853,
+    "display": "Cubchoo Fur"
+  },
+  "cryogonal-ice": {
+    "id": 1854,
+    "display": "Cryogonal Ice"
+  },
+  "pawniard-blade": {
+    "id": 1855,
+    "display": "Pawniard Blade"
+  },
+  "rufflet-feather": {
+    "id": 1856,
+    "display": "Rufflet Feather"
+  },
+  "deino-scales": {
+    "id": 1857,
+    "display": "Deino Scales"
+  },
+  "larvesta-fuzz": {
+    "id": 1858,
+    "display": "Larvesta Fuzz"
+  },
+  "fletchling-feather": {
+    "id": 1859,
+    "display": "Fletchling Feather"
+  },
+  "scatterbug-powder": {
+    "id": 1860,
+    "display": "Scatterbug Powder"
+  },
+  "litleo-tuft": {
+    "id": 1861,
+    "display": "Litleo Tuft"
+  },
+  "flabebe-pollen": {
+    "id": 1862,
+    "display": "Flabébé Pollen"
+  },
+  "skiddo-leaf": {
+    "id": 1863,
+    "display": "Skiddo Leaf"
+  },
+  "skrelp-kelp": {
+    "id": 1864,
+    "display": "Skrelp Kelp"
+  },
+  "clauncher-claw": {
+    "id": 1865,
+    "display": "Clauncher Claw"
+  },
+  "hawlucha-down": {
+    "id": 1866,
+    "display": "Hawlucha Down"
+  },
+  "dedenne-fur": {
+    "id": 1867,
+    "display": "Dedenne Fur"
+  },
+  "goomy-goo": {
+    "id": 1868,
+    "display": "Goomy Goo"
+  },
+  "klefki-key": {
+    "id": 1869,
+    "display": "Klefki Key"
+  },
+  "bergmite-ice": {
+    "id": 1870,
+    "display": "Bergmite Ice"
+  },
+  "noibat-fur": {
+    "id": 1871,
+    "display": "Noibat Fur"
+  },
+  "yungoos-fur": {
+    "id": 1872,
+    "display": "Yungoos Fur"
+  },
+  "crabrawler-shell": {
+    "id": 1873,
+    "display": "Crabrawler Shell"
+  },
+  "oricorio-feather": {
+    "id": 1874,
+    "display": "Oricorio Feather"
+  },
+  "rockruff-rock": {
+    "id": 1875,
+    "display": "Rockruff Rock"
+  },
+  "mareanie-spike": {
+    "id": 1876,
+    "display": "Mareanie Spike"
+  },
+  "mudbray-mud": {
+    "id": 1877,
+    "display": "Mudbray Mud"
+  },
+  "fomantis-leaf": {
+    "id": 1878,
+    "display": "Fomantis Leaf"
+  },
+  "salandit-gas": {
+    "id": 1879,
+    "display": "Salandit Gas"
+  },
+  "bounsweet-sweat": {
+    "id": 1880,
+    "display": "Bounsweet Sweat"
+  },
+  "oranguru-fur": {
+    "id": 1881,
+    "display": "Oranguru Fur"
+  },
+  "passimian-fur": {
+    "id": 1882,
+    "display": "Passimian Fur"
+  },
+  "sandygast-sand": {
+    "id": 1883,
+    "display": "Sandygast Sand"
+  },
+  "komala-claw": {
+    "id": 1884,
+    "display": "Komala Claw"
+  },
+  "mimikyu-scrap": {
+    "id": 1885,
+    "display": "Mimikyu Scrap"
+  },
+  "bruxish-tooth": {
+    "id": 1886,
+    "display": "Bruxish Tooth"
+  },
+  "chewtle-claw": {
+    "id": 1887,
+    "display": "Chewtle Claw"
+  },
+  "skwovet-fur": {
+    "id": 1888,
+    "display": "Skwovet Fur"
+  },
+  "arrokuda-scales": {
+    "id": 1889,
+    "display": "Arrokuda Scales"
+  },
+  "rookidee-feather": {
+    "id": 1890,
+    "display": "Rookidee Feather"
+  },
+  "toxel-sparks": {
+    "id": 1891,
+    "display": "Toxel Sparks"
+  },
+  "falinks-sweat": {
+    "id": 1892,
+    "display": "Falinks Sweat"
+  },
+  "cufant-tarnish": {
+    "id": 1893,
+    "display": "Cufant Tarnish"
+  },
+  "rolycoly-coal": {
+    "id": 1894,
+    "display": "Rolycoly Coal"
+  },
+  "silicobra-sand": {
+    "id": 1895,
+    "display": "Silicobra Sand"
+  },
+  "indeedee-fur": {
+    "id": 1896,
+    "display": "Indeedee Fur"
+  },
+  "pincurchin-spines": {
+    "id": 1897,
+    "display": "Pincurchin Spines"
+  },
+  "snom-thread": {
+    "id": 1898,
+    "display": "Snom Thread"
+  },
+  "impidimp-hair": {
+    "id": 1899,
+    "display": "Impidimp Hair"
+  },
+  "applin-juice": {
+    "id": 1900,
+    "display": "Applin Juice"
+  },
+  "sinistea-chip": {
+    "id": 1901,
+    "display": "Sinistea Chip"
+  },
+  "hatenna-dust": {
+    "id": 1902,
+    "display": "Hatenna Dust"
+  },
+  "stonjourner-stone": {
+    "id": 1903,
+    "display": "Stonjourner Stone"
+  },
+  "eiscue-down": {
+    "id": 1904,
+    "display": "Eiscue Down"
+  },
+  "dreepy-powder": {
+    "id": 1905,
+    "display": "Dreepy Powder"
+  },
+  "lechonk-hair": {
+    "id": 1906,
+    "display": "Lechonk Hair"
+  },
+  "tarountula-thread": {
+    "id": 1907,
+    "display": "Tarountula Thread"
+  },
+  "nymble-claw": {
+    "id": 1908,
+    "display": "Nymble Claw"
+  },
+  "rellor-mud": {
+    "id": 1909,
+    "display": "Rellor Mud"
+  },
+  "greavard-wax": {
+    "id": 1910,
+    "display": "Greavard Wax"
+  },
+  "flittle-down": {
+    "id": 1911,
+    "display": "Flittle Down"
+  },
+  "wiglett-sand": {
+    "id": 1912,
+    "display": "Wiglett Sand"
+  },
+  "dondozo-whisker": {
+    "id": 1913,
+    "display": "Dondozo Whisker"
+  },
+  "veluza-fillet": {
+    "id": 1914,
+    "display": "Veluza Fillet"
+  },
+  "finizen-mucus": {
+    "id": 1915,
+    "display": "Finizen Mucus"
+  },
+  "smoliv-oil": {
+    "id": 1916,
+    "display": "Smoliv Oil"
+  },
+  "capsakid-seed": {
+    "id": 1917,
+    "display": "Capsakid Seed"
+  },
+  "tadbulb-mucus": {
+    "id": 1918,
+    "display": "Tadbulb Mucus"
+  },
+  "varoom-fume": {
+    "id": 1919,
+    "display": "Varoom Fume"
+  },
+  "orthworm-tarnish": {
+    "id": 1920,
+    "display": "Orthworm Tarnish"
+  },
+  "tandemaus-fur": {
+    "id": 1921,
+    "display": "Tandemaus Fur"
+  },
+  "cetoddle-grease": {
+    "id": 1922,
+    "display": "Cetoddle Grease"
+  },
+  "frigibax-scales": {
+    "id": 1923,
+    "display": "Frigibax Scales"
+  },
+  "tatsugiri-scales": {
+    "id": 1924,
+    "display": "Tatsugiri Scales"
+  },
+  "cyclizar-scales": {
+    "id": 1925,
+    "display": "Cyclizar Scales"
+  },
+  "pawmi-fur": {
+    "id": 1926,
+    "display": "Pawmi Fur"
+  },
+  "wattrel-feather": {
+    "id": 1927,
+    "display": "Wattrel Feather"
+  },
+  "bombirdier-feather": {
+    "id": 1928,
+    "display": "Bombirdier Feather"
+  },
+  "squawkabilly-feather": {
+    "id": 1929,
+    "display": "Squawkabilly Feather"
+  },
+  "flamigo-down": {
+    "id": 1930,
+    "display": "Flamigo Down"
+  },
+  "klawf-claw": {
+    "id": 1931,
+    "display": "Klawf Claw"
+  },
+  "nacli-salt": {
+    "id": 1932,
+    "display": "Nacli Salt"
+  },
+  "glimmet-crystal": {
+    "id": 1933,
+    "display": "Glimmet Crystal"
+  },
+  "shroodle-ink": {
+    "id": 1934,
+    "display": "Shroodle Ink"
+  },
+  "fidough-fur": {
+    "id": 1935,
+    "display": "Fidough Fur"
+  },
+  "maschiff-fang": {
+    "id": 1936,
+    "display": "Maschiff Fang"
+  },
+  "bramblin-twig": {
+    "id": 1937,
+    "display": "Bramblin Twig"
+  },
+  "gimmighoul-coin": {
+    "id": 1938,
+    "display": "Gimmighoul Coin"
+  },
+  "tinkatink-hair": {
+    "id": 1939,
+    "display": "Tinkatink Hair"
+  },
+  "charcadet-soot": {
+    "id": 1940,
+    "display": "Charcadet Soot"
+  },
+  "toedscool-flaps": {
+    "id": 1941,
+    "display": "Toedscool Flaps"
+  },
+  "wooper-slime": {
+    "id": 1942,
+    "display": "Wooper Slime"
+  },
+  "tm101": {
+    "id": 1944,
+    "display": "TM101"
+  },
+  "tm102": {
+    "id": 1945,
+    "display": "TM102"
+  },
+  "tm103": {
+    "id": 1946,
+    "display": "TM103"
+  },
+  "tm104": {
+    "id": 1947,
+    "display": "TM104"
+  },
+  "tm105": {
+    "id": 1948,
+    "display": "TM105"
+  },
+  "tm106": {
+    "id": 1949,
+    "display": "TM106"
+  },
+  "tm107": {
+    "id": 1950,
+    "display": "TM107"
+  },
+  "tm108": {
+    "id": 1951,
+    "display": "TM108"
+  },
+  "tm109": {
+    "id": 1952,
+    "display": "TM109"
+  },
+  "tm110": {
+    "id": 1953,
+    "display": "TM110"
+  },
+  "tm111": {
+    "id": 1954,
+    "display": "TM111"
+  },
+  "tm112": {
+    "id": 1955,
+    "display": "TM112"
+  },
+  "tm113": {
+    "id": 1956,
+    "display": "TM113"
+  },
+  "tm114": {
+    "id": 1957,
+    "display": "TM114"
+  },
+  "tm115": {
+    "id": 1958,
+    "display": "TM115"
+  },
+  "tm116": {
+    "id": 1959,
+    "display": "TM116"
+  },
+  "tm117": {
+    "id": 1960,
+    "display": "TM117"
+  },
+  "tm118": {
+    "id": 1961,
+    "display": "TM118"
+  },
+  "tm119": {
+    "id": 1962,
+    "display": "TM119"
+  },
+  "tm120": {
+    "id": 1963,
+    "display": "TM120"
+  },
+  "tm121": {
+    "id": 1964,
+    "display": "TM121"
+  },
+  "tm122": {
+    "id": 1965,
+    "display": "TM122"
+  },
+  "tm123": {
+    "id": 1966,
+    "display": "TM123"
+  },
+  "tm124": {
+    "id": 1967,
+    "display": "TM124"
+  },
+  "tm125": {
+    "id": 1968,
+    "display": "TM125"
+  },
+  "tm126": {
+    "id": 1969,
+    "display": "TM126"
+  },
+  "tm127": {
+    "id": 1970,
+    "display": "TM127"
+  },
+  "tm128": {
+    "id": 1971,
+    "display": "TM128"
+  },
+  "tm129": {
+    "id": 1972,
+    "display": "TM129"
+  },
+  "tm130": {
+    "id": 1973,
+    "display": "TM130"
+  },
+  "tm131": {
+    "id": 1974,
+    "display": "TM131"
+  },
+  "tm132": {
+    "id": 1975,
+    "display": "TM132"
+  },
+  "tm133": {
+    "id": 1976,
+    "display": "TM133"
+  },
+  "tm134": {
+    "id": 1977,
+    "display": "TM134"
+  },
+  "tm135": {
+    "id": 1978,
+    "display": "TM135"
+  },
+  "tm136": {
+    "id": 1979,
+    "display": "TM136"
+  },
+  "tm137": {
+    "id": 1980,
+    "display": "TM137"
+  },
+  "tm138": {
+    "id": 1981,
+    "display": "TM138"
+  },
+  "tm139": {
+    "id": 1982,
+    "display": "TM139"
+  },
+  "tm140": {
+    "id": 1983,
+    "display": "TM140"
+  },
+  "tm141": {
+    "id": 1984,
+    "display": "TM141"
+  },
+  "tm142": {
+    "id": 1985,
+    "display": "TM142"
+  },
+  "tm143": {
+    "id": 1986,
+    "display": "TM143"
+  },
+  "tm144": {
+    "id": 1987,
+    "display": "TM144"
+  },
+  "tm145": {
+    "id": 1988,
+    "display": "TM145"
+  },
+  "tm146": {
+    "id": 1989,
+    "display": "TM146"
+  },
+  "tm147": {
+    "id": 1990,
+    "display": "TM147"
+  },
+  "tm148": {
+    "id": 1991,
+    "display": "TM148"
+  },
+  "tm149": {
+    "id": 1992,
+    "display": "TM149"
+  },
+  "tm150": {
+    "id": 1993,
+    "display": "TM150"
+  },
+  "tm151": {
+    "id": 1994,
+    "display": "TM151"
+  },
+  "tm152": {
+    "id": 1995,
+    "display": "TM152"
+  },
+  "tm153": {
+    "id": 1996,
+    "display": "TM153"
+  },
+  "tm154": {
+    "id": 1997,
+    "display": "TM154"
+  },
+  "tm155": {
+    "id": 1998,
+    "display": "TM155"
+  },
+  "tm156": {
+    "id": 1999,
+    "display": "TM156"
+  },
+  "tm157": {
+    "id": 2000,
+    "display": "TM157"
+  },
+  "tm158": {
+    "id": 2001,
+    "display": "TM158"
+  },
+  "tm159": {
+    "id": 2002,
+    "display": "TM159"
+  },
+  "tm160": {
+    "id": 2003,
+    "display": "TM160"
+  },
+  "tm161": {
+    "id": 2004,
+    "display": "TM161"
+  },
+  "tm162": {
+    "id": 2005,
+    "display": "TM162"
+  },
+  "tm163": {
+    "id": 2006,
+    "display": "TM163"
+  },
+  "tm164": {
+    "id": 2007,
+    "display": "TM164"
+  },
+  "tm165": {
+    "id": 2008,
+    "display": "TM165"
+  },
+  "tm166": {
+    "id": 2009,
+    "display": "TM166"
+  },
+  "tm167": {
+    "id": 2010,
+    "display": "TM167"
+  },
+  "tm168": {
+    "id": 2011,
+    "display": "TM168"
+  },
+  "tm169": {
+    "id": 2012,
+    "display": "TM169"
+  },
+  "tm170": {
+    "id": 2013,
+    "display": "TM170"
+  },
+  "tm171": {
+    "id": 2014,
+    "display": "TM171"
+  },
+  "picnic-set": {
+    "id": 2015,
+    "display": "Picnic Set"
+  },
+  "academy-bottle": {
+    "id": 2016,
+    "display": "Academy Bottle"
+  },
+  "polka-dot-bottle": {
+    "id": 2018,
+    "display": "Polka-Dot Bottle"
+  },
+  "striped-bottle": {
+    "id": 2019,
+    "display": "Striped Bottle"
+  },
+  "diamond-bottle": {
+    "id": 2020,
+    "display": "Diamond Bottle"
+  },
+  "academy-cup": {
+    "id": 2021,
+    "display": "Academy Cup"
+  },
+  "striped-cup": {
+    "id": 2023,
+    "display": "Striped Cup"
+  },
+  "polka-dot-cup": {
+    "id": 2024,
+    "display": "Polka-Dot Cup"
+  },
+  "flower-pattern-cup": {
+    "id": 2025,
+    "display": "Flower Pattern Cup"
+  },
+  "academy-tablecloth": {
+    "id": 2026,
+    "display": "Academy Tablecloth"
+  },
+  "whimsical-tablecloth": {
+    "id": 2028,
+    "display": "Whimsical Tablecloth"
+  },
+  "leafy-tablecloth": {
+    "id": 2029,
+    "display": "Leafy Tablecloth"
+  },
+  "spooky-tablecloth": {
+    "id": 2030,
+    "display": "Spooky Tablecloth"
+  },
+  "academy-ball": {
+    "id": 2031,
+    "display": "Academy Ball"
+  },
+  "marill-ball": {
+    "id": 2033,
+    "display": "Marill Ball"
+  },
+  "yarn-ball": {
+    "id": 2034,
+    "display": "Yarn Ball"
+  },
+  "cyber-ball": {
+    "id": 2035,
+    "display": "Cyber Ball"
+  },
+  "gold-pick": {
+    "id": 2036,
+    "display": "Gold Pick"
+  },
+  "silver-pick": {
+    "id": 2037,
+    "display": "Silver Pick"
+  },
+  "red-flag-pick": {
+    "id": 2038,
+    "display": "Red-Flag Pick"
+  },
+  "blue-flag-pick": {
+    "id": 2039,
+    "display": "Blue-Flag Pick"
+  },
+  "pika-pika-pick": {
+    "id": 2040,
+    "display": "Pika-Pika Pick"
+  },
+  "winking-pika-pick": {
+    "id": 2041,
+    "display": "Winking Pika Pick"
+  },
+  "vee-vee-pick": {
+    "id": 2042,
+    "display": "Vee-Vee Pick"
+  },
+  "smiling-vee-pick": {
+    "id": 2043,
+    "display": "Smiling Vee Pick"
+  },
+  "blue-poke-ball-pick": {
+    "id": 2044,
+    "display": "Blue Poké Ball Pick"
+  },
+  "auspicious-armor": {
+    "id": 2045,
+    "display": "Auspicious Armor"
+  },
+  "pink-bottle": {
+    "id": 2047,
+    "display": "Pink Bottle"
+  },
+  "blue-bottle": {
+    "id": 2048,
+    "display": "Blue Bottle"
+  },
+  "yellow-bottle": {
+    "id": 2049,
+    "display": "Yellow Bottle"
+  },
+  "silver-bottle": {
+    "id": 2053,
+    "display": "Silver Bottle"
+  },
+  "barred-cup": {
+    "id": 2054,
+    "display": "Barred Cup"
+  },
+  "diamond-pattern-cup": {
+    "id": 2055,
+    "display": "Diamond Pattern Cup"
+  },
+  "fire-pattern-cup": {
+    "id": 2056,
+    "display": "Fire Pattern Cup"
+  },
+  "pink-cup": {
+    "id": 2057,
+    "display": "Pink Cup"
+  },
+  "blue-cup": {
+    "id": 2058,
+    "display": "Blue Cup"
+  },
+  "yellow-cup": {
+    "id": 2059,
+    "display": "Yellow Cup"
+  },
+  "pikachu-cup": {
+    "id": 2060,
+    "display": "Pikachu Cup"
+  },
+  "eevee-cup": {
+    "id": 2061,
+    "display": "Eevee Cup"
+  },
+  "slowpoke-cup": {
+    "id": 2062,
+    "display": "Slowpoke Cup"
+  },
+  "silver-cup": {
+    "id": 2063,
+    "display": "Silver Cup"
+  },
+  "exercise-ball": {
+    "id": 2064,
+    "display": "Exercise Ball"
+  },
+  "battle-tablecloth": {
+    "id": 2069,
+    "display": "Battle Tablecloth"
+  },
+  "monstrous-tablecloth": {
+    "id": 2070,
+    "display": "Monstrous Tablecloth"
+  },
+  "striped-tablecloth": {
+    "id": 2071,
+    "display": "Striped Tablecloth"
+  },
+  "diamond-tablecloth": {
+    "id": 2072,
+    "display": "Diamond Tablecloth"
+  },
+  "polka-dot-tablecloth": {
+    "id": 2073,
+    "display": "Polka-Dot Tablecloth"
+  },
+  "lilac-tablecloth": {
+    "id": 2074,
+    "display": "Lilac Tablecloth"
+  },
+  "mint-tablecloth": {
+    "id": 2075,
+    "display": "Mint Tablecloth"
+  },
+  "peach-tablecloth": {
+    "id": 2076,
+    "display": "Peach Tablecloth"
+  },
+  "yellow-tablecloth": {
+    "id": 2077,
+    "display": "Yellow Tablecloth"
+  },
+  "blue-tablecloth": {
+    "id": 2078,
+    "display": "Blue Tablecloth"
+  },
+  "pink-tablecloth": {
+    "id": 2079,
+    "display": "Pink Tablecloth"
+  },
+  "gold-bottle": {
+    "id": 2080,
+    "display": "Gold Bottle"
+  },
+  "bronze-bottle": {
+    "id": 2081,
+    "display": "Bronze Bottle"
+  },
+  "gold-cup": {
+    "id": 2082,
+    "display": "Gold Cup"
+  },
+  "bronze-cup": {
+    "id": 2083,
+    "display": "Bronze Cup"
+  },
+  "green-poke-ball-pick": {
+    "id": 2084,
+    "display": "Green Poké Ball Pick"
+  },
+  "red-poke-ball-pick": {
+    "id": 2085,
+    "display": "Red Poké Ball Pick"
+  },
+  "party-sparkler-pick": {
+    "id": 2086,
+    "display": "Party Sparkler Pick"
+  },
+  "heroic-sword-pick": {
+    "id": 2087,
+    "display": "Heroic Sword Pick"
+  },
+  "magical-star-pick": {
+    "id": 2088,
+    "display": "Magical Star Pick"
+  },
+  "magical-heart-pick": {
+    "id": 2089,
+    "display": "Magical Heart Pick"
+  },
+  "parasol-pick": {
+    "id": 2090,
+    "display": "Parasol Pick"
+  },
+  "blue-sky-flower-pick": {
+    "id": 2091,
+    "display": "Blue-Sky Flower Pick"
+  },
+  "sunset-flower-pick": {
+    "id": 2092,
+    "display": "Sunset Flower Pick"
+  },
+  "sunrise-flower-pick": {
+    "id": 2093,
+    "display": "Sunrise Flower Pick"
+  },
+  "blue-dish": {
+    "id": 2094,
+    "display": "Blue Dish"
+  },
+  "green-dish": {
+    "id": 2095,
+    "display": "Green Dish"
+  },
+  "orange-dish": {
+    "id": 2096,
+    "display": "Orange Dish"
+  },
+  "red-dish": {
+    "id": 2097,
+    "display": "Red Dish"
+  },
+  "white-dish": {
+    "id": 2098,
+    "display": "White Dish"
+  },
+  "yellow-dish": {
+    "id": 2099,
+    "display": "Yellow Dish"
+  },
+  "roto-stick": {
+    "id": 2100,
+    "display": "Roto Stick"
+  },
+  "teal-style-card": {
+    "id": 2101,
+    "display": "Teal Style Card"
+  },
+  "teal-mask": {
+    "id": 2102,
+    "display": "Teal Mask"
+  },
+  "glimmering-charm": {
+    "id": 2103,
+    "display": "Glimmering Charm"
+  },
+  "crystal-cluster": {
+    "id": 2104,
+    "display": "Crystal Cluster"
+  },
+  "fairy-feather": {
+    "id": 2105,
+    "display": "Fairy Feather"
+  },
+  "wellspring-mask": {
+    "id": 2106,
+    "display": "Wellspring Mask"
+  },
+  "hearthflame-mask": {
+    "id": 2107,
+    "display": "Hearthflame Mask"
+  },
+  "cornerstone-mask": {
+    "id": 2108,
+    "display": "Cornerstone Mask"
+  },
+  "syrupy-apple": {
+    "id": 2109,
+    "display": "Syrupy Apple"
+  },
+  "unremarkable-teacup": {
+    "id": 2110,
+    "display": "Unremarkable Teacup"
+  },
+  "masterpiece-teacup": {
+    "id": 2111,
+    "display": "Masterpiece Teacup"
+  },
+  "health-mochi": {
+    "id": 2112,
+    "display": "Health Mochi"
+  },
+  "muscle-mochi": {
+    "id": 2113,
+    "display": "Muscle Mochi"
+  },
+  "resist-mochi": {
+    "id": 2114,
+    "display": "Resist Mochi"
+  },
+  "genius-mochi": {
+    "id": 2115,
+    "display": "Genius Mochi"
+  },
+  "clever-mochi": {
+    "id": 2116,
+    "display": "Clever Mochi"
+  },
+  "swift-mochi": {
+    "id": 2117,
+    "display": "Swift Mochi"
+  },
+  "fresh-start-mochi": {
+    "id": 2118,
+    "display": "Fresh Start Mochi"
+  },
+  "ekans-fang": {
+    "id": 2119,
+    "display": "Ekans Fang"
+  },
+  "sandshrew-claw": {
+    "id": 2120,
+    "display": "Sandshrew Claw"
+  },
+  "cleffa-fur": {
+    "id": 2121,
+    "display": "Cleffa Fur"
+  },
+  "vulpix-fur": {
+    "id": 2122,
+    "display": "Vulpix Fur"
+  },
+  "poliwag-slime": {
+    "id": 2123,
+    "display": "Poliwag Slime"
+  },
+  "bellsprout-vine": {
+    "id": 2124,
+    "display": "Bellsprout Vine"
+  },
+  "geodude-fragment": {
+    "id": 2125,
+    "display": "Geodude Fragment"
+  },
+  "koffing-gas": {
+    "id": 2126,
+    "display": "Koffing Gas"
+  },
+  "munchlax-fang": {
+    "id": 2127,
+    "display": "Munchlax Fang"
+  },
+  "sentret-fur": {
+    "id": 2128,
+    "display": "Sentret Fur"
+  },
+  "hoothoot-feather": {
+    "id": 2129,
+    "display": "Hoothoot Feather"
+  },
+  "spinarak-thread": {
+    "id": 2130,
+    "display": "Spinarak Thread"
+  },
+  "aipom-hair": {
+    "id": 2131,
+    "display": "Aipom Hair"
+  },
+  "yanma-spike": {
+    "id": 2132,
+    "display": "Yanma Spike"
+  },
+  "gligar-fang": {
+    "id": 2133,
+    "display": "Gligar Fang"
+  },
+  "slugma-lava": {
+    "id": 2134,
+    "display": "Slugma Lava"
+  },
+  "swinub-hair": {
+    "id": 2135,
+    "display": "Swinub Hair"
+  },
+  "poochyena-fang": {
+    "id": 2136,
+    "display": "Poochyena Fang"
+  },
+  "lotad-leaf": {
+    "id": 2137,
+    "display": "Lotad Leaf"
+  },
+  "seedot-stem": {
+    "id": 2138,
+    "display": "Seedot Stem"
+  },
+  "nosepass-fragment": {
+    "id": 2139,
+    "display": "Nosepass Fragment"
+  },
+  "volbeat-fluid": {
+    "id": 2140,
+    "display": "Volbeat Fluid"
+  },
+  "illumise-fluid": {
+    "id": 2141,
+    "display": "Illumise Fluid"
+  },
+  "corphish-shell": {
+    "id": 2142,
+    "display": "Corphish Shell"
+  },
+  "feebas-scales": {
+    "id": 2143,
+    "display": "Feebas Scales"
+  },
+  "duskull-fragment": {
+    "id": 2144,
+    "display": "Duskull Fragment"
+  },
+  "chingling-fragment": {
+    "id": 2145,
+    "display": "Chingling Fragment"
+  },
+  "timburr-sweat": {
+    "id": 2146,
+    "display": "Timburr Sweat"
+  },
+  "sewaddle-leaf": {
+    "id": 2147,
+    "display": "Sewaddle Leaf"
+  },
+  "ducklett-feather": {
+    "id": 2148,
+    "display": "Ducklett Feather"
+  },
+  "litwick-soot": {
+    "id": 2149,
+    "display": "Litwick Soot"
+  },
+  "mienfoo-claw": {
+    "id": 2150,
+    "display": "Mienfoo Claw"
+  },
+  "vullaby-feather": {
+    "id": 2151,
+    "display": "Vullaby Feather"
+  },
+  "carbink-jewel": {
+    "id": 2152,
+    "display": "Carbink Jewel"
+  },
+  "phantump-twig": {
+    "id": 2153,
+    "display": "Phantump Twig"
+  },
+  "grubbin-thread": {
+    "id": 2154,
+    "display": "Grubbin Thread"
+  },
+  "cutiefly-powder": {
+    "id": 2155,
+    "display": "Cutiefly Powder"
+  },
+  "jangmo-o-scales": {
+    "id": 2156,
+    "display": "Jangmo-o Scales"
+  },
+  "cramorant-down": {
+    "id": 2157,
+    "display": "Cramorant Down"
+  },
+  "morpeko-snack": {
+    "id": 2158,
+    "display": "Morpeko Snack"
+  },
+  "poltchageist-powder": {
+    "id": 2159,
+    "display": "Poltchageist Powder"
+  },
+  "linking-cord": {
+    "id": 2160,
+    "display": "Linking Cord"
+  },
+  "tm172": {
+    "id": 2161,
+    "display": "TM172"
+  },
+  "tm173": {
+    "id": 2162,
+    "display": "TM173"
+  },
+  "tm174": {
+    "id": 2163,
+    "display": "TM174"
+  },
+  "tm175": {
+    "id": 2164,
+    "display": "TM175"
+  },
+  "tm176": {
+    "id": 2165,
+    "display": "TM176"
+  },
+  "tm177": {
+    "id": 2166,
+    "display": "TM177"
+  },
+  "tm178": {
+    "id": 2167,
+    "display": "TM178"
+  },
+  "tm179": {
+    "id": 2168,
+    "display": "TM179"
+  },
+  "tm180": {
+    "id": 2169,
+    "display": "TM180"
+  },
+  "tm181": {
+    "id": 2170,
+    "display": "TM181"
+  },
+  "tm182": {
+    "id": 2171,
+    "display": "TM182"
+  },
+  "tm183": {
+    "id": 2172,
+    "display": "TM183"
+  },
+  "tm184": {
+    "id": 2173,
+    "display": "TM184"
+  },
+  "tm185": {
+    "id": 2174,
+    "display": "TM185"
+  },
+  "tm186": {
+    "id": 2175,
+    "display": "TM186"
+  },
+  "tm187": {
+    "id": 2176,
+    "display": "TM187"
+  },
+  "tm188": {
+    "id": 2177,
+    "display": "TM188"
+  },
+  "tm189": {
+    "id": 2178,
+    "display": "TM189"
+  },
+  "tm190": {
+    "id": 2179,
+    "display": "TM190"
+  },
+  "tm191": {
+    "id": 2180,
+    "display": "TM191"
+  },
+  "tm192": {
+    "id": 2181,
+    "display": "TM192"
+  },
+  "tm193": {
+    "id": 2182,
+    "display": "TM193"
+  },
+  "tm194": {
+    "id": 2183,
+    "display": "TM194"
+  },
+  "tm195": {
+    "id": 2184,
+    "display": "TM195"
+  },
+  "tm196": {
+    "id": 2185,
+    "display": "TM196"
+  },
+  "tm197": {
+    "id": 2186,
+    "display": "TM197"
+  },
+  "tm198": {
+    "id": 2187,
+    "display": "TM198"
+  },
+  "tm199": {
+    "id": 2188,
+    "display": "TM199"
+  },
+  "tm200": {
+    "id": 2189,
+    "display": "TM200"
+  },
+  "tm201": {
+    "id": 2190,
+    "display": "TM201"
+  },
+  "tm202": {
+    "id": 2191,
+    "display": "TM202"
+  },
+  "tm203": {
+    "id": 2192,
+    "display": "TM203"
+  },
+  "tm204": {
+    "id": 2193,
+    "display": "TM204"
+  },
+  "tm205": {
+    "id": 2194,
+    "display": "TM205"
+  },
+  "tm206": {
+    "id": 2195,
+    "display": "TM206"
+  },
+  "tm207": {
+    "id": 2196,
+    "display": "TM207"
+  },
+  "tm208": {
+    "id": 2197,
+    "display": "TM208"
+  },
+  "tm209": {
+    "id": 2198,
+    "display": "TM209"
+  },
+  "tm210": {
+    "id": 2199,
+    "display": "TM210"
+  },
+  "tm211": {
+    "id": 2200,
+    "display": "TM211"
+  },
+  "tm212": {
+    "id": 2201,
+    "display": "TM212"
+  },
+  "tm213": {
+    "id": 2202,
+    "display": "TM213"
+  },
+  "tm214": {
+    "id": 2203,
+    "display": "TM214"
+  },
+  "tm215": {
+    "id": 2204,
+    "display": "TM215"
+  },
+  "tm216": {
+    "id": 2205,
+    "display": "TM216"
+  },
+  "tm217": {
+    "id": 2206,
+    "display": "TM217"
+  },
+  "tm218": {
+    "id": 2207,
+    "display": "TM218"
+  },
+  "tm219": {
+    "id": 2208,
+    "display": "TM219"
+  },
+  "tm220": {
+    "id": 2209,
+    "display": "TM220"
+  },
+  "tm221": {
+    "id": 2210,
+    "display": "TM221"
+  },
+  "tm222": {
+    "id": 2211,
+    "display": "TM222"
+  },
+  "tm223": {
+    "id": 2212,
+    "display": "TM223"
+  },
+  "tm224": {
+    "id": 2213,
+    "display": "TM224"
+  },
+  "tm225": {
+    "id": 2214,
+    "display": "TM225"
+  },
+  "tm226": {
+    "id": 2215,
+    "display": "TM226"
+  },
+  "tm227": {
+    "id": 2216,
+    "display": "TM227"
+  },
+  "tm228": {
+    "id": 2217,
+    "display": "TM228"
+  },
+  "tm229": {
+    "id": 2218,
+    "display": "TM229"
+  },
+  "lastrange-ball": {
+    "id": 2219,
+    "display": "Strange Ball"
+  },
+  "lapoke-ball": {
+    "id": 2220,
+    "display": "Poké Ball"
+  },
+  "lagreat-ball": {
+    "id": 2221,
+    "display": "Great Ball"
+  },
+  "laultra-ball": {
+    "id": 2222,
+    "display": "Ultra Ball"
+  },
+  "laheavy-ball": {
+    "id": 2223,
+    "display": "Heavy Ball"
+  },
+  "laleaden-ball": {
+    "id": 2224,
+    "display": "Leaden Ball"
+  },
+  "lagigaton-ball": {
+    "id": 2225,
+    "display": "Gigaton Ball"
+  },
+  "lafeather-ball": {
+    "id": 2226,
+    "display": "Feather Ball"
+  },
+  "lawing-ball": {
+    "id": 2227,
+    "display": "Wing Ball"
+  },
+  "lajet-ball": {
+    "id": 2228,
+    "display": "Jet Ball"
+  },
+  "laorigin-ball": {
+    "id": 2229,
+    "display": "Origin Ball"
+  },
+  "black-augurite": {
+    "id": 10001,
+    "display": "black-augurite"
+  },
+  "peat-block": {
+    "id": 10002,
+    "display": "peat-block"
+  }
+}
