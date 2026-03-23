@@ -8,7 +8,7 @@
     - Si hay mapa previo y count <= localCount => no hace nada
     - Si no hay mapa previo (bootstrap) => siempre continúa
   - Trae índice completo /item?limit=100000
-  - Agrega faltantes con pool (GET /item/{name} para id + nombre ES/EN)
+  - Agrega faltantes con pool (GET /item/{name} para id + nombre ES/EN + category)
   - Escribe NUEVO item_es_map.YYYY-MM-DD.json
   - Actualiza manifest.json a ese nuevo archivo
   - Borra el archivo viejo (si existía y es distinto)
@@ -82,6 +82,15 @@ function pickLocalizedName(itemJson)
     return en || (itemJson && itemJson.name ? itemJson.name : null);
 }
 
+function pickCategoryName(itemJson)
+{
+    return itemJson &&
+        itemJson.category &&
+        itemJson.category.name
+        ? itemJson.category.name
+        : null;
+}
+
 async function withPool(items, poolSize, workerFn)
 {
     let p = 0;
@@ -107,7 +116,7 @@ function safeUnlink(filePath)
         {
             unlinkSync(filePath);
         }
-    
+
     }catch(e)
     {
         console.warn("[WARN] No pude borrar:", filePath, e && e.message ? e.message : e);
@@ -162,18 +171,17 @@ async function main()
             knownKeys = new Set(Object.keys(esMap));
             console.log("[INFO] Archivo actual:", oldFileName);
             console.log("[INFO] Cantidad actual en map:", knownKeys.size);
-        
+
         }else
         {
             console.log("[INFO] No existe el mapa previo (archivo faltante). Bootstrap desde cero.");
         }
-    
+
     }else
     {
         console.log("[INFO] manifest sin items_url. Bootstrap desde cero.");
     }
 
-    // 1.A) Chequeo liviano: count
     const head = await getJson(API + "/item?limit=1");
     const apiCount = getCountFromListResponse(head);
     const localCount = knownKeys.size;
@@ -227,7 +235,8 @@ async function main()
 
             esMap[name] = {
                 id: item && typeof item.id === "number" ? item.id : null,
-                display: pickLocalizedName(item)
+                display: pickLocalizedName(item),
+                category: pickCategoryName(item)
             };
 
             added++;
@@ -236,7 +245,7 @@ async function main()
             {
                 console.log("[INFO] Procesados " + (idx + 1) + "/" + missing.length + " | agregados=" + added + " | fallidos=" + failed);
             }
-        
+
         }catch(e)
         {
             failed++;
@@ -277,7 +286,7 @@ async function main()
     {
         safeUnlink(oldMapPath);
         console.log("[OK] Borrado viejo:", oldFileName);
-    
+
     }else if(oldFileName === newFileName)
     {
         console.log("[INFO] Viejo y nuevo coinciden (mismo día). No se borra.");
