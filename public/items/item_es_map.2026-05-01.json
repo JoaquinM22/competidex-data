@@ -10864,6 +10864,11 @@
     "display": "Origin Ball",
     "category": "standard-balls"
   },
+  "metal-alloy": {
+    "id": 2232,
+    "display": "metal-alloy",
+    "category": "evolution"
+  },
   "black-augurite": {
     "id": 10001,
     "display": "black-augurite",
