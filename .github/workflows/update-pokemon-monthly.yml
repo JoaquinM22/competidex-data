@@ -3,7 +3,7 @@ name: Update Pokemon Map (monthly)
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 8 1 * *"  # día 1 de cada mes 08:00 UTC
+    - cron: "0 11 1 * *"  # día 1 de cada mes 11:00 UTC
 
 permissions:
   contents: write

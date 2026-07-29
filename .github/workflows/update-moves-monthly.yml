@@ -3,8 +3,8 @@ name: Update moves ES map (monthly)
 on:
   workflow_dispatch:
   schedule:
-    # 1 vez al mes: día 1 a las 03:10 UTC
-    - cron: "10 3 1 * *"
+    # 1 vez al mes: día 1 a las 10:00 UTC
+    - cron: "0 10 1 * *"
 
 permissions:
   contents: write
