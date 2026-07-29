@@ -98,6 +98,21 @@ function getIsContact(showdownIndex, pokeApiName)
     return !!(mv.flags && Object.prototype.hasOwnProperty.call(mv.flags, "contact"));
 }
 
+function getNullDisplayKeys(map)
+{
+    const keys = [];
+
+    for(const name of Object.keys(map))
+    {
+        if(!map[name] || map[name].display === null || typeof map[name].display === "undefined")
+        {
+            keys.push(name);
+        }
+    }
+
+    return keys;
+}
+
 async function withPool(items, poolSize, workerFn)
 {
     let p = 0;
@@ -189,6 +204,47 @@ async function main()
             esMap[name].isContact = nextIsContact;
             changed = true;
         }
+    }
+
+    const nullDisplayKeys = getNullDisplayKeys(esMap);
+
+    if(nullDisplayKeys.length)
+    {
+        console.log("[INFO] Moves con display null a reintentar:", nullDisplayKeys.length);
+
+        const DISPLAY_POOL = Number(process.env.MOVES_DISPLAY_POOL || 5);
+        console.log("[INFO] Concurrencia pool display:", DISPLAY_POOL);
+
+        let displayAdded = 0;
+        let displayFailed = 0;
+
+        await withPool(nullDisplayKeys, DISPLAY_POOL, async (name, idx) =>
+        {
+            try
+            {
+                const mv = await getJson(`${API}/move/${name}`);
+                const nextDisplay = pickSpanishName(mv);
+
+                if(nextDisplay)
+                {
+                    esMap[name].display = nextDisplay;
+                    changed = true;
+                    displayAdded++;
+                }
+
+                if((idx + 1) % 50 === 0)
+                {
+                    console.log(`[INFO] Display reintentos ${idx + 1}/${nullDisplayKeys.length} | completados=${displayAdded} | fallidos=${displayFailed}`);
+                }
+
+            }catch(e)
+            {
+                displayFailed++;
+                console.warn("[WARN] No pude reintentar display:", name, e && e.message ? e.message : e);
+            }
+        });
+
+        console.log("[INFO] Display completados:", displayAdded, "| sin cambio:", nullDisplayKeys.length - displayAdded, "| fallidos:", displayFailed);
     }
 
     // 1.A) Chequeo liviano: count
