@@ -18,6 +18,7 @@ const { readFileSync, writeFileSync, existsSync, unlinkSync } = require("fs");
 const { join } = require("path");
 
 const API = "https://pokeapi.co/api/v2";
+const SHOWDOWN_MOVES_URL = "https://play.pokemonshowdown.com/data/moves.json";
 
 function readJSON(p)
 {
@@ -60,6 +61,41 @@ function pickSpanishName(mvJson)
         if (n && n.language && n.language.name === "es" && n.name) return n.name;
     }
     return null;
+}
+
+function normalizeShowdownKey(name)
+{
+    return String(name || "").toLowerCase().replace(/-/g, "");
+}
+
+function buildShowdownIndex(showdownJson)
+{
+    const index = {};
+    const entries = showdownJson && typeof showdownJson === "object" ? Object.entries(showdownJson) : [];
+
+    for(const [key, value] of entries)
+    {
+        index[normalizeShowdownKey(key)] = value;
+    }
+
+    return index;
+}
+
+function getShowdownMove(showdownIndex, pokeApiName)
+{
+    return showdownIndex[normalizeShowdownKey(pokeApiName)] || null;
+}
+
+function getIsContact(showdownIndex, pokeApiName)
+{
+    const mv = getShowdownMove(showdownIndex, pokeApiName);
+
+    if(!mv)
+    {
+        return null;
+    }
+
+    return !!(mv.flags && Object.prototype.hasOwnProperty.call(mv.flags, "contact"));
 }
 
 async function withPool(items, poolSize, workerFn)
@@ -136,6 +172,25 @@ async function main()
         console.log("[INFO] manifest sin moves_url. Bootstrap desde cero.");
     }
 
+    // Showdown: fuente extra para isContact
+    const showdownRaw = await getJson(SHOWDOWN_MOVES_URL);
+    const showdownIndex = buildShowdownIndex(showdownRaw);
+    console.log("[INFO] Showdown moves index cargado:", Object.keys(showdownIndex).length);
+
+    let changed = false;
+
+    // Backfill de isContact para lo que ya existe en el mapa local
+    for(const name of Object.keys(esMap))
+    {
+        const nextIsContact = getIsContact(showdownIndex, name);
+
+        if(esMap[name].isContact !== nextIsContact)
+        {
+            esMap[name].isContact = nextIsContact;
+            changed = true;
+        }
+    }
+
     // 1.A) Chequeo liviano: count
     const head = await getJson(`${API}/move?limit=1`);
     const apiCount = getCountFromListResponse(head);
@@ -146,9 +201,9 @@ async function main()
     const isBootstrap = localCount === 0;
 
     // Si no es bootstrap y el count no creció, corto
-    if(!isBootstrap && apiCount !== null && apiCount <= localCount)
+    if(!isBootstrap && apiCount !== null && apiCount <= localCount && !changed)
     {
-        console.log("[OK] El count no creció. No hay moves nuevos. Nada que actualizar.");
+        console.log("[OK] El count no creció y no hubo cambios en isContact. Nada que actualizar.");
         return;
     }
 
@@ -168,8 +223,13 @@ async function main()
 
     if(!missing.length)
     {
-        console.log("[OK] No hay moves nuevos (missing=0). Nada que actualizar.");
-        return;
+        if(!changed)
+        {
+            console.log("[OK] No hay moves nuevos (missing=0) ni cambios en isContact. Nada que actualizar.");
+            return;
+        }
+
+        console.log("[INFO] No hay moves nuevos, pero sí cambios en isContact. Se reescribe el map.");
     }
 
     console.log("[INFO] Moves a agregar:", missing.length);
@@ -189,10 +249,13 @@ async function main()
 
             esMap[name] = {
                 id: mv && typeof mv.id === "number" ? mv.id : null,
+                isContact: getIsContact(showdownIndex, name),
                 display: pickSpanishName(mv) || null,
                 type: mv && mv.type ? mv.type.name : null,
                 damage_class: mv && mv.damage_class ? mv.damage_class.name : null,
             };
+
+            changed = true;
 
             added++;
 
