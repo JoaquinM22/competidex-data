@@ -1,4 +1,6 @@
 {
-  "version": "2026-07-29",
-  "moves_url": "/moves/move_es_map.2026-07-29.json"
+  "version": "2026-08-07",
+  "moves_url": "/moves/move_es_map.2026-08-07.json",
+  "machines_count": 2372,
+  "machines_full_rebuild_at": "2026-08-07"
 }
