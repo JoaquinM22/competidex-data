@@ -5,10 +5,14 @@
   - Lee public/pokemon/manifest.json -> pokemon_url actual (puede ser null en 1ra vez)
   - Si hay archivo actual: lo carga. Si no hay: arranca con map vacío (bootstrap)
   - Chequeo liviano: GET /pokemon?limit=1 (count)
-    - Si hay mapa previo y count <= localCount => no hace nada
+    - Si hay mapa previo y count <= localCount => no hace nada, salvo que haya schema viejo o rebuild anual pendiente
     - Si no hay mapa previo (bootstrap) => siempre continúa
-  - Trae índice completo /pokemon?limit=100000
-  - Agrega faltantes con pool (GET /pokemon/{name} para id+types)
+  - Cada pokemon guarda
+    id, types, generation, abilities, weight, height, stats, 
+    malePercentage, femalePercentage, sinSexo (booleano), captureRate, puedeCriar (booleano), color, hasMegaForms (booleano), hasGigaForm (booleano) y display
+  - Los datos salen de /pokemon/{name} y /pokemon-species/{id or name}
+  - Guarda en manifest.json la fecha del último rebuild completo
+  - Fuerza un rebuild completo una vez por año
   - Escribe NUEVO pokemon_map.YYYY-MM-DD.json
   - Actualiza manifest.json a ese nuevo archivo
   - Borra el archivo viejo (si existía y es distinto)
@@ -16,8 +20,10 @@
 
 const { readFileSync, writeFileSync, existsSync, unlinkSync } = require("fs");
 const { join } = require("path");
+const { canPokemonBreed, toPokemonDisplayName, getColorPkmByKey, getPokemonGenByKey, hasPokemonGigaForm, hasPokemonMegaForms } = require("../utils/pokemon_scripts_utils");
 
 const API = "https://pokeapi.co/api/v2";
+const POKEMON_FULL_REBUILD_DAYS = 365;
 
 function readJSON(p)
 {
@@ -38,6 +44,23 @@ function todayISO()
     return `${yyyy}-${mm}-${dd}`;
 }
 
+function parseISODateUTC(dateStr)
+{
+    if(!dateStr || typeof dateStr !== "string")
+    {
+        return null;
+    }
+
+    const d = new Date(`${dateStr}T00:00:00Z`);
+    return isNaN(d.getTime()) ? null : d;
+}
+
+function daysBetweenUTC(fromDate, toDate)
+{
+    const ms = toDate.getTime() - fromDate.getTime();
+    return Math.floor(ms / 86400000);
+}
+
 function getCountFromListResponse(listJson)
 {
     const c = listJson && typeof listJson.count === "number" ? listJson.count : null;
@@ -47,7 +70,7 @@ function getCountFromListResponse(listJson)
 async function getJson(url)
 {
     const res = await fetch(url, { headers: { accept: "application/json" } });
-    if (!res.ok) throw new Error(`HTTP ${res.status} GET ${url}`);
+    if(!res.ok) throw new Error(`HTTP ${res.status} GET ${url}`);
     return res.json();
 }
 
@@ -57,7 +80,7 @@ async function withPool(items, poolSize, workerFn)
 
     async function worker()
     {
-        while (p < items.length)
+        while(p < items.length)
         {
             const idx = p++;
             await workerFn(items[idx], idx);
@@ -72,8 +95,12 @@ function safeUnlink(filePath)
 {
     try
     {
-        if (filePath && existsSync(filePath)) unlinkSync(filePath);
-    } catch(e)
+        if(filePath && existsSync(filePath))
+        {
+            unlinkSync(filePath);
+        }
+
+    }catch(e)
     {
         console.warn("[WARN] No pude borrar:", filePath, e && e.message ? e.message : e);
     }
@@ -82,6 +109,234 @@ function safeUnlink(filePath)
 function safeObj(x)
 {
     return (x && typeof x === "object") ? x : {};
+}
+
+function safeNumber(value)
+{
+    return (typeof value === "number" && Number.isFinite(value)) ? value : null;
+}
+
+function safeText(value)
+{
+    if(typeof value !== "string")
+    {
+        return null;
+    }
+
+    const txt = value.trim();
+    return txt !== "" ? txt : null;
+}
+
+function normalizePokemonText(input)
+{
+  return String(input || "")
+    .toLowerCase()
+    .replace(/♀/g, " female ")
+    .replace(/♂/g, " male ")
+    .normalize("NFD").replace(/\p{Diacritic}/gu, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+function formatWeight(value)
+{
+    const num = safeNumber(value);
+    if(num === null) return null;
+    return Number((num / 10).toFixed(1));
+}
+
+function formatHeight(value)
+{
+    const num = safeNumber(value);
+    if(num === null) return null;
+    return Number((num / 10).toFixed(1));
+}
+
+function getRawTypes(raw)
+{
+    const types = Array.isArray(raw)
+        ? raw
+        : (raw && Array.isArray(raw.types) ? raw.types : []);
+
+    return types
+        .map((item) => item?.type?.name)
+        .filter(Boolean);
+}
+
+function getStats(rawStats)
+{
+    const statsPoke = returnEmptyStats();
+    const arr = Array.isArray(rawStats) ? rawStats : [];
+
+    for(const item of arr)
+    {
+        const name = item?.stat?.name;
+        const base = safeNumber(item?.base_stat);
+        const effort = safeNumber(item?.effort);
+
+        switch(name)
+        {
+            case "hp":
+                statsPoke.hp = base;
+                statsPoke.effort_hp = effort;
+                break;
+
+            case "attack":
+                statsPoke.atk = base;
+                statsPoke.effort_atk = effort;
+                break;
+
+            case "defense":
+                statsPoke.def = base;
+                statsPoke.effort_def = effort;
+                break;
+
+            case "special-attack":
+                statsPoke.spe_atk = base;
+                statsPoke.effort_spe_atk = effort;
+                break;
+
+            case "special-defense":
+                statsPoke.spe_def = base;
+                statsPoke.effort_spe_def = effort;
+                break;
+
+            case "speed":
+                statsPoke.speed = base;
+                statsPoke.effort_speed = effort;
+                break;
+        }
+    }
+
+    return statsPoke;
+}
+
+function returnEmptyStats()
+{
+    return {
+        hp: null,
+        effort_hp: null,
+        atk: null,
+        effort_atk: null,
+        def: null,
+        effort_def: null,
+        spe_atk: null,
+        effort_spe_atk: null,
+        spe_def: null,
+        effort_spe_def: null,
+        speed: null,
+        effort_speed: null
+    };
+}
+
+function getGenderPercentagePkm(genderRate)
+{
+    if(genderRate === -1 || genderRate == null)
+    {
+        return {
+            malePercentage: null,
+            femalePercentage: null,
+            sinSexo: true
+        };
+    }
+
+    if(genderRate === 0)
+    {
+        return {
+            malePercentage: 100,
+            femalePercentage: null,
+            sinSexo: false
+        };
+    }
+
+    if(genderRate === 8)
+    {
+        return {
+            malePercentage: null,
+            femalePercentage: 100,
+            sinSexo: false
+        };
+    }
+
+    const femalePercentage = (genderRate / 8) * 100;
+    const malePercentage = 100 - femalePercentage;
+
+    return {
+        malePercentage: parseFloat(malePercentage.toFixed(1)),
+        femalePercentage: parseFloat(femalePercentage.toFixed(1)),
+        sinSexo: false
+    };
+}
+
+function getPokemonAbilitiesFromRaw(raw)
+{
+    if(!raw || !Array.isArray(raw.abilities))
+    {
+        return [];
+    }
+
+    return raw.abilities
+        .map((item) => ({
+            name: normalizePokemonText(item?.ability?.name) ? String(item?.ability?.name).trim() : "",
+            slot: typeof item?.slot === "number" && Number.isFinite(item.slot) ? item.slot : null
+        }))
+        .filter((item) => item.name !== "");
+}
+
+function buildPokemonRecord(raw, speciesRaw)
+{
+    const genderData = getGenderPercentagePkm(speciesRaw?.gender_rate);
+    const apiName = safeText(raw?.name) || "";
+
+    return {
+        id: safeNumber(raw?.id),
+        types: getRawTypes(raw),
+        generation: getPokemonGenByKey(apiName, (safeText(speciesRaw?.generation?.name) || "")),
+        abilities: getPokemonAbilitiesFromRaw(raw),
+        weight: formatWeight(raw?.weight),
+        height: formatHeight(raw?.height),
+        stats: getStats(raw?.stats),
+        malePercentage: genderData.malePercentage,
+        femalePercentage: genderData.femalePercentage,
+        sinSexo: genderData.sinSexo,
+        captureRate: safeNumber(speciesRaw?.capture_rate),
+        puedeCriar: canPokemonBreed(raw?.name, speciesRaw),
+        color: getColorPkmByKey(apiName) || (safeText(speciesRaw?.color?.name) || ""),
+        display: toPokemonDisplayName(apiName),
+        hasMegaForms: hasPokemonMegaForms(apiName),
+        hasGigaForm: hasPokemonGigaForm(apiName)
+    };
+}
+
+function hasPokemonRecordSchema(record)
+{
+    return !!record &&
+        typeof record === "object" &&
+        Object.prototype.hasOwnProperty.call(record, "generation") &&
+        Object.prototype.hasOwnProperty.call(record, "abilities") &&
+        Object.prototype.hasOwnProperty.call(record, "weight") &&
+        Object.prototype.hasOwnProperty.call(record, "height") &&
+        Object.prototype.hasOwnProperty.call(record, "stats") &&
+        Object.prototype.hasOwnProperty.call(record, "malePercentage") &&
+        Object.prototype.hasOwnProperty.call(record, "femalePercentage") &&
+        Object.prototype.hasOwnProperty.call(record, "sinSexo") &&
+        Object.prototype.hasOwnProperty.call(record, "captureRate") &&
+        Object.prototype.hasOwnProperty.call(record, "puedeCriar") &&
+        Object.prototype.hasOwnProperty.call(record, "color") &&
+        Object.prototype.hasOwnProperty.call(record, "hasMegaForms") &&
+        Object.prototype.hasOwnProperty.call(record, "hasGigaForm") &&
+        Object.prototype.hasOwnProperty.call(record, "display");
+}
+
+function needsPokemonRefresh(record)
+{
+    return !hasPokemonRecordSchema(record) ||
+        record === null ||
+        typeof record !== "object" ||
+        !Array.isArray(record.types) ||
+        !record.stats ||
+        typeof record.stats !== "object" ||
+        !Array.isArray(record.abilities);
 }
 
 async function main()
@@ -107,7 +362,7 @@ async function main()
     let map = {};
     let knownKeys = new Set();
 
-    // BOOTSTRAP: si no hay pokemon_url o el archivo no existe, arrancamos vacío
+    // BOOTSTRAP: si hay pokemon_url y el archivo existe, lo cargo. Si no, arranco vacío.
     if(pokemonUrlPath)
     {
         oldFileName = pokemonUrlPath.split("/").filter(Boolean).pop();
@@ -119,6 +374,7 @@ async function main()
             knownKeys = new Set(Object.keys(map));
             console.log("[INFO] Archivo actual:", oldFileName);
             console.log("[INFO] Cantidad actual en map:", knownKeys.size);
+
         }else
         {
             console.log("[INFO] No existe mapa previo (archivo faltante). Bootstrap desde cero.");
@@ -129,18 +385,28 @@ async function main()
         console.log("[INFO] manifest sin pokemon_url. Bootstrap desde cero.");
     }
 
+    const lastFullRebuildDate = parseISODateUTC(
+        manifest && manifest.pokemon_full_rebuild_at ? String(manifest.pokemon_full_rebuild_at) : null
+    );
+    const todayDate = parseISODateUTC(todayISO());
+    const rebuildDue = !lastFullRebuildDate || daysBetweenUTC(lastFullRebuildDate, todayDate) >= POKEMON_FULL_REBUILD_DAYS;
+    const forceFullRebuild = String(process.env.FORCE_FULL_POKEMON_REBUILD || "") === "1";
+
     // 1.A) Chequeo liviano: count
     const head = await getJson(`${API}/pokemon?limit=1`);
     const apiCount = getCountFromListResponse(head);
     const localCount = knownKeys.size;
 
     console.log("[INFO] Pokemon local:", localCount, "| Pokemon API (count):", apiCount);
+    console.log("[INFO] Pokemon full rebuild due:", rebuildDue, "| forced:", forceFullRebuild);
 
-    // Si NO es bootstrap y count no creció => no hacemos nada
     const isBootstrap = (localCount === 0);
-    if(!isBootstrap && apiCount !== null && apiCount <= localCount)
+    const schemaRefreshNeeded = Object.keys(map).some((name) => needsPokemonRefresh(map[name]));
+
+    // Si no es bootstrap, no creció el count, no hay schema viejo y no toca rebuild anual => no hacemos nada
+    if(!isBootstrap && !rebuildDue && !forceFullRebuild && !schemaRefreshNeeded && apiCount !== null && apiCount <= localCount)
     {
-        console.log("[OK] El count no creció. No hay pokemon nuevos. Nada que actualizar.");
+        console.log("[OK] El count no creció. No hay pokemon nuevos ni rebuild pendiente. Nada que actualizar.");
         return;
     }
 
@@ -149,21 +415,51 @@ async function main()
     const results = (list && list.results) ? list.results : [];
     console.log("[INFO] Pokemon en API (results):", results.length);
 
-    // 2) Faltantes
+    // 2) Faltantes o registros a refrescar
     const missing = [];
+    const toRefresh = [];
+
     for(let i = 0; i < results.length; i++)
     {
         const name = results[i] && results[i].name ? results[i].name : null;
-        if (name && !knownKeys.has(name)) missing.push(name);
+
+        if(!name)
+        {
+            continue;
+        }
+
+        if(isBootstrap || rebuildDue || forceFullRebuild)
+        {
+            toRefresh.push(name);
+            continue;
+        }
+
+        if(!knownKeys.has(name))
+        {
+            missing.push(name);
+            continue;
+        }
+
+        if(needsPokemonRefresh(map[name]))
+        {
+            toRefresh.push(name);
+        }
     }
 
-    if(!missing.length)
+    const candidates = missing.concat(toRefresh);
+
+    if(!candidates.length)
     {
-        console.log("[OK] No hay pokemon nuevos (missing=0). Nada que actualizar.");
-        return;
+        if(!schemaRefreshNeeded)
+        {
+            console.log("[OK] No hay pokemon nuevos ni schema viejo para migrar. Nada que actualizar.");
+            return;
+        }
+
+        console.log("[INFO] Hay schema viejo, pero no se encontraron candidatos por refrescar. Se reescribe el map igual.");
     }
 
-    console.log("[INFO] Pokemon a agregar:", missing.length);
+    console.log("[INFO] Pokemon a agregar:", missing.length, "| a refrescar:", toRefresh.length);
 
     // 3) Detalles con concurrencia
     const POOL = Number(process.env.POKEMON_POOL || 5);
@@ -172,27 +468,27 @@ async function main()
     let added = 0;
     let failed = 0;
 
-    await withPool(missing, POOL, async (name, idx) => {
-        try {
-        const p = await getJson(`${API}/pokemon/${name}`);
+    await withPool(candidates, POOL, async (name, idx) =>
+    {
+        try
+        {
+            const p = await getJson(`${API}/pokemon/${name}`);
+            const speciesUrl = p?.species?.url || (p?.id != null ? `${API}/pokemon-species/${p.id}/` : null);
+            const speciesRaw = speciesUrl ? await getJson(speciesUrl) : null;
 
-        const types = (p && p.types ? p.types : [])
-            .map(t => (t && t.type ? t.type.name : null))
-            .filter(Boolean);
+            map[name] = buildPokemonRecord(p, speciesRaw);
 
-        map[name] = {
-            id: (p && p.id) ? p.id : null,
-            types: types
-        };
+            added++;
 
-        added++;
+            if((idx + 1) % 50 === 0)
+            {
+                console.log(`[INFO] Procesados ${idx + 1}/${candidates.length} | agregados=${added} | fallidos=${failed}`);
+            }
 
-        if ((idx + 1) % 50 === 0) {
-            console.log(`[INFO] Procesados ${idx + 1}/${missing.length} | agregados=${added} | fallidos=${failed}`);
-        }
-        } catch (e) {
-        failed++;
-        console.warn("[WARN] No pude agregar:", name, e && e.message ? e.message : e);
+        }catch(e)
+        {
+            failed++;
+            console.warn("[WARN] No pude agregar/refrescar:", name, e && e.message ? e.message : e);
         }
     });
 
@@ -206,6 +502,13 @@ async function main()
     // 5) Actualizar manifest
     manifest.version = version;
     manifest.pokemon_url = `/pokemon/${newFileName}`;
+
+    const fullRefreshPerformed = isBootstrap || rebuildDue || forceFullRebuild || toRefresh.length === knownKeys.size;
+    if(fullRefreshPerformed)
+    {
+        manifest.pokemon_full_rebuild_at = version;
+    }
+
     writeJSON(manifestPath, manifest);
 
     // 6) Borrar el viejo si corresponde
@@ -221,7 +524,7 @@ async function main()
 
     console.log("[OK] Generado:", newFileName);
     console.log("[OK] Manifest actualizado a version:", version);
-    console.log("[OK] Total agregados:", added, "| fallidos:", failed);
+    console.log("[OK] Total agregados/refrescados:", added, "| fallidos:", failed);
 }
 
 main().catch((e) => {
