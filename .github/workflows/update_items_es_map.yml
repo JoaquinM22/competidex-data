@@ -3,7 +3,7 @@ name: Update items ES map (monthly)
 on:
   workflow_dispatch:
   schedule:
-    # 1 vez al mes: día 1 a las 09:00 UTC
+    # 1 vez al mes: día 1 de cada mes a las 09:00 UTC
     - cron: "0 9 1 * *"
 
 permissions:

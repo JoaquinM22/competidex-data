@@ -3,7 +3,8 @@ name: Update Ability Map (monthly)
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 8 1 * *"  # día 1 de cada mes 08:00 UTC
+    # 1 vez al mes: día 1 de cada mes a las 08:00 UTC
+    - cron: "0 8 1 * *"
 
 permissions:
   contents: write
