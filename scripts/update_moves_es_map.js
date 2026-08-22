@@ -12,7 +12,7 @@
   - Hace rebuild completo del índice de /machine solo si pasó 12 meses o si hace falta por seguridad
   - Trae índice completo /move?limit=100000
   - Agrega faltantes o migra entradas viejas con pool
-  - Enriquce cada move con id + display ES + type + damage_class + isContact + power + accuracy + pp + machinesByGroup
+  - Enriquce cada move con id + display ES + type + damage_class + flags derivadas + power + accuracy + pp + machinesByGroup
   - Escribe NUEVO move_es_map.YYYY-MM-DD.json
   - Actualiza manifest.json a ese nuevo archivo
   - Borra el archivo viejo (si existía y es distinto)
@@ -114,6 +114,32 @@ function isMoveV2Record(record)
         hasOwn(record, "type") &&
         hasOwn(record, "damage_class") &&
         hasOwn(record, "isContact") &&
+        hasOwn(record, "reflejaMantoEspejo") &&
+        hasOwn(record, "elegiblePorMetronomo") &&
+        hasOwn(record, "bloquedByProtect") &&
+        hasOwn(record, "reflejaEspejoMagico") &&
+        hasOwn(record, "afectadoPorRobo") &&
+        hasOwn(record, "isSoundMove") &&
+        hasOwn(record, "isWindMove") &&
+        hasOwn(record, "isBulletMove") &&
+        hasOwn(record, "traspasaSustituto") &&
+        hasOwn(record, "isBiteMove") &&
+        hasOwn(record, "isPulseMove") &&
+        hasOwn(record, "isPunchMove") &&
+        hasOwn(record, "isSharpMove") &&
+        hasOwn(record, "isDanceMove") &&
+        hasOwn(record, "isDefrostMove") &&
+        hasOwn(record, "afectadoPorRocaDelRey") &&
+        hasOwn(record, "inmuneACopion") &&
+        hasOwn(record, "inmuneAOtraVez") &&
+        hasOwn(record, "inmuneAMandato") &&
+        hasOwn(record, "inmuneAYoPrimero") &&
+        hasOwn(record, "inmuneAMimetico") &&
+        hasOwn(record, "afectadoPorGravedad") &&
+        hasOwn(record, "afectadoPorAnticuracion") &&
+        hasOwn(record, "duplicaPorReduccion") &&
+        hasOwn(record, "inmuneAEsquema") &&
+        hasOwn(record, "noElegiblePorSonambulo") &&
         hasOwn(record, "power") &&
         hasOwn(record, "accuracy") &&
         hasOwn(record, "pp") &&
@@ -158,16 +184,64 @@ function getShowdownMove(showdownIndex, pokeApiName)
     return showdownIndex[normalizeShowdownKey(pokeApiName)] || null;
 }
 
-function getIsContact(showdownIndex, pokeApiName)
+function getShowdownFlag(showdownIndex, pokeApiName, flagName)
 {
     const mv = getShowdownMove(showdownIndex, pokeApiName);
+    const flags = mv && mv.flags ? mv.flags : null;
 
-    if(!mv)
+    if(!flags)
     {
-        return null;
+        return false;
     }
 
-    return !!(mv.flags && Object.prototype.hasOwnProperty.call(mv.flags, "contact"));
+    return flags[flagName] === 1;
+}
+
+function buildMoveFlags(showdownIndex, pokeApiName)
+{
+    return {
+        isContact: getShowdownFlag(showdownIndex, pokeApiName, "contact"), // Es de contacto
+        reflejaMantoEspejo: getShowdownFlag(showdownIndex, pokeApiName, "mirror"), // Puede reflejarse si rival usa movimiento "Manto Espejo"
+        elegiblePorMetronomo: getShowdownFlag(showdownIndex, pokeApiName, "metronome"), // Puede salir al usar movimiento "Metronomo"
+        bloquedByProtect: getShowdownFlag(showdownIndex, pokeApiName, "protect"), // Es bloqueado por proteccion, deteccion, etc
+        reflejaEspejoMagico: getShowdownFlag(showdownIndex, pokeApiName, "reflectable"), // Es afectado por espejo magico
+        afectadoPorRobo: getShowdownFlag(showdownIndex, pokeApiName, "snatch"), // Es afectado por movimiento "Robo"
+        isSoundMove: getShowdownFlag(showdownIndex, pokeApiName, "sound"), // Es un movimiento de sonido
+        isWindMove: getShowdownFlag(showdownIndex, pokeApiName, "wind"), // Es un movimento de viento
+        isBulletMove: getShowdownFlag(showdownIndex, pokeApiName, "bullet"), // Es un movimiento que no posee efecto sobre habilidad "Antibalas"
+        traspasaSustituto: getShowdownFlag(showdownIndex, pokeApiName, "bypasssub"), // Atraviesa sustituto
+        isBiteMove: getShowdownFlag(showdownIndex, pokeApiName, "bite"), // Es un movimiento de mordisco (Se potencia x1.5 con habilidad "strong-jaw")
+        isPulseMove: getShowdownFlag(showdownIndex, pokeApiName, "pulse"), // Es un movimiento de pulso (Se potencia x1.5 con habilidad "mega-launcher")
+        isPunchMove: getShowdownFlag(showdownIndex, pokeApiName, "punch"), // Es un movimiento de puños (Se potencia x1.2 con habilidad "iron-fist")
+        isSharpMove: getShowdownFlag(showdownIndex, pokeApiName, "slicing"), // Es un movimiento de corte (Se potencia x1.5 con habilidad "sharpness")
+        isDanceMove: getShowdownFlag(showdownIndex, pokeApiName, "dance"), // Es un movimiento de danza (Activa la habilidad "dancer")
+        isDefrostMove: getShowdownFlag(showdownIndex, pokeApiName, "defrost"), // Descongela al usuario luego de usar el movimiento, en caso de estarlo
+        inmuneACopion: getShowdownFlag(showdownIndex, pokeApiName, "failcopycat"), // No es afectado por movimiento "Copion"
+        inmuneAOtraVez: getShowdownFlag(showdownIndex, pokeApiName, "failencore"), // No es afectado por movimiento "Otra vez"
+        inmuneAMandato: getShowdownFlag(showdownIndex, pokeApiName, "failinstruct"), // No es afectado por movimiento "Mandato"
+        inmuneAYoPrimero: getShowdownFlag(showdownIndex, pokeApiName, "failmefirst"), // No es afectado por movimiento "Yo Primero"
+        inmuneAMimetico: getShowdownFlag(showdownIndex, pokeApiName, "failmimic"), // No es afectado por movimiento "Mimetico"
+        afectadoPorGravedad: getShowdownFlag(showdownIndex, pokeApiName, "gravity"), // No se puede realizar el movimiento si hay "Gravedad"
+        afectadoPorAnticuracion: getShowdownFlag(showdownIndex, pokeApiName, "heal"), // No se puede realizar si hay efecto de "Anticuracion"
+        duplicaPorReduccion: getShowdownFlag(showdownIndex, pokeApiName, "minimize"), // El movimiento hace el doble de daño si el rival uso "Reduccion"
+        inmuneAEsquema: getShowdownFlag(showdownIndex, pokeApiName, "nosketch"), // El movimiento no puede ser copiado por movimiento "Esquema"
+        noElegiblePorSonambulo: getShowdownFlag(showdownIndex, pokeApiName, "nosleeptalk") // No puede ser seleccionado por movimiento "Sonambulo"
+    };
+}
+
+function getAfectadoPorRocaDelRey(moveJson)
+{
+    const damageClass = moveJson && moveJson.damage_class ? moveJson.damage_class.name : null;
+    const flinchChance = moveJson && moveJson.meta && typeof moveJson.meta.flinch_chance === "number"
+        ? moveJson.meta.flinch_chance
+        : null;
+
+    if(damageClass !== "physical" && damageClass !== "special")
+    {
+        return false;
+    }
+
+    return flinchChance === null || flinchChance <= 0;
 }
 
 function toSpanishMachineName(itemName)
@@ -249,13 +323,15 @@ function buildMachinesByGroup(moveName, machineIndex, moveJson)
 function buildMoveRecord(moveJson, showdownIndex, machineIndex)
 {
     const moveName = moveJson && moveJson.name ? moveJson.name : null;
+    const moveFlags = buildMoveFlags(showdownIndex, moveName);
 
     return {
         id: pickNumberField(moveJson, "id"),
         display: pickSpanishName(moveJson),
         type: moveJson && moveJson.type ? moveJson.type.name : null,
         damage_class: moveJson && moveJson.damage_class ? moveJson.damage_class.name : null,
-        isContact: getIsContact(showdownIndex, moveName),
+        ...moveFlags,
+        afectadoPorRocaDelRey: getAfectadoPorRocaDelRey(moveJson),
         power: pickNumberField(moveJson, "power"),
         accuracy: pickNumberField(moveJson, "accuracy"),
         pp: pickNumberField(moveJson, "pp"),
@@ -504,21 +580,31 @@ async function main()
         console.log("[INFO] manifest sin moves_url. Bootstrap desde cero.");
     }
 
-    // Showdown: fuente extra para isContact
+    // Showdown: fuente extra para flags de contacto/efectos
     const showdownRaw = await getJson(SHOWDOWN_MOVES_URL);
     const showdownIndex = buildShowdownIndex(showdownRaw);
     console.log("[INFO] Showdown moves index cargado:", Object.keys(showdownIndex).length);
 
     let changed = false;
 
-    // Backfill de isContact para lo que ya existe en el mapa local
+    // Backfill de flags para lo que ya existe en el mapa local
     for(const name of Object.keys(esMap))
     {
-        const nextIsContact = getIsContact(showdownIndex, name);
+        const nextFlags = buildMoveFlags(showdownIndex, name);
 
-        if(esMap[name].isContact !== nextIsContact)
+        let needsUpdate = false;
+
+        for(const key of Object.keys(nextFlags))
         {
-            esMap[name].isContact = nextIsContact;
+            if(esMap[name][key] !== nextFlags[key])
+            {
+                esMap[name][key] = nextFlags[key];
+                needsUpdate = true;
+            }
+        }
+
+        if(needsUpdate)
+        {
             changed = true;
         }
     }
@@ -652,7 +738,7 @@ async function main()
     const listNeeded = isBootstrap || changed || machineSyncMode === "full" || (apiMoveCount !== null && apiMoveCount > localMoveCount);
     if(!listNeeded && machineSyncMode === "none")
     {
-        console.log("[OK] No hay moves nuevos, no hubo cambios en isContact/display y no hay sync de machines. Nada que actualizar.");
+        console.log("[OK] No hay moves nuevos, no hubo cambios en flags/display y no hay sync de machines. Nada que actualizar.");
         return;
     }
 
@@ -707,7 +793,7 @@ async function main()
             return;
         }
 
-        console.log("[INFO] No hay moves nuevos, pero sí cambios en isContact/display o machines. Se reescribe el map.");
+        console.log("[INFO] No hay moves nuevos, pero sí cambios en flags/display o machines. Se reescribe el map.");
     }
 
     console.log("[INFO] Moves a agregar:", missing.length, "| a refrescar:", toRefresh.length);

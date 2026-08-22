@@ -1751,12 +1751,149 @@ function hasPokemonMegaForms(apiKey)
 // ---------------- DATOS META DE MEGA EVOLUCIONES POKÉMON - FIN ---------------- 
 
 
+// ---------------- DATOS META POKÉMON CON HABILIDADES EXTRA - INICIO ---------------- 
+//#region EXTRA HAB
+
+// Regla por especie/forma para ajustar habilidades:
+// - extraVisibles: habilidades que se agregan con slot 2, o slot 1 si replaceVisibles === true
+// - replaceVisibles: si es true, elimina todas las habilidades visibles (slot 1 y 2) antes de agregar extras
+// - extraHidden: habilidades que se agregan con slot 3
+// - replaceHidden: si es true, elimina todas las habilidades ocultas (slot 3) antes de agregar extras
+const EXTRA_ABILITIES_BY_KEY =
+{
+  "rockruff": {
+    "extraVisibles": [],
+    "replaceVisibles": null,
+    "extraHidden": ["own-tempo"],
+    "replaceHidden": false
+  },
+  "zygarde-10": {
+    "extraVisibles":["power-construct"],
+    "replaceVisibles": false,
+    "extraHidden": [],
+    "replaceHidden": null
+  },
+  "zygarde-50": {
+    "extraVisibles":["power-construct"],
+    "replaceVisibles": false,
+    "extraHidden": [],
+    "replaceHidden": null
+  },
+  "darmanitan-zen": {
+    "extraVisibles":[],
+    "replaceVisibles": true,
+    "extraHidden": ["zen-mode"],
+    "replaceHidden": true
+  },
+  "darmanitan-galar-zen": {
+    "extraVisibles":[],
+    "replaceVisibles": true,
+    "extraHidden": ["zen-mode"],
+    "replaceHidden": true
+  }
+};
+
+function normalizeExtraAbilityKey(input)
+{
+  return normalizePokemonKey(input);
+}
+
+function normalizePokemonAbilityName(input)
+{
+  const raw = String(input || "").trim();
+  return raw ? raw : null;
+}
+
+function buildPokemonAbilityEntry(name, slot)
+{
+  const normalizedName = normalizePokemonAbilityName(name);
+  const normalizedSlot = (typeof slot === "number" && Number.isFinite(slot)) ? slot : null;
+
+  if(!normalizedName || normalizedSlot === null)
+  {
+    return null;
+  }
+
+  return {
+    name: normalizedName,
+    slot: normalizedSlot
+  };
+}
+
+function getPokemonAbilitiesFromRaw(raw, apiKey = null)
+{
+  if(!raw || !Array.isArray(raw.abilities))
+  {
+    return [];
+  }
+
+  const baseAbilities = raw.abilities
+    .map((item) => buildPokemonAbilityEntry(item?.ability?.name, item?.slot))
+    .filter(Boolean);
+
+  const key = normalizeExtraAbilityKey(apiKey || raw?.name);
+  const meta = key ? EXTRA_ABILITIES_BY_KEY[key] : null;
+
+  if(!meta)
+  {
+    return baseAbilities;
+  }
+
+  let visibleAbilities = baseAbilities.filter((item) => item.slot === 1 || item.slot === 2);
+  let hiddenAbilities = baseAbilities.filter((item) => item.slot === 3);
+
+  if(meta.replaceVisibles === true)
+  {
+    visibleAbilities = [];
+  }
+
+  if(meta.replaceHidden === true)
+  {
+    hiddenAbilities = [];
+  }
+
+  const extraVisibleSlot = meta.replaceVisibles === true ? 1 : 2;
+  const extraVisibleAbilities = Array.isArray(meta.extraVisibles) ? meta.extraVisibles : [];
+  const extraHiddenAbilities = Array.isArray(meta.extraHidden) ? meta.extraHidden : [];
+
+  const extraVisibleEntries = extraVisibleAbilities
+    .map((name) => buildPokemonAbilityEntry(name, extraVisibleSlot))
+    .filter(Boolean);
+
+  const extraHiddenEntries = extraHiddenAbilities
+    .map((name) => buildPokemonAbilityEntry(name, 3))
+    .filter(Boolean);
+
+  const merged = visibleAbilities
+    .concat(extraVisibleEntries, hiddenAbilities, extraHiddenEntries);
+
+  const seen = new Set();
+  const out = [];
+
+  for(const item of merged)
+  {
+    const keyItem = `${item.slot}:${item.name}`;
+    if(seen.has(keyItem))
+    {
+      continue;
+    }
+
+    seen.add(keyItem);
+    out.push(item);
+  }
+
+  return out;
+}
+// ---------------- DATOS META POKÉMON CON HABILIDADES EXTRA - FIN ---------------- 
+
+
 module.exports =
 {
-    canPokemonBreed,
-    toPokemonDisplayName,
-    getColorPkmByKey,
-    getPokemonGenByKey,
-    hasPokemonGigaForm,
-    hasPokemonMegaForms
+  canPokemonBreed,
+  toPokemonDisplayName,
+  getColorPkmByKey,
+  getPokemonGenByKey,
+  hasPokemonGigaForm,
+  hasPokemonMegaForms,
+  getPokemonAbilitiesFromRaw
 };

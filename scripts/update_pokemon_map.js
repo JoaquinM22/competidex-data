@@ -8,8 +8,9 @@
     - Si hay mapa previo y count <= localCount => no hace nada, salvo que haya schema viejo o rebuild anual pendiente
     - Si no hay mapa previo (bootstrap) => siempre continúa
   - Cada pokemon guarda
-    id, types, generation, abilities, weight, height, stats, 
-    malePercentage, femalePercentage, sinSexo (booleano), captureRate, puedeCriar (booleano), color, hasMegaForms (booleano), hasGigaForm (booleano) y display
+    id, types, generation, abilities, weight, height, stats,
+    malePercentage, femalePercentage, sinSexo (booleano), captureRate, puedeCriar (booleano),
+    color, hasMegaForms (booleano), hasGigaForm (booleano), eggGroups y categoryPkm
   - Los datos salen de /pokemon/{name} y /pokemon-species/{id or name}
   - Guarda en manifest.json la fecha del último rebuild completo
   - Fuerza un rebuild completo una vez por año
@@ -20,7 +21,7 @@
 
 const { readFileSync, writeFileSync, existsSync, unlinkSync } = require("fs");
 const { join } = require("path");
-const { canPokemonBreed, toPokemonDisplayName, getColorPkmByKey, getPokemonGenByKey, hasPokemonGigaForm, hasPokemonMegaForms } = require("../utils/pokemon_scripts_utils");
+const { canPokemonBreed, toPokemonDisplayName, getColorPkmByKey, getPokemonGenByKey, getPokemonAbilitiesFromRaw, hasPokemonGigaForm, hasPokemonMegaForms } = require("../utils/pokemon_scripts_utils");
 
 const API = "https://pokeapi.co/api/v2";
 const POKEMON_FULL_REBUILD_DAYS = 365;
@@ -125,17 +126,6 @@ function safeText(value)
 
     const txt = value.trim();
     return txt !== "" ? txt : null;
-}
-
-function normalizePokemonText(input)
-{
-  return String(input || "")
-    .toLowerCase()
-    .replace(/♀/g, " female ")
-    .replace(/♂/g, " male ")
-    .normalize("NFD").replace(/\p{Diacritic}/gu, "")
-    .replace(/[^a-z0-9]+/g, " ")
-    .trim();
 }
 
 function formatWeight(value)
@@ -268,19 +258,41 @@ function getGenderPercentagePkm(genderRate)
     };
 }
 
-function getPokemonAbilitiesFromRaw(raw)
+function getPkmEggGroups(arr)
 {
-    if(!raw || !Array.isArray(raw.abilities))
-    {
-        return [];
-    }
+  const eggGroups = Array.isArray(arr) ? arr : [];
+  if(!eggGroups.length) return [];
 
-    return raw.abilities
-        .map((item) => ({
-            name: normalizePokemonText(item?.ability?.name) ? String(item?.ability?.name).trim() : "",
-            slot: typeof item?.slot === "number" && Number.isFinite(item.slot) ? item.slot : null
-        }))
-        .filter((item) => item.name !== "");
+  const out = [];
+
+  for(const item of eggGroups)
+  {
+    const apiKey = safeText(item?.name);
+    if(!apiKey) continue;
+    out.push(apiKey);
+  }
+
+  return out;
+}
+
+function getPkmCategory(arr)
+{
+  const genera = Array.isArray(arr) ? arr : [];
+  if(!genera.length) return null;
+
+  const preferredLanguages = ["es", "es-419", "en"];
+
+  for(const lang of preferredLanguages)
+  {
+    const match = genera.find((item) => String(item?.language?.name || "").trim().toLowerCase() === lang);
+    if(match && typeof match.genus === "string")
+    {
+      const genus = match.genus.trim();
+      if(genus) return genus;
+    }
+  }
+
+  return null;
 }
 
 function buildPokemonRecord(raw, speciesRaw)
@@ -292,7 +304,7 @@ function buildPokemonRecord(raw, speciesRaw)
         id: safeNumber(raw?.id),
         types: getRawTypes(raw),
         generation: getPokemonGenByKey(apiName, (safeText(speciesRaw?.generation?.name) || "")),
-        abilities: getPokemonAbilitiesFromRaw(raw),
+        abilities: getPokemonAbilitiesFromRaw(raw, apiName),
         weight: formatWeight(raw?.weight),
         height: formatHeight(raw?.height),
         stats: getStats(raw?.stats),
@@ -304,7 +316,9 @@ function buildPokemonRecord(raw, speciesRaw)
         color: getColorPkmByKey(apiName) || (safeText(speciesRaw?.color?.name) || ""),
         display: toPokemonDisplayName(apiName),
         hasMegaForms: hasPokemonMegaForms(apiName),
-        hasGigaForm: hasPokemonGigaForm(apiName)
+        hasGigaForm: hasPokemonGigaForm(apiName),
+        eggGroups: getPkmEggGroups(speciesRaw?.egg_groups),
+        categoryPkm: getPkmCategory(speciesRaw?.genera)
     };
 }
 
@@ -325,6 +339,8 @@ function hasPokemonRecordSchema(record)
         Object.prototype.hasOwnProperty.call(record, "color") &&
         Object.prototype.hasOwnProperty.call(record, "hasMegaForms") &&
         Object.prototype.hasOwnProperty.call(record, "hasGigaForm") &&
+        Object.prototype.hasOwnProperty.call(record, "eggGroups") &&
+        Object.prototype.hasOwnProperty.call(record, "categoryPkm") &&
         Object.prototype.hasOwnProperty.call(record, "display");
 }
 
@@ -333,10 +349,13 @@ function needsPokemonRefresh(record)
     return !hasPokemonRecordSchema(record) ||
         record === null ||
         typeof record !== "object" ||
+        !Number.isFinite(record.id) ||
         !Array.isArray(record.types) ||
         !record.stats ||
         typeof record.stats !== "object" ||
-        !Array.isArray(record.abilities);
+        !Array.isArray(record.abilities) ||
+        !Array.isArray(record.eggGroups) ||
+        typeof record.categoryPkm !== "string";
 }
 
 async function main()
