@@ -318,7 +318,8 @@ function buildPokemonRecord(raw, speciesRaw)
         hasMegaForms: hasPokemonMegaForms(apiName),
         hasGigaForm: hasPokemonGigaForm(apiName),
         eggGroups: getPkmEggGroups(speciesRaw?.egg_groups),
-        categoryPkm: getPkmCategory(speciesRaw?.genera)
+        categoryPkm: getPkmCategory(speciesRaw?.genera),
+        specieName: safeText(raw?.species?.name)
     };
 }
 
@@ -341,6 +342,7 @@ function hasPokemonRecordSchema(record)
         Object.prototype.hasOwnProperty.call(record, "hasGigaForm") &&
         Object.prototype.hasOwnProperty.call(record, "eggGroups") &&
         Object.prototype.hasOwnProperty.call(record, "categoryPkm") &&
+        Object.prototype.hasOwnProperty.call(record, "specieName") &&
         Object.prototype.hasOwnProperty.call(record, "display");
 }
 
@@ -355,6 +357,7 @@ function needsPokemonRefresh(record)
         typeof record.stats !== "object" ||
         !Array.isArray(record.abilities) ||
         !Array.isArray(record.eggGroups) ||
+        typeof record.specieName !== "string" ||
         typeof record.categoryPkm !== "string";
 }
 
