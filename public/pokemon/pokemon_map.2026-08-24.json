@@ -62347,8 +62347,8 @@
       "speed": 65,
       "effort_speed": 0
     },
-    "malePercentage": 100,
-    "femalePercentage": null,
+    "malePercentage": null,
+    "femalePercentage": 100,
     "sinSexo": false,
     "captureRate": 100,
     "puedeCriar": true,
