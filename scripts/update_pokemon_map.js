@@ -219,8 +219,17 @@ function returnEmptyStats()
     };
 }
 
-function getGenderPercentagePkm(genderRate)
+function getGenderPercentagePkm(genderRate, apiPkmName)
 {
+    if(apiPkmName === "oinkologne-female")
+    {
+        return {
+            malePercentage: null,
+            femalePercentage: 100,
+            sinSexo: false
+        };
+    }
+
     if(genderRate === -1 || genderRate == null)
     {
         return {
@@ -297,8 +306,8 @@ function getPkmCategory(arr)
 
 function buildPokemonRecord(raw, speciesRaw)
 {
-    const genderData = getGenderPercentagePkm(speciesRaw?.gender_rate);
     const apiName = safeText(raw?.name) || "";
+    const genderData = getGenderPercentagePkm(speciesRaw?.gender_rate, apiName);
 
     return {
         id: safeNumber(raw?.id),
