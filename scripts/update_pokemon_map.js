@@ -319,6 +319,9 @@ function buildPokemonRecord(raw, speciesRaw)
         hasGigaForm: hasPokemonGigaForm(apiName),
         eggGroups: getPkmEggGroups(speciesRaw?.egg_groups),
         categoryPkm: getPkmCategory(speciesRaw?.genera),
+        isBabyPkm: !!speciesRaw?.is_baby,
+        isMythicalPkm: !!speciesRaw?.is_mythical,
+        isLegendaryPkm: !!speciesRaw?.is_legendary,
         specieName: safeText(raw?.species?.name)
     };
 }
@@ -343,7 +346,10 @@ function hasPokemonRecordSchema(record)
         Object.prototype.hasOwnProperty.call(record, "eggGroups") &&
         Object.prototype.hasOwnProperty.call(record, "categoryPkm") &&
         Object.prototype.hasOwnProperty.call(record, "specieName") &&
-        Object.prototype.hasOwnProperty.call(record, "display");
+        Object.prototype.hasOwnProperty.call(record, "display") &&
+        Object.prototype.hasOwnProperty.call(record, "isBabyPkm") &&
+        Object.prototype.hasOwnProperty.call(record, "isMythicalPkm") &&
+        Object.prototype.hasOwnProperty.call(record, "isLegendaryPkm");
 }
 
 function needsPokemonRefresh(record)
@@ -358,7 +364,10 @@ function needsPokemonRefresh(record)
         !Array.isArray(record.abilities) ||
         !Array.isArray(record.eggGroups) ||
         typeof record.specieName !== "string" ||
-        typeof record.categoryPkm !== "string";
+        typeof record.categoryPkm !== "string" ||
+        typeof record.isBabyPkm !== "boolean" ||
+        typeof record.isMythicalPkm !== "boolean" ||
+        typeof record.isLegendaryPkm !== "boolean";
 }
 
 async function main()
