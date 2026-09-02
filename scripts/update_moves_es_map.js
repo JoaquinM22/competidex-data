@@ -97,6 +97,44 @@ function pickNumberField(mvJson, fieldName)
     return mvJson && typeof mvJson[fieldName] === "number" ? mvJson[fieldName] : null;
 }
 
+function getHasSecondaryEffect(mvJson)
+{
+    const effectChance = mvJson && mvJson.effect_chance;
+    return typeof effectChance === "number" && effectChance > 0;
+}
+
+function getPriorityLevel(mvJson)
+{
+    const priority = mvJson && mvJson.priority;
+    return typeof priority === "number" ? priority : null;
+}
+
+function getIndiceCritico(mvJson)
+{
+    const potenciaMov = pickNumberField(mvJson, "power");
+
+    if(potenciaMov === null || potenciaMov <= 0)
+    {
+        return null;
+    }
+
+    const critRate = mvJson && mvJson.meta ? mvJson.meta.crit_rate : null;
+    if(critRate === null || critRate === undefined)
+    {
+        return null;
+    }
+
+    const indiceCritico = Number(critRate);
+    return isFinite(indiceCritico) ? indiceCritico : null;
+}
+
+function getGenerationFromMove(mvJson)
+{
+    const gen = mvJson && mvJson.generation && mvJson.generation.name ? mvJson.generation.name : null;
+
+    return gen;
+}
+
 function hasOwn(obj, key)
 {
     return !!obj && Object.prototype.hasOwnProperty.call(obj, key);
@@ -142,6 +180,10 @@ function isMoveV2Record(record)
         hasOwn(record, "noElegiblePorSonambulo") &&
         hasOwn(record, "power") &&
         hasOwn(record, "accuracy") &&
+        hasOwn(record, "hasSecondaryEffect") &&
+        hasOwn(record, "generation") &&
+        hasOwn(record, "priorityLevel") &&
+        hasOwn(record, "indiceCritico") && 
         hasOwn(record, "pp") &&
         hasOwn(record, "machinesByGroup");
 }
@@ -334,6 +376,10 @@ function buildMoveRecord(moveJson, showdownIndex, machineIndex)
         afectadoPorRocaDelRey: getAfectadoPorRocaDelRey(moveJson),
         power: pickNumberField(moveJson, "power"),
         accuracy: pickNumberField(moveJson, "accuracy"),
+        hasSecondaryEffect: getHasSecondaryEffect(moveJson),
+        priorityLevel: getPriorityLevel(moveJson),
+        indiceCritico: getIndiceCritico(moveJson),
+        generation: getGenerationFromMove(moveJson),
         pp: pickNumberField(moveJson, "pp"),
         machinesByGroup: buildMachinesByGroup(moveName, machineIndex, moveJson),
     };
