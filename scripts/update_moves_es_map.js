@@ -128,6 +128,11 @@ function getIndiceCritico(mvJson)
     return isFinite(indiceCritico) ? indiceCritico : null;
 }
 
+function getBlancoMov(mvJson)
+{
+    return (mvJson && mvJson.target) ? mvJson.target.name : null;
+}
+
 function getGenerationFromMove(mvJson)
 {
     const gen = mvJson && mvJson.generation && mvJson.generation.name ? mvJson.generation.name : null;
@@ -184,6 +189,7 @@ function isMoveV2Record(record)
         hasOwn(record, "generation") &&
         hasOwn(record, "priorityLevel") &&
         hasOwn(record, "indiceCritico") && 
+        hasOwn(record, "blancoMov") &&
         hasOwn(record, "pp") &&
         hasOwn(record, "machinesByGroup");
 }
@@ -379,6 +385,7 @@ function buildMoveRecord(moveJson, showdownIndex, machineIndex)
         hasSecondaryEffect: getHasSecondaryEffect(moveJson),
         priorityLevel: getPriorityLevel(moveJson),
         indiceCritico: getIndiceCritico(moveJson),
+        blancoMov: getBlancoMov(moveJson),
         generation: getGenerationFromMove(moveJson),
         pp: pickNumberField(moveJson, "pp"),
         machinesByGroup: buildMachinesByGroup(moveName, machineIndex, moveJson),
