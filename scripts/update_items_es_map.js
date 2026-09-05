@@ -78,10 +78,9 @@ async function getJson(url)
     return res.json();
 }
 
-function pickLocalizedName(itemJson)
+function pickSpanishName(itemJson)
 {
     const arr = itemJson && itemJson.names ? itemJson.names : [];
-    let en = null;
 
     for(let i = 0; i < arr.length; i++)
     {
@@ -92,14 +91,9 @@ function pickLocalizedName(itemJson)
         {
             return n.name;
         }
-
-        if(n.language.name === "en")
-        {
-            en = n.name;
-        }
     }
 
-    return en || (itemJson && itemJson.name ? itemJson.name : null);
+    return null;
 }
 
 function pickCategoryName(itemJson)
@@ -323,7 +317,7 @@ async function main()
 
             esMap[name] = {
                 id: item && typeof item.id === "number" ? item.id : null,
-                display: pickLocalizedName(item),
+                display: pickSpanishName(item),
                 category: pickCategoryName(item),
                 attributes: getItemAttributes(item)
             };

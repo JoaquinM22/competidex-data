@@ -4831,7 +4831,7 @@
   },
   "god-stone": {
     "id": 663,
-    "display": "god stone",
+    "display": null,
     "category": "unused",
     "attributes": []
   },
@@ -13117,7 +13117,7 @@
   },
   "roto-stick": {
     "id": 2100,
-    "display": "Roto Stick",
+    "display": null,
     "category": "gameplay",
     "attributes": []
   },
@@ -13225,7 +13225,7 @@
   },
   "fresh-start-mochi": {
     "id": 2118,
-    "display": "Fresh Start Mochi",
+    "display": null,
     "category": "vitamins",
     "attributes": []
   },
@@ -13920,277 +13920,277 @@
   },
   "clefablite": {
     "id": 2233,
-    "display": "clefablite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "victreebelite": {
     "id": 2234,
-    "display": "victreebelite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "starminite": {
     "id": 2235,
-    "display": "starminite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "dragoninite": {
     "id": 2236,
-    "display": "dragoninite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "meganiumite": {
     "id": 2237,
-    "display": "meganiumite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "feraligite": {
     "id": 2238,
-    "display": "feraligite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "skarmorite": {
     "id": 2239,
-    "display": "skarmorite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "froslassite": {
     "id": 2240,
-    "display": "froslassite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "heatranite": {
     "id": 2241,
-    "display": "heatranite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "darkranite": {
     "id": 2242,
-    "display": "darkranite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "emboarite": {
     "id": 2243,
-    "display": "emboarite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "excadrite": {
     "id": 2244,
-    "display": "excadrite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "scolipite": {
     "id": 2245,
-    "display": "scolipite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "scraftinite": {
     "id": 2246,
-    "display": "scraftinite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "eelektrossite": {
     "id": 2247,
-    "display": "eelektrossite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "chandelurite": {
     "id": 2248,
-    "display": "chandelurite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "chesnaughtite": {
     "id": 2249,
-    "display": "chesnaughtite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "delphoxite": {
     "id": 2250,
-    "display": "delphoxite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "greninjite": {
     "id": 2251,
-    "display": "greninjite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "pyroarite": {
     "id": 2252,
-    "display": "pyroarite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "floettite": {
     "id": 2253,
-    "display": "floettite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "malamarite": {
     "id": 2254,
-    "display": "malamarite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "barbaracite": {
     "id": 2255,
-    "display": "barbaracite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "dragalgite": {
     "id": 2256,
-    "display": "dragalgite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "hawluchanite": {
     "id": 2257,
-    "display": "hawluchanite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "zygardite": {
     "id": 2258,
-    "display": "zygardite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "drampanite": {
     "id": 2259,
-    "display": "drampanite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "zeraorite": {
     "id": 2260,
-    "display": "zeraorite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "falinksite": {
     "id": 2261,
-    "display": "falinksite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "raichunite-x": {
     "id": 2262,
-    "display": "raichunite-x",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "raichunite-y": {
     "id": 2263,
-    "display": "raichunite-y",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "chimechite": {
     "id": 2264,
-    "display": "chimechite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "absolite-z": {
     "id": 2265,
-    "display": "absolite-z",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "staraptite": {
     "id": 2266,
-    "display": "staraptite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "garchompite-z": {
     "id": 2267,
-    "display": "garchompite-z",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "lucarionite-z": {
     "id": 2268,
-    "display": "lucarionite-z",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "golurkite": {
     "id": 2269,
-    "display": "golurkite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "meowsticite": {
     "id": 2270,
-    "display": "meowsticite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "crabominite": {
     "id": 2271,
-    "display": "crabominite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "golisopite": {
     "id": 2272,
-    "display": "golisopite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "magearnite": {
     "id": 2273,
-    "display": "magearnite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "scovillainite": {
     "id": 2274,
-    "display": "scovillainite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "baxcalibrite": {
     "id": 2275,
-    "display": "baxcalibrite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "tatsugirinite": {
     "id": 2276,
-    "display": "tatsugirinite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "glimmoranite": {
     "id": 2277,
-    "display": "glimmoranite",
+    "display": null,
     "category": "mega-stones",
     "attributes": []
   },
   "hopo-berry": {
     "id": 2278,
-    "display": "hopo-berry",
+    "display": null,
     "category": "pp-recovery",
     "attributes": []
   }
