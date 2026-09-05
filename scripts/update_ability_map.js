@@ -10,7 +10,7 @@
   - Guarda en manifest.json la fecha del último rebuild completo
   - Fuerza un rebuild completo una vez por año
   - Trae índice completo /ability?limit=100000
-  - Agrega faltantes o refresca todo si corresponde con pool (GET /ability/{name} para id+generation+nombre ES)
+  - Agrega faltantes o refresca registros incompletos con pool (GET /ability/{name} para id+generation+nombre ES)
   - Escribe NUEVO ability_map.YYYY-MM-DD.json
   - Actualiza manifest.json a ese nuevo archivo
   - Borra el archivo viejo (si existía y es distinto)
@@ -105,25 +105,28 @@ function safeObj(x)
     return (x && typeof x === "object") ? x : {};
 }
 
-function pickNameEsOrEn(json)
+function pickSpanishName(json)
 {
     const names = (json && Array.isArray(json.names)) ? json.names : [];
-    // ES primero
+
     for(let i = 0; i < names.length; i++)
     {
         const n = names[i];
         if (n && n.language && n.language.name === "es" && n.name) return String(n.name);
     }
 
-    // EN fallback
-    for(let j = 0; j < names.length; j++)
-    {
-        const n2 = names[j];
-        if (n2 && n2.language && n2.language.name === "en" && n2.name) return String(n2.name);
-    }
+    return null;
+}
 
-    // último fallback
-    return (json && json.name) ? String(json.name) : "";
+function needsAbilityRefresh(record)
+{
+    return !record ||
+        typeof record !== "object" ||
+        typeof record.id !== "number" ||
+        typeof record.gen !== "string" ||
+        record.gen.trim() === "" ||
+        typeof record.display !== "string" ||
+        record.display.trim() === "";
 }
 
 async function main()
@@ -188,9 +191,11 @@ async function main()
     console.log("[INFO] Ability full rebuild due:", rebuildDue, "| forced:", forceFullRebuild);
 
     const isBootstrap = (localCount === 0);
-    if(!isBootstrap && !rebuildDue && !forceFullRebuild && apiCount !== null && apiCount <= localCount)
+    const schemaRefreshNeeded = Object.keys(map).some((name) => needsAbilityRefresh(map[name]));
+
+    if(!isBootstrap && !rebuildDue && !forceFullRebuild && !schemaRefreshNeeded && apiCount !== null && apiCount <= localCount)
     {
-        console.log("[OK] El count no creció. No hay habilidades nuevas ni rebuild pendiente. Nada que actualizar.");
+        console.log("[OK] El count no creció. No hay habilidades nuevas, registros incompletos ni rebuild pendiente. Nada que actualizar.");
         return;
     }
 
@@ -221,6 +226,12 @@ async function main()
         if(!knownKeys.has(name))
         {
             missing.push(name);
+            continue;
+        }
+
+        if(needsAbilityRefresh(map[name]))
+        {
+            toRefresh.push(name);
         }
     }
 
@@ -228,8 +239,13 @@ async function main()
 
     if(!candidates.length)
     {
-        console.log("[OK] No hay habilidades nuevas ni rebuild pendiente. Nada que actualizar.");
-        return;
+        if(!schemaRefreshNeeded)
+        {
+            console.log("[OK] No hay habilidades nuevas, registros incompletos ni rebuild pendiente. Nada que actualizar.");
+            return;
+        }
+
+        console.log("[INFO] Hay registros incompletos, pero no se encontraron candidatos por refrescar. Se reescribe el map igual.");
     }
 
     console.log("[INFO] Habilidades a agregar:", missing.length, "| a refrescar:", toRefresh.length);
@@ -250,7 +266,7 @@ async function main()
             const gen = (a && a.generation && a.generation.name) ? String(a.generation.name) : null;
             const id = (a && a.id) ? a.id : null;
 
-            const display = pickNameEsOrEn(a) || name;
+            const display = pickSpanishName(a);
 
             map[name] = {
                 id: id,
