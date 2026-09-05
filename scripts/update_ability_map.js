@@ -5,10 +5,12 @@
   - Lee public/abilities/manifest.json -> ability_url actual (puede ser null en 1ra vez)
   - Si hay archivo actual: lo carga. Si no hay: arranca con map vacío (bootstrap)
   - Chequeo liviano: GET /ability?limit=1 (count)
-    - Si hay mapa previo y count <= localCount => no hace nada
+    - Si hay mapa previo y count <= localCount => no hace nada, salvo rebuild anual pendiente
     - Si no hay mapa previo (bootstrap) => siempre continúa
+  - Guarda en manifest.json la fecha del último rebuild completo
+  - Fuerza un rebuild completo una vez por año
   - Trae índice completo /ability?limit=100000
-  - Agrega faltantes con pool (GET /ability/{name} para id+generation+nombre ES)
+  - Agrega faltantes o refresca todo si corresponde con pool (GET /ability/{name} para id+generation+nombre ES)
   - Escribe NUEVO ability_map.YYYY-MM-DD.json
   - Actualiza manifest.json a ese nuevo archivo
   - Borra el archivo viejo (si existía y es distinto)
@@ -18,6 +20,7 @@ const { readFileSync, writeFileSync, existsSync, unlinkSync } = require("fs");
 const { join } = require("path");
 
 const API = "https://pokeapi.co/api/v2";
+const ABILITY_FULL_REBUILD_DAYS = 365;
 
 function readJSON(p)
 {
@@ -36,6 +39,23 @@ function todayISO()
     const mm = String(d.getUTCMonth() + 1).padStart(2, "0");
     const dd = String(d.getUTCDate()).padStart(2, "0");
     return `${yyyy}-${mm}-${dd}`;
+}
+
+function parseISODateUTC(dateStr)
+{
+    if(!dateStr || typeof dateStr !== "string")
+    {
+        return null;
+    }
+
+    const d = new Date(`${dateStr}T00:00:00Z`);
+    return isNaN(d.getTime()) ? null : d;
+}
+
+function daysBetweenUTC(fromDate, toDate)
+{
+    const ms = toDate.getTime() - fromDate.getTime();
+    return Math.floor(ms / 86400000);
 }
 
 function getCountFromListResponse(listJson)
@@ -152,17 +172,25 @@ async function main()
         console.log("[INFO] manifest sin ability_url. Bootstrap desde cero.");
     }
 
+    const lastFullRebuildDate = parseISODateUTC(
+        manifest && manifest.ability_full_rebuild_at ? String(manifest.ability_full_rebuild_at) : null
+    );
+    const todayDate = parseISODateUTC(todayISO());
+    const rebuildDue = !lastFullRebuildDate || daysBetweenUTC(lastFullRebuildDate, todayDate) >= ABILITY_FULL_REBUILD_DAYS;
+    const forceFullRebuild = String(process.env.FORCE_FULL_ABILITY_REBUILD || "") === "1";
+
     // 1.A) Chequeo liviano: count
     const head = await getJson(`${API}/ability?limit=1`);
     const apiCount = getCountFromListResponse(head);
     const localCount = knownKeys.size;
 
     console.log("[INFO] Abilities local:", localCount, "| Abilities API (count):", apiCount);
+    console.log("[INFO] Ability full rebuild due:", rebuildDue, "| forced:", forceFullRebuild);
 
     const isBootstrap = (localCount === 0);
-    if(!isBootstrap && apiCount !== null && apiCount <= localCount)
+    if(!isBootstrap && !rebuildDue && !forceFullRebuild && apiCount !== null && apiCount <= localCount)
     {
-        console.log("[OK] El count no creció. No hay habilidades nuevas. Nada que actualizar.");
+        console.log("[OK] El count no creció. No hay habilidades nuevas ni rebuild pendiente. Nada que actualizar.");
         return;
     }
 
@@ -171,21 +199,40 @@ async function main()
     const results = (list && list.results) ? list.results : [];
     console.log("[INFO] Abilities en API (results):", results.length);
 
-    // 2) Faltantes
+    // 2) Faltantes o registros a refrescar
     const missing = [];
+    const toRefresh = [];
+
     for(let i = 0; i < results.length; i++)
     {
         const name = results[i] && results[i].name ? results[i].name : null;
-        if (name && !knownKeys.has(name)) missing.push(name);
+
+        if(!name)
+        {
+            continue;
+        }
+
+        if(isBootstrap || rebuildDue || forceFullRebuild)
+        {
+            toRefresh.push(name);
+            continue;
+        }
+
+        if(!knownKeys.has(name))
+        {
+            missing.push(name);
+        }
     }
 
-    if(!missing.length)
+    const candidates = missing.concat(toRefresh);
+
+    if(!candidates.length)
     {
-        console.log("[OK] No hay habilidades nuevas (missing=0). Nada que actualizar.");
+        console.log("[OK] No hay habilidades nuevas ni rebuild pendiente. Nada que actualizar.");
         return;
     }
 
-    console.log("[INFO] Habilidades a agregar:", missing.length);
+    console.log("[INFO] Habilidades a agregar:", missing.length, "| a refrescar:", toRefresh.length);
 
     // 3) Detalles con concurrencia
     const POOL = Number(process.env.ABILITIES_POOL || 5);
@@ -194,7 +241,7 @@ async function main()
     let added = 0;
     let failed = 0;
 
-    await withPool(missing, POOL, async (name, idx) =>
+    await withPool(candidates, POOL, async (name, idx) =>
     {
         try
         {
@@ -215,7 +262,7 @@ async function main()
 
             if((idx + 1) % 50 === 0)
             {
-                console.log(`[INFO] Procesados ${idx + 1}/${missing.length} | agregados=${added} | fallidos=${failed}`);
+                console.log(`[INFO] Procesados ${idx + 1}/${candidates.length} | agregados=${added} | fallidos=${failed}`);
             }
 
         }catch(e)
@@ -235,6 +282,13 @@ async function main()
     // 5) Actualizar manifest
     manifest.version = version;
     manifest.ability_url = `/abilities/${newFileName}`;
+
+    const fullRefreshPerformed = isBootstrap || rebuildDue || forceFullRebuild || toRefresh.length === knownKeys.size;
+    if(fullRefreshPerformed)
+    {
+        manifest.ability_full_rebuild_at = version;
+    }
+
     writeJSON(manifestPath, manifest);
 
     // 6) Borrar el viejo si corresponde
@@ -250,7 +304,7 @@ async function main()
 
     console.log("[OK] Generado:", newFileName);
     console.log("[OK] Manifest actualizado a version:", version);
-    console.log("[OK] Total agregados:", added, "| fallidos:", failed);
+    console.log("[OK] Total agregados/refrescados:", added, "| fallidos:", failed);
 }
 
 main().catch((e) => {

@@ -1863,5 +1863,10 @@
     "id": 10050,
     "gen": "generation-v",
     "display": "Sprint"
+  },
+  "aura-guard": {
+    "id": 314,
+    "gen": "generation-ix",
+    "display": "Aura Guard"
   }
 }
