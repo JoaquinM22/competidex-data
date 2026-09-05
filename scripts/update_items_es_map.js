@@ -10,7 +10,7 @@
   - Guarda en manifest.json la fecha del último rebuild completo
   - Fuerza un rebuild completo una vez por año
   - Trae índice completo /item?limit=100000
-  - Agrega faltantes o refresca todo si corresponde con pool (GET /item/{name} para id + nombre ES/EN + category)
+  - Agrega faltantes o refresca registros incompletos con pool (GET /item/{name} para id + nombre ES/EN + category + attributes)
   - Escribe NUEVO item_es_map.YYYY-MM-DD.json
   - Actualiza manifest.json a ese nuevo archivo
   - Borra el archivo viejo (si existía y es distinto)
@@ -109,6 +109,35 @@ function pickCategoryName(itemJson)
         itemJson.category.name
         ? itemJson.category.name
         : null;
+}
+
+function getItemAttributes(itemJson)
+{
+    const attributes = itemJson && Array.isArray(itemJson.attributes) ? itemJson.attributes : [];
+    const out = [];
+
+    for(let i = 0; i < attributes.length; i++)
+    {
+        const attr = attributes[i];
+
+        if(attr && typeof attr.name === "string" && attr.name.trim() !== "")
+        {
+            out.push(attr.name);
+        }
+    }
+
+    return out;
+}
+
+function needsItemRefresh(record)
+{
+    return !record ||
+        typeof record !== "object" ||
+        typeof record.id !== "number" ||
+        typeof record.display !== "string" ||
+        record.display.trim() === "" ||
+        typeof record.category !== "string" ||
+        record.category.trim() === "";
 }
 
 async function withPool(items, poolSize, workerFn)
@@ -217,10 +246,14 @@ async function main()
     console.log("[INFO] Items full rebuild due:", rebuildDue, "| forced:", forceFullRebuild);
 
     const isBootstrap = localCount === 0;
-
-    if(!isBootstrap && !rebuildDue && !forceFullRebuild && apiCount !== null && apiCount <= localCount)
+    const schemaRefreshNeeded = Object.keys(esMap).some(function(name)
     {
-        console.log("[OK] El count no creció. No hay items nuevos ni rebuild pendiente. Nada que actualizar.");
+        return needsItemRefresh(esMap[name]);
+    });
+
+    if(!isBootstrap && !rebuildDue && !forceFullRebuild && !schemaRefreshNeeded && apiCount !== null && apiCount <= localCount)
+    {
+        console.log("[OK] El count no creció. No hay items nuevos, registros incompletos ni rebuild pendiente. Nada que actualizar.");
         return;
     }
 
@@ -251,6 +284,12 @@ async function main()
         if(!knownKeys.has(name))
         {
             missing.push(name);
+            continue;
+        }
+
+        if(needsItemRefresh(esMap[name]))
+        {
+            toRefresh.push(name);
         }
     }
 
@@ -258,8 +297,13 @@ async function main()
 
     if(!candidates.length)
     {
-        console.log("[OK] No hay items nuevos ni rebuild pendiente. Nada que actualizar.");
-        return;
+        if(!schemaRefreshNeeded)
+        {
+            console.log("[OK] No hay items nuevos, registros incompletos ni rebuild pendiente. Nada que actualizar.");
+            return;
+        }
+
+        console.log("[INFO] Hay registros incompletos, pero no se encontraron candidatos por refrescar. Se reescribe el map igual.");
     }
 
     console.log("[INFO] Items a agregar:", missing.length, "| a refrescar:", toRefresh.length);
@@ -280,7 +324,8 @@ async function main()
             esMap[name] = {
                 id: item && typeof item.id === "number" ? item.id : null,
                 display: pickLocalizedName(item),
-                category: pickCategoryName(item)
+                category: pickCategoryName(item),
+                attributes: getItemAttributes(item)
             };
 
             added++;
