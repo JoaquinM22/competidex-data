@@ -5,10 +5,12 @@
   - Lee public/items/manifest.json -> items_url actual (puede ser null / faltar / archivo faltante)
   - Si hay archivo actual: lo carga. Si no hay: arranca con map vacío (bootstrap)
   - Chequeo liviano: GET /item?limit=1 (count)
-    - Si hay mapa previo y count <= localCount => no hace nada
+    - Si hay mapa previo y count <= localCount => no hace nada, salvo rebuild anual pendiente
     - Si no hay mapa previo (bootstrap) => siempre continúa
+  - Guarda en manifest.json la fecha del último rebuild completo
+  - Fuerza un rebuild completo una vez por año
   - Trae índice completo /item?limit=100000
-  - Agrega faltantes con pool (GET /item/{name} para id + nombre ES/EN + category)
+  - Agrega faltantes o refresca todo si corresponde con pool (GET /item/{name} para id + nombre ES/EN + category)
   - Escribe NUEVO item_es_map.YYYY-MM-DD.json
   - Actualiza manifest.json a ese nuevo archivo
   - Borra el archivo viejo (si existía y es distinto)
@@ -18,6 +20,7 @@ const { readFileSync, writeFileSync, existsSync, unlinkSync, mkdirSync } = requi
 const { join } = require("path");
 
 const API = "https://pokeapi.co/api/v2";
+const ITEMS_FULL_REBUILD_DAYS = 365;
 
 function readJSON(p)
 {
@@ -36,6 +39,23 @@ function todayISO()
     const mm = String(d.getUTCMonth() + 1).padStart(2, "0");
     const dd = String(d.getUTCDate()).padStart(2, "0");
     return yyyy + "-" + mm + "-" + dd;
+}
+
+function parseISODateUTC(dateStr)
+{
+    if(!dateStr || typeof dateStr !== "string")
+    {
+        return null;
+    }
+
+    const d = new Date(dateStr + "T00:00:00Z");
+    return isNaN(d.getTime()) ? null : d;
+}
+
+function daysBetweenUTC(fromDate, toDate)
+{
+    const ms = toDate.getTime() - fromDate.getTime();
+    return Math.floor(ms / 86400000);
 }
 
 function getCountFromListResponse(listJson)
@@ -182,17 +202,25 @@ async function main()
         console.log("[INFO] manifest sin items_url. Bootstrap desde cero.");
     }
 
+    const lastFullRebuildDate = parseISODateUTC(
+        manifest && manifest.items_full_rebuild_at ? String(manifest.items_full_rebuild_at) : null
+    );
+    const todayDate = parseISODateUTC(todayISO());
+    const rebuildDue = !lastFullRebuildDate || daysBetweenUTC(lastFullRebuildDate, todayDate) >= ITEMS_FULL_REBUILD_DAYS;
+    const forceFullRebuild = String(process.env.FORCE_FULL_ITEMS_REBUILD || "") === "1";
+
     const head = await getJson(API + "/item?limit=1");
     const apiCount = getCountFromListResponse(head);
     const localCount = knownKeys.size;
 
     console.log("[INFO] Items local:", localCount, "| Items API (count):", apiCount);
+    console.log("[INFO] Items full rebuild due:", rebuildDue, "| forced:", forceFullRebuild);
 
     const isBootstrap = localCount === 0;
 
-    if(!isBootstrap && apiCount !== null && apiCount <= localCount)
+    if(!isBootstrap && !rebuildDue && !forceFullRebuild && apiCount !== null && apiCount <= localCount)
     {
-        console.log("[OK] El count no creció. No hay items nuevos. Nada que actualizar.");
+        console.log("[OK] El count no creció. No hay items nuevos ni rebuild pendiente. Nada que actualizar.");
         return;
     }
 
@@ -201,24 +229,40 @@ async function main()
     const results = list && list.results ? list.results : [];
     console.log("[INFO] Items en API (results):", results.length);
 
-    // 2) Faltantes
+    // 2) Faltantes o registros a refrescar
     const missing = [];
+    const toRefresh = [];
+
     for(let i = 0; i < results.length; i++)
     {
         const name = results[i] && results[i].name ? results[i].name : null;
-        if(name && !knownKeys.has(name))
+
+        if(!name)
+        {
+            continue;
+        }
+
+        if(isBootstrap || rebuildDue || forceFullRebuild)
+        {
+            toRefresh.push(name);
+            continue;
+        }
+
+        if(!knownKeys.has(name))
         {
             missing.push(name);
         }
     }
 
-    if(!missing.length)
+    const candidates = missing.concat(toRefresh);
+
+    if(!candidates.length)
     {
-        console.log("[OK] No hay items nuevos (missing=0). Nada que actualizar.");
+        console.log("[OK] No hay items nuevos ni rebuild pendiente. Nada que actualizar.");
         return;
     }
 
-    console.log("[INFO] Items a agregar:", missing.length);
+    console.log("[INFO] Items a agregar:", missing.length, "| a refrescar:", toRefresh.length);
 
     // 3) Detalles con concurrencia
     const POOL = Number(process.env.ITEMS_POOL || 5);
@@ -227,7 +271,7 @@ async function main()
     let added = 0;
     let failed = 0;
 
-    await withPool(missing, POOL, async function(name, idx)
+    await withPool(candidates, POOL, async function(name, idx)
     {
         try
         {
@@ -243,7 +287,7 @@ async function main()
 
             if((idx + 1) % 50 === 0)
             {
-                console.log("[INFO] Procesados " + (idx + 1) + "/" + missing.length + " | agregados=" + added + " | fallidos=" + failed);
+                console.log("[INFO] Procesados " + (idx + 1) + "/" + candidates.length + " | agregados=" + added + " | fallidos=" + failed);
             }
 
         }catch(e)
@@ -279,6 +323,13 @@ async function main()
     // 6) Actualizar manifest
     manifest.version = version;
     manifest.items_url = "/items/" + newFileName;
+
+    const fullRefreshPerformed = isBootstrap || rebuildDue || forceFullRebuild || toRefresh.length === knownKeys.size;
+    if(fullRefreshPerformed)
+    {
+        manifest.items_full_rebuild_at = version;
+    }
+
     writeJSON(manifestPath, manifest);
 
     // 7) Borrar el viejo si corresponde
@@ -294,7 +345,7 @@ async function main()
 
     console.log("[OK] Generado:", newFileName);
     console.log("[OK] Manifest actualizado a version:", version);
-    console.log("[OK] Total agregados:", added, "| fallidos:", failed);
+    console.log("[OK] Total agregados/refrescados:", added, "| fallidos:", failed);
 }
 
 main().catch(function(e) {
