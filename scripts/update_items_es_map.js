@@ -123,6 +123,45 @@ function getItemAttributes(itemJson)
     return out;
 }
 
+
+function cleanText(s)
+{
+return String(s || "")
+    .replace(/[\f\n\r]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function esTextoValido(txt)
+{
+const s = cleanText(txt);
+
+if (!s) return false;
+if(!/[A-Za-zÁÉÍÓÚáéíóúÑñ]/.test(s)) return false;
+if(/^[-—–ー.·•\s]+$/.test(s)) return false;
+
+return true;
+}
+
+function getItemDescES(raw)
+{
+  const flavors = (raw && raw.flavor_text_entries) ? raw.flavor_text_entries : [];
+
+  for(let i = 0; i < flavors.length; i++)
+  {
+    const f = flavors[i];
+    if (!f || !f.language || !f.language.name) continue;
+    if(f.language.name !== "es") continue;
+
+    const txt = cleanText(f.text || f.flavor_text || "");
+    if (!esTextoValido(txt)) continue;
+
+    return txt;
+  }
+
+  return null;
+}
+
 function needsItemRefresh(record)
 {
     return !record ||
@@ -319,7 +358,8 @@ async function main()
                 id: item && typeof item.id === "number" ? item.id : null,
                 display: pickSpanishName(item),
                 category: pickCategoryName(item),
-                attributes: getItemAttributes(item)
+                attributes: getItemAttributes(item),
+                descES: getItemDescES(item)
             };
 
             added++;
