@@ -1,0 +1,2246 @@
+{
+  "stench": {
+    "id": 1,
+    "gen": "generation-iii",
+    "display": "Hedor",
+    "descES": "Puede amedrentar al rival al atacarlo debido al mal olor que emana."
+  },
+  "damp": {
+    "id": 6,
+    "gen": "generation-iii",
+    "display": "Humedad",
+    "descES": "Aumenta la humedad del entorno y evita que se puedan utilizar movimientos explosivos, tales como Autodestrucción."
+  },
+  "speed-boost": {
+    "id": 3,
+    "gen": "generation-iii",
+    "display": "Impulso",
+    "descES": "Aumenta su Velocidad en cada turno."
+  },
+  "battle-armor": {
+    "id": 4,
+    "gen": "generation-iii",
+    "display": "Armadura Batalla",
+    "descES": "La robusta coraza que lo protege bloquea los golpes críticos."
+  },
+  "sturdy": {
+    "id": 5,
+    "gen": "generation-iii",
+    "display": "Robustez",
+    "descES": "Evita que el rival pueda debilitarlo de un solo golpe cuando tiene los PS al máximo. También evita los movimientos fulminantes."
+  },
+  "limber": {
+    "id": 7,
+    "gen": "generation-iii",
+    "display": "Flexibilidad",
+    "descES": "Evita ser paralizado gracias a la flexibilidad de su cuerpo."
+  },
+  "sand-veil": {
+    "id": 8,
+    "gen": "generation-iii",
+    "display": "Velo Arena",
+    "descES": "Aumenta su Evasión durante las tormentas de arena."
+  },
+  "static": {
+    "id": 9,
+    "gen": "generation-iii",
+    "display": "Electricidad Estática",
+    "descES": "La electricidad estática que lo envuelve puede paralizar al mínimo contacto."
+  },
+  "volt-absorb": {
+    "id": 10,
+    "gen": "generation-iii",
+    "display": "Absorbe Electricidad",
+    "descES": "Si le alcanza un movimiento de tipo Eléctrico, recupera PS en vez de sufrir daño."
+  },
+  "water-absorb": {
+    "id": 11,
+    "gen": "generation-iii",
+    "display": "Absorbe Agua",
+    "descES": "Si le alcanza un movimiento de tipo Agua, recupera PS en vez de sufrir daño."
+  },
+  "oblivious": {
+    "id": 12,
+    "gen": "generation-iii",
+    "display": "Despiste",
+    "descES": "Su indiferencia evita que sea provocado o caiga presa del enamoramiento."
+  },
+  "cloud-nine": {
+    "id": 13,
+    "gen": "generation-iii",
+    "display": "Aclimatación",
+    "descES": "Anula todos los efectos del tiempo atmosférico."
+  },
+  "compound-eyes": {
+    "id": 14,
+    "gen": "generation-iii",
+    "display": "Ojo Compuesto",
+    "descES": "Aumenta la precisión de sus movimientos."
+  },
+  "insomnia": {
+    "id": 15,
+    "gen": "generation-iii",
+    "display": "Insomnio",
+    "descES": "Su resistencia al sueño le impide quedarse dormido."
+  },
+  "color-change": {
+    "id": 16,
+    "gen": "generation-iii",
+    "display": "Cambio Color",
+    "descES": "Adopta el tipo del último movimiento del que es blanco."
+  },
+  "immunity": {
+    "id": 17,
+    "gen": "generation-iii",
+    "display": "Inmunidad",
+    "descES": "Su sistema inmunitario evita el envenenamiento."
+  },
+  "flash-fire": {
+    "id": 18,
+    "gen": "generation-iii",
+    "display": "Absorbe Fuego",
+    "descES": "Si le alcanza algún movimiento de tipo Fuego, potencia sus propios movimientos de dicho tipo."
+  },
+  "shield-dust": {
+    "id": 19,
+    "gen": "generation-iii",
+    "display": "Polvo Escudo",
+    "descES": "El polvo de escamas que lo envuelve lo protege de los efectos secundarios de los ataques recibidos."
+  },
+  "own-tempo": {
+    "id": 20,
+    "gen": "generation-iii",
+    "display": "Ritmo Propio",
+    "descES": "Como le gusta hacer las cosas a su manera, los rivales no logran confundirlo."
+  },
+  "intimidate": {
+    "id": 22,
+    "gen": "generation-iii",
+    "display": "Intimidación",
+    "descES": "Al entrar en combate amilana al rival de tal manera que su Ataque disminuye."
+  },
+  "shadow-tag": {
+    "id": 23,
+    "gen": "generation-iii",
+    "display": "Sombra Trampa",
+    "descES": "Impide que el enemigo huya o sea cambiado por otro."
+  },
+  "suction-cups": {
+    "id": 21,
+    "gen": "generation-iii",
+    "display": "Ventosas",
+    "descES": "Sus ventosas se aferran al suelo, con lo cual anula movimientos y objetos que fuerzan el relevo."
+  },
+  "wonder-guard": {
+    "id": 25,
+    "gen": "generation-iii",
+    "display": "Superguarda",
+    "descES": "Gracias a un poder misterioso, solo le hacen daño los movimientos supereficaces."
+  },
+  "effect-spore": {
+    "id": 27,
+    "gen": "generation-iii",
+    "display": "Efecto Espora",
+    "descES": "Puede dormir, envenenar o paralizar al Pokémon con el que entre en contacto al recibir un ataque."
+  },
+  "rough-skin": {
+    "id": 24,
+    "gen": "generation-iii",
+    "display": "Piel Tosca",
+    "descES": "Hiere con su piel áspera al rival que lo ataque con un movimiento de contacto."
+  },
+  "synchronize": {
+    "id": 28,
+    "gen": "generation-iii",
+    "display": "Sincronía",
+    "descES": "Contagia el envenenamiento, las quemaduras o la parálisis al Pokémon que le cause ese estado."
+  },
+  "drizzle": {
+    "id": 2,
+    "gen": "generation-iii",
+    "display": "Llovizna",
+    "descES": "Hace que llueva al entrar en combate."
+  },
+  "levitate": {
+    "id": 26,
+    "gen": "generation-iii",
+    "display": "Levitación",
+    "descES": "Su capacidad de flotar sobre el suelo le proporciona inmunidad frente a los movimientos de tipo Tierra."
+  },
+  "clear-body": {
+    "id": 29,
+    "gen": "generation-iii",
+    "display": "Cuerpo Puro",
+    "descES": "Evita que bajen sus características a causa de movimientos o habilidades de otros Pokémon."
+  },
+  "natural-cure": {
+    "id": 30,
+    "gen": "generation-iii",
+    "display": "Cura Natural",
+    "descES": "Cura sus problemas de estado al cambiarse con otro Pokémon."
+  },
+  "lightning-rod": {
+    "id": 31,
+    "gen": "generation-iii",
+    "display": "Pararrayos",
+    "descES": "Atrae y neutraliza los movimientos de tipo Eléctrico, que además le suben el Ataque Especial."
+  },
+  "swift-swim": {
+    "id": 33,
+    "gen": "generation-iii",
+    "display": "Nado Rápido",
+    "descES": "Sube su Velocidad cuando llueve."
+  },
+  "chlorophyll": {
+    "id": 34,
+    "gen": "generation-iii",
+    "display": "Clorofila",
+    "descES": "Sube su Velocidad cuando hace sol."
+  },
+  "illuminate": {
+    "id": 35,
+    "gen": "generation-iii",
+    "display": "Iluminación",
+    "descES": "Aumenta la probabilidad de encontrar Pokémon al iluminar el entorno."
+  },
+  "serene-grace": {
+    "id": 32,
+    "gen": "generation-iii",
+    "display": "Dicha",
+    "descES": "Aumenta la probabilidad de que los movimientos causen efectos secundarios."
+  },
+  "poison-point": {
+    "id": 38,
+    "gen": "generation-iii",
+    "display": "Punto Tóxico",
+    "descES": "Puede envenenar al mínimo contacto."
+  },
+  "trace": {
+    "id": 36,
+    "gen": "generation-iii",
+    "display": "Calco",
+    "descES": "Al entrar en combate copia la habilidad del rival."
+  },
+  "inner-focus": {
+    "id": 39,
+    "gen": "generation-iii",
+    "display": "Fuerza Mental",
+    "descES": "Gracias a su profunda concentración, no se amedrenta ante los ataques del rival."
+  },
+  "water-veil": {
+    "id": 41,
+    "gen": "generation-iii",
+    "display": "Velo Agua",
+    "descES": "Evita las quemaduras gracias a la capa de agua que lo envuelve."
+  },
+  "huge-power": {
+    "id": 37,
+    "gen": "generation-iii",
+    "display": "Potencia",
+    "descES": "Duplica la potencia de sus ataques físicos."
+  },
+  "magnet-pull": {
+    "id": 42,
+    "gen": "generation-iii",
+    "display": "Imán",
+    "descES": "Su magnetismo atrae a los Pokémon de tipo Acero y les impide huir."
+  },
+  "soundproof": {
+    "id": 43,
+    "gen": "generation-iii",
+    "display": "Insonorizar",
+    "descES": "Su aislamiento acústico lo protege de movimientos que usan sonido."
+  },
+  "pressure": {
+    "id": 46,
+    "gen": "generation-iii",
+    "display": "Presión",
+    "descES": "Presiona al rival para que sus PP se acaben antes."
+  },
+  "rain-dish": {
+    "id": 44,
+    "gen": "generation-iii",
+    "display": "Cura Lluvia",
+    "descES": "Recupera PS de forma gradual cuando llueve."
+  },
+  "magma-armor": {
+    "id": 40,
+    "gen": "generation-iii",
+    "display": "Escudo Magma",
+    "descES": "Gracias al magma candente que lo envuelve, no puede ser congelado."
+  },
+  "thick-fat": {
+    "id": 47,
+    "gen": "generation-iii",
+    "display": "Sebo",
+    "descES": "Gracias a la gruesa capa de grasa que lo protege, reduce a la mitad el daño que recibe de ataques de tipo Fuego o Hielo."
+  },
+  "sand-stream": {
+    "id": 45,
+    "gen": "generation-iii",
+    "display": "Chorro Arena",
+    "descES": "Crea una tormenta de arena al entrar en combate."
+  },
+  "early-bird": {
+    "id": 48,
+    "gen": "generation-iii",
+    "display": "Madrugar",
+    "descES": "Si se duerme, tardará la mitad de tiempo en despertarse."
+  },
+  "flame-body": {
+    "id": 49,
+    "gen": "generation-iii",
+    "display": "Cuerpo Llama",
+    "descES": "Puede quemar al mínimo contacto."
+  },
+  "keen-eye": {
+    "id": 51,
+    "gen": "generation-iii",
+    "display": "Vista Lince",
+    "descES": "Su aguda vista evita que le disminuya la Precisión."
+  },
+  "hyper-cutter": {
+    "id": 52,
+    "gen": "generation-iii",
+    "display": "Corte Fuerte",
+    "descES": "Evita que el rival le baje el Ataque."
+  },
+  "pickup": {
+    "id": 53,
+    "gen": "generation-iii",
+    "display": "Recogida",
+    "descES": "Puede recoger objetos que el rival haya usado, o bien otros que encuentre en plena aventura."
+  },
+  "truant": {
+    "id": 54,
+    "gen": "generation-iii",
+    "display": "Ausente",
+    "descES": "Al ejecutar un movimiento, descansará en el turno siguiente."
+  },
+  "hustle": {
+    "id": 55,
+    "gen": "generation-iii",
+    "display": "Entusiasmo",
+    "descES": "Aumenta su Ataque, pero reduce su Precisión."
+  },
+  "cute-charm": {
+    "id": 56,
+    "gen": "generation-iii",
+    "display": "Gran Encanto",
+    "descES": "Puede causar enamoramiento al rival que lo toque."
+  },
+  "run-away": {
+    "id": 50,
+    "gen": "generation-iii",
+    "display": "Fuga",
+    "descES": "Puede escaparse de todos los Pokémon salvajes."
+  },
+  "plus": {
+    "id": 57,
+    "gen": "generation-iii",
+    "display": "Más",
+    "descES": "Potencia su Ataque Especial si un Pokémon aliado tiene la habilidad Más o Menos."
+  },
+  "minus": {
+    "id": 58,
+    "gen": "generation-iii",
+    "display": "Menos",
+    "descES": "Potencia su Ataque Especial si un Pokémon aliado tiene la habilidad Más o Menos."
+  },
+  "forecast": {
+    "id": 59,
+    "gen": "generation-iii",
+    "display": "Predicción",
+    "descES": "Cambia a tipo Agua, Fuego o Hielo en función del tiempo atmosférico."
+  },
+  "sticky-hold": {
+    "id": 60,
+    "gen": "generation-iii",
+    "display": "Viscosidad",
+    "descES": "Los objetos se quedan pegados a su cuerpo, por lo que no pueden robárselos."
+  },
+  "marvel-scale": {
+    "id": 63,
+    "gen": "generation-iii",
+    "display": "Escama Especial",
+    "descES": "Sube su Defensa si sufre un problema de estado."
+  },
+  "guts": {
+    "id": 62,
+    "gen": "generation-iii",
+    "display": "Agallas",
+    "descES": "Si sufre un problema de estado, se viene arriba y aumenta su Ataque."
+  },
+  "liquid-ooze": {
+    "id": 64,
+    "gen": "generation-iii",
+    "display": "Lodo Líquido",
+    "descES": "Exuda una sustancia tóxica de intenso hedor que hiere a quienes intentan drenarle PS."
+  },
+  "shed-skin": {
+    "id": 61,
+    "gen": "generation-iii",
+    "display": "Mudar",
+    "descES": "Puede curar sus problemas de estado al mudar la piel."
+  },
+  "overgrow": {
+    "id": 65,
+    "gen": "generation-iii",
+    "display": "Espesura",
+    "descES": "Potencia sus movimientos de tipo Planta cuando le quedan pocos PS."
+  },
+  "swarm": {
+    "id": 68,
+    "gen": "generation-iii",
+    "display": "Enjambre",
+    "descES": "Potencia sus movimientos de tipo Bicho cuando le quedan pocos PS."
+  },
+  "torrent": {
+    "id": 67,
+    "gen": "generation-iii",
+    "display": "Torrente",
+    "descES": "Potencia sus movimientos de tipo Agua cuando le quedan pocos PS."
+  },
+  "drought": {
+    "id": 70,
+    "gen": "generation-iii",
+    "display": "Sequía",
+    "descES": "Cuando entra en combate, el tiempo pasa a ser soleado."
+  },
+  "arena-trap": {
+    "id": 71,
+    "gen": "generation-iii",
+    "display": "Trampa Arena",
+    "descES": "Evita que el rival huya."
+  },
+  "vital-spirit": {
+    "id": 72,
+    "gen": "generation-iii",
+    "display": "Espíritu Vital",
+    "descES": "Su determinación le impide quedarse dormido."
+  },
+  "white-smoke": {
+    "id": 73,
+    "gen": "generation-iii",
+    "display": "Humo Blanco",
+    "descES": "El humo blanco que lo protege evita que otros Pokémon le bajen las características."
+  },
+  "pure-power": {
+    "id": 74,
+    "gen": "generation-iii",
+    "display": "Energía Pura",
+    "descES": "Duplica la potencia de sus ataques físicos gracias al yoga."
+  },
+  "shell-armor": {
+    "id": 75,
+    "gen": "generation-iii",
+    "display": "Caparazón",
+    "descES": "La robusta coraza que lo protege bloquea los golpes críticos."
+  },
+  "motor-drive": {
+    "id": 78,
+    "gen": "generation-iv",
+    "display": "Electromotor",
+    "descES": "Si le alcanza un movimiento de tipo Eléctrico, le sube la Velocidad en vez de sufrir daño."
+  },
+  "tangled-feet": {
+    "id": 77,
+    "gen": "generation-iv",
+    "display": "Tumbos",
+    "descES": "Sube su Evasión si está confuso."
+  },
+  "air-lock": {
+    "id": 76,
+    "gen": "generation-iii",
+    "display": "Bucle Aire",
+    "descES": "Neutraliza todos los efectos del tiempo atmosférico."
+  },
+  "rivalry": {
+    "id": 79,
+    "gen": "generation-iv",
+    "display": "Rivalidad",
+    "descES": "Si el objetivo es del mismo sexo, su competitividad le lleva a infligir más daño. Si es del sexo contrario, en cambio, el daño será menor."
+  },
+  "rock-head": {
+    "id": 69,
+    "gen": "generation-iii",
+    "display": "Cabeza Roca",
+    "descES": "No puede dañarse con sus propios movimientos."
+  },
+  "steadfast": {
+    "id": 80,
+    "gen": "generation-iv",
+    "display": "Impasible",
+    "descES": "Cada vez que se amedrenta sube su Velocidad, debido a su voluntad inquebrantable."
+  },
+  "snow-cloak": {
+    "id": 81,
+    "gen": "generation-iv",
+    "display": "Manto Níveo",
+    "descES": "Sube la Evasión cuando graniza."
+  },
+  "blaze": {
+    "id": 66,
+    "gen": "generation-iii",
+    "display": "Mar Llamas",
+    "descES": "Potencia sus movimientos de tipo Fuego cuando le quedan pocos PS."
+  },
+  "gluttony": {
+    "id": 82,
+    "gen": "generation-iv",
+    "display": "Gula",
+    "descES": "Cuando sus PS se ven reducidos a la mitad, engulle la baya que normalmente solo se comería cuando le quedasen pocos PS."
+  },
+  "unburden": {
+    "id": 84,
+    "gen": "generation-iv",
+    "display": "Liviano",
+    "descES": "Sube su Velocidad si usa o pierde el objeto que lleva."
+  },
+  "heatproof": {
+    "id": 85,
+    "gen": "generation-iv",
+    "display": "Ignífugo",
+    "descES": "Su cuerpo, resistente al calor, reduce a la mitad el daño recibido por movimientos de tipo Fuego."
+  },
+  "anger-point": {
+    "id": 83,
+    "gen": "generation-iv",
+    "display": "Irascible",
+    "descES": "Si recibe un golpe crítico, monta en cólera y sube su Ataque hasta el máximo."
+  },
+  "dry-skin": {
+    "id": 87,
+    "gen": "generation-iv",
+    "display": "Piel Seca",
+    "descES": "Pierde PS si hace sol y los recupera si llueve o recibe un movimiento de tipo Agua. Los movimientos de tipo Fuego, por su parte, le hacen más daño de lo normal."
+  },
+  "download": {
+    "id": 88,
+    "gen": "generation-iv",
+    "display": "Descarga",
+    "descES": "Compara la Defensa y la Defensa Especial del rival para ver cuál es inferior y aumenta su propio Ataque o Ataque Especial según sea lo más eficaz."
+  },
+  "iron-fist": {
+    "id": 89,
+    "gen": "generation-iv",
+    "display": "Puño Férreo",
+    "descES": "Aumenta la potencia de los puñetazos."
+  },
+  "simple": {
+    "id": 86,
+    "gen": "generation-iv",
+    "display": "Simple",
+    "descES": "Duplica los cambios en las características."
+  },
+  "adaptability": {
+    "id": 91,
+    "gen": "generation-iv",
+    "display": "Adaptable",
+    "descES": "Potencia aún más los movimientos cuyo tipo coincida con el suyo."
+  },
+  "skill-link": {
+    "id": 92,
+    "gen": "generation-iv",
+    "display": "Encadenado",
+    "descES": "Ejecuta siempre los movimientos múltiples con el número máximo de golpes."
+  },
+  "hydration": {
+    "id": 93,
+    "gen": "generation-iv",
+    "display": "Hidratación",
+    "descES": "Cura los problemas de estado si está lloviendo."
+  },
+  "solar-power": {
+    "id": 94,
+    "gen": "generation-iv",
+    "display": "Poder Solar",
+    "descES": "Si hace sol, aumenta su Ataque Especial, pero pierde PS en cada turno."
+  },
+  "poison-heal": {
+    "id": 90,
+    "gen": "generation-iv",
+    "display": "Antídoto",
+    "descES": "Si resulta envenenado, recupera PS en vez de perderlos."
+  },
+  "normalize": {
+    "id": 96,
+    "gen": "generation-iv",
+    "display": "Normalidad",
+    "descES": "Hace que todos sus movimientos se vuelvan de tipo Normal y aumenten ligeramente su potencia."
+  },
+  "quick-feet": {
+    "id": 95,
+    "gen": "generation-iv",
+    "display": "Pies Rápidos",
+    "descES": "Aumenta la Velocidad si sufre problemas de estado."
+  },
+  "sniper": {
+    "id": 97,
+    "gen": "generation-iv",
+    "display": "Francotirador",
+    "descES": "Potencia los golpes críticos que asesta aún más de lo normal."
+  },
+  "magic-guard": {
+    "id": 98,
+    "gen": "generation-iv",
+    "display": "Muro Mágico",
+    "descES": "Solo recibe daño de ataques."
+  },
+  "stall": {
+    "id": 100,
+    "gen": "generation-iv",
+    "display": "Rezagado",
+    "descES": "Ejecuta su movimiento tras todos los demás."
+  },
+  "technician": {
+    "id": 101,
+    "gen": "generation-iv",
+    "display": "Experto",
+    "descES": "Potencia sus movimientos más débiles."
+  },
+  "klutz": {
+    "id": 103,
+    "gen": "generation-iv",
+    "display": "Zoquete",
+    "descES": "No puede usar objetos equipados."
+  },
+  "leaf-guard": {
+    "id": 102,
+    "gen": "generation-iv",
+    "display": "Defensa Hoja",
+    "descES": "Evita los problemas de estado si hace sol."
+  },
+  "mold-breaker": {
+    "id": 104,
+    "gen": "generation-iv",
+    "display": "Rompemoldes",
+    "descES": "Las habilidades del objetivo no afectan a los movimientos que emplea."
+  },
+  "super-luck": {
+    "id": 105,
+    "gen": "generation-iv",
+    "display": "Afortunado",
+    "descES": "Su buena suerte aumenta la probabilidad de asestar golpes críticos."
+  },
+  "anticipation": {
+    "id": 107,
+    "gen": "generation-iv",
+    "display": "Anticipación",
+    "descES": "Prevé los movimientos peligrosos del rival."
+  },
+  "forewarn": {
+    "id": 108,
+    "gen": "generation-iv",
+    "display": "Alerta",
+    "descES": "Indica el movimiento más potente del rival al entrar en combate."
+  },
+  "no-guard": {
+    "id": 99,
+    "gen": "generation-iv",
+    "display": "Indefenso",
+    "descES": "Al quedar ambos expuestos, tanto sus movimientos como los del rival acertarán siempre."
+  },
+  "unaware": {
+    "id": 109,
+    "gen": "generation-iv",
+    "display": "Ignorante",
+    "descES": "Pasa por alto las mejoras en las características del rival al atacar."
+  },
+  "aftermath": {
+    "id": 106,
+    "gen": "generation-iv",
+    "display": "Detonación",
+    "descES": "Daña al agresor que le ha dado el golpe de gracia con un movimiento de contacto."
+  },
+  "filter": {
+    "id": 111,
+    "gen": "generation-iv",
+    "display": "Filtro",
+    "descES": "Mitiga el daño que le infligen los movimientos supereficaces."
+  },
+  "tinted-lens": {
+    "id": 110,
+    "gen": "generation-iv",
+    "display": "Cromolente",
+    "descES": "Potencia los movimientos que no son muy eficaces, que infligen ahora un daño normal."
+  },
+  "scrappy": {
+    "id": 113,
+    "gen": "generation-iv",
+    "display": "Intrépido",
+    "descES": "Puede alcanzar a Pokémon de tipo Fantasma con movimientos de tipo Normal o Lucha."
+  },
+  "slow-start": {
+    "id": 112,
+    "gen": "generation-iv",
+    "display": "Inicio Lento",
+    "descES": "Baja a la mitad su Ataque y su Velocidad durante cinco turnos."
+  },
+  "ice-body": {
+    "id": 115,
+    "gen": "generation-iv",
+    "display": "Gélido",
+    "descES": "Recupera PS de forma gradual cuando hay tormentas de granizo."
+  },
+  "solid-rock": {
+    "id": 116,
+    "gen": "generation-iv",
+    "display": "Roca Sólida",
+    "descES": "Mitiga el daño que le infligen los movimientos supereficaces."
+  },
+  "snow-warning": {
+    "id": 117,
+    "gen": "generation-iv",
+    "display": "Nevada",
+    "descES": "Invoca una tormenta de granizo al entrar en combate."
+  },
+  "frisk": {
+    "id": 119,
+    "gen": "generation-iv",
+    "display": "Cacheo",
+    "descES": "Puede ver el objeto que lleva el rival al entrar en combate."
+  },
+  "reckless": {
+    "id": 120,
+    "gen": "generation-iv",
+    "display": "Audaz",
+    "descES": "Potencia los movimientos que también dañan al usuario."
+  },
+  "multitype": {
+    "id": 121,
+    "gen": "generation-iv",
+    "display": "Multitipo",
+    "descES": "Cambia su tipo al de la tabla o al del Cristal Z que lleve."
+  },
+  "flower-gift": {
+    "id": 122,
+    "gen": "generation-iv",
+    "display": "Don Floral",
+    "descES": "Si hace sol, aumenta su Ataque y su Defensa Especial, así como los de sus aliados."
+  },
+  "bad-dreams": {
+    "id": 123,
+    "gen": "generation-iv",
+    "display": "Mal Sueño",
+    "descES": "Inflige daño a cualquier rival que esté dormido."
+  },
+  "pickpocket": {
+    "id": 124,
+    "gen": "generation-v",
+    "display": "Hurto",
+    "descES": "Si el rival usa un movimiento de contacto al atacar, le roba el objeto."
+  },
+  "sheer-force": {
+    "id": 125,
+    "gen": "generation-v",
+    "display": "Potencia Bruta",
+    "descES": "Sube la potencia de sus movimientos en detrimento de los efectos secundarios, que se ven anulados."
+  },
+  "unnerve": {
+    "id": 127,
+    "gen": "generation-v",
+    "display": "Nerviosismo",
+    "descES": "Pone nervioso al rival y le impide usar bayas."
+  },
+  "defiant": {
+    "id": 128,
+    "gen": "generation-v",
+    "display": "Competitivo",
+    "descES": "Sube mucho su Ataque cuando el rival le baja las características."
+  },
+  "honey-gather": {
+    "id": 118,
+    "gen": "generation-iv",
+    "display": "Recogemiel",
+    "descES": "Puede que encuentre Miel una vez concluido el combate."
+  },
+  "cursed-body": {
+    "id": 130,
+    "gen": "generation-v",
+    "display": "Cuerpo Maldito",
+    "descES": "Puede anular el movimiento usado en su contra."
+  },
+  "defeatist": {
+    "id": 129,
+    "gen": "generation-v",
+    "display": "Flaqueza",
+    "descES": "Se debilita tanto cuando sus PS se ven reducidos a la mitad que su Ataque y su Ataque Especial bajan."
+  },
+  "storm-drain": {
+    "id": 114,
+    "gen": "generation-iv",
+    "display": "Colector",
+    "descES": "Atrae y neutraliza los movimientos de tipo Agua, que además le suben el Ataque Especial."
+  },
+  "friend-guard": {
+    "id": 132,
+    "gen": "generation-v",
+    "display": "Compiescolta",
+    "descES": "Reduce el daño que sufren los aliados."
+  },
+  "weak-armor": {
+    "id": 133,
+    "gen": "generation-v",
+    "display": "Armadura Frágil",
+    "descES": "Al recibir daño de un ataque físico, le baja la Defensa, pero le sube mucho la Velocidad."
+  },
+  "heavy-metal": {
+    "id": 134,
+    "gen": "generation-v",
+    "display": "Metal Pesado",
+    "descES": "Duplica su peso."
+  },
+  "light-metal": {
+    "id": 135,
+    "gen": "generation-v",
+    "display": "Metal Liviano",
+    "descES": "Reduce a la mitad su peso."
+  },
+  "toxic-boost": {
+    "id": 137,
+    "gen": "generation-v",
+    "display": "Ímpetu Tóxico",
+    "descES": "Aumenta la potencia de sus ataques físicos cuando está envenenado."
+  },
+  "healer": {
+    "id": 131,
+    "gen": "generation-v",
+    "display": "Alma Cura",
+    "descES": "A veces cura los problemas de estado de un aliado."
+  },
+  "harvest": {
+    "id": 139,
+    "gen": "generation-v",
+    "display": "Cosecha",
+    "descES": "Puede reutilizar varias veces una misma baya."
+  },
+  "flare-boost": {
+    "id": 138,
+    "gen": "generation-v",
+    "display": "Ímpetu Ardiente",
+    "descES": "Aumenta la potencia de sus ataques especiales cuando sufre quemaduras."
+  },
+  "moody": {
+    "id": 141,
+    "gen": "generation-v",
+    "display": "Veleta",
+    "descES": "Una característica le sube mucho en cada turno, pero le baja otra."
+  },
+  "overcoat": {
+    "id": 142,
+    "gen": "generation-v",
+    "display": "Funda",
+    "descES": "No le afectan las tormentas de arena, el granizo y los movimientos con polvos."
+  },
+  "telepathy": {
+    "id": 140,
+    "gen": "generation-v",
+    "display": "Telepatía",
+    "descES": "Elude los ataques de los aliados durante el combate."
+  },
+  "regenerator": {
+    "id": 144,
+    "gen": "generation-v",
+    "display": "Regeneración",
+    "descES": "Recupera unos pocos PS al ser cambiado por otro Pokémon."
+  },
+  "poison-touch": {
+    "id": 143,
+    "gen": "generation-v",
+    "display": "Toque Tóxico",
+    "descES": "Puede envenenar al objetivo con solo tocarlo."
+  },
+  "sand-rush": {
+    "id": 146,
+    "gen": "generation-v",
+    "display": "Ímpetu Arena",
+    "descES": "Aumenta su Velocidad durante las tormentas de arena."
+  },
+  "wonder-skin": {
+    "id": 147,
+    "gen": "generation-v",
+    "display": "Piel Milagro",
+    "descES": "Presenta una mayor resistencia ante los movimientos de estado."
+  },
+  "analytic": {
+    "id": 148,
+    "gen": "generation-v",
+    "display": "Cálculo Final",
+    "descES": "Aumenta la potencia de su movimiento si es el último en atacar."
+  },
+  "illusion": {
+    "id": 149,
+    "gen": "generation-v",
+    "display": "Ilusión",
+    "descES": "Adopta el aspecto del último Pokémon del equipo al entrar en combate para desconcertar al rival."
+  },
+  "imposter": {
+    "id": 150,
+    "gen": "generation-v",
+    "display": "Impostor",
+    "descES": "Se transforma en el Pokémon que tiene enfrente."
+  },
+  "multiscale": {
+    "id": 136,
+    "gen": "generation-v",
+    "display": "Multiescamas",
+    "descES": "Reduce el daño que sufre si sus PS están al máximo."
+  },
+  "infiltrator": {
+    "id": 151,
+    "gen": "generation-v",
+    "display": "Allanamiento",
+    "descES": "Ataca sorteando la barrera o el sustituto del rival."
+  },
+  "big-pecks": {
+    "id": 145,
+    "gen": "generation-v",
+    "display": "Sacapecho",
+    "descES": "Impide que el rival le baje la Defensa."
+  },
+  "moxie": {
+    "id": 153,
+    "gen": "generation-v",
+    "display": "Autoestima",
+    "descES": "Al debilitar a un objetivo, su confianza se refuerza de tal manera que aumenta su Ataque."
+  },
+  "mummy": {
+    "id": 152,
+    "gen": "generation-v",
+    "display": "Momia",
+    "descES": "Contagia la habilidad Momia al rival que entre en contacto con él."
+  },
+  "justified": {
+    "id": 154,
+    "gen": "generation-v",
+    "display": "Justiciero",
+    "descES": "Si le alcanza un movimiento de tipo Siniestro, aumenta el Ataque debido a su integridad."
+  },
+  "sap-sipper": {
+    "id": 157,
+    "gen": "generation-v",
+    "display": "Herbívoro",
+    "descES": "Neutraliza los movimientos de tipo Planta y sube su Ataque."
+  },
+  "rattled": {
+    "id": 155,
+    "gen": "generation-v",
+    "display": "Cobardía",
+    "descES": "Si le alcanza un movimiento de tipo Siniestro, Bicho o Fantasma, el miedo hace que le suba la Velocidad."
+  },
+  "prankster": {
+    "id": 158,
+    "gen": "generation-v",
+    "display": "Bromista",
+    "descES": "Sus movimientos de estado tienen prioridad alta."
+  },
+  "sand-force": {
+    "id": 159,
+    "gen": "generation-v",
+    "display": "Poder Arena",
+    "descES": "Potencia los movimientos de tipo Tierra, Acero y Roca durante las tormentas de arena."
+  },
+  "victory-star": {
+    "id": 162,
+    "gen": "generation-v",
+    "display": "Tinovictoria",
+    "descES": "Sube su Precisión y la de sus aliados."
+  },
+  "zen-mode": {
+    "id": 161,
+    "gen": "generation-v",
+    "display": "Modo Daruma",
+    "descES": "Cambia de forma si sus PS se ven reducidos a la mitad."
+  },
+  "turboblaze": {
+    "id": 163,
+    "gen": "generation-v",
+    "display": "Turbollama",
+    "descES": "Las habilidades del objetivo no afectan a los movimientos que emplea."
+  },
+  "teravolt": {
+    "id": 164,
+    "gen": "generation-v",
+    "display": "Terravoltaje",
+    "descES": "Las habilidades del objetivo no afectan a los movimientos que emplea."
+  },
+  "iron-barbs": {
+    "id": 160,
+    "gen": "generation-v",
+    "display": "Punta Acero",
+    "descES": "Inflige daño al rival si este le golpea con un movimiento de contacto."
+  },
+  "flower-veil": {
+    "id": 166,
+    "gen": "generation-vi",
+    "display": "Velo Flor",
+    "descES": "Evita que los Pokémon de tipo Planta aliados sufran problemas de estado o que les bajen sus características."
+  },
+  "aroma-veil": {
+    "id": 165,
+    "gen": "generation-vi",
+    "display": "Velo Aroma",
+    "descES": "Se protege a sí mismo y a sus aliados de ataques que impiden elegir movimientos."
+  },
+  "fur-coat": {
+    "id": 169,
+    "gen": "generation-vi",
+    "display": "Pelaje Recio",
+    "descES": "Reduce a la mitad el daño que recibe de ataques físicos del rival."
+  },
+  "protean": {
+    "id": 168,
+    "gen": "generation-vi",
+    "display": "Mutatipo",
+    "descES": "Cambia su tipo al del movimiento que va a usar."
+  },
+  "cheek-pouch": {
+    "id": 167,
+    "gen": "generation-vi",
+    "display": "Carrillo",
+    "descES": "Recupera PS al comer cualquier baya."
+  },
+  "magician": {
+    "id": 170,
+    "gen": "generation-vi",
+    "display": "Prestidigitador",
+    "descES": "Roba el objeto del Pokémon al que alcance con un movimiento."
+  },
+  "bulletproof": {
+    "id": 171,
+    "gen": "generation-vi",
+    "display": "Antibalas",
+    "descES": "No le afectan las bombas ni algunos proyectiles."
+  },
+  "strong-jaw": {
+    "id": 173,
+    "gen": "generation-vi",
+    "display": "Mandíbula Fuerte",
+    "descES": "Su robusta mandíbula le confiere una mordedura potente."
+  },
+  "refrigerate": {
+    "id": 174,
+    "gen": "generation-vi",
+    "display": "Piel Helada",
+    "descES": "Convierte los movimientos de tipo Normal en tipo Hielo y aumenta ligeramente su potencia."
+  },
+  "competitive": {
+    "id": 172,
+    "gen": "generation-vi",
+    "display": "Tenacidad",
+    "descES": "Aumenta mucho su Ataque Especial cuando el rival le baja cualquiera de sus características."
+  },
+  "sweet-veil": {
+    "id": 175,
+    "gen": "generation-vi",
+    "display": "Velo Dulce",
+    "descES": "No cae dormido y evita también que sus aliados se duerman."
+  },
+  "stance-change": {
+    "id": 176,
+    "gen": "generation-vi",
+    "display": "Cambio Táctico",
+    "descES": "Adopta la Forma Filo al lanzar un ataque, o bien la Forma Escudo si usa el movimiento Escudo Real."
+  },
+  "grass-pelt": {
+    "id": 179,
+    "gen": "generation-vi",
+    "display": "Manto Frondoso",
+    "descES": "Aumenta su Defensa si hay un campo de hierba en el terreno de combate."
+  },
+  "gale-wings": {
+    "id": 177,
+    "gen": "generation-vi",
+    "display": "Alas Vendaval",
+    "descES": "Da prioridad a los movimientos de tipo Volador si sus PS están al máximo."
+  },
+  "symbiosis": {
+    "id": 180,
+    "gen": "generation-vi",
+    "display": "Simbiosis",
+    "descES": "Pasa su objeto a un aliado que ya haya utilizado el suyo."
+  },
+  "contrary": {
+    "id": 126,
+    "gen": "generation-v",
+    "display": "Respondón",
+    "descES": "Invierte los cambios en las características: bajan cuando les toca subir y suben cuando les toca bajar."
+  },
+  "pixilate": {
+    "id": 182,
+    "gen": "generation-vi",
+    "display": "Piel Feérica",
+    "descES": "Convierte los movimientos de tipo Normal en tipo Hada y aumenta ligeramente su potencia."
+  },
+  "gooey": {
+    "id": 183,
+    "gen": "generation-vi",
+    "display": "Baba",
+    "descES": "Baja la Velocidad del rival cuando este le ataca con un movimiento de contacto."
+  },
+  "aerilate": {
+    "id": 184,
+    "gen": "generation-vi",
+    "display": "Piel Celeste",
+    "descES": "Convierte los movimientos de tipo Normal en tipo Volador y aumenta ligeramente su potencia."
+  },
+  "parental-bond": {
+    "id": 185,
+    "gen": "generation-vi",
+    "display": "Amor Filial",
+    "descES": "Une fuerzas con su cría y ataca dos veces."
+  },
+  "dark-aura": {
+    "id": 186,
+    "gen": "generation-vi",
+    "display": "Aura Oscura",
+    "descES": "Aumenta la potencia de todos los movimientos de tipo Siniestro."
+  },
+  "fairy-aura": {
+    "id": 187,
+    "gen": "generation-vi",
+    "display": "Aura Feérica",
+    "descES": "Aumenta la potencia de todos los movimientos de tipo Hada."
+  },
+  "aura-break": {
+    "id": 188,
+    "gen": "generation-vi",
+    "display": "Rompeaura",
+    "descES": "Invierte los efectos de las auras, por lo que baja la potencia de ciertos movimientos en vez de subirla."
+  },
+  "primordial-sea": {
+    "id": 189,
+    "gen": "generation-vi",
+    "display": "Mar del Albor",
+    "descES": "Altera el clima para anular los ataques de tipo Fuego."
+  },
+  "tough-claws": {
+    "id": 181,
+    "gen": "generation-vi",
+    "display": "Garra Dura",
+    "descES": "Aumenta la potencia de los movimientos de contacto."
+  },
+  "desolate-land": {
+    "id": 190,
+    "gen": "generation-vi",
+    "display": "Tierra del Ocaso",
+    "descES": "Altera el clima para anular los ataques de tipo Agua."
+  },
+  "delta-stream": {
+    "id": 191,
+    "gen": "generation-vi",
+    "display": "Ráfaga Delta",
+    "descES": "Altera el clima para anular las vulnerabilidades del tipo Volador."
+  },
+  "stamina": {
+    "id": 192,
+    "gen": "generation-vii",
+    "display": "Firmeza",
+    "descES": "Aumenta su Defensa al recibir un ataque."
+  },
+  "mega-launcher": {
+    "id": 178,
+    "gen": "generation-vi",
+    "display": "Megadisparador",
+    "descES": "Aumenta la potencia de algunos movimientos de pulsos y auras."
+  },
+  "wimp-out": {
+    "id": 193,
+    "gen": "generation-vii",
+    "display": "Huida",
+    "descES": "Se asusta y abandona el terreno de combate cuando sus PS se ven reducidos a la mitad."
+  },
+  "emergency-exit": {
+    "id": 194,
+    "gen": "generation-vii",
+    "display": "Retirada",
+    "descES": "Abandona el terreno de combate cuando sus PS se ven reducidos a la mitad para evitar males mayores."
+  },
+  "magic-bounce": {
+    "id": 156,
+    "gen": "generation-v",
+    "display": "Espejo Mágico",
+    "descES": "Puede devolver los movimientos de estado lanzados por el rival, sin verse afectado por ellos."
+  },
+  "merciless": {
+    "id": 196,
+    "gen": "generation-vii",
+    "display": "Ensañamiento",
+    "descES": "Hace que sus movimientos asesten siempre un golpe crítico si el rival está envenenado."
+  },
+  "shields-down": {
+    "id": 197,
+    "gen": "generation-vii",
+    "display": "Escudo Limitado",
+    "descES": "Rompe su coraza cuando sus PS se ven reducidos a la mitad y adopta una forma ofensiva."
+  },
+  "stakeout": {
+    "id": 198,
+    "gen": "generation-vii",
+    "display": "Vigilante",
+    "descES": "Si el objetivo de su ataque es sustituido por otro, duplica el daño que infligirá."
+  },
+  "water-compaction": {
+    "id": 195,
+    "gen": "generation-vii",
+    "display": "Hidrorrefuerzo",
+    "descES": "Aumenta mucho su Defensa si le alcanza un movimiento de tipo Agua."
+  },
+  "water-bubble": {
+    "id": 199,
+    "gen": "generation-vii",
+    "display": "Pompa",
+    "descES": "Reduce el daño que le provocan los movimientos de tipo Fuego y es inmune a las quemaduras."
+  },
+  "steelworker": {
+    "id": 200,
+    "gen": "generation-vii",
+    "display": "Acero Templado",
+    "descES": "Potencia los movimientos de tipo Acero."
+  },
+  "slush-rush": {
+    "id": 202,
+    "gen": "generation-vii",
+    "display": "Quitanieves",
+    "descES": "Aumenta su Velocidad si está granizando."
+  },
+  "long-reach": {
+    "id": 203,
+    "gen": "generation-vii",
+    "display": "Remoto",
+    "descES": "Puede usar cualquier movimiento sin entrar en contacto con el rival."
+  },
+  "berserk": {
+    "id": 201,
+    "gen": "generation-vii",
+    "display": "Cólera",
+    "descES": "Aumenta su Ataque Especial si sus PS se ven reducidos a la mitad debido a algún ataque."
+  },
+  "liquid-voice": {
+    "id": 204,
+    "gen": "generation-vii",
+    "display": "Voz Fluida",
+    "descES": "Hace que todos sus movimientos que usan sonido pasen a ser de tipo Agua."
+  },
+  "galvanize": {
+    "id": 206,
+    "gen": "generation-vii",
+    "display": "Piel Eléctrica",
+    "descES": "Convierte los movimientos de tipo Normal en tipo Eléctrico y aumenta ligeramente su potencia."
+  },
+  "triage": {
+    "id": 205,
+    "gen": "generation-vii",
+    "display": "Primer Auxilio",
+    "descES": "Da prioridad a los movimientos que restauran PS."
+  },
+  "schooling": {
+    "id": 208,
+    "gen": "generation-vii",
+    "display": "Banco",
+    "descES": "Forma bancos con sus congéneres cuando tiene muchos PS, lo cual le otorga más fuerza. Cuando le quedan pocos PS, el banco se dispersa."
+  },
+  "surge-surfer": {
+    "id": 207,
+    "gen": "generation-vii",
+    "display": "Cola Surf",
+    "descES": "Duplica su Velocidad si hay un campo eléctrico en el terreno de combate."
+  },
+  "disguise": {
+    "id": 209,
+    "gen": "generation-vii",
+    "display": "Disfraz",
+    "descES": "Puede eludir un ataque valiéndose de la tela que le cubre el cuerpo una vez por combate."
+  },
+  "battle-bond": {
+    "id": 210,
+    "gen": "generation-vii",
+    "display": "Fuerte Afecto",
+    "descES": "Al derrotar a un rival, los vínculos con su Entrenador se refuerzan y se convierte en Greninja Ash. Su Shuriken de Agua también se ve potenciado."
+  },
+  "power-construct": {
+    "id": 211,
+    "gen": "generation-vii",
+    "display": "Agrupamiento",
+    "descES": "Cuando sus PS se ven reducidos a la mitad, las células se reagrupan y adopta su Forma Completa."
+  },
+  "comatose": {
+    "id": 213,
+    "gen": "generation-vii",
+    "display": "Letargo Perenne",
+    "descES": "No despierta jamás de su profundo letargo e incluso ataca dormido."
+  },
+  "queenly-majesty": {
+    "id": 214,
+    "gen": "generation-vii",
+    "display": "Regia Presencia",
+    "descES": "Intimida al objetivo y le impide usar movimientos con prioridad."
+  },
+  "innards-out": {
+    "id": 215,
+    "gen": "generation-vii",
+    "display": "Revés",
+    "descES": "Al caer debilitado, inflige al rival un daño equivalente a los PS que le quedaran."
+  },
+  "dancer": {
+    "id": 216,
+    "gen": "generation-vii",
+    "display": "Pareja de Baile",
+    "descES": "Puede copiar inmediatamente cualquier movimiento de baile que haya usado otro Pokémon presente en el combate."
+  },
+  "dazzling": {
+    "id": 219,
+    "gen": "generation-vii",
+    "display": "Cuerpo Vívido",
+    "descES": "Desconcierta al rival y le impide utilizar movimientos con prioridad en su contra."
+  },
+  "battery": {
+    "id": 217,
+    "gen": "generation-vii",
+    "display": "Batería",
+    "descES": "Potencia los ataques especiales de los aliados."
+  },
+  "fluffy": {
+    "id": 218,
+    "gen": "generation-vii",
+    "display": "Peluche",
+    "descES": "Reduce a la mitad el daño provocado por los movimientos de contacto, pero duplica el infligido por los de tipo Fuego."
+  },
+  "soul-heart": {
+    "id": 220,
+    "gen": "generation-vii",
+    "display": "Coránima",
+    "descES": "Aumenta su Ataque Especial cada vez que un Pokémon cae debilitado."
+  },
+  "tangling-hair": {
+    "id": 221,
+    "gen": "generation-vii",
+    "display": "Rizos Rebeldes",
+    "descES": "Baja la Velocidad del rival cuando este le ataca con un movimiento de contacto."
+  },
+  "power-of-alchemy": {
+    "id": 223,
+    "gen": "generation-vii",
+    "display": "Reacción Química",
+    "descES": "Reacciona copiando la habilidad de un aliado debilitado."
+  },
+  "receiver": {
+    "id": 222,
+    "gen": "generation-vii",
+    "display": "Receptor",
+    "descES": "Adquiere la habilidad de un aliado debilitado."
+  },
+  "rks-system": {
+    "id": 225,
+    "gen": "generation-vii",
+    "display": "Sistema Alfa",
+    "descES": "Cambia su tipo según el disco que lleve instalado."
+  },
+  "electric-surge": {
+    "id": 226,
+    "gen": "generation-vii",
+    "display": "Electrogénesis",
+    "descES": "Crea un campo eléctrico al entrar en combate."
+  },
+  "misty-surge": {
+    "id": 228,
+    "gen": "generation-vii",
+    "display": "Nebulogénesis",
+    "descES": "Crea un campo de niebla al entrar en combate."
+  },
+  "psychic-surge": {
+    "id": 227,
+    "gen": "generation-vii",
+    "display": "Psicogénesis",
+    "descES": "Crea un campo psíquico al entrar en combate."
+  },
+  "grassy-surge": {
+    "id": 229,
+    "gen": "generation-vii",
+    "display": "Herbogénesis",
+    "descES": "Crea un campo de hierba al entrar en combate."
+  },
+  "full-metal-body": {
+    "id": 230,
+    "gen": "generation-vii",
+    "display": "Guardia Metálica",
+    "descES": "Evita que bajen sus características a causa de movimientos o habilidades de otros Pokémon."
+  },
+  "prism-armor": {
+    "id": 232,
+    "gen": "generation-vii",
+    "display": "Armadura Prisma",
+    "descES": "Mitiga el daño que le infligen los movimientos supereficaces."
+  },
+  "shadow-shield": {
+    "id": 231,
+    "gen": "generation-vii",
+    "display": "Guardia Espectro",
+    "descES": "Reduce el daño que sufre si sus PS están al máximo."
+  },
+  "neuroforce": {
+    "id": 233,
+    "gen": "generation-vii",
+    "display": "Fuerza Cerebral",
+    "descES": "Potencia los ataques supereficaces."
+  },
+  "intrepid-sword": {
+    "id": 234,
+    "gen": "generation-viii",
+    "display": "Espada Indómita",
+    "descES": "Aumenta su Ataque al entrar en combate."
+  },
+  "dauntless-shield": {
+    "id": 235,
+    "gen": "generation-viii",
+    "display": "Escudo Recio",
+    "descES": "Aumenta su Defensa al entrar en combate."
+  },
+  "libero": {
+    "id": 236,
+    "gen": "generation-viii",
+    "display": "Líbero",
+    "descES": "Cambia su tipo al del movimiento que va a usar."
+  },
+  "ball-fetch": {
+    "id": 237,
+    "gen": "generation-viii",
+    "display": "Recogebolas",
+    "descES": "Si no lleva equipado ningún objeto, recupera la Poké Ball del primer intento de captura fallido."
+  },
+  "cotton-down": {
+    "id": 238,
+    "gen": "generation-viii",
+    "display": "Pelusa",
+    "descES": "Al ser alcanzado por un ataque, suelta una pelusa de algodón que reduce la Velocidad de todos los demás Pokémon."
+  },
+  "propeller-tail": {
+    "id": 239,
+    "gen": "generation-viii",
+    "display": "Hélice Caudal",
+    "descES": "Impide que el rival pueda atraer ataques hacia sí mismo por efecto de su habilidad o sus movimientos."
+  },
+  "mirror-armor": {
+    "id": 240,
+    "gen": "generation-viii",
+    "display": "Coraza Reflejo",
+    "descES": "Refleja los efectos que reducen las características."
+  },
+  "gulp-missile": {
+    "id": 241,
+    "gen": "generation-viii",
+    "display": "Tragamisil",
+    "descES": "Tras usar Surf o Buceo, emerge con una presa en la boca. Al recibir daño, ataca escupiéndola al rival."
+  },
+  "stalwart": {
+    "id": 242,
+    "gen": "generation-viii",
+    "display": "Acérrimo",
+    "descES": "Impide que el rival pueda atraer ataques hacia sí mismo por efecto de su habilidad o sus movimientos."
+  },
+  "steam-engine": {
+    "id": 243,
+    "gen": "generation-viii",
+    "display": "Combustible",
+    "descES": "Si le alcanza un movimiento de tipo Fuego o Agua, le sube muchísimo la Velocidad."
+  },
+  "corrosion": {
+    "id": 212,
+    "gen": "generation-vii",
+    "display": "Corrosión",
+    "descES": "Puede envenenar incluso a rivales de tipo Acero o Veneno."
+  },
+  "punk-rock": {
+    "id": 244,
+    "gen": "generation-viii",
+    "display": "Punk Rock",
+    "descES": "Potencia los movimientos que usan sonido y reduce a la mitad el daño que le infligen dichos movimientos."
+  },
+  "sand-spit": {
+    "id": 245,
+    "gen": "generation-viii",
+    "display": "Expulsarena",
+    "descES": "Provoca una tormenta de arena al recibir un ataque."
+  },
+  "ice-scales": {
+    "id": 246,
+    "gen": "generation-viii",
+    "display": "Escama de Hielo",
+    "descES": "Las gélidas escamas que protegen su cuerpo reducen a la mitad el daño que le infligen los ataques especiales."
+  },
+  "power-spot": {
+    "id": 249,
+    "gen": "generation-viii",
+    "display": "Fuente Energía",
+    "descES": "Potencia los movimientos de los Pokémon adyacentes."
+  },
+  "ice-face": {
+    "id": 248,
+    "gen": "generation-viii",
+    "display": "Cara de Hielo",
+    "descES": "Absorbe el daño de un ataque físico con el hielo de la cabeza, tras lo cual cambia de forma. El hielo se regenerará la próxima vez que granice."
+  },
+  "ripen": {
+    "id": 247,
+    "gen": "generation-viii",
+    "display": "Maduración",
+    "descES": "Hace madurar las bayas, por lo que duplica sus efectos."
+  },
+  "mimicry": {
+    "id": 250,
+    "gen": "generation-viii",
+    "display": "Mimetismo",
+    "descES": "Cambia su tipo según el campo que haya en el terreno de combate."
+  },
+  "screen-cleaner": {
+    "id": 251,
+    "gen": "generation-viii",
+    "display": "Antibarrera",
+    "descES": "Anula los efectos de Pantalla de Luz, Reflejo y Velo Aurora tanto de rivales como de aliados al entrar en combate."
+  },
+  "steely-spirit": {
+    "id": 252,
+    "gen": "generation-viii",
+    "display": "Alma Acerada",
+    "descES": "Potencia los movimientos de tipo Acero de los aliados."
+  },
+  "perish-body": {
+    "id": 253,
+    "gen": "generation-viii",
+    "display": "Cuerpo Mortal",
+    "descES": "Si le alcanza un movimiento de contacto, se debilitará al cabo de 3 turnos, así como su agresor, a menos que abandonen el terreno de combate."
+  },
+  "wandering-spirit": {
+    "id": 254,
+    "gen": "generation-viii",
+    "display": "Alma Errante",
+    "descES": "Si le alcanza un movimiento de contacto, intercambia su habilidad con la del agresor."
+  },
+  "gorilla-tactics": {
+    "id": 255,
+    "gen": "generation-viii",
+    "display": "Monotema",
+    "descES": "Potencia su Ataque, pero solo puede usar el primer movimiento escogido."
+  },
+  "neutralizing-gas": {
+    "id": 256,
+    "gen": "generation-viii",
+    "display": "Gas Reactivo",
+    "descES": "Anula los efectos de las habilidades de los demás Pokémon presentes mientras esté en el terreno de combate."
+  },
+  "pastel-veil": {
+    "id": 257,
+    "gen": "generation-viii",
+    "display": "Velo Pastel",
+    "descES": "Se protege a sí mismo y a sus aliados del envenenamiento."
+  },
+  "hunger-switch": {
+    "id": 258,
+    "gen": "generation-viii",
+    "display": "Mutapetito",
+    "descES": "Alterna entre su Forma Saciada y Forma Voraz al final de cada turno."
+  },
+  "quick-draw": {
+    "id": 259,
+    "gen": "generation-viii",
+    "display": "Mano Rápida",
+    "descES": "A veces, puede atacar el primero."
+  },
+  "unseen-fist": {
+    "id": 260,
+    "gen": "generation-viii",
+    "display": "Puño Invisible",
+    "descES": "Si usa un movimiento de contacto, puede infligir daño al objetivo aunque este se proteja."
+  },
+  "curious-medicine": {
+    "id": 261,
+    "gen": "generation-viii",
+    "display": "Medicina Extraña",
+    "descES": "Al entrar en combate, rezuma una substancia medicinal por la caracola que revierte los cambios en las características de los aliados."
+  },
+  "transistor": {
+    "id": 262,
+    "gen": "generation-viii",
+    "display": "Transistor",
+    "descES": "Potencia los movimientos de tipo Eléctrico."
+  },
+  "dragons-maw": {
+    "id": 263,
+    "gen": "generation-viii",
+    "display": "Mandíbula Dragón",
+    "descES": "Potencia los movimientos de tipo Dragón."
+  },
+  "grim-neigh": {
+    "id": 265,
+    "gen": "generation-viii",
+    "display": "Relincho Negro",
+    "descES": "Al derrotar a un objetivo, emite un relincho aterrador y aumenta su Ataque Especial."
+  },
+  "as-one-glastrier": {
+    "id": 266,
+    "gen": "generation-viii",
+    "display": "Unidad Ecuestre",
+    "descES": "El Pokémon tiene dos habilidades: Relincho Blanco de Glastrier y Nerviosismo de Calyrex."
+  },
+  "as-one-spectrier": {
+    "id": 267,
+    "gen": "generation-viii",
+    "display": "Unidad Ecuestre",
+    "descES": "El Pokémon tiene dos habilidades: Relincho Negro de Spectrier y Nerviosismo de Calyrex."
+  },
+  "chilling-neigh": {
+    "id": 264,
+    "gen": "generation-viii",
+    "display": "Relincho Blanco",
+    "descES": "Al derrotar a un objetivo, emite un relincho gélido y aumenta su Ataque."
+  },
+  "lingering-aroma": {
+    "id": 268,
+    "gen": "generation-ix",
+    "display": "Olor Persistente",
+    "descES": null
+  },
+  "seed-sower": {
+    "id": 269,
+    "gen": "generation-ix",
+    "display": "Disemillar",
+    "descES": null
+  },
+  "thermal-exchange": {
+    "id": 270,
+    "gen": "generation-ix",
+    "display": "Termoconversión",
+    "descES": null
+  },
+  "anger-shell": {
+    "id": 271,
+    "gen": "generation-ix",
+    "display": "Coraza Ira",
+    "descES": null
+  },
+  "wind-rider": {
+    "id": 274,
+    "gen": "generation-ix",
+    "display": "Surcavientos",
+    "descES": null
+  },
+  "well-baked-body": {
+    "id": 273,
+    "gen": "generation-ix",
+    "display": "Cuerpo Horneado",
+    "descES": null
+  },
+  "purifying-salt": {
+    "id": 272,
+    "gen": "generation-ix",
+    "display": "Sal Purificadora",
+    "descES": null
+  },
+  "rocky-payload": {
+    "id": 276,
+    "gen": "generation-ix",
+    "display": "Transportarrocas",
+    "descES": null
+  },
+  "wind-power": {
+    "id": 277,
+    "gen": "generation-ix",
+    "display": "Energía Eólica",
+    "descES": null
+  },
+  "guard-dog": {
+    "id": 275,
+    "gen": "generation-ix",
+    "display": "Perro Guardián",
+    "descES": null
+  },
+  "zero-to-hero": {
+    "id": 278,
+    "gen": "generation-ix",
+    "display": "Cambio Heroico",
+    "descES": null
+  },
+  "beast-boost": {
+    "id": 224,
+    "gen": "generation-vii",
+    "display": "Ultraimpulso",
+    "descES": "Si derrota a un rival en ese turno, aumenta su característica más fuerte."
+  },
+  "commander": {
+    "id": 279,
+    "gen": "generation-ix",
+    "display": "Comandar",
+    "descES": null
+  },
+  "electromorphosis": {
+    "id": 280,
+    "gen": "generation-ix",
+    "display": "Dinamo",
+    "descES": null
+  },
+  "protosynthesis": {
+    "id": 281,
+    "gen": "generation-ix",
+    "display": "Paleosíntesis",
+    "descES": null
+  },
+  "vessel-of-ruin": {
+    "id": 284,
+    "gen": "generation-ix",
+    "display": "Caldero Debacle",
+    "descES": null
+  },
+  "sword-of-ruin": {
+    "id": 285,
+    "gen": "generation-ix",
+    "display": "Espada Debacle",
+    "descES": null
+  },
+  "quark-drive": {
+    "id": 282,
+    "gen": "generation-ix",
+    "display": "Carga Cuark",
+    "descES": null
+  },
+  "tablets-of-ruin": {
+    "id": 286,
+    "gen": "generation-ix",
+    "display": "Tablilla Debacle",
+    "descES": null
+  },
+  "beads-of-ruin": {
+    "id": 287,
+    "gen": "generation-ix",
+    "display": "Abalorio Debacle",
+    "descES": null
+  },
+  "good-as-gold": {
+    "id": 283,
+    "gen": "generation-ix",
+    "display": "Cuerpo Áureo",
+    "descES": null
+  },
+  "orichalcum-pulse": {
+    "id": 288,
+    "gen": "generation-ix",
+    "display": "Latido Oricalco",
+    "descES": null
+  },
+  "hadron-engine": {
+    "id": 289,
+    "gen": "generation-ix",
+    "display": "Motor Hadrónico",
+    "descES": null
+  },
+  "opportunist": {
+    "id": 290,
+    "gen": "generation-ix",
+    "display": "Oportunista",
+    "descES": null
+  },
+  "cud-chew": {
+    "id": 291,
+    "gen": "generation-ix",
+    "display": "Rumia",
+    "descES": null
+  },
+  "supreme-overlord": {
+    "id": 293,
+    "gen": "generation-ix",
+    "display": "General Supremo",
+    "descES": null
+  },
+  "costar": {
+    "id": 294,
+    "gen": "generation-ix",
+    "display": "Unísono",
+    "descES": null
+  },
+  "toxic-debris": {
+    "id": 295,
+    "gen": "generation-ix",
+    "display": "Capa Tóxica",
+    "descES": null
+  },
+  "sharpness": {
+    "id": 292,
+    "gen": "generation-ix",
+    "display": "Cortante",
+    "descES": null
+  },
+  "earth-eater": {
+    "id": 297,
+    "gen": "generation-ix",
+    "display": "Geofagia",
+    "descES": null
+  },
+  "mycelium-might": {
+    "id": 298,
+    "gen": "generation-ix",
+    "display": "Poder Fúngico",
+    "descES": null
+  },
+  "minds-eye": {
+    "id": 299,
+    "gen": "generation-ix",
+    "display": "Ojo Mental",
+    "descES": null
+  },
+  "supersweet-syrup": {
+    "id": 300,
+    "gen": "generation-ix",
+    "display": "Néctar Dulce",
+    "descES": null
+  },
+  "hospitality": {
+    "id": 301,
+    "gen": "generation-ix",
+    "display": "Hospitalidad",
+    "descES": null
+  },
+  "toxic-chain": {
+    "id": 302,
+    "gen": "generation-ix",
+    "display": "Cadena Tóxica",
+    "descES": null
+  },
+  "embody-aspect": {
+    "id": 303,
+    "gen": "generation-ix",
+    "display": "Evocarrecuerdos",
+    "descES": null
+  },
+  "tera-shift": {
+    "id": 304,
+    "gen": "generation-ix",
+    "display": "Teracambio",
+    "descES": null
+  },
+  "tera-shell": {
+    "id": 305,
+    "gen": "generation-ix",
+    "display": "Teracaparazón",
+    "descES": null
+  },
+  "teraform-zero": {
+    "id": 306,
+    "gen": "generation-ix",
+    "display": "Teraformación 0",
+    "descES": null
+  },
+  "poison-puppeteer": {
+    "id": 307,
+    "gen": "generation-ix",
+    "display": "Títere Tóxico",
+    "descES": null
+  },
+  "dragonize": {
+    "id": 309,
+    "gen": "generation-ix",
+    "display": "Piel Dragontina",
+    "descES": null
+  },
+  "mega-sol": {
+    "id": 310,
+    "gen": "generation-ix",
+    "display": "Megasolar",
+    "descES": null
+  },
+  "piercing-drill": {
+    "id": 308,
+    "gen": "generation-ix",
+    "display": "Turbotaladro",
+    "descES": null
+  },
+  "spicy-spray": {
+    "id": 311,
+    "gen": "generation-ix",
+    "display": "Salpicante",
+    "descES": null
+  },
+  "eelevate": {
+    "id": 312,
+    "gen": "generation-ix",
+    "display": null,
+    "descES": null
+  },
+  "fire-mane": {
+    "id": 313,
+    "gen": "generation-ix",
+    "display": null,
+    "descES": null
+  },
+  "wave-rider": {
+    "id": 10002,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "mountaineer": {
+    "id": 10001,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "armor-tail": {
+    "id": 296,
+    "gen": "generation-ix",
+    "display": "Cola Armadura",
+    "descES": null
+  },
+  "aura-guard": {
+    "id": 314,
+    "gen": "generation-ix",
+    "display": null,
+    "descES": null
+  },
+  "thrust": {
+    "id": 10004,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "parry": {
+    "id": 10006,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "dodge": {
+    "id": 10008,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "perception": {
+    "id": 10005,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "jagged-edge": {
+    "id": 10009,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "instinct": {
+    "id": 10007,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "frostbite": {
+    "id": 10010,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "pride": {
+    "id": 10012,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "tenacity": {
+    "id": 10011,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "deep-sleep": {
+    "id": 10013,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "power-nap": {
+    "id": 10014,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "spirit": {
+    "id": 10015,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "warm-blanket": {
+    "id": 10016,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "herbivore": {
+    "id": 10018,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "sandpit": {
+    "id": 10019,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "gulp": {
+    "id": 10017,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "hot-blooded": {
+    "id": 10020,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "life-force": {
+    "id": 10022,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "lunchbox": {
+    "id": 10023,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "nurse": {
+    "id": 10024,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "melee": {
+    "id": 10025,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "bodyguard": {
+    "id": 10027,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "hero": {
+    "id": 10028,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "sponge": {
+    "id": 10026,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "last-bastion": {
+    "id": 10029,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "stealth": {
+    "id": 10030,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "nomad": {
+    "id": 10032,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "sequence": {
+    "id": 10033,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "vanguard": {
+    "id": 10031,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "skater": {
+    "id": 10003,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "celebrate": {
+    "id": 10035,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "grass-cloak": {
+    "id": 10034,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "calming": {
+    "id": 10037,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "daze": {
+    "id": 10038,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "lullaby": {
+    "id": 10036,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "frighten": {
+    "id": 10039,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "interference": {
+    "id": 10040,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "mood-maker": {
+    "id": 10041,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "fortune": {
+    "id": 10043,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "bonanza": {
+    "id": 10044,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "medic": {
+    "id": 10021,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "confidence": {
+    "id": 10042,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "explode": {
+    "id": 10045,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "share": {
+    "id": 10047,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "shadow-dash": {
+    "id": 10049,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "omnipotent": {
+    "id": 10046,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "black-hole": {
+    "id": 10048,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "disgust": {
+    "id": 10051,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "high-rise": {
+    "id": 10052,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "climber": {
+    "id": 10053,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "sprint": {
+    "id": 10050,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "flame-boost": {
+    "id": 10054,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "aqua-boost": {
+    "id": 10055,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "run-up": {
+    "id": 10056,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "conqueror": {
+    "id": 10057,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "shackle": {
+    "id": 10058,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "shield": {
+    "id": 10060,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  },
+  "decoy": {
+    "id": 10059,
+    "gen": "generation-v",
+    "display": null,
+    "descES": null
+  }
+}

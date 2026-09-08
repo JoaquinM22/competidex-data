@@ -118,6 +118,71 @@ function pickSpanishName(json)
     return null;
 }
 
+
+function normTextHab(s)
+{
+  return String(s || "")
+    .replace(/[\f\n\r]+/g, " ")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+}
+
+function getHabilidadDescEs(json)
+{
+  const entries = (json && json.flavor_text_entries) ? json.flavor_text_entries : [];
+
+  function esTextoValido(txt)
+  {
+    const s = normTextHab(txt);
+    return !!s && /[A-Za-zÁÉÍÓÚáéíóúÑñ]/.test(s);
+  }
+
+  function findLastFlavorEs()
+  {
+    let ultimo = null;
+
+    for(let i = 0; i < entries.length; i++)
+    {
+      const it = entries[i];
+      if (!it || !it.language || it.language.name !== "es") continue;
+
+      const txt = normTextHab(it.flavor_text || "");
+      if (!esTextoValido(txt)) continue;
+
+      ultimo = txt;
+    }
+
+    return ultimo;
+  }
+
+  function findLastEffectEs()
+  {
+    const effectEntries = (json && json.effect_entries) ? json.effect_entries : [];
+    let ultimo = null;
+
+    for(let i = 0; i < effectEntries.length; i++)
+    {
+      const e = effectEntries[i];
+      if (!e || !e.language || e.language.name !== "es") continue;
+
+      const txt = norm(e.effect || "");
+      if (!esTextoValido(txt)) continue;
+
+      ultimo = txt;
+    }
+
+    return ultimo;
+  }
+
+  const flavorEs = findLastFlavorEs();
+  if (flavorEs) return flavorEs;
+
+  const effectEs = findLastEffectEs();
+  if (effectEs) return effectEs;
+
+  return null;
+}
+
 function needsAbilityRefresh(record)
 {
     return !record ||
@@ -271,7 +336,8 @@ async function main()
             map[name] = {
                 id: id,
                 gen: gen,
-                display: display
+                display: display,
+                descES: getHabilidadDescEs(a)
             };
 
             added++;
