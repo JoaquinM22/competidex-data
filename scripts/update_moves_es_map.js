@@ -92,6 +92,65 @@ function pickSpanishName(mvJson)
     return null;
 }
 
+
+function getMovDescES(raw)
+{
+  const arr = (raw && raw.flavor_text_entries) ? raw.flavor_text_entries : [];
+  const arrRev = arr.slice().reverse();
+
+  function limpiarTexto(txt)
+  {
+    return String(txt || "").replace(/\s+/g, " ").trim();
+  }
+
+  function esTextoValido(txt)
+  {
+    const s = limpiarTexto(txt);
+    return !!s && /[A-Za-zÁÉÍÓÚáéíóúÑñ]/.test(s);
+  }
+
+  function esTextoDescartable(txt, lang)
+  {
+    const s = limpiarTexto(txt).toLowerCase();
+    const l = String(lang || "").trim().toLowerCase();
+
+    if(!s) return true;
+    if(s === "dummy data") return true;
+    if(s.indexOf("este movimiento no se puede usar") !== -1) return true;
+
+    if(l.indexOf("es") === 0)
+    {
+      return s.indexOf("este movimiento no se puede usar") === 0;
+    }
+
+    return false;
+  }
+
+  function buscarSpanish()
+  {
+    for(let i = 0; i < arrRev.length; i++)
+    {
+      const f = arrRev[i];
+      if(!f || !f.language || !f.language.name) continue;
+
+      const lang = String(f.language.name).trim().toLowerCase();
+      if(lang.indexOf("es") !== 0) continue;
+
+      const txt = limpiarTexto(f.flavor_text || "");
+      if(!esTextoValido(txt)) continue;
+      if(esTextoDescartable(txt, lang)) continue;
+
+      return txt;
+    }
+
+    return null;
+  }
+
+  return buscarSpanish();
+}
+
+
+
 function pickNumberField(mvJson, fieldName)
 {
     return mvJson && typeof mvJson[fieldName] === "number" ? mvJson[fieldName] : null;
@@ -388,6 +447,7 @@ function buildMoveRecord(moveJson, showdownIndex, machineIndex)
         blancoMov: getBlancoMov(moveJson),
         generation: getGenerationFromMove(moveJson),
         pp: pickNumberField(moveJson, "pp"),
+        descES: getMovDescES(moveJson),
         machinesByGroup: buildMachinesByGroup(moveName, machineIndex, moveJson),
     };
 }
