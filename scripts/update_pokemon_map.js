@@ -21,7 +21,7 @@
 
 const { readFileSync, writeFileSync, existsSync, unlinkSync } = require("fs");
 const { join } = require("path");
-const { canPokemonBreed, toPokemonDisplayName, getColorPkmByKey, getPokemonGenByKey, getPokemonAbilitiesFromRaw, hasPokemonGigaForm, hasPokemonMegaForms } = require("../utils/pokemon_scripts_utils");
+const { canPokemonBreed, toPokemonDisplayName, getColorPkmByKey, getPokemonGenByKey, getPokemonAbilitiesFromRaw, hasPokemonGigaForm, hasPokemonMegaForms, isMegaForm, isGigaForm } = require("../utils/pokemon_scripts_utils");
 
 const API = "https://pokeapi.co/api/v2";
 const POKEMON_FULL_REBUILD_DAYS = 365;
@@ -331,6 +331,8 @@ function buildPokemonRecord(raw, speciesRaw)
         isBabyPkm: !!speciesRaw?.is_baby,
         isMythicalPkm: !!speciesRaw?.is_mythical,
         isLegendaryPkm: !!speciesRaw?.is_legendary,
+        isMegaForm: isMegaForm(apiName),
+        isGigaForm: isGigaForm(apiName),
         specieName: safeText(raw?.species?.name)
     };
 }
@@ -358,6 +360,8 @@ function hasPokemonRecordSchema(record)
         Object.prototype.hasOwnProperty.call(record, "display") &&
         Object.prototype.hasOwnProperty.call(record, "isBabyPkm") &&
         Object.prototype.hasOwnProperty.call(record, "isMythicalPkm") &&
+        Object.prototype.hasOwnProperty.call(record, "isMegaForm") &&
+        Object.prototype.hasOwnProperty.call(record, "isGigaForm") &&
         Object.prototype.hasOwnProperty.call(record, "isLegendaryPkm");
 }
 
@@ -376,6 +380,8 @@ function needsPokemonRefresh(record)
         typeof record.categoryPkm !== "string" ||
         typeof record.isBabyPkm !== "boolean" ||
         typeof record.isMythicalPkm !== "boolean" ||
+        typeof record.isMegaForm !== "boolean" || 
+        typeof record.isGigaForm !== "boolean" ||
         typeof record.isLegendaryPkm !== "boolean";
 }
 

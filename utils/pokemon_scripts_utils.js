@@ -495,58 +495,103 @@ const MEGA_DISPLAY_BY_KEY =
   "raichu-mega-y": "Mega-Raichu Y"
 };
 
+const GIGA_DISPLAY_BY_KEY =
+{
+  "charizard-gmax": "Charizard Gigamax",
+  "butterfree-gmax": "Butterfree Gigamax",
+  "pikachu-gmax": "Pikachu Gigamax",
+  "meowth-gmax": "Meowth Gigamax",
+  "machamp-gmax": "Machamp Gigamax",
+  "gengar-gmax": "Gengar Gigamax",
+  "kingler-gmax": "Kingler Gigamax",
+  "lapras-gmax": "Lapras Gigamax",
+  "eevee-gmax": "Eevee Gigamax",
+  "snorlax-gmax": "Snorlax Gigamax",
+  "garbodor-gmax": "Garbodor Gigamax",
+  "melmetal-gmax": "Melmetal Gigamax",
+  "corviknight-gmax": "Corviknight Gigamax",
+  "orbeetle-gmax": "Orbeetle Gigamax",
+  "drednaw-gmax": "Drednaw Gigamax",
+  "coalossal-gmax": "Coalossal Gigamax",
+  "flapple-gmax": "Flapple Gigamax",
+  "appletun-gmax": "Appletun Gigamax",
+  "sandaconda-gmax": "Sandaconda Gigamax",
+  "toxtricity-amped-gmax": "Toxtricity Forma Aguda Gigamax",
+  "toxtricity-low-key-gmax": "Toxtricity Forma Grave Gigamax",
+  "centiskorch-gmax": "Centiskorch Gigamax",
+  "hatterene-gmax": "Hatterene Gigamax",
+  "grimmsnarl-gmax": "Grimmsnarl Gigamax",
+  "alcremie-gmax": "Alcremie Gigamax",
+  "copperajah-gmax": "Copperajah Gigamax",
+  "duraludon-gmax": "Duraludon Gigamax",
+  "venusaur-gmax": "Venusaur Gigamax",
+  "blastoise-gmax": "Blastoise Gigamax",
+  "rillaboom-gmax": "Rillaboom Gigamax",
+  "cinderace-gmax": "Cinderace Gigamax",
+  "inteleon-gmax": "Inteleon Gigamax",
+  "urshifu-single-strike-gmax": "Urshifu Gigamax Estilo Brusco",
+  "urshifu-rapid-strike-gmax": "Urshifu Gigamax Estilo Fluido",
+  "eternatus-eternamax": "Eternatus Eternamax"
+};
+
 function escapePokemonRegExp(text)
 {
-    return String(text || "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return String(text || "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
 function titleFromPokemonKey(key)
 {
-    return String(key || "")
-        .split("-")
-        .map(function(word)
-        {
-            return word ? word[0].toUpperCase() + word.slice(1) : word;
-        })
-        .join(" ");
+  return String(key || "")
+  .split("-")
+  .map(function(word)
+  {
+    return word ? word[0].toUpperCase() + word.slice(1) : word;
+  })
+  .join(" ");
 }
 
 function fallbackPokemonDisplayForKey(key)
 {
-    const rawKey = String(key || "").toLowerCase().trim();
+  const rawKey = String(key || "").toLowerCase().trim();
 
-    const megaDisplay = MEGA_DISPLAY_BY_KEY[rawKey];
-    if(megaDisplay)
-    {
-        return megaDisplay;
-    }
+  const megaDisplay = MEGA_DISPLAY_BY_KEY[rawKey];
+  if(megaDisplay)
+  {
+    return megaDisplay;
+  }
 
-    const regionKeys = Object.keys(REGION_DISPLAY_META || {});
-    const regionPattern = regionKeys.length ? regionKeys.map(escapePokemonRegExp).join("|") : "";
+  const gigaDisplay = GIGA_DISPLAY_BY_KEY[rawKey];
+  if(gigaDisplay)
+  {
+    return gigaDisplay;
+  }
 
-    if(!regionPattern)
-    {
-        return titleFromPokemonKey(key);
-    }
+  const regionKeys = Object.keys(REGION_DISPLAY_META || {});
+  const regionPattern = regionKeys.length ? regionKeys.map(escapePokemonRegExp).join("|") : "";
 
-    const m = String(key || "").match(new RegExp(`^(.*?)-(${regionPattern})$`));
-    if(m)
-    {
-        const base = titleFromPokemonKey(m[1]);
-        const regionDisplay = REGION_DISPLAY_META[m[2]];
-        if(regionDisplay)
-        {
-            return `${base} de ${regionDisplay}`;
-        }
-    }
-
+  if(!regionPattern)
+  {
     return titleFromPokemonKey(key);
+  }
+
+  const m = String(key || "").match(new RegExp(`^(.*?)-(${regionPattern})$`));
+  if(m)
+  {
+    const base = titleFromPokemonKey(m[1]);
+    const regionDisplay = REGION_DISPLAY_META[m[2]];
+    if(regionDisplay)
+    {
+      return `${base} de ${regionDisplay}`;
+    }
+  }
+
+  return titleFromPokemonKey(key);
 }
 
 function toPokemonDisplayName(key)
 {
-    const normalizedKey = String(key || "").toLowerCase().trim();
-    return DISPLAY_ES_NAME_SPECIAL_PKM_BY_KEY[normalizedKey] || fallbackPokemonDisplayForKey(normalizedKey);
+  const normalizedKey = String(key || "").toLowerCase().trim();
+  return DISPLAY_ES_NAME_SPECIAL_PKM_BY_KEY[normalizedKey] || fallbackPokemonDisplayForKey(normalizedKey);
 }
 // ---------------- DATOS META DE NOMBRES POKÉMON - FIN ----------------
 
@@ -1133,6 +1178,53 @@ const GIGAS_PKM_META =
     "desc": "Esta es la forma Gigamax que posee Eternatus. No es posible obtenerla en el juego; únicamente aparece durante la batalla final en Pokémon Espada y Escudo."
   }
 };
+
+const GIGA_API_KEYS =
+[
+  "charizard-gmax",
+  "butterfree-gmax",
+  "pikachu-gmax",
+  "meowth-gmax",
+  "machamp-gmax",
+  "gengar-gmax",
+  "kingler-gmax",
+  "lapras-gmax",
+  "eevee-gmax",
+  "snorlax-gmax",
+  "garbodor-gmax",
+  "melmetal-gmax",
+  "corviknight-gmax",
+  "orbeetle-gmax",
+  "drednaw-gmax",
+  "coalossal-gmax",
+  "flapple-gmax",
+  "appletun-gmax",
+  "sandaconda-gmax",
+  "toxtricity-amped-gmax",
+  "toxtricity-low-key-gmax",
+  "centiskorch-gmax",
+  "hatterene-gmax",
+  "grimmsnarl-gmax",
+  "alcremie-gmax",
+  "copperajah-gmax",
+  "duraludon-gmax",
+  "venusaur-gmax",
+  "blastoise-gmax",
+  "rillaboom-gmax",
+  "cinderace-gmax",
+  "inteleon-gmax",
+  "urshifu-single-strike-gmax",
+  "urshifu-rapid-strike-gmax",
+  "eternatus-eternamax"
+];
+
+const GIGA_API_KEYS_SET = new Set(GIGA_API_KEYS);
+
+function isGigaForm(apiKey)
+{
+  const key = normalizePkmBaseGigaKey(apiKey);
+  return key ? GIGA_API_KEYS_SET.has(key) : false;
+}
 
 function normalizePkmBaseGigaKey(input)
 {
@@ -1748,6 +1840,12 @@ function hasPokemonMegaForms(apiKey)
 {
   return getPokemonMegaForms(apiKey).length > 0;
 }
+
+function isMegaForm(apiKey)
+{
+  const key = normalizePkmBaseMegaKey(apiKey);
+  return key ? Object.prototype.hasOwnProperty.call(MEGA_DISPLAY_BY_KEY, key) : false;
+}
 // ---------------- DATOS META DE MEGA EVOLUCIONES POKÉMON - FIN ---------------- 
 
 
@@ -1895,5 +1993,7 @@ module.exports =
   getPokemonGenByKey,
   hasPokemonGigaForm,
   hasPokemonMegaForms,
+  isMegaForm,
+  isGigaForm,
   getPokemonAbilitiesFromRaw
 };
