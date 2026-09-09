@@ -378,10 +378,8 @@ const DISPLAY_ES_NAME_SPECIAL_PKM_BY_KEY =
 const MEGA_DISPLAY_BY_KEY =
 {
   "venusaur-mega": "Mega-Venusaur",
-
   "charizard-mega-x": "Mega-Charizard X",
   "charizard-mega-y": "Mega-Charizard Y",
-
   "blastoise-mega": "Mega-Blastoise",
   "alakazam-mega": "Mega-Alakazam",
   "gengar-mega": "Mega-Gengar",
@@ -389,10 +387,8 @@ const MEGA_DISPLAY_BY_KEY =
   "pinsir-mega": "Mega-Pinsir",
   "gyarados-mega": "Mega-Gyarados",
   "aerodactyl-mega": "Mega-Aerodactyl",
-
   "mewtwo-mega-x": "Mega-Mewtwo X",
   "mewtwo-mega-y": "Mega-Mewtwo Y",
-
   "ampharos-mega": "Mega-Ampharos",
   "scizor-mega": "Mega-Scizor",
   "heracross-mega": "Mega-Heracross",
@@ -446,54 +442,39 @@ const MEGA_DISPLAY_BY_KEY =
   "clefable-mega": "Mega-Clefable",
   "scrafty-mega": "Mega-Scrafty",
   "starmie-mega": "Mega-Starmie",
-
-  "pyroar-male-mega": "Mega-Pyroar",
-
+  "pyroar-mega": "Mega-Pyroar",
   "meganium-mega": "Mega-Meganium",
   "feraligatr-mega": "Mega-Feraligatr",
   "emboar-mega": "Mega-Emboar",
-
   "floette-mega": "Mega-Floette Flor Eterna",
-
   "zygarde-mega": "Mega-Zygarde Forma Completa",
-
   "zeraora-mega": "Mega-Zeraora",
   "golisopod-mega": "Mega-Golisopod",
-
   "magearna-mega": "Mega-Magearna",
   "magearna-original-mega": "Mega-Magearna Color Vetusto",
-
   "chimecho-mega": "Mega-Chimecho",
   "staraptor-mega": "Mega-Staraptor",
   "heatran-mega": "Mega-Heatran",
   "darkrai-mega": "Mega-Darkrai",
   "golurk-mega": "Mega-Golurk",
-
   "meowstic-male-mega": "Mega-Meowstic ♂",
   "meowstic-female-mega": "Mega-Meowstic ♀",
-
   "crabominable-mega": "Mega-Crabominable",
   "scovillain-mega": "Mega-Scovillain",
   "glimmora-mega": "Mega-Glimmora",
-
   "tatsugiri-curly-mega": "Mega-Tatsugiri Forma Curvada",
   "tatsugiri-droopy-mega": "Mega-Tatsugiri Forma Lánguida",
   "tatsugiri-stretchy-mega": "Mega-Tatsugiri Forma Recta",
-
   "baxcalibur-mega": "Mega-Baxcalibur",
-
   "lucario-mega": "Mega-Lucario",
   "lucario-mega-z": "Mega-Lucario Z",
-
   "garchomp-mega": "Mega-Garchomp",
   "garchomp-mega-z": "Mega-Garchomp Z",
-
   "absol-mega": "Mega-Absol",
   "absol-mega-z": "Mega-Absol Z",
-
   "raichu-mega-x": "Mega-Raichu X",
   "raichu-mega-y": "Mega-Raichu Y"
-};
+}
 
 const GIGA_DISPLAY_BY_KEY =
 {
@@ -1841,10 +1822,113 @@ function hasPokemonMegaForms(apiKey)
   return getPokemonMegaForms(apiKey).length > 0;
 }
 
+const MEGAS_API_KEYS =
+[
+  "venusaur-mega",
+  "charizard-mega-x",
+  "charizard-mega-y",
+  "blastoise-mega",
+  "alakazam-mega",
+  "gengar-mega",
+  "kangaskhan-mega",
+  "pinsir-mega",
+  "gyarados-mega",
+  "aerodactyl-mega",
+  "mewtwo-mega-x",
+  "mewtwo-mega-y",
+  "ampharos-mega",
+  "scizor-mega",
+  "heracross-mega",
+  "houndoom-mega",
+  "tyranitar-mega",
+  "blaziken-mega",
+  "gardevoir-mega",
+  "mawile-mega",
+  "aggron-mega",
+  "medicham-mega",
+  "manectric-mega",
+  "banette-mega",
+  "abomasnow-mega",
+  "beedrill-mega",
+  "pidgeot-mega",
+  "slowbro-mega",
+  "steelix-mega",
+  "sceptile-mega",
+  "swampert-mega",
+  "sableye-mega",
+  "sharpedo-mega",
+  "camerupt-mega",
+  "altaria-mega",
+  "glalie-mega",
+  "salamence-mega",
+  "metagross-mega",
+  "latias-mega",
+  "latios-mega",
+  "rayquaza-mega",
+  "lopunny-mega",
+  "gallade-mega",
+  "audino-mega",
+  "diancie-mega",
+  "dragonite-mega",
+  "victreebel-mega",
+  "hawlucha-mega",
+  "malamar-mega",
+  "greninja-mega",
+  "delphox-mega",
+  "chesnaught-mega",
+  "drampa-mega",
+  "excadrill-mega",
+  "eelektross-mega",
+  "chandelure-mega",
+  "falinks-mega",
+  "barbaracle-mega",
+  "skarmory-mega",
+  "scolipede-mega",
+  "froslass-mega",
+  "dragalge-mega",
+  "clefable-mega",
+  "scrafty-mega",
+  "starmie-mega",
+  "pyroar-mega",
+  "meganium-mega",
+  "feraligatr-mega",
+  "emboar-mega",
+  "floette-mega",
+  "zygarde-mega",
+  "zeraora-mega",
+  "golisopod-mega",
+  "magearna-mega",
+  "magearna-original-mega",
+  "chimecho-mega",
+  "staraptor-mega",
+  "heatran-mega",
+  "darkrai-mega",
+  "golurk-mega",
+  "meowstic-male-mega",
+  "meowstic-female-mega",
+  "crabominable-mega",
+  "scovillain-mega",
+  "glimmora-mega",
+  "tatsugiri-curly-mega",
+  "tatsugiri-droopy-mega",
+  "tatsugiri-stretchy-mega",
+  "baxcalibur-mega",
+  "lucario-mega",
+  "lucario-mega-z",
+  "garchomp-mega",
+  "garchomp-mega-z",
+  "absol-mega",
+  "absol-mega-z",
+  "raichu-mega-x",
+  "raichu-mega-y"
+]
+
+const MEGAS_API_KEYS_SET = new Set(MEGAS_API_KEYS);
+
 function isMegaForm(apiKey)
 {
   const key = normalizePkmBaseMegaKey(apiKey);
-  return key ? Object.prototype.hasOwnProperty.call(MEGA_DISPLAY_BY_KEY, key) : false;
+  return key ? MEGAS_API_KEYS_SET.has(key) : false;
 }
 // ---------------- DATOS META DE MEGA EVOLUCIONES POKÉMON - FIN ---------------- 
 
