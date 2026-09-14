@@ -205,9 +205,11 @@ function needsAbilityRefresh(record)
         typeof record.id !== "number" ||
         typeof record.gen !== "string" ||
         record.gen.trim() === "" ||
+
         typeof record.descES !== "string" ||
         record.descES.trim() === "" ||
         record.descES.trim() === "-" ||
+
         typeof record.display !== "string" ||
         record.display.trim() === "";
 }

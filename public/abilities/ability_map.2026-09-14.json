@@ -20,12 +20,12 @@
     "descES": "Hace que llueva al entrar en combate.",
     "descEN": "The Pokémon makes it rain when it enters a battle."
   },
-  "speed-boost": {
-    "id": 3,
+  "battle-armor": {
+    "id": 4,
     "gen": "generation-iii",
-    "display": "Impulso",
-    "descES": "Aumenta su Velocidad en cada turno.",
-    "descEN": "The Pokémon's Speed stat is boosted every turn."
+    "display": "Armadura Batalla",
+    "descES": "La robusta coraza que lo protege bloquea los golpes críticos.",
+    "descEN": "Hard armor protects the Pokémon from critical hits."
   },
   "sturdy": {
     "id": 5,
@@ -33,6 +33,13 @@
     "display": "Robustez",
     "descES": "Evita que el rival pueda debilitarlo de un solo golpe cuando tiene los PS al máximo. También evita los movimientos fulminantes.",
     "descEN": "The Pokémon cannot be knocked out by a single hit as long as its HP is full. One-hit KO moves will also fail to knock it out."
+  },
+  "speed-boost": {
+    "id": 3,
+    "gen": "generation-iii",
+    "display": "Impulso",
+    "descES": "Aumenta su Velocidad en cada turno.",
+    "descEN": "The Pokémon's Speed stat is boosted every turn."
   },
   "limber": {
     "id": 7,
@@ -48,13 +55,6 @@
     "descES": "Si le alcanza un movimiento de tipo Eléctrico, recupera PS en vez de sufrir daño.",
     "descEN": "If hit by an Electric-type move, the Pokémon has its HP restored instead of taking damage."
   },
-  "sand-veil": {
-    "id": 8,
-    "gen": "generation-iii",
-    "display": "Velo Arena",
-    "descES": "Aumenta su Evasión durante las tormentas de arena.",
-    "descEN": "Boosts the Pokémon's evasiveness in a sandstorm."
-  },
   "static": {
     "id": 9,
     "gen": "generation-iii",
@@ -62,26 +62,19 @@
     "descES": "La electricidad estática que lo envuelve puede paralizar al mínimo contacto.",
     "descEN": "The Pokémon is charged with static electricity and may paralyze attackers that make direct contact with it."
   },
+  "sand-veil": {
+    "id": 8,
+    "gen": "generation-iii",
+    "display": "Velo Arena",
+    "descES": "Aumenta su Evasión durante las tormentas de arena.",
+    "descEN": "Boosts the Pokémon's evasiveness in a sandstorm."
+  },
   "water-absorb": {
     "id": 11,
     "gen": "generation-iii",
     "display": "Absorbe Agua",
     "descES": "Si le alcanza un movimiento de tipo Agua, recupera PS en vez de sufrir daño.",
     "descEN": "If hit by a Water-type move, the Pokémon has its HP restored instead of taking damage."
-  },
-  "battle-armor": {
-    "id": 4,
-    "gen": "generation-iii",
-    "display": "Armadura Batalla",
-    "descES": "La robusta coraza que lo protege bloquea los golpes críticos.",
-    "descEN": "Hard armor protects the Pokémon from critical hits."
-  },
-  "cloud-nine": {
-    "id": 13,
-    "gen": "generation-iii",
-    "display": "Aclimatación",
-    "descES": "Anula todos los efectos del tiempo atmosférico.",
-    "descEN": "Eliminates the effects of weather."
   },
   "oblivious": {
     "id": 12,
@@ -97,6 +90,13 @@
     "descES": "Aumenta la precisión de sus movimientos.",
     "descEN": "The Pokémon's compound eyes boost its accuracy."
   },
+  "insomnia": {
+    "id": 15,
+    "gen": "generation-iii",
+    "display": "Insomnio",
+    "descES": "Su resistencia al sueño le impide quedarse dormido.",
+    "descEN": "The Pokémon's insomnia prevents it from falling asleep."
+  },
   "immunity": {
     "id": 17,
     "gen": "generation-iii",
@@ -104,19 +104,12 @@
     "descES": "Su sistema inmunitario evita el envenenamiento.",
     "descEN": "The Pokémon's immune system prevents it from being poisoned."
   },
-  "flash-fire": {
-    "id": 18,
+  "cloud-nine": {
+    "id": 13,
     "gen": "generation-iii",
-    "display": "Absorbe Fuego",
-    "descES": "Si le alcanza algún movimiento de tipo Fuego, potencia sus propios movimientos de dicho tipo.",
-    "descEN": "If hit by a Fire-type move, the Pokémon absorbs the flames and uses them to power up its own Fire-type moves."
-  },
-  "insomnia": {
-    "id": 15,
-    "gen": "generation-iii",
-    "display": "Insomnio",
-    "descES": "Su resistencia al sueño le impide quedarse dormido.",
-    "descEN": "The Pokémon's insomnia prevents it from falling asleep."
+    "display": "Aclimatación",
+    "descES": "Anula todos los efectos del tiempo atmosférico.",
+    "descEN": "Eliminates the effects of weather."
   },
   "color-change": {
     "id": 16,
@@ -125,19 +118,19 @@
     "descES": "Adopta el tipo del último movimiento del que es blanco.",
     "descEN": "The Pokémon’s type becomes the type of the move used on it."
   },
+  "flash-fire": {
+    "id": 18,
+    "gen": "generation-iii",
+    "display": "Absorbe Fuego",
+    "descES": "Si le alcanza algún movimiento de tipo Fuego, potencia sus propios movimientos de dicho tipo.",
+    "descEN": "If hit by a Fire-type move, the Pokémon absorbs the flames and uses them to power up its own Fire-type moves."
+  },
   "shield-dust": {
     "id": 19,
     "gen": "generation-iii",
     "display": "Polvo Escudo",
     "descES": "El polvo de escamas que lo envuelve lo protege de los efectos secundarios de los ataques recibidos.",
     "descEN": "Protective dust shields the Pokémon from the additional effects of moves."
-  },
-  "own-tempo": {
-    "id": 20,
-    "gen": "generation-iii",
-    "display": "Ritmo Propio",
-    "descES": "Como le gusta hacer las cosas a su manera, los rivales no logran confundirlo.",
-    "descEN": "The Pokémon sticks to its own tempo, preventing it from becoming confused or being affected by Intimidate."
   },
   "suction-cups": {
     "id": 21,
@@ -153,12 +146,12 @@
     "descES": "Al entrar en combate amilana al rival de tal manera que su Ataque disminuye.",
     "descEN": "When the Pokémon enters a battle, it intimidates opposing Pokémon and makes them cower, lowering their Attack stats."
   },
-  "rough-skin": {
-    "id": 24,
+  "own-tempo": {
+    "id": 20,
     "gen": "generation-iii",
-    "display": "Piel Tosca",
-    "descES": "Hiere con su piel áspera al rival que lo ataque con un movimiento de contacto.",
-    "descEN": "The Pokémon's rough skin damages attackers that make direct contact with it."
+    "display": "Ritmo Propio",
+    "descES": "Como le gusta hacer las cosas a su manera, los rivales no logran confundirlo.",
+    "descEN": "The Pokémon sticks to its own tempo, preventing it from becoming confused or being affected by Intimidate."
   },
   "shadow-tag": {
     "id": 23,
@@ -174,6 +167,13 @@
     "descES": "Gracias a un poder misterioso, solo le hacen daño los movimientos supereficaces.",
     "descEN": "Its mysterious power only lets supereffective moves hit the Pokémon."
   },
+  "rough-skin": {
+    "id": 24,
+    "gen": "generation-iii",
+    "display": "Piel Tosca",
+    "descES": "Hiere con su piel áspera al rival que lo ataque con un movimiento de contacto.",
+    "descEN": "The Pokémon's rough skin damages attackers that make direct contact with it."
+  },
   "levitate": {
     "id": 26,
     "gen": "generation-iii",
@@ -181,19 +181,26 @@
     "descES": "Su capacidad de flotar sobre el suelo le proporciona inmunidad frente a los movimientos de tipo Tierra.",
     "descEN": "By floating in the air, the Pokémon receives full immunity to all Ground-type moves."
   },
-  "synchronize": {
-    "id": 28,
-    "gen": "generation-iii",
-    "display": "Sincronía",
-    "descES": "Contagia el envenenamiento, las quemaduras o la parálisis al Pokémon que le cause ese estado.",
-    "descEN": "If the Pokémon is burned, paralyzed, or poisoned by another Pokémon, that Pokémon will be inflicted with the same status condition."
-  },
   "effect-spore": {
     "id": 27,
     "gen": "generation-iii",
     "display": "Efecto Espora",
     "descES": "Puede dormir, envenenar o paralizar al Pokémon con el que entre en contacto al recibir un ataque.",
     "descEN": "Contact with the Pokémon may inflict poison, sleep, or paralysis on the attacker."
+  },
+  "natural-cure": {
+    "id": 30,
+    "gen": "generation-iii",
+    "display": "Cura Natural",
+    "descES": "Cura sus problemas de estado al cambiarse con otro Pokémon.",
+    "descEN": "The Pokémon's status conditions are cured when it switches out."
+  },
+  "synchronize": {
+    "id": 28,
+    "gen": "generation-iii",
+    "display": "Sincronía",
+    "descES": "Contagia el envenenamiento, las quemaduras o la parálisis al Pokémon que le cause ese estado.",
+    "descEN": "If the Pokémon is burned, paralyzed, or poisoned by another Pokémon, that Pokémon will be inflicted with the same status condition."
   },
   "clear-body": {
     "id": 29,
@@ -223,19 +230,19 @@
     "descES": "Sube su Velocidad cuando llueve.",
     "descEN": "Boosts the Pokémon's Speed stat in rain."
   },
-  "chlorophyll": {
-    "id": 34,
-    "gen": "generation-iii",
-    "display": "Clorofila",
-    "descES": "Sube su Velocidad cuando hace sol.",
-    "descEN": "Boosts the Pokémon's Speed stat in harsh sunlight."
-  },
   "illuminate": {
     "id": 35,
     "gen": "generation-iii",
     "display": "Iluminación",
     "descES": "Aumenta la probabilidad de encontrar Pokémon al iluminar el entorno.",
     "descEN": "By illuminating its surroundings, the Pokémon prevents its accuracy from being lowered."
+  },
+  "chlorophyll": {
+    "id": 34,
+    "gen": "generation-iii",
+    "display": "Clorofila",
+    "descES": "Sube su Velocidad cuando hace sol.",
+    "descEN": "Boosts the Pokémon's Speed stat in harsh sunlight."
   },
   "trace": {
     "id": 36,
@@ -251,13 +258,6 @@
     "descES": "Duplica la potencia de sus ataques físicos.",
     "descEN": "Doubles the Pokémon's Attack stat."
   },
-  "poison-point": {
-    "id": 38,
-    "gen": "generation-iii",
-    "display": "Punto Tóxico",
-    "descES": "Puede envenenar al mínimo contacto.",
-    "descEN": "Contact with the Pokémon may poison the attacker."
-  },
   "inner-focus": {
     "id": 39,
     "gen": "generation-iii",
@@ -265,12 +265,12 @@
     "descES": "Gracias a su profunda concentración, no se amedrenta ante los ataques del rival.",
     "descEN": "The Pokémon's intense focus prevents it from flinching or being affected by Intimidate."
   },
-  "water-veil": {
-    "id": 41,
+  "poison-point": {
+    "id": 38,
     "gen": "generation-iii",
-    "display": "Velo Agua",
-    "descES": "Evita las quemaduras gracias a la capa de agua que lo envuelve.",
-    "descEN": "The Pokémon's water veil prevents it from being burned."
+    "display": "Punto Tóxico",
+    "descES": "Puede envenenar al mínimo contacto.",
+    "descEN": "Contact with the Pokémon may poison the attacker."
   },
   "magma-armor": {
     "id": 40,
@@ -278,6 +278,13 @@
     "display": "Escudo Magma",
     "descES": "Gracias al magma candente que lo envuelve, no puede ser congelado.",
     "descEN": "The Pokémon’s hot magma coating prevents it from being frozen."
+  },
+  "water-veil": {
+    "id": 41,
+    "gen": "generation-iii",
+    "display": "Velo Agua",
+    "descES": "Evita las quemaduras gracias a la capa de agua que lo envuelve.",
+    "descEN": "The Pokémon's water veil prevents it from being burned."
   },
   "magnet-pull": {
     "id": 42,
@@ -307,26 +314,19 @@
     "descES": "Crea una tormenta de arena al entrar en combate.",
     "descEN": "The Pokémon summons a sandstorm when it enters a battle."
   },
-  "thick-fat": {
-    "id": 47,
-    "gen": "generation-iii",
-    "display": "Sebo",
-    "descES": "Gracias a la gruesa capa de grasa que lo protege, reduce a la mitad el daño que recibe de ataques de tipo Fuego o Hielo.",
-    "descEN": "The Pokémon is protected by a layer of thick fat, which halves the damage taken from Fire- and Ice-type moves."
-  },
-  "early-bird": {
-    "id": 48,
-    "gen": "generation-iii",
-    "display": "Madrugar",
-    "descES": "Si se duerme, tardará la mitad de tiempo en despertarse.",
-    "descEN": "The Pokémon awakens from sleep twice as fast as other Pokémon."
-  },
   "pressure": {
     "id": 46,
     "gen": "generation-iii",
     "display": "Presión",
     "descES": "Presiona al rival para que sus PP se acaben antes.",
     "descEN": "Puts other Pokémon under pressure, causing them to expend more PP to use their moves."
+  },
+  "thick-fat": {
+    "id": 47,
+    "gen": "generation-iii",
+    "display": "Sebo",
+    "descES": "Gracias a la gruesa capa de grasa que lo protege, reduce a la mitad el daño que recibe de ataques de tipo Fuego o Hielo.",
+    "descEN": "The Pokémon is protected by a layer of thick fat, which halves the damage taken from Fire- and Ice-type moves."
   },
   "flame-body": {
     "id": 49,
@@ -335,12 +335,12 @@
     "descES": "Puede quemar al mínimo contacto.",
     "descEN": "Contact with the Pokémon may burn the attacker."
   },
-  "keen-eye": {
-    "id": 51,
+  "early-bird": {
+    "id": 48,
     "gen": "generation-iii",
-    "display": "Vista Lince",
-    "descES": "Su aguda vista evita que le disminuya la Precisión.",
-    "descEN": "The Pokémon's keen eyes prevent its accuracy from being lowered."
+    "display": "Madrugar",
+    "descES": "Si se duerme, tardará la mitad de tiempo en despertarse.",
+    "descEN": "The Pokémon awakens from sleep twice as fast as other Pokémon."
   },
   "run-away": {
     "id": 50,
@@ -349,13 +349,6 @@
     "descES": "Puede escaparse de todos los Pokémon salvajes.",
     "descEN": "Enables a sure getaway from wild Pokémon."
   },
-  "pickup": {
-    "id": 53,
-    "gen": "generation-iii",
-    "display": "Recogida",
-    "descES": "Puede recoger objetos que el rival haya usado, o bien otros que encuentre en plena aventura.",
-    "descEN": "The Pokémon may pick up an item another Pokémon used during a battle. It may pick up items outside of battle, too."
-  },
   "hyper-cutter": {
     "id": 52,
     "gen": "generation-iii",
@@ -363,12 +356,33 @@
     "descES": "Evita que el rival le baje el Ataque.",
     "descEN": "The Pokémon's prized, mighty pincers prevent other Pokémon from lowering its Attack stat."
   },
+  "keen-eye": {
+    "id": 51,
+    "gen": "generation-iii",
+    "display": "Vista Lince",
+    "descES": "Su aguda vista evita que le disminuya la Precisión.",
+    "descEN": "The Pokémon's keen eyes prevent its accuracy from being lowered."
+  },
   "truant": {
     "id": 54,
     "gen": "generation-iii",
     "display": "Ausente",
     "descES": "Al ejecutar un movimiento, descansará en el turno siguiente.",
     "descEN": "Each time the Pokémon uses a move, it spends the next turn loafing around."
+  },
+  "pickup": {
+    "id": 53,
+    "gen": "generation-iii",
+    "display": "Recogida",
+    "descES": "Puede recoger objetos que el rival haya usado, o bien otros que encuentre en plena aventura.",
+    "descEN": "The Pokémon may pick up an item another Pokémon used during a battle. It may pick up items outside of battle, too."
+  },
+  "hustle": {
+    "id": 55,
+    "gen": "generation-iii",
+    "display": "Entusiasmo",
+    "descES": "Aumenta su Ataque, pero reduce su Precisión.",
+    "descEN": "Boosts the Pokémon's Attack stat but lowers its accuracy."
   },
   "cute-charm": {
     "id": 56,
@@ -383,13 +397,6 @@
     "display": "Más",
     "descES": "Potencia su Ataque Especial si un Pokémon aliado tiene la habilidad Más o Menos.",
     "descEN": "Boosts the Sp. Atk stat of the Pokémon if an ally with the Plus or Minus Ability is also in battle."
-  },
-  "hustle": {
-    "id": 55,
-    "gen": "generation-iii",
-    "display": "Entusiasmo",
-    "descES": "Aumenta su Ataque, pero reduce su Precisión.",
-    "descEN": "Boosts the Pokémon's Attack stat but lowers its accuracy."
   },
   "minus": {
     "id": 58,
@@ -412,13 +419,6 @@
     "descES": "Los objetos se quedan pegados a su cuerpo, por lo que no pueden robárselos.",
     "descEN": "The Pokémon's held items cling to its sticky body and cannot be removed by other Pokémon."
   },
-  "natural-cure": {
-    "id": 30,
-    "gen": "generation-iii",
-    "display": "Cura Natural",
-    "descES": "Cura sus problemas de estado al cambiarse con otro Pokémon.",
-    "descEN": "The Pokémon's status conditions are cured when it switches out."
-  },
   "shed-skin": {
     "id": 61,
     "gen": "generation-iii",
@@ -433,6 +433,13 @@
     "descES": "Si sufre un problema de estado, se viene arriba y aumenta su Ataque.",
     "descEN": "It's so gutsy that having a status condition boosts the Pokémon's Attack stat."
   },
+  "liquid-ooze": {
+    "id": 64,
+    "gen": "generation-iii",
+    "display": "Lodo Líquido",
+    "descES": "Exuda una sustancia tóxica de intenso hedor que hiere a quienes intentan drenarle PS.",
+    "descEN": "The strong stench of the Pokémon's oozed liquid damages attackers that use HP-draining moves."
+  },
   "marvel-scale": {
     "id": 63,
     "gen": "generation-iii",
@@ -446,13 +453,6 @@
     "display": "Espesura",
     "descES": "Potencia sus movimientos de tipo Planta cuando le quedan pocos PS.",
     "descEN": "Powers up Grass-type moves when the Pokémon's HP is low."
-  },
-  "liquid-ooze": {
-    "id": 64,
-    "gen": "generation-iii",
-    "display": "Lodo Líquido",
-    "descES": "Exuda una sustancia tóxica de intenso hedor que hiere a quienes intentan drenarle PS.",
-    "descEN": "The strong stench of the Pokémon's oozed liquid damages attackers that use HP-draining moves."
   },
   "blaze": {
     "id": 66,
@@ -489,19 +489,19 @@
     "descES": "Evita que el rival huya.",
     "descEN": "Prevents opposing Pokémon from fleeing from battle."
   },
-  "vital-spirit": {
-    "id": 72,
-    "gen": "generation-iii",
-    "display": "Espíritu Vital",
-    "descES": "Su determinación le impide quedarse dormido.",
-    "descEN": "The Pokémon is full of vitality, and that prevents it from falling asleep."
-  },
   "drought": {
     "id": 70,
     "gen": "generation-iii",
     "display": "Sequía",
     "descES": "Cuando entra en combate, el tiempo pasa a ser soleado.",
     "descEN": "Turns the sunlight harsh when the Pokémon enters a battle."
+  },
+  "vital-spirit": {
+    "id": 72,
+    "gen": "generation-iii",
+    "display": "Espíritu Vital",
+    "descES": "Su determinación le impide quedarse dormido.",
+    "descEN": "The Pokémon is full of vitality, and that prevents it from falling asleep."
   },
   "white-smoke": {
     "id": 73,
@@ -517,13 +517,6 @@
     "descES": "Duplica la potencia de sus ataques físicos gracias al yoga.",
     "descEN": "Using its pure power, the Pokémon doubles its Attack stat."
   },
-  "shell-armor": {
-    "id": 75,
-    "gen": "generation-iii",
-    "display": "Caparazón",
-    "descES": "La robusta coraza que lo protege bloquea los golpes críticos.",
-    "descEN": "A hard shell protects the Pokémon from critical hits."
-  },
   "air-lock": {
     "id": 76,
     "gen": "generation-iii",
@@ -531,12 +524,26 @@
     "descES": "Neutraliza todos los efectos del tiempo atmosférico.",
     "descEN": "Eliminates the effects of weather."
   },
+  "shell-armor": {
+    "id": 75,
+    "gen": "generation-iii",
+    "display": "Caparazón",
+    "descES": "La robusta coraza que lo protege bloquea los golpes críticos.",
+    "descEN": "A hard shell protects the Pokémon from critical hits."
+  },
   "tangled-feet": {
     "id": 77,
     "gen": "generation-iv",
     "display": "Tumbos",
     "descES": "Sube su Evasión si está confuso.",
     "descEN": "Boosts the Pokémon's evasiveness if it is confused."
+  },
+  "motor-drive": {
+    "id": 78,
+    "gen": "generation-iv",
+    "display": "Electromotor",
+    "descES": "Si le alcanza un movimiento de tipo Eléctrico, le sube la Velocidad en vez de sufrir daño.",
+    "descEN": "The Pokémon takes no damage when hit by Electric-type moves. Instead, its Speed stat is boosted."
   },
   "rivalry": {
     "id": 79,
@@ -559,12 +566,12 @@
     "descES": "Sube la Evasión cuando graniza.",
     "descEN": "Boosts the Pokémon's evasiveness in snow."
   },
-  "motor-drive": {
-    "id": 78,
+  "gluttony": {
+    "id": 82,
     "gen": "generation-iv",
-    "display": "Electromotor",
-    "descES": "Si le alcanza un movimiento de tipo Eléctrico, le sube la Velocidad en vez de sufrir daño.",
-    "descEN": "The Pokémon takes no damage when hit by Electric-type moves. Instead, its Speed stat is boosted."
+    "display": "Gula",
+    "descES": "Cuando sus PS se ven reducidos a la mitad, engulle la baya que normalmente solo se comería cuando le quedasen pocos PS.",
+    "descEN": "If the Pokémon is holding a Berry to be eaten when its HP is low, it will instead eat the Berry when its HP drops to half or less."
   },
   "anger-point": {
     "id": 83,
@@ -573,13 +580,6 @@
     "descES": "Si recibe un golpe crítico, monta en cólera y sube su Ataque hasta el máximo.",
     "descEN": "The Pokémon is angered when it takes a critical hit, and that maxes its Attack stat."
   },
-  "gluttony": {
-    "id": 82,
-    "gen": "generation-iv",
-    "display": "Gula",
-    "descES": "Cuando sus PS se ven reducidos a la mitad, engulle la baya que normalmente solo se comería cuando le quedasen pocos PS.",
-    "descEN": "If the Pokémon is holding a Berry to be eaten when its HP is low, it will instead eat the Berry when its HP drops to half or less."
-  },
   "unburden": {
     "id": 84,
     "gen": "generation-iv",
@@ -587,19 +587,19 @@
     "descES": "Sube su Velocidad si usa o pierde el objeto que lleva.",
     "descEN": "Boosts the Speed stat if the Pokémon's held item is used or lost."
   },
-  "heatproof": {
-    "id": 85,
-    "gen": "generation-iv",
-    "display": "Ignífugo",
-    "descES": "Su cuerpo, resistente al calor, reduce a la mitad el daño recibido por movimientos de tipo Fuego.",
-    "descEN": "The Pokémon's heatproof body halves the damage taken from Fire-type moves."
-  },
   "simple": {
     "id": 86,
     "gen": "generation-iv",
     "display": "Simple",
     "descES": "Duplica los cambios en las características.",
     "descEN": "Doubles the effects of the Pokémon's stat changes."
+  },
+  "heatproof": {
+    "id": 85,
+    "gen": "generation-iv",
+    "display": "Ignífugo",
+    "descES": "Su cuerpo, resistente al calor, reduce a la mitad el daño recibido por movimientos de tipo Fuego.",
+    "descEN": "The Pokémon's heatproof body halves the damage taken from Fire-type moves."
   },
   "dry-skin": {
     "id": 87,
@@ -615,19 +615,19 @@
     "descES": "Compara la Defensa y la Defensa Especial del rival para ver cuál es inferior y aumenta su propio Ataque o Ataque Especial según sea lo más eficaz.",
     "descEN": "The Pokémon compares an opposing Pokémon's Defense and Sp. Def stats before raising its own Attack or Sp. Atk stat—whichever will be more effective."
   },
-  "poison-heal": {
-    "id": 90,
-    "gen": "generation-iv",
-    "display": "Antídoto",
-    "descES": "Si resulta envenenado, recupera PS en vez de perderlos.",
-    "descEN": "If poisoned, the Pokémon has its HP restored instead of taking damage."
-  },
   "iron-fist": {
     "id": 89,
     "gen": "generation-iv",
     "display": "Puño Férreo",
     "descES": "Aumenta la potencia de los puñetazos.",
     "descEN": "Powers up punching moves."
+  },
+  "poison-heal": {
+    "id": 90,
+    "gen": "generation-iv",
+    "display": "Antídoto",
+    "descES": "Si resulta envenenado, recupera PS en vez de perderlos.",
+    "descEN": "If poisoned, the Pokémon has its HP restored instead of taking damage."
   },
   "adaptability": {
     "id": 91,
@@ -636,6 +636,13 @@
     "descES": "Potencia aún más los movimientos cuyo tipo coincida con el suyo.",
     "descEN": "Powers up moves of the same type as the Pokémon."
   },
+  "hydration": {
+    "id": 93,
+    "gen": "generation-iv",
+    "display": "Hidratación",
+    "descES": "Cura los problemas de estado si está lloviendo.",
+    "descEN": "Cures the Pokémon's status conditions in rain."
+  },
   "skill-link": {
     "id": 92,
     "gen": "generation-iv",
@@ -643,12 +650,12 @@
     "descES": "Ejecuta siempre los movimientos múltiples con el número máximo de golpes.",
     "descEN": "Maximizes the number of times multistrike moves hit."
   },
-  "hydration": {
-    "id": 93,
+  "solar-power": {
+    "id": 94,
     "gen": "generation-iv",
-    "display": "Hidratación",
-    "descES": "Cura los problemas de estado si está lloviendo.",
-    "descEN": "Cures the Pokémon's status conditions in rain."
+    "display": "Poder Solar",
+    "descES": "Si hace sol, aumenta su Ataque Especial, pero pierde PS en cada turno.",
+    "descEN": "In harsh sunlight, the Pokémon's Sp. Atk stat is boosted, but its HP decreases every turn."
   },
   "quick-feet": {
     "id": 95,
@@ -671,12 +678,12 @@
     "descES": "Potencia los golpes críticos que asesta aún más de lo normal.",
     "descEN": "If the Pokémon's attack lands a critical hit, the attack is powered up even further."
   },
-  "solar-power": {
-    "id": 94,
+  "magic-guard": {
+    "id": 98,
     "gen": "generation-iv",
-    "display": "Poder Solar",
-    "descES": "Si hace sol, aumenta su Ataque Especial, pero pierde PS en cada turno.",
-    "descEN": "In harsh sunlight, the Pokémon's Sp. Atk stat is boosted, but its HP decreases every turn."
+    "display": "Muro Mágico",
+    "descES": "Solo recibe daño de ataques.",
+    "descEN": "The Pokémon only takes damage from attacks."
   },
   "no-guard": {
     "id": 99,
@@ -684,13 +691,6 @@
     "display": "Indefenso",
     "descES": "Al quedar ambos expuestos, tanto sus movimientos como los del rival acertarán siempre.",
     "descEN": "The Pokémon employs no-guard tactics to ensure incoming and outgoing attacks always land."
-  },
-  "magic-guard": {
-    "id": 98,
-    "gen": "generation-iv",
-    "display": "Muro Mágico",
-    "descES": "Solo recibe daño de ataques.",
-    "descEN": "The Pokémon only takes damage from attacks."
   },
   "stall": {
     "id": 100,
@@ -720,12 +720,12 @@
     "descES": "No puede usar objetos equipados.",
     "descEN": "The Pokémon can't use any held items."
   },
-  "super-luck": {
-    "id": 105,
+  "mold-breaker": {
+    "id": 104,
     "gen": "generation-iv",
-    "display": "Afortunado",
-    "descES": "Su buena suerte aumenta la probabilidad de asestar golpes críticos.",
-    "descEN": "The Pokémon is so lucky that the critical-hit ratios of its moves are boosted."
+    "display": "Rompemoldes",
+    "descES": "Las habilidades del objetivo no afectan a los movimientos que emplea.",
+    "descEN": "The Pokémon's moves are unimpeded by the Ability of the target."
   },
   "aftermath": {
     "id": 106,
@@ -734,19 +734,19 @@
     "descES": "Daña al agresor que le ha dado el golpe de gracia con un movimiento de contacto.",
     "descEN": "Damages the attacker if it knocks out the Pokémon with a move that makes direct contact."
   },
+  "super-luck": {
+    "id": 105,
+    "gen": "generation-iv",
+    "display": "Afortunado",
+    "descES": "Su buena suerte aumenta la probabilidad de asestar golpes críticos.",
+    "descEN": "The Pokémon is so lucky that the critical-hit ratios of its moves are boosted."
+  },
   "anticipation": {
     "id": 107,
     "gen": "generation-iv",
     "display": "Anticipación",
     "descES": "Prevé los movimientos peligrosos del rival.",
     "descEN": "The Pokémon can sense an opposing Pokémon's dangerous moves."
-  },
-  "mold-breaker": {
-    "id": 104,
-    "gen": "generation-iv",
-    "display": "Rompemoldes",
-    "descES": "Las habilidades del objetivo no afectan a los movimientos que emplea.",
-    "descEN": "The Pokémon's moves are unimpeded by the Ability of the target."
   },
   "forewarn": {
     "id": 108,
@@ -790,19 +790,19 @@
     "descES": "Puede alcanzar a Pokémon de tipo Fantasma con movimientos de tipo Normal o Lucha.",
     "descEN": "The Pokémon can hit Ghost-type Pokémon with Normal- and Fighting-type moves. It is also unaffected by Intimidate."
   },
-  "ice-body": {
-    "id": 115,
-    "gen": "generation-iv",
-    "display": "Gélido",
-    "descES": "Recupera PS de forma gradual cuando hay tormentas de granizo.",
-    "descEN": "The Pokémon gradually regains HP in snow."
-  },
   "storm-drain": {
     "id": 114,
     "gen": "generation-iv",
     "display": "Colector",
     "descES": "Atrae y neutraliza los movimientos de tipo Agua, que además le suben el Ataque Especial.",
     "descEN": "The Pokémon draws in all Water-type moves. Instead of taking damage from them, its Sp. Atk stat is boosted."
+  },
+  "ice-body": {
+    "id": 115,
+    "gen": "generation-iv",
+    "display": "Gélido",
+    "descES": "Recupera PS de forma gradual cuando hay tormentas de granizo.",
+    "descEN": "The Pokémon gradually regains HP in snow."
   },
   "solid-rock": {
     "id": 116,
@@ -818,19 +818,19 @@
     "descES": "Invoca una tormenta de granizo al entrar en combate.",
     "descEN": "The Pokémon makes it snow when it enters a battle."
   },
-  "honey-gather": {
-    "id": 118,
-    "gen": "generation-iv",
-    "display": "Recogemiel",
-    "descES": "Puede que encuentre Miel una vez concluido el combate.",
-    "descEN": "The Pokémon may gather Honey after a battle."
-  },
   "frisk": {
     "id": 119,
     "gen": "generation-iv",
     "display": "Cacheo",
     "descES": "Puede ver el objeto que lleva el rival al entrar en combate.",
     "descEN": "When it enters a battle, the Pokémon can check an opposing Pokémon's held item."
+  },
+  "honey-gather": {
+    "id": 118,
+    "gen": "generation-iv",
+    "display": "Recogemiel",
+    "descES": "Puede que encuentre Miel una vez concluido el combate.",
+    "descEN": "The Pokémon may gather Honey after a battle."
   },
   "reckless": {
     "id": 120,
@@ -860,19 +860,19 @@
     "descES": "Inflige daño a cualquier rival que esté dormido.",
     "descEN": "Damages opposing Pokémon that are asleep."
   },
-  "pickpocket": {
-    "id": 124,
-    "gen": "generation-v",
-    "display": "Hurto",
-    "descES": "Si el rival usa un movimiento de contacto al atacar, le roba el objeto.",
-    "descEN": "The Pokémon steals the held item from attackers that made direct contact with it."
-  },
   "sheer-force": {
     "id": 125,
     "gen": "generation-v",
     "display": "Potencia Bruta",
     "descES": "Sube la potencia de sus movimientos en detrimento de los efectos secundarios, que se ven anulados.",
     "descEN": "Removes any additional effects from the Pokémon's moves, but increases the moves' power."
+  },
+  "pickpocket": {
+    "id": 124,
+    "gen": "generation-v",
+    "display": "Hurto",
+    "descES": "Si el rival usa un movimiento de contacto al atacar, le roba el objeto.",
+    "descEN": "The Pokémon steals the held item from attackers that made direct contact with it."
   },
   "contrary": {
     "id": 126,
@@ -888,19 +888,19 @@
     "descES": "Pone nervioso al rival y le impide usar bayas.",
     "descEN": "Unnerves opposing Pokémon and makes them unable to eat Berries."
   },
-  "defeatist": {
-    "id": 129,
-    "gen": "generation-v",
-    "display": "Flaqueza",
-    "descES": "Se debilita tanto cuando sus PS se ven reducidos a la mitad que su Ataque y su Ataque Especial bajan.",
-    "descEN": "Halves the Pokémon’s Attack and Sp. Atk stats when its HP becomes half or less."
-  },
   "defiant": {
     "id": 128,
     "gen": "generation-v",
     "display": "Competitivo",
     "descES": "Sube mucho su Ataque cuando el rival le baja las características.",
     "descEN": "If the Pokémon has any stat lowered by an opposing Pokémon, its Attack stat will be boosted sharply."
+  },
+  "defeatist": {
+    "id": 129,
+    "gen": "generation-v",
+    "display": "Flaqueza",
+    "descES": "Se debilita tanto cuando sus PS se ven reducidos a la mitad que su Ataque y su Ataque Especial bajan.",
+    "descEN": "Halves the Pokémon’s Attack and Sp. Atk stats when its HP becomes half or less."
   },
   "cursed-body": {
     "id": 130,
@@ -951,6 +951,13 @@
     "descES": "Reduce a la mitad su peso.",
     "descEN": "Halves the Pokémon's weight."
   },
+  "toxic-boost": {
+    "id": 137,
+    "gen": "generation-v",
+    "display": "Ímpetu Tóxico",
+    "descES": "Aumenta la potencia de sus ataques físicos cuando está envenenado.",
+    "descEN": "Powers up physical moves when the Pokémon is poisoned."
+  },
   "flare-boost": {
     "id": 138,
     "gen": "generation-v",
@@ -958,12 +965,12 @@
     "descES": "Aumenta la potencia de sus ataques especiales cuando sufre quemaduras.",
     "descEN": "Powers up special moves when the Pokémon is burned."
   },
-  "toxic-boost": {
-    "id": 137,
+  "telepathy": {
+    "id": 140,
     "gen": "generation-v",
-    "display": "Ímpetu Tóxico",
-    "descES": "Aumenta la potencia de sus ataques físicos cuando está envenenado.",
-    "descEN": "Powers up physical moves when the Pokémon is poisoned."
+    "display": "Telepatía",
+    "descES": "Elude los ataques de los aliados durante el combate.",
+    "descEN": "The Pokémon anticipates and dodges the attacks of its allies."
   },
   "harvest": {
     "id": 139,
@@ -986,12 +993,12 @@
     "descES": "No le afectan las tormentas de arena, el granizo y los movimientos con polvos.",
     "descEN": "The Pokémon takes no damage from sandstorms. It is also protected from the effects of powders and spores."
   },
-  "telepathy": {
-    "id": 140,
+  "poison-touch": {
+    "id": 143,
     "gen": "generation-v",
-    "display": "Telepatía",
-    "descES": "Elude los ataques de los aliados durante el combate.",
-    "descEN": "The Pokémon anticipates and dodges the attacks of its allies."
+    "display": "Toque Tóxico",
+    "descES": "Puede envenenar al objetivo con solo tocarlo.",
+    "descEN": "May poison a target when the Pokémon makes contact."
   },
   "regenerator": {
     "id": 144,
@@ -1000,19 +1007,19 @@
     "descES": "Recupera unos pocos PS al ser cambiado por otro Pokémon.",
     "descEN": "The Pokémon has a little of its HP restored when withdrawn from battle."
   },
-  "poison-touch": {
-    "id": 143,
-    "gen": "generation-v",
-    "display": "Toque Tóxico",
-    "descES": "Puede envenenar al objetivo con solo tocarlo.",
-    "descEN": "May poison a target when the Pokémon makes contact."
-  },
   "big-pecks": {
     "id": 145,
     "gen": "generation-v",
     "display": "Sacapecho",
     "descES": "Impide que el rival le baje la Defensa.",
     "descEN": "Prevents the Pokémon from having its Defense stat lowered."
+  },
+  "sand-rush": {
+    "id": 146,
+    "gen": "generation-v",
+    "display": "Ímpetu Arena",
+    "descES": "Aumenta su Velocidad durante las tormentas de arena.",
+    "descEN": "Boosts the Pokémon's Speed stat in a sandstorm."
   },
   "wonder-skin": {
     "id": 147,
@@ -1028,12 +1035,19 @@
     "descES": "Aumenta la potencia de su movimiento si es el último en atacar.",
     "descEN": "Boosts the power of the Pokémon's move if it is the last to act that turn."
   },
-  "sand-rush": {
-    "id": 146,
+  "illusion": {
+    "id": 149,
     "gen": "generation-v",
-    "display": "Ímpetu Arena",
-    "descES": "Aumenta su Velocidad durante las tormentas de arena.",
-    "descEN": "Boosts the Pokémon's Speed stat in a sandstorm."
+    "display": "Ilusión",
+    "descES": "Adopta el aspecto del último Pokémon del equipo al entrar en combate para desconcertar al rival.",
+    "descEN": "The Pokémon fools opponents by entering battle disguised as the last Pokémon in its Trainer's party."
+  },
+  "imposter": {
+    "id": 150,
+    "gen": "generation-v",
+    "display": "Impostor",
+    "descES": "Se transforma en el Pokémon que tiene enfrente.",
+    "descEN": "The Pokémon transforms itself into the Pokémon it's facing."
   },
   "infiltrator": {
     "id": 151,
@@ -1041,13 +1055,6 @@
     "display": "Allanamiento",
     "descES": "Ataca sorteando la barrera o el sustituto del rival.",
     "descEN": "The Pokémon's moves are unaffected by the target's barriers, substitutes, and the like."
-  },
-  "illusion": {
-    "id": 149,
-    "gen": "generation-v",
-    "display": "Ilusión",
-    "descES": "Adopta el aspecto del último Pokémon del equipo al entrar en combate para desconcertar al rival.",
-    "descEN": "The Pokémon fools opponents by entering battle disguised as the last Pokémon in its Trainer's party."
   },
   "mummy": {
     "id": 152,
@@ -1077,19 +1084,19 @@
     "descES": "Si le alcanza un movimiento de tipo Siniestro, Bicho o Fantasma, el miedo hace que le suba la Velocidad.",
     "descEN": "The Pokémon gets scared when hit by a Dark-, Ghost-, or Bug-type attack or if intimidated, which boosts its Speed stat."
   },
-  "magic-bounce": {
-    "id": 156,
-    "gen": "generation-v",
-    "display": "Espejo Mágico",
-    "descES": "Puede devolver los movimientos de estado lanzados por el rival, sin verse afectado por ellos.",
-    "descEN": "The Pokémon reflects status moves instead of getting hit by them."
-  },
   "sap-sipper": {
     "id": 157,
     "gen": "generation-v",
     "display": "Herbívoro",
     "descES": "Neutraliza los movimientos de tipo Planta y sube su Ataque.",
     "descEN": "The Pokémon takes no damage when hit by Grass-type moves. Instead, its Attack stat is boosted."
+  },
+  "magic-bounce": {
+    "id": 156,
+    "gen": "generation-v",
+    "display": "Espejo Mágico",
+    "descES": "Puede devolver los movimientos de estado lanzados por el rival, sin verse afectado por ellos.",
+    "descEN": "The Pokémon reflects status moves instead of getting hit by them."
   },
   "prankster": {
     "id": 158,
@@ -1098,13 +1105,6 @@
     "descES": "Sus movimientos de estado tienen prioridad alta.",
     "descEN": "Gives priority to the Pokémon's status moves."
   },
-  "iron-barbs": {
-    "id": 160,
-    "gen": "generation-v",
-    "display": "Punta Acero",
-    "descES": "Inflige daño al rival si este le golpea con un movimiento de contacto.",
-    "descEN": "Inflicts damage on the attacker upon contact with iron barbs."
-  },
   "sand-force": {
     "id": 159,
     "gen": "generation-v",
@@ -1112,12 +1112,12 @@
     "descES": "Potencia los movimientos de tipo Tierra, Acero y Roca durante las tormentas de arena.",
     "descEN": "Boosts the power of Rock-, Ground-, and Steel-type moves in a sandstorm."
   },
-  "zen-mode": {
-    "id": 161,
+  "iron-barbs": {
+    "id": 160,
     "gen": "generation-v",
-    "display": "Modo Daruma",
-    "descES": "Cambia de forma si sus PS se ven reducidos a la mitad.",
-    "descEN": "Changes the Pokémon’s shape when HP is half or less."
+    "display": "Punta Acero",
+    "descES": "Inflige daño al rival si este le golpea con un movimiento de contacto.",
+    "descEN": "Inflicts damage on the attacker upon contact with iron barbs."
   },
   "victory-star": {
     "id": 162,
@@ -1126,10 +1126,24 @@
     "descES": "Sube su Precisión y la de sus aliados.",
     "descEN": "Boosts the accuracy of its allies and itself."
   },
+  "zen-mode": {
+    "id": 161,
+    "gen": "generation-v",
+    "display": "Modo Daruma",
+    "descES": "Cambia de forma si sus PS se ven reducidos a la mitad.",
+    "descEN": "Changes the Pokémon’s shape when HP is half or less."
+  },
   "turboblaze": {
     "id": 163,
     "gen": "generation-v",
     "display": "Turbollama",
+    "descES": "Las habilidades del objetivo no afectan a los movimientos que emplea.",
+    "descEN": "The Pokémon's moves are unimpeded by the Ability of the target."
+  },
+  "teravolt": {
+    "id": 164,
+    "gen": "generation-v",
+    "display": "Terravoltaje",
     "descES": "Las habilidades del objetivo no afectan a los movimientos que emplea.",
     "descEN": "The Pokémon's moves are unimpeded by the Ability of the target."
   },
@@ -1147,33 +1161,12 @@
     "descES": "Evita que los Pokémon de tipo Planta aliados sufran problemas de estado o que les bajen sus características.",
     "descEN": "Ally Grass-type Pokémon are protected from status conditions and the lowering of their stats."
   },
-  "imposter": {
-    "id": 150,
-    "gen": "generation-v",
-    "display": "Impostor",
-    "descES": "Se transforma en el Pokémon que tiene enfrente.",
-    "descEN": "The Pokémon transforms itself into the Pokémon it's facing."
-  },
-  "teravolt": {
-    "id": 164,
-    "gen": "generation-v",
-    "display": "Terravoltaje",
-    "descES": "Las habilidades del objetivo no afectan a los movimientos que emplea.",
-    "descEN": "The Pokémon's moves are unimpeded by the Ability of the target."
-  },
-  "fur-coat": {
-    "id": 169,
+  "cheek-pouch": {
+    "id": 167,
     "gen": "generation-vi",
-    "display": "Pelaje Recio",
-    "descES": "Reduce a la mitad el daño que recibe de ataques físicos del rival.",
-    "descEN": "Halves the damage from physical moves."
-  },
-  "bulletproof": {
-    "id": 171,
-    "gen": "generation-vi",
-    "display": "Antibalas",
-    "descES": "No le afectan las bombas ni algunos proyectiles.",
-    "descEN": "Protects the Pokémon from ball and bomb moves."
+    "display": "Carrillo",
+    "descES": "Recupera PS al comer cualquier baya.",
+    "descEN": "The Pokémon's HP is restored when it eats any Berry, in addition to the Berry's usual effect."
   },
   "protean": {
     "id": 168,
@@ -1182,12 +1175,12 @@
     "descES": "Cambia su tipo al del movimiento que va a usar.",
     "descEN": "Changes the Pokémon's type to the type of the move it's about to use. This works only once each time the Pokémon enters battle."
   },
-  "cheek-pouch": {
-    "id": 167,
+  "fur-coat": {
+    "id": 169,
     "gen": "generation-vi",
-    "display": "Carrillo",
-    "descES": "Recupera PS al comer cualquier baya.",
-    "descEN": "The Pokémon's HP is restored when it eats any Berry, in addition to the Berry's usual effect."
+    "display": "Pelaje Recio",
+    "descES": "Reduce a la mitad el daño que recibe de ataques físicos del rival.",
+    "descEN": "Halves the damage from physical moves."
   },
   "magician": {
     "id": 170,
@@ -1196,6 +1189,13 @@
     "descES": "Roba el objeto del Pokémon al que alcance con un movimiento.",
     "descEN": "The Pokémon steals the held item from any target it hits with a move."
   },
+  "bulletproof": {
+    "id": 171,
+    "gen": "generation-vi",
+    "display": "Antibalas",
+    "descES": "No le afectan las bombas ni algunos proyectiles.",
+    "descEN": "Protects the Pokémon from ball and bomb moves."
+  },
   "competitive": {
     "id": 172,
     "gen": "generation-vi",
@@ -1203,19 +1203,19 @@
     "descES": "Aumenta mucho su Ataque Especial cuando el rival le baja cualquiera de sus características.",
     "descEN": "Boosts the Pokémon's Sp. Atk stat sharply when its stats are lowered by an opposing Pokémon."
   },
-  "refrigerate": {
-    "id": 174,
-    "gen": "generation-vi",
-    "display": "Piel Helada",
-    "descES": "Convierte los movimientos de tipo Normal en tipo Hielo y aumenta ligeramente su potencia.",
-    "descEN": "Normal-type moves become Ice-type moves. The power of those moves is boosted a little."
-  },
   "strong-jaw": {
     "id": 173,
     "gen": "generation-vi",
     "display": "Mandíbula Fuerte",
     "descES": "Su robusta mandíbula le confiere una mordedura potente.",
     "descEN": "The Pokémon's strong jaw boosts the power of its biting moves."
+  },
+  "refrigerate": {
+    "id": 174,
+    "gen": "generation-vi",
+    "display": "Piel Helada",
+    "descES": "Convierte los movimientos de tipo Normal en tipo Hielo y aumenta ligeramente su potencia.",
+    "descEN": "Normal-type moves become Ice-type moves. The power of those moves is boosted a little."
   },
   "sweet-veil": {
     "id": 175,
@@ -1238,19 +1238,19 @@
     "descES": "Da prioridad a los movimientos de tipo Volador si sus PS están al máximo.",
     "descEN": "Gives priority to the Pokémon's Flying-type moves while its HP is full."
   },
-  "mega-launcher": {
-    "id": 178,
-    "gen": "generation-vi",
-    "display": "Megadisparador",
-    "descES": "Aumenta la potencia de algunos movimientos de pulsos y auras.",
-    "descEN": "Powers up pulse moves."
-  },
   "grass-pelt": {
     "id": 179,
     "gen": "generation-vi",
     "display": "Manto Frondoso",
     "descES": "Aumenta su Defensa si hay un campo de hierba en el terreno de combate.",
     "descEN": "Boosts the Pokémon's Defense stat on Grassy Terrain."
+  },
+  "mega-launcher": {
+    "id": 178,
+    "gen": "generation-vi",
+    "display": "Megadisparador",
+    "descES": "Aumenta la potencia de algunos movimientos de pulsos y auras.",
+    "descEN": "Powers up pulse moves."
   },
   "symbiosis": {
     "id": 180,
@@ -1266,19 +1266,19 @@
     "descES": "Aumenta la potencia de los movimientos de contacto.",
     "descEN": "Powers up moves that make direct contact."
   },
-  "gooey": {
-    "id": 183,
-    "gen": "generation-vi",
-    "display": "Baba",
-    "descES": "Baja la Velocidad del rival cuando este le ataca con un movimiento de contacto.",
-    "descEN": "Contact with the Pokémon lowers the attacker's Speed stat."
-  },
   "pixilate": {
     "id": 182,
     "gen": "generation-vi",
     "display": "Piel Feérica",
     "descES": "Convierte los movimientos de tipo Normal en tipo Hada y aumenta ligeramente su potencia.",
     "descEN": "Normal-type moves become Fairy-type moves. The power of those moves is boosted a little."
+  },
+  "gooey": {
+    "id": 183,
+    "gen": "generation-vi",
+    "display": "Baba",
+    "descES": "Baja la Velocidad del rival cuando este le ataca con un movimiento de contacto.",
+    "descEN": "Contact with the Pokémon lowers the attacker's Speed stat."
   },
   "aerilate": {
     "id": 184,
@@ -1301,13 +1301,6 @@
     "descES": "Aumenta la potencia de todos los movimientos de tipo Siniestro.",
     "descEN": "Powers up each Pokémon’s Dark-type moves."
   },
-  "primordial-sea": {
-    "id": 189,
-    "gen": "generation-vi",
-    "display": "Mar del Albor",
-    "descES": "Altera el clima para anular los ataques de tipo Fuego.",
-    "descEN": "The Pokémon changes the weather to nullify Fire-type attacks."
-  },
   "fairy-aura": {
     "id": 187,
     "gen": "generation-vi",
@@ -1322,12 +1315,33 @@
     "descES": "Invierte los efectos de las auras, por lo que baja la potencia de ciertos movimientos en vez de subirla.",
     "descEN": "The effects of “Aura” Abilities are reversed to lower the power of affected moves."
   },
+  "primordial-sea": {
+    "id": 189,
+    "gen": "generation-vi",
+    "display": "Mar del Albor",
+    "descES": "Altera el clima para anular los ataques de tipo Fuego.",
+    "descEN": "The Pokémon changes the weather to nullify Fire-type attacks."
+  },
   "desolate-land": {
     "id": 190,
     "gen": "generation-vi",
     "display": "Tierra del Ocaso",
     "descES": "Altera el clima para anular los ataques de tipo Agua.",
     "descEN": "The Pokémon changes the weather to nullify Water-type attacks."
+  },
+  "delta-stream": {
+    "id": 191,
+    "gen": "generation-vi",
+    "display": "Ráfaga Delta",
+    "descES": "Altera el clima para anular las vulnerabilidades del tipo Volador.",
+    "descEN": "The Pokémon changes the weather to eliminate all of the Flying type’s weaknesses."
+  },
+  "stamina": {
+    "id": 192,
+    "gen": "generation-vii",
+    "display": "Firmeza",
+    "descES": "Aumenta su Defensa al recibir un ataque.",
+    "descEN": "Boosts the Defense stat when the Pokémon is hit by an attack."
   },
   "wimp-out": {
     "id": 193,
@@ -1343,13 +1357,6 @@
     "descES": "Abandona el terreno de combate cuando sus PS se ven reducidos a la mitad para evitar males mayores.",
     "descEN": "The Pokémon, sensing danger, switches out when its HP becomes half or less."
   },
-  "stamina": {
-    "id": 192,
-    "gen": "generation-vii",
-    "display": "Firmeza",
-    "descES": "Aumenta su Defensa al recibir un ataque.",
-    "descEN": "Boosts the Defense stat when the Pokémon is hit by an attack."
-  },
   "water-compaction": {
     "id": 195,
     "gen": "generation-vii",
@@ -1357,12 +1364,12 @@
     "descES": "Aumenta mucho su Defensa si le alcanza un movimiento de tipo Agua.",
     "descEN": "Boosts the Defense stat sharply when the Pokémon is hit by a Water-type move."
   },
-  "delta-stream": {
-    "id": 191,
-    "gen": "generation-vi",
-    "display": "Ráfaga Delta",
-    "descES": "Altera el clima para anular las vulnerabilidades del tipo Volador.",
-    "descEN": "The Pokémon changes the weather to eliminate all of the Flying type’s weaknesses."
+  "shields-down": {
+    "id": 197,
+    "gen": "generation-vii",
+    "display": "Escudo Limitado",
+    "descES": "Rompe su coraza cuando sus PS se ven reducidos a la mitad y adopta una forma ofensiva.",
+    "descEN": "When its HP drops to half or less, the Pokémon's shell breaks and it becomes aggressive."
   },
   "merciless": {
     "id": 196,
@@ -1377,13 +1384,6 @@
     "display": "Vigilante",
     "descES": "Si el objetivo de su ataque es sustituido por otro, duplica el daño que infligirá.",
     "descEN": "Doubles the damage dealt to a target that has just switched into battle."
-  },
-  "shields-down": {
-    "id": 197,
-    "gen": "generation-vii",
-    "display": "Escudo Limitado",
-    "descES": "Rompe su coraza cuando sus PS se ven reducidos a la mitad y adopta una forma ofensiva.",
-    "descEN": "When its HP drops to half or less, the Pokémon's shell breaks and it becomes aggressive."
   },
   "water-bubble": {
     "id": 199,
@@ -1406,6 +1406,13 @@
     "descES": "Aumenta su Ataque Especial si sus PS se ven reducidos a la mitad debido a algún ataque.",
     "descEN": "Boosts the Pokémon's Sp. Atk stat when it takes a hit that causes its HP to drop to half or less."
   },
+  "slush-rush": {
+    "id": 202,
+    "gen": "generation-vii",
+    "display": "Quitanieves",
+    "descES": "Aumenta su Velocidad si está granizando.",
+    "descEN": "Boosts the Pokémon's Speed stat in snow."
+  },
   "long-reach": {
     "id": 203,
     "gen": "generation-vii",
@@ -1419,13 +1426,6 @@
     "display": "Voz Fluida",
     "descES": "Hace que todos sus movimientos que usan sonido pasen a ser de tipo Agua.",
     "descEN": "Sound-based moves become Water-type moves."
-  },
-  "slush-rush": {
-    "id": 202,
-    "gen": "generation-vii",
-    "display": "Quitanieves",
-    "descES": "Aumenta su Velocidad si está granizando.",
-    "descEN": "Boosts the Pokémon's Speed stat in snow."
   },
   "triage": {
     "id": 205,
@@ -1448,19 +1448,19 @@
     "descES": "Duplica su Velocidad si hay un campo eléctrico en el terreno de combate.",
     "descEN": "Doubles the Pokémon's Speed stat on Electric Terrain."
   },
-  "disguise": {
-    "id": 209,
-    "gen": "generation-vii",
-    "display": "Disfraz",
-    "descES": "Puede eludir un ataque valiéndose de la tela que le cubre el cuerpo una vez por combate.",
-    "descEN": "Once per battle, the shroud that covers the Pokémon can protect it from an attack."
-  },
   "schooling": {
     "id": 208,
     "gen": "generation-vii",
     "display": "Banco",
     "descES": "Forma bancos con sus congéneres cuando tiene muchos PS, lo cual le otorga más fuerza. Cuando le quedan pocos PS, el banco se dispersa.",
     "descEN": "When it has a lot of HP, the Pokémon forms a powerful school. It stops schooling when its HP is low."
+  },
+  "disguise": {
+    "id": 209,
+    "gen": "generation-vii",
+    "display": "Disfraz",
+    "descES": "Puede eludir un ataque valiéndose de la tela que le cubre el cuerpo una vez por combate.",
+    "descEN": "Once per battle, the shroud that covers the Pokémon can protect it from an attack."
   },
   "battle-bond": {
     "id": 210,
@@ -1483,19 +1483,19 @@
     "descES": "Puede envenenar incluso a rivales de tipo Acero o Veneno.",
     "descEN": "The Pokémon can poison the target even if it's a Steel or Poison type."
   },
-  "queenly-majesty": {
-    "id": 214,
-    "gen": "generation-vii",
-    "display": "Regia Presencia",
-    "descES": "Intimida al objetivo y le impide usar movimientos con prioridad.",
-    "descEN": "When the Pokémon uses Surf or Dive, it will come back with prey. When it takes damage, it will spit out the prey to attack."
-  },
   "comatose": {
     "id": 213,
     "gen": "generation-vii",
     "display": "Letargo Perenne",
     "descES": "No despierta jamás de su profundo letargo e incluso ataca dormido.",
     "descEN": "The Pokémon is always drowsing and will never wake up. It can attack while in its sleeping state."
+  },
+  "queenly-majesty": {
+    "id": 214,
+    "gen": "generation-vii",
+    "display": "Regia Presencia",
+    "descES": "Intimida al objetivo y le impide usar movimientos con prioridad.",
+    "descEN": "When the Pokémon uses Surf or Dive, it will come back with prey. When it takes damage, it will spit out the prey to attack."
   },
   "innards-out": {
     "id": 215,
@@ -1525,19 +1525,19 @@
     "descES": "Reduce a la mitad el daño provocado por los movimientos de contacto, pero duplica el infligido por los de tipo Fuego.",
     "descEN": "Halves the damage taken from moves that make direct contact, but doubles that of Fire-type moves."
   },
-  "dazzling": {
-    "id": 219,
-    "gen": "generation-vii",
-    "display": "Cuerpo Vívido",
-    "descES": "Desconcierta al rival y le impide utilizar movimientos con prioridad en su contra.",
-    "descEN": "The Pokémon dazzles its opponents, making them unable to use priority moves against the Pokémon or its allies."
-  },
   "soul-heart": {
     "id": 220,
     "gen": "generation-vii",
     "display": "Coránima",
     "descES": "Aumenta su Ataque Especial cada vez que un Pokémon cae debilitado.",
     "descEN": "Boosts the Pokémon's Sp. Atk stat every time another Pokémon faints."
+  },
+  "dazzling": {
+    "id": 219,
+    "gen": "generation-vii",
+    "display": "Cuerpo Vívido",
+    "descES": "Desconcierta al rival y le impide utilizar movimientos con prioridad en su contra.",
+    "descEN": "The Pokémon dazzles its opponents, making them unable to use priority moves against the Pokémon or its allies."
   },
   "tangling-hair": {
     "id": 221,
@@ -1546,13 +1546,6 @@
     "descES": "Baja la Velocidad del rival cuando este le ataca con un movimiento de contacto.",
     "descEN": "Contact with the Pokémon lowers the attacker's Speed stat."
   },
-  "receiver": {
-    "id": 222,
-    "gen": "generation-vii",
-    "display": "Receptor",
-    "descES": "Adquiere la habilidad de un aliado debilitado.",
-    "descEN": "The Pokémon copies the Ability of a defeated ally."
-  },
   "power-of-alchemy": {
     "id": 223,
     "gen": "generation-vii",
@@ -1560,19 +1553,12 @@
     "descES": "Reacciona copiando la habilidad de un aliado debilitado.",
     "descEN": "The Pokémon copies the Ability of a defeated ally."
   },
-  "electric-surge": {
-    "id": 226,
+  "receiver": {
+    "id": 222,
     "gen": "generation-vii",
-    "display": "Electrogénesis",
-    "descES": "Crea un campo eléctrico al entrar en combate.",
-    "descEN": "Turns the ground into Electric Terrain when the Pokémon enters a battle."
-  },
-  "psychic-surge": {
-    "id": 227,
-    "gen": "generation-vii",
-    "display": "Psicogénesis",
-    "descES": "Crea un campo psíquico al entrar en combate.",
-    "descEN": "Turns the ground into Psychic Terrain when the Pokémon enters a battle."
+    "display": "Receptor",
+    "descES": "Adquiere la habilidad de un aliado debilitado.",
+    "descEN": "The Pokémon copies the Ability of a defeated ally."
   },
   "beast-boost": {
     "id": 224,
@@ -1581,12 +1567,26 @@
     "descES": "Si derrota a un rival en ese turno, aumenta su característica más fuerte.",
     "descEN": "The Pokémon boosts its most proficient stat each time it knocks out a Pokémon."
   },
+  "electric-surge": {
+    "id": 226,
+    "gen": "generation-vii",
+    "display": "Electrogénesis",
+    "descES": "Crea un campo eléctrico al entrar en combate.",
+    "descEN": "Turns the ground into Electric Terrain when the Pokémon enters a battle."
+  },
   "rks-system": {
     "id": 225,
     "gen": "generation-vii",
     "display": "Sistema Alfa",
     "descES": "Cambia su tipo según el disco que lleve instalado.",
     "descEN": "Changes the Pokémon’s type to match the memory disc it holds."
+  },
+  "psychic-surge": {
+    "id": 227,
+    "gen": "generation-vii",
+    "display": "Psicogénesis",
+    "descES": "Crea un campo psíquico al entrar en combate.",
+    "descEN": "Turns the ground into Psychic Terrain when the Pokémon enters a battle."
   },
   "misty-surge": {
     "id": 228,
@@ -1602,19 +1602,19 @@
     "descES": "Crea un campo de hierba al entrar en combate.",
     "descEN": "Turns the ground into Grassy Terrain when the Pokémon enters a battle."
   },
-  "shadow-shield": {
-    "id": 231,
-    "gen": "generation-vii",
-    "display": "Guardia Espectro",
-    "descES": "Reduce el daño que sufre si sus PS están al máximo.",
-    "descEN": "Reduces the amount of damage the Pokémon takes while its HP is full."
-  },
   "full-metal-body": {
     "id": 230,
     "gen": "generation-vii",
     "display": "Guardia Metálica",
     "descES": "Evita que bajen sus características a causa de movimientos o habilidades de otros Pokémon.",
     "descEN": "Prevents other Pokémon’s moves or Abilities from lowering the Pokémon’s stats."
+  },
+  "shadow-shield": {
+    "id": 231,
+    "gen": "generation-vii",
+    "display": "Guardia Espectro",
+    "descES": "Reduce el daño que sufre si sus PS están al máximo.",
+    "descEN": "Reduces the amount of damage the Pokémon takes while its HP is full."
   },
   "prism-armor": {
     "id": 232,
@@ -1630,19 +1630,19 @@
     "descES": "Potencia los ataques supereficaces.",
     "descEN": "Powers up moves that are super effective."
   },
-  "dauntless-shield": {
-    "id": 235,
-    "gen": "generation-viii",
-    "display": "Escudo Recio",
-    "descES": "Aumenta su Defensa al entrar en combate.",
-    "descEN": "Boosts the Pokémon’s Defense stat the first time the Pokémon enters a battle."
-  },
   "intrepid-sword": {
     "id": 234,
     "gen": "generation-viii",
     "display": "Espada Indómita",
     "descES": "Aumenta su Ataque al entrar en combate.",
     "descEN": "Boosts the Pokémon’s Attack stat the first time the Pokémon enters a battle."
+  },
+  "dauntless-shield": {
+    "id": 235,
+    "gen": "generation-viii",
+    "display": "Escudo Recio",
+    "descES": "Aumenta su Defensa al entrar en combate.",
+    "descEN": "Boosts the Pokémon’s Defense stat the first time the Pokémon enters a battle."
   },
   "libero": {
     "id": 236,
@@ -1665,19 +1665,19 @@
     "descES": "Al ser alcanzado por un ataque, suelta una pelusa de algodón que reduce la Velocidad de todos los demás Pokémon.",
     "descEN": "When the Pokémon is hit by an attack, it scatters cotton fluff around and lowers the Speed stat of all Pokémon except itself."
   },
-  "mirror-armor": {
-    "id": 240,
-    "gen": "generation-viii",
-    "display": "Coraza Reflejo",
-    "descES": "Refleja los efectos que reducen las características.",
-    "descEN": "Bounces back only the stat-lowering effects that the Pokémon receives."
-  },
   "propeller-tail": {
     "id": 239,
     "gen": "generation-viii",
     "display": "Hélice Caudal",
     "descES": "Impide que el rival pueda atraer ataques hacia sí mismo por efecto de su habilidad o sus movimientos.",
     "descEN": "Ignores the effects of opposing Pokémon's Abilities and moves that draw in moves."
+  },
+  "mirror-armor": {
+    "id": 240,
+    "gen": "generation-viii",
+    "display": "Coraza Reflejo",
+    "descES": "Refleja los efectos que reducen las características.",
+    "descEN": "Bounces back only the stat-lowering effects that the Pokémon receives."
   },
   "gulp-missile": {
     "id": 241,
@@ -1728,6 +1728,13 @@
     "descES": "Hace madurar las bayas, por lo que duplica sus efectos.",
     "descEN": "Ripens Berries and doubles their effect."
   },
+  "ice-face": {
+    "id": 248,
+    "gen": "generation-viii",
+    "display": "Cara de Hielo",
+    "descES": "Absorbe el daño de un ataque físico con el hielo de la cabeza, tras lo cual cambia de forma. El hielo se regenerará la próxima vez que granice.",
+    "descEN": "The Pokémon's ice head can take a physical attack as a substitute, but the attack also changes the Pokémon's appearance. The ice will be restored when it snows."
+  },
   "power-spot": {
     "id": 249,
     "gen": "generation-viii",
@@ -1748,13 +1755,6 @@
     "display": "Antibarrera",
     "descES": "Anula los efectos de Pantalla de Luz, Reflejo y Velo Aurora tanto de rivales como de aliados al entrar en combate.",
     "descEN": "When the Pokémon enters a battle, the effects of Light Screen, Reflect, and Aurora Veil are nullified for both opposing and ally Pokémon."
-  },
-  "ice-face": {
-    "id": 248,
-    "gen": "generation-viii",
-    "display": "Cara de Hielo",
-    "descES": "Absorbe el daño de un ataque físico con el hielo de la cabeza, tras lo cual cambia de forma. El hielo se regenerará la próxima vez que granice.",
-    "descEN": "The Pokémon's ice head can take a physical attack as a substitute, but the attack also changes the Pokémon's appearance. The ice will be restored when it snows."
   },
   "steely-spirit": {
     "id": 252,
@@ -1798,13 +1798,6 @@
     "descES": "Se protege a sí mismo y a sus aliados del envenenamiento.",
     "descEN": "Protects the Pokémon and its ally Pokémon from being poisoned."
   },
-  "hunger-switch": {
-    "id": 258,
-    "gen": "generation-viii",
-    "display": "Mutapetito",
-    "descES": "Alterna entre su Forma Saciada y Forma Voraz al final de cada turno.",
-    "descEN": "The Pokémon changes its form, alternating between its Full Belly Mode and Hangry Mode after the end of every turn."
-  },
   "quick-draw": {
     "id": 259,
     "gen": "generation-viii",
@@ -1812,12 +1805,26 @@
     "descES": "A veces, puede atacar el primero.",
     "descEN": "Enables the Pokémon to move first occasionally."
   },
+  "hunger-switch": {
+    "id": 258,
+    "gen": "generation-viii",
+    "display": "Mutapetito",
+    "descES": "Alterna entre su Forma Saciada y Forma Voraz al final de cada turno.",
+    "descEN": "The Pokémon changes its form, alternating between its Full Belly Mode and Hangry Mode after the end of every turn."
+  },
   "unseen-fist": {
     "id": 260,
     "gen": "generation-viii",
     "display": "Puño Invisible",
     "descES": "Si usa un movimiento de contacto, puede infligir daño al objetivo aunque este se proteja.",
     "descEN": "If the Pokémon uses moves that make direct contact, it can attack the target even if the target protects itself."
+  },
+  "curious-medicine": {
+    "id": 261,
+    "gen": "generation-viii",
+    "display": "Medicina Extraña",
+    "descES": "Al entrar en combate, rezuma una substancia medicinal por la caracola que revierte los cambios en las características de los aliados.",
+    "descEN": "When the Pokémon enters a battle, it scatters medicine from its shell, which removes all stat changes from allies."
   },
   "transistor": {
     "id": 262,
@@ -1833,12 +1840,12 @@
     "descES": "Potencia los movimientos de tipo Dragón.",
     "descEN": "Powers up Dragon-type moves."
   },
-  "curious-medicine": {
-    "id": 261,
+  "grim-neigh": {
+    "id": 265,
     "gen": "generation-viii",
-    "display": "Medicina Extraña",
-    "descES": "Al entrar en combate, rezuma una substancia medicinal por la caracola que revierte los cambios en las características de los aliados.",
-    "descEN": "When the Pokémon enters a battle, it scatters medicine from its shell, which removes all stat changes from allies."
+    "display": "Relincho Negro",
+    "descES": "Al derrotar a un objetivo, emite un relincho aterrador y aumenta su Ataque Especial.",
+    "descEN": "When the Pokémon knocks out a target, it utters a terrifying neigh, which boosts its Sp. Atk stat."
   },
   "chilling-neigh": {
     "id": 264,
@@ -1847,12 +1854,12 @@
     "descES": "Al derrotar a un objetivo, emite un relincho gélido y aumenta su Ataque.",
     "descEN": "When the Pokémon knocks out a target, it utters a chilling neigh, which boosts its Attack stat."
   },
-  "grim-neigh": {
-    "id": 265,
+  "as-one-glastrier": {
+    "id": 266,
     "gen": "generation-viii",
-    "display": "Relincho Negro",
-    "descES": "Al derrotar a un objetivo, emite un relincho aterrador y aumenta su Ataque Especial.",
-    "descEN": "When the Pokémon knocks out a target, it utters a terrifying neigh, which boosts its Sp. Atk stat."
+    "display": "Unidad Ecuestre",
+    "descES": "El Pokémon tiene dos habilidades: Relincho Blanco de Glastrier y Nerviosismo de Calyrex.",
+    "descEN": "This Ability combines the effects of both Calyrex's Unnerve Ability and Glastrier's Chilling Neigh Ability."
   },
   "as-one-spectrier": {
     "id": 267,
@@ -1868,13 +1875,6 @@
     "descES": "-",
     "descEN": "Contact with the Pokémon changes the attacker's Ability to Lingering Aroma."
   },
-  "as-one-glastrier": {
-    "id": 266,
-    "gen": "generation-viii",
-    "display": "Unidad Ecuestre",
-    "descES": "El Pokémon tiene dos habilidades: Relincho Blanco de Glastrier y Nerviosismo de Calyrex.",
-    "descEN": "This Ability combines the effects of both Calyrex's Unnerve Ability and Glastrier's Chilling Neigh Ability."
-  },
   "seed-sower": {
     "id": 269,
     "gen": "generation-ix",
@@ -1889,12 +1889,12 @@
     "descES": "-",
     "descEN": "Boosts the Attack stat when the Pokémon is hit by a Fire-type move. The Pokémon also cannot be burned."
   },
-  "well-baked-body": {
-    "id": 273,
+  "purifying-salt": {
+    "id": 272,
     "gen": "generation-ix",
-    "display": "Cuerpo Horneado",
+    "display": "Sal Purificadora",
     "descES": "-",
-    "descEN": "The Pokémon takes no damage when hit by Fire-type moves. Instead, its Defense stat is sharply boosted."
+    "descEN": "The Pokémon's pure salt protects it from status conditions and halves the damage taken from Ghost-type moves."
   },
   "anger-shell": {
     "id": 271,
@@ -1903,12 +1903,12 @@
     "descES": "-",
     "descEN": "When an attack causes its HP to drop to half or less, the Pokémon gets angry. This lowers its Defense and Sp. Def stats but boosts its Attack, Sp. Atk, and Speed stats."
   },
-  "purifying-salt": {
-    "id": 272,
+  "well-baked-body": {
+    "id": 273,
     "gen": "generation-ix",
-    "display": "Sal Purificadora",
+    "display": "Cuerpo Horneado",
     "descES": "-",
-    "descEN": "The Pokémon's pure salt protects it from status conditions and halves the damage taken from Ghost-type moves."
+    "descEN": "The Pokémon takes no damage when hit by Fire-type moves. Instead, its Defense stat is sharply boosted."
   },
   "wind-rider": {
     "id": 274,
@@ -1924,19 +1924,19 @@
     "descES": "-",
     "descEN": "Boosts the Pokémon’s Attack stat if intimidated. Moves and items that would force the Pokémon to switch out also fail to work."
   },
-  "wind-power": {
-    "id": 277,
-    "gen": "generation-ix",
-    "display": "Energía Eólica",
-    "descES": "-",
-    "descEN": "The Pokémon becomes charged when it is hit by a wind move, boosting the power of the next Electric-type move the Pokémon uses."
-  },
   "rocky-payload": {
     "id": 276,
     "gen": "generation-ix",
     "display": "Transportarrocas",
     "descES": "-",
     "descEN": "Powers up Rock-type moves."
+  },
+  "wind-power": {
+    "id": 277,
+    "gen": "generation-ix",
+    "display": "Energía Eólica",
+    "descES": "-",
+    "descEN": "The Pokémon becomes charged when it is hit by a wind move, boosting the power of the next Electric-type move the Pokémon uses."
   },
   "zero-to-hero": {
     "id": 278,
@@ -1973,6 +1973,13 @@
     "descES": "-",
     "descEN": "Boosts the Pokémon's most proficient stat on Electric Terrain or if the Pokémon is holding Booster Energy."
   },
+  "good-as-gold": {
+    "id": 283,
+    "gen": "generation-ix",
+    "display": "Cuerpo Áureo",
+    "descES": "-",
+    "descEN": "A body of pure, solid gold gives the Pokémon full immunity to other Pokémon's status moves."
+  },
   "vessel-of-ruin": {
     "id": 284,
     "gen": "generation-ix",
@@ -1987,12 +1994,12 @@
     "descES": "-",
     "descEN": "The power of the Pokémon's ruinous sword lowers the Defense stats of all Pokémon except itself."
   },
-  "good-as-gold": {
-    "id": 283,
+  "tablets-of-ruin": {
+    "id": 286,
     "gen": "generation-ix",
-    "display": "Cuerpo Áureo",
+    "display": "Tablilla Debacle",
     "descES": "-",
-    "descEN": "A body of pure, solid gold gives the Pokémon full immunity to other Pokémon's status moves."
+    "descEN": "The power of the Pokémon's ruinous wooden tablets lowers the Attack stats of all Pokémon except itself."
   },
   "beads-of-ruin": {
     "id": 287,
@@ -2000,13 +2007,6 @@
     "display": "Abalorio Debacle",
     "descES": "-",
     "descEN": "The power of the Pokémon's ruinous beads lowers the Sp. Def stats of all Pokémon except itself."
-  },
-  "tablets-of-ruin": {
-    "id": 286,
-    "gen": "generation-ix",
-    "display": "Tablilla Debacle",
-    "descES": "-",
-    "descEN": "The power of the Pokémon's ruinous wooden tablets lowers the Attack stats of all Pokémon except itself."
   },
   "orichalcum-pulse": {
     "id": 288,
@@ -2022,19 +2022,19 @@
     "descES": "-",
     "descEN": "Turns the ground into Electric Terrain when the Pokémon enters a battle. The futuristic engine within the Pokémon also boosts its Sp. Atk stat on Electric Terrain."
   },
-  "cud-chew": {
-    "id": 291,
-    "gen": "generation-ix",
-    "display": "Rumia",
-    "descES": "-",
-    "descEN": "When the Pokémon eats a Berry, it will regurgitate that Berry at the end of the next turn and eat it one more time."
-  },
   "opportunist": {
     "id": 290,
     "gen": "generation-ix",
     "display": "Oportunista",
     "descES": "-",
     "descEN": "If an opponent's stat is boosted, the Pokémon seizes the opportunity to boost the same stat for itself."
+  },
+  "cud-chew": {
+    "id": 291,
+    "gen": "generation-ix",
+    "display": "Rumia",
+    "descES": "-",
+    "descEN": "When the Pokémon eats a Berry, it will regurgitate that Berry at the end of the next turn and eat it one more time."
   },
   "sharpness": {
     "id": 292,
@@ -2050,19 +2050,19 @@
     "descES": "-",
     "descEN": "When the Pokémon enters a battle, its Attack and Sp. Atk stats are slightly boosted for each of the allies in its party that have already been defeated."
   },
-  "costar": {
-    "id": 294,
-    "gen": "generation-ix",
-    "display": "Unísono",
-    "descES": "-",
-    "descEN": "When the Pokémon enters a battle, it copies an ally's stat changes."
-  },
   "toxic-debris": {
     "id": 295,
     "gen": "generation-ix",
     "display": "Capa Tóxica",
     "descES": "-",
     "descEN": "Scatters poison spikes at the feet of the opposing team when the Pokémon takes damage from physical moves."
+  },
+  "costar": {
+    "id": 294,
+    "gen": "generation-ix",
+    "display": "Unísono",
+    "descES": "-",
+    "descEN": "When the Pokémon enters a battle, it copies an ally's stat changes."
   },
   "armor-tail": {
     "id": 296,
@@ -2099,19 +2099,19 @@
     "descES": "-",
     "descEN": "Lowers the evasion of opposing Pokémon by 1 stage when first sent into battle"
   },
-  "toxic-chain": {
-    "id": 302,
-    "gen": "generation-ix",
-    "display": "Cadena Tóxica",
-    "descES": "-",
-    "descEN": "The power of the Pokémon's toxic chain may badly poison any target the Pokémon hits with a move"
-  },
   "hospitality": {
     "id": 301,
     "gen": "generation-ix",
     "display": "Hospitalidad",
     "descES": "-",
     "descEN": "When the Pokémon enters a battle, it showers its ally with hospitality, restoring a small amount of the ally's HP"
+  },
+  "toxic-chain": {
+    "id": 302,
+    "gen": "generation-ix",
+    "display": "Cadena Tóxica",
+    "descES": "-",
+    "descEN": "The power of the Pokémon's toxic chain may badly poison any target the Pokémon hits with a move"
   },
   "embody-aspect": {
     "id": 303,
@@ -2120,19 +2120,19 @@
     "descES": "-",
     "descEN": "The Pokémon's heart fills with memories, causing the Mask to shine and one of the Pokémon's stats to be boosted."
   },
-  "tera-shift": {
-    "id": 304,
-    "gen": "generation-ix",
-    "display": "Teracambio",
-    "descES": "-",
-    "descEN": "When the Pokémon enters a battle, it absorbs the energy around itself and transforms into its Terastal Form."
-  },
   "tera-shell": {
     "id": 305,
     "gen": "generation-ix",
     "display": "Teracaparazón",
     "descES": "-",
     "descEN": "The Pokémon's shell contains the powers of each type. All damage-dealing moves that hit the Pokémon when its HP is full will not be very effective."
+  },
+  "tera-shift": {
+    "id": 304,
+    "gen": "generation-ix",
+    "display": "Teracambio",
+    "descES": "-",
+    "descEN": "When the Pokémon enters a battle, it absorbs the energy around itself and transforms into its Terastal Form."
   },
   "teraform-zero": {
     "id": 306,
@@ -2190,13 +2190,6 @@
     "descES": "-",
     "descEN": "Boosts the power of the Pokémon's Fire-type moves by 50%."
   },
-  "aura-guard": {
-    "id": 314,
-    "gen": "generation-ix",
-    "display": null,
-    "descES": "-",
-    "descEN": "A Pokémon with Aura Guard takes half damage from moves that make contact. Moves affected by Long Reach which make contact will deal regular damage."
-  },
   "mountaineer": {
     "id": 10001,
     "gen": "generation-v",
@@ -2204,15 +2197,15 @@
     "descES": "-",
     "descEN": "-"
   },
-  "wave-rider": {
-    "id": 10002,
-    "gen": "generation-v",
+  "aura-guard": {
+    "id": 314,
+    "gen": "generation-ix",
     "display": null,
     "descES": "-",
-    "descEN": "-"
+    "descEN": "A Pokémon with Aura Guard takes half damage from moves that make contact. Moves affected by Long Reach which make contact will deal regular damage."
   },
-  "thrust": {
-    "id": 10004,
+  "wave-rider": {
+    "id": 10002,
     "gen": "generation-v",
     "display": null,
     "descES": "-",
@@ -2225,8 +2218,8 @@
     "descES": "-",
     "descEN": "-"
   },
-  "parry": {
-    "id": 10006,
+  "thrust": {
+    "id": 10004,
     "gen": "generation-v",
     "display": null,
     "descES": "-",
@@ -2234,6 +2227,13 @@
   },
   "perception": {
     "id": 10005,
+    "gen": "generation-v",
+    "display": null,
+    "descES": "-",
+    "descEN": "-"
+  },
+  "parry": {
+    "id": 10006,
     "gen": "generation-v",
     "display": null,
     "descES": "-",
@@ -2253,8 +2253,8 @@
     "descES": "-",
     "descEN": "-"
   },
-  "frostbite": {
-    "id": 10010,
+  "jagged-edge": {
+    "id": 10009,
     "gen": "generation-v",
     "display": null,
     "descES": "-",
@@ -2267,8 +2267,8 @@
     "descES": "-",
     "descEN": "-"
   },
-  "jagged-edge": {
-    "id": 10009,
+  "frostbite": {
+    "id": 10010,
     "gen": "generation-v",
     "display": null,
     "descES": "-",
@@ -2302,15 +2302,15 @@
     "descES": "-",
     "descEN": "-"
   },
-  "gulp": {
-    "id": 10017,
+  "warm-blanket": {
+    "id": 10016,
     "gen": "generation-v",
     "display": null,
     "descES": "-",
     "descEN": "-"
   },
-  "warm-blanket": {
-    "id": 10016,
+  "gulp": {
+    "id": 10017,
     "gen": "generation-v",
     "display": null,
     "descES": "-",
@@ -2344,8 +2344,8 @@
     "descES": "-",
     "descEN": "-"
   },
-  "nurse": {
-    "id": 10024,
+  "life-force": {
+    "id": 10022,
     "gen": "generation-v",
     "display": null,
     "descES": "-",
@@ -2358,8 +2358,8 @@
     "descES": "-",
     "descEN": "-"
   },
-  "life-force": {
-    "id": 10022,
+  "nurse": {
+    "id": 10024,
     "gen": "generation-v",
     "display": null,
     "descES": "-",
@@ -2379,6 +2379,13 @@
     "descES": "-",
     "descEN": "-"
   },
+  "bodyguard": {
+    "id": 10027,
+    "gen": "generation-v",
+    "display": null,
+    "descES": "-",
+    "descEN": "-"
+  },
   "hero": {
     "id": 10028,
     "gen": "generation-v",
@@ -2386,8 +2393,8 @@
     "descES": "-",
     "descEN": "-"
   },
-  "bodyguard": {
-    "id": 10027,
+  "last-bastion": {
+    "id": 10029,
     "gen": "generation-v",
     "display": null,
     "descES": "-",
@@ -2407,13 +2414,6 @@
     "descES": "-",
     "descEN": "-"
   },
-  "last-bastion": {
-    "id": 10029,
-    "gen": "generation-v",
-    "display": null,
-    "descES": "-",
-    "descEN": "-"
-  },
   "nomad": {
     "id": 10032,
     "gen": "generation-v",
@@ -2428,13 +2428,6 @@
     "descES": "-",
     "descEN": "-"
   },
-  "celebrate": {
-    "id": 10035,
-    "gen": "generation-v",
-    "display": null,
-    "descES": "-",
-    "descEN": "-"
-  },
   "grass-cloak": {
     "id": 10034,
     "gen": "generation-v",
@@ -2442,8 +2435,8 @@
     "descES": "-",
     "descEN": "-"
   },
-  "calming": {
-    "id": 10037,
+  "celebrate": {
+    "id": 10035,
     "gen": "generation-v",
     "display": null,
     "descES": "-",
@@ -2451,6 +2444,13 @@
   },
   "lullaby": {
     "id": 10036,
+    "gen": "generation-v",
+    "display": null,
+    "descES": "-",
+    "descEN": "-"
+  },
+  "calming": {
+    "id": 10037,
     "gen": "generation-v",
     "display": null,
     "descES": "-",
@@ -2470,13 +2470,6 @@
     "descES": "-",
     "descEN": "-"
   },
-  "fortune": {
-    "id": 10043,
-    "gen": "generation-v",
-    "display": null,
-    "descES": "-",
-    "descEN": "-"
-  },
   "mood-maker": {
     "id": 10041,
     "gen": "generation-v",
@@ -2484,15 +2477,22 @@
     "descES": "-",
     "descEN": "-"
   },
-  "bonanza": {
-    "id": 10044,
+  "confidence": {
+    "id": 10042,
     "gen": "generation-v",
     "display": null,
     "descES": "-",
     "descEN": "-"
   },
-  "confidence": {
-    "id": 10042,
+  "fortune": {
+    "id": 10043,
+    "gen": "generation-v",
+    "display": null,
+    "descES": "-",
+    "descEN": "-"
+  },
+  "bonanza": {
+    "id": 10044,
     "gen": "generation-v",
     "display": null,
     "descES": "-",
@@ -2547,6 +2547,13 @@
     "descES": "-",
     "descEN": "-"
   },
+  "high-rise": {
+    "id": 10052,
+    "gen": "generation-v",
+    "display": null,
+    "descES": "-",
+    "descEN": "-"
+  },
   "climber": {
     "id": 10053,
     "gen": "generation-v",
@@ -2563,13 +2570,6 @@
   },
   "aqua-boost": {
     "id": 10055,
-    "gen": "generation-v",
-    "display": null,
-    "descES": "-",
-    "descEN": "-"
-  },
-  "high-rise": {
-    "id": 10052,
     "gen": "generation-v",
     "display": null,
     "descES": "-",
@@ -2596,15 +2596,15 @@
     "descES": "-",
     "descEN": "-"
   },
-  "shield": {
-    "id": 10060,
+  "decoy": {
+    "id": 10059,
     "gen": "generation-v",
     "display": null,
     "descES": "-",
     "descEN": "-"
   },
-  "decoy": {
-    "id": 10059,
+  "shield": {
+    "id": 10060,
     "gen": "generation-v",
     "display": null,
     "descES": "-",
