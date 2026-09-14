@@ -92,64 +92,6 @@ function pickSpanishName(mvJson)
     return null;
 }
 
-
-function getMovDescES(raw)
-{
-  const arr = (raw && raw.flavor_text_entries) ? raw.flavor_text_entries : [];
-  const arrRev = arr.slice().reverse();
-
-  function limpiarTexto(txt)
-  {
-    return String(txt || "").replace(/\s+/g, " ").trim();
-  }
-
-  function esTextoValido(txt)
-  {
-    const s = limpiarTexto(txt);
-    return !!s && /[A-Za-zÁÉÍÓÚáéíóúÑñ]/.test(s);
-  }
-
-  function esTextoDescartable(txt, lang)
-  {
-    const s = limpiarTexto(txt).toLowerCase();
-    const l = String(lang || "").trim().toLowerCase();
-
-    if(!s) return true;
-    if(s === "dummy data") return true;
-    if(s.indexOf("este movimiento no se puede usar") !== -1) return true;
-
-    if(l.indexOf("es") === 0)
-    {
-      return s.indexOf("este movimiento no se puede usar") === 0;
-    }
-
-    return false;
-  }
-
-  function buscarSpanish()
-  {
-    for(let i = 0; i < arrRev.length; i++)
-    {
-      const f = arrRev[i];
-      if(!f || !f.language || !f.language.name) continue;
-
-      const lang = String(f.language.name).trim().toLowerCase();
-      if(lang.indexOf("es") !== 0) continue;
-
-      const txt = limpiarTexto(f.flavor_text || "");
-      if(!esTextoValido(txt)) continue;
-      if(esTextoDescartable(txt, lang)) continue;
-
-      return txt;
-    }
-
-    return null;
-  }
-
-  return buscarSpanish();
-}
-
-
 const numberFieldOverrides =
 {
     "accuracy":
@@ -285,6 +227,8 @@ function isMoveV2Record(record)
         hasOwn(record, "indiceCritico") && 
         hasOwn(record, "blancoMov") &&
         hasOwn(record, "pp") &&
+        hasOwn(record, "descES") &&
+        hasOwn(record, "descEN") &&
         hasOwn(record, "machinesByGroup");
 }
 
@@ -478,6 +422,79 @@ function buildMachinesByGroup(moveName, machineIndex, moveJson)
     return byGroup;
 }
 
+// ----------- Desc Es y En del Mov - INICIO -----------
+
+function limpiarTextoDesc(txt)
+{
+    return String(txt || "").replace(/\s+/g, " ").trim();
+}
+
+function esTextoDescValido(txt)
+{
+    const s = limpiarTextoDesc(txt);
+    return !!s && /[A-Za-zÁÉÍÓÚáéíóúÑñ]/.test(s);
+}
+
+function esTextoDescartable(txt, lang)
+{
+    const s = limpiarTextoDesc(txt).toLowerCase();
+    const l = String(lang || "").trim().toLowerCase();
+
+    if(!s) return true;
+
+    if(s === "dummy data") return true;
+
+    if(l.indexOf("es") === 0)
+    {
+        return s.indexOf("este movimiento no se puede usar") === 0;
+    }
+
+    if(l.indexOf("en") === 0)
+    {
+        return s.indexOf("this move can") === 0 && s.indexOf("forgotten") !== -1;
+    }
+
+    return false;
+}
+
+function buscarDescPorIdioma(raw, prefijoIdioma)
+{
+    const arr = (raw && raw.flavor_text_entries) ? raw.flavor_text_entries : [];
+    const arrRev = arr.slice().reverse();
+    const prefijo = String(prefijoIdioma || "").trim().toLowerCase();
+
+    if(!prefijo) return "-";
+
+    for(let i = 0; i < arrRev.length; i++)
+    {
+        const f = arrRev[i];
+        if(!f || !f.language || !f.language.name) continue;
+
+        const lang = String(f.language.name).trim().toLowerCase();
+        if(lang.indexOf(prefijo) !== 0) continue;
+
+        const txt = limpiarTextoDesc(f.flavor_text || "");
+        if(!esTextoDescValido(txt)) continue;
+        if(esTextoDescartable(txt, lang)) continue;
+
+        return txt;
+    }
+
+    return "-";
+}
+
+function descEs(raw)
+{
+    return buscarDescPorIdioma(raw, "es");
+}
+
+function descEn(raw)
+{
+    return buscarDescPorIdioma(raw, "en");
+}
+
+// ------------ Desc Es y En del Mov - FIN -----------
+
 function buildMoveRecord(moveJson, showdownIndex, machineIndex)
 {
     const moveName = moveJson && moveJson.name ? moveJson.name : null;
@@ -494,11 +511,12 @@ function buildMoveRecord(moveJson, showdownIndex, machineIndex)
         accuracy: pickNumberField(moveJson, "accuracy", moveName),
         hasSecondaryEffect: getHasSecondaryEffect(moveJson),
         priorityLevel: getPriorityLevel(moveJson),
-        indiceCritico: getIndiceCritico(moveJson, apiNameMove),
+        indiceCritico: getIndiceCritico(moveJson, moveName),
         blancoMov: getBlancoMov(moveJson),
         generation: getGenerationFromMove(moveJson),
         pp: pickNumberField(moveJson, "pp", moveName),
-        descES: getMovDescES(moveJson),
+        descES: descEs(moveJson),
+        descEN: descEn(moveJson),
         machinesByGroup: buildMachinesByGroup(moveName, machineIndex, moveJson),
     };
 }

@@ -118,6 +118,7 @@ function pickSpanishName(json)
     return null;
 }
 
+// ----------- Desc de Habs - INICIO ----------- 
 
 function normTextHab(s)
 {
@@ -127,7 +128,7 @@ function normTextHab(s)
     .trim();
 }
 
-function getHabilidadDescEs(json)
+function getHabDesc(json, lang)
 {
   const entries = (json && json.flavor_text_entries) ? json.flavor_text_entries : [];
 
@@ -137,14 +138,14 @@ function getHabilidadDescEs(json)
     return !!s && /[A-Za-zÁÉÍÓÚáéíóúÑñ]/.test(s);
   }
 
-  function findLastFlavorEs()
+  function findLastFlavor(langKey)
   {
-    let ultimo = null;
+    let ultimo = "";
 
     for(let i = 0; i < entries.length; i++)
     {
       const it = entries[i];
-      if (!it || !it.language || it.language.name !== "es") continue;
+      if (!it || !it.language || it.language.name !== langKey) continue;
 
       const txt = normTextHab(it.flavor_text || "");
       if (!esTextoValido(txt)) continue;
@@ -155,17 +156,17 @@ function getHabilidadDescEs(json)
     return ultimo;
   }
 
-  function findLastEffectEs()
+  function findLastEffect(langKey)
   {
     const effectEntries = (json && json.effect_entries) ? json.effect_entries : [];
-    let ultimo = null;
+    let ultimo = "";
 
     for(let i = 0; i < effectEntries.length; i++)
     {
       const e = effectEntries[i];
-      if (!e || !e.language || e.language.name !== "es") continue;
+      if (!e || !e.language || e.language.name !== langKey) continue;
 
-      const txt = norm(e.effect || "");
+      const txt = normTextHab(e.effect || "");
       if (!esTextoValido(txt)) continue;
 
       ultimo = txt;
@@ -174,14 +175,28 @@ function getHabilidadDescEs(json)
     return ultimo;
   }
 
-  const flavorEs = findLastFlavorEs();
-  if (flavorEs) return flavorEs;
+  const langKey = String(lang || "es").trim().toLowerCase();
 
-  const effectEs = findLastEffectEs();
-  if (effectEs) return effectEs;
+  const flavor = findLastFlavor(langKey);
+  if (flavor) return flavor;
 
-  return null;
+  const effect = findLastEffect(langKey);
+  if (effect) return effect;
+
+  return "-";
 }
+
+function getHabDescES(json)
+{
+    return getHabDesc(json, "es");
+}
+
+function getHabDescEN(json)
+{
+    return getHabDesc(json, "en");
+}
+
+// ----------- Desc de Habs - FIN ----------- 
 
 function needsAbilityRefresh(record)
 {
@@ -190,6 +205,9 @@ function needsAbilityRefresh(record)
         typeof record.id !== "number" ||
         typeof record.gen !== "string" ||
         record.gen.trim() === "" ||
+        typeof record.descES !== "string" ||
+        record.descES.trim() === "" ||
+        record.descES.trim() === "-" ||
         typeof record.display !== "string" ||
         record.display.trim() === "";
 }
@@ -337,7 +355,8 @@ async function main()
                 id: id,
                 gen: gen,
                 display: display,
-                descES: getHabilidadDescEs(a)
+                descES: getHabDescES(a),
+                descEN: getHabDescEN(a)
             };
 
             added++;
