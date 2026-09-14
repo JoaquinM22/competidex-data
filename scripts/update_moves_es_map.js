@@ -150,10 +150,45 @@ function getMovDescES(raw)
 }
 
 
-
-function pickNumberField(mvJson, fieldName)
+const numberFieldOverrides =
 {
-    return mvJson && typeof mvJson[fieldName] === "number" ? mvJson[fieldName] : null;
+    "accuracy":
+    {
+        "syrup-bomb": 90,
+        "crabhammer": 95
+    },
+    "power":
+    {
+        "beak-blast": 120,
+        "grav-apple": 90,
+        "apple-acid": 90,
+        "trop-kick": 85,
+        "mountain-gale": 120,
+        "fire-lash": 90,
+        "bone-rush": 30,
+        "first-impression": 100,
+        "night-daze": 90,
+        "spirit-shackle": 90,
+        "psyshield-bash": 90,
+        "infernal-parade": 65,
+        "meteor-assault": 170,
+        "snipe-shot": 85,
+        "slash": 80
+    }
+};
+
+function pickNumberField(mvJson, fieldName, apiNameMove)
+{
+    const fieldOverrides = numberFieldOverrides[fieldName];
+
+    if(fieldOverrides && Object.prototype.hasOwnProperty.call(fieldOverrides, apiNameMove))
+    {
+        return fieldOverrides[apiNameMove];
+    }
+
+    return mvJson && typeof mvJson[fieldName] === "number"
+        ? mvJson[fieldName]
+        : null;
 }
 
 function getHasSecondaryEffect(mvJson)
@@ -168,9 +203,9 @@ function getPriorityLevel(mvJson)
     return typeof priority === "number" ? priority : null;
 }
 
-function getIndiceCritico(mvJson)
+function getIndiceCritico(mvJson, apiNameMove)
 {
-    const potenciaMov = pickNumberField(mvJson, "power");
+    const potenciaMov = pickNumberField(mvJson, "power", apiNameMove);
 
     if(potenciaMov === null || potenciaMov <= 0)
     {
@@ -351,6 +386,22 @@ function getAfectadoPorRocaDelRey(moveJson)
     return flinchChance === null || flinchChance <= 0;
 }
 
+const moveTypeOverrides =
+{
+    "snap-trap": "steel",
+    "growth": "grass",
+};
+
+function getMovType(moveJson, apiNameMove)
+{
+    if(Object.prototype.hasOwnProperty.call(moveTypeOverrides, apiNameMove))
+    {
+        return moveTypeOverrides[apiNameMove];
+    }
+
+    return moveJson && moveJson.type ? moveJson.type.name : null;
+}
+
 function toSpanishMachineName(itemName)
 {
     const name = String(itemName || "");
@@ -433,20 +484,20 @@ function buildMoveRecord(moveJson, showdownIndex, machineIndex)
     const moveFlags = buildMoveFlags(showdownIndex, moveName);
 
     return {
-        id: pickNumberField(moveJson, "id"),
+        id: pickNumberField(moveJson, "id", moveName),
         display: pickSpanishName(moveJson),
-        type: moveJson && moveJson.type ? moveJson.type.name : null,
+        type: getMovType(moveJson, moveName),
         damage_class: moveJson && moveJson.damage_class ? moveJson.damage_class.name : null,
         ...moveFlags,
         afectadoPorRocaDelRey: getAfectadoPorRocaDelRey(moveJson),
-        power: pickNumberField(moveJson, "power"),
-        accuracy: pickNumberField(moveJson, "accuracy"),
+        power: pickNumberField(moveJson, "power", moveName),
+        accuracy: pickNumberField(moveJson, "accuracy", moveName),
         hasSecondaryEffect: getHasSecondaryEffect(moveJson),
         priorityLevel: getPriorityLevel(moveJson),
-        indiceCritico: getIndiceCritico(moveJson),
+        indiceCritico: getIndiceCritico(moveJson, apiNameMove),
         blancoMov: getBlancoMov(moveJson),
         generation: getGenerationFromMove(moveJson),
-        pp: pickNumberField(moveJson, "pp"),
+        pp: pickNumberField(moveJson, "pp", moveName),
         descES: getMovDescES(moveJson),
         machinesByGroup: buildMachinesByGroup(moveName, machineIndex, moveJson),
     };
