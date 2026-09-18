@@ -123,43 +123,88 @@ function getItemAttributes(itemJson)
     return out;
 }
 
-
 function cleanText(s)
 {
-return String(s || "")
-    .replace(/[\f\n\r]+/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
+    return String(s || "")
+        .replace(/[\f\n\r]+/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
 }
 
 function esTextoValido(txt)
 {
-const s = cleanText(txt);
+    const s = cleanText(txt);
 
-if (!s) return false;
-if(!/[A-Za-zÁÉÍÓÚáéíóúÑñ]/.test(s)) return false;
-if(/^[-—–ー.·•\s]+$/.test(s)) return false;
+    if (!s) return false;
+    if(!/[A-Za-zÁÉÍÓÚáéíóúÑñ]/.test(s)) return false;
+    if(/^[-—–ー.·•\s]+$/.test(s)) return false;
 
-return true;
+    return true;
 }
 
 function getItemDescES(raw)
 {
-  const flavors = (raw && raw.flavor_text_entries) ? raw.flavor_text_entries : [];
+    const flavors = (raw && raw.flavor_text_entries) ? raw.flavor_text_entries : [];
+    let ultimaEs = null;
 
-  for(let i = 0; i < flavors.length; i++)
-  {
-    const f = flavors[i];
-    if (!f || !f.language || !f.language.name) continue;
-    if(f.language.name !== "es") continue;
+    for(let i = 0; i < flavors.length; i++)
+    {
+        const f = flavors[i];
+        if (!f || !f.language || !f.language.name) continue;
 
-    const txt = cleanText(f.text || f.flavor_text || "");
-    if (!esTextoValido(txt)) continue;
+        const txt = cleanText(f.text || f.flavor_text || "");
+        if (!esTextoValido(txt)) continue;
 
-    return txt;
-  }
+        if(f.language.name === "es")
+        {
+            ultimaEs = txt;
+        }
+    }
 
-  return null;
+    return ultimaEs || null;
+}
+
+function getItemDescEN(raw)
+{
+    const effects = (raw && raw.effect_entries) ? raw.effect_entries : [];
+    const flavors = (raw && raw.flavor_text_entries) ? raw.flavor_text_entries : [];
+    let ultimaEffectEn = null;
+    let ultimaFlavorEn = null;
+
+    for(let i = 0; i < effects.length; i++)
+    {
+        const e = effects[i];
+        if (!e || !e.language || !e.language.name) continue;
+
+        const txt = cleanText(e.effect || e.short_effect || "");
+        if (!esTextoValido(txt)) continue;
+
+        if(e.language.name === "en")
+        {
+            ultimaEffectEn = txt;
+        }
+    }
+
+    if(ultimaEffectEn)
+    {
+        return ultimaEffectEn;
+    }
+
+    for(let i = 0; i < flavors.length; i++)
+    {
+        const f = flavors[i];
+        if (!f || !f.language || !f.language.name) continue;
+
+        const txt = cleanText(f.text || f.flavor_text || "");
+        if (!esTextoValido(txt)) continue;
+
+        if(f.language.name === "en")
+        {
+            ultimaFlavorEn = txt;
+        }
+    }
+
+    return ultimaFlavorEn || null;
 }
 
 function needsItemRefresh(record)
@@ -359,7 +404,8 @@ async function main()
                 display: pickSpanishName(item),
                 category: pickCategoryName(item),
                 attributes: getItemAttributes(item),
-                descES: getItemDescES(item)
+                descES: getItemDescES(item),
+                descEN: getItemDescEN(item)
             };
 
             added++;
