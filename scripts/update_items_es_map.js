@@ -123,89 +123,94 @@ function getItemAttributes(itemJson)
     return out;
 }
 
+// ------------ Desc EN y ES del Objeto - INICIO ------------
+
 function cleanText(s)
 {
-    return String(s || "")
-        .replace(/[\f\n\r]+/g, " ")
-        .replace(/\s+/g, " ")
-        .trim();
+  return String(s || "")
+    .replace(/[\f\n\r]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function esTextoValido(txt)
 {
-    const s = cleanText(txt);
+  const s = cleanText(txt);
 
-    if (!s) return false;
-    if(!/[A-Za-zÁÉÍÓÚáéíóúÑñ]/.test(s)) return false;
-    if(/^[-—–ー.·•\s]+$/.test(s)) return false;
+  if (!s) return false;
+  if(!/[A-Za-zÁÉÍÓÚáéíóúÑñ]/.test(s)) return false;
+  if(/^[-—–ー.·•\s]+$/.test(s)) return false;
 
-    return true;
+  return true;
 }
 
 function getItemDescES(raw)
 {
-    const flavors = (raw && raw.flavor_text_entries) ? raw.flavor_text_entries : [];
-    let ultimaEs = null;
+  const flavors = (raw && raw.flavor_text_entries) ? raw.flavor_text_entries : [];
+  let ultimaEs = null;
 
-    for(let i = 0; i < flavors.length; i++)
+  for(let i = 0; i < flavors.length; i++)
+  {
+    const f = flavors[i];
+    if (!f || !f.language || !f.language.name) continue;
+
+    const txt = cleanText(f.text || f.flavor_text || "");
+    if (!esTextoValido(txt)) continue;
+
+    if(f.language.name === "es")
     {
-        const f = flavors[i];
-        if (!f || !f.language || !f.language.name) continue;
-
-        const txt = cleanText(f.text || f.flavor_text || "");
-        if (!esTextoValido(txt)) continue;
-
-        if(f.language.name === "es")
-        {
-            ultimaEs = txt;
-        }
+      ultimaEs = txt;
     }
+  }
 
-    return ultimaEs || null;
+  return ultimaEs || null;
 }
 
 function getItemDescEN(raw)
 {
-    const effects = (raw && raw.effect_entries) ? raw.effect_entries : [];
-    const flavors = (raw && raw.flavor_text_entries) ? raw.flavor_text_entries : [];
-    let ultimaEffectEn = null;
-    let ultimaFlavorEn = null;
+  const flavors = (raw && raw.flavor_text_entries) ? raw.flavor_text_entries : [];
+  let ultimaFlavorEn = null;
 
-    for(let i = 0; i < effects.length; i++)
+  for(let i = 0; i < flavors.length; i++)
+  {
+    const f = flavors[i];
+    if (!f || !f.language || !f.language.name) continue;
+
+    const txt = cleanText(f.text || f.flavor_text || "");
+    if (!esTextoValido(txt)) continue;
+
+    if(f.language.name === "en")
     {
-        const e = effects[i];
-        if (!e || !e.language || !e.language.name) continue;
-
-        const txt = cleanText(e.effect || e.short_effect || "");
-        if (!esTextoValido(txt)) continue;
-
-        if(e.language.name === "en")
-        {
-            ultimaEffectEn = txt;
-        }
+      ultimaFlavorEn = txt;
     }
+  }
 
-    if(ultimaEffectEn)
-    {
-        return ultimaEffectEn;
-    }
-
-    for(let i = 0; i < flavors.length; i++)
-    {
-        const f = flavors[i];
-        if (!f || !f.language || !f.language.name) continue;
-
-        const txt = cleanText(f.text || f.flavor_text || "");
-        if (!esTextoValido(txt)) continue;
-
-        if(f.language.name === "en")
-        {
-            ultimaFlavorEn = txt;
-        }
-    }
-
-    return ultimaFlavorEn || null;
+  return ultimaFlavorEn || null;
 }
+
+function getEfectoItemEN(raw)
+{
+  const effects = (raw && raw.effect_entries) ? raw.effect_entries : [];
+  let ultimaEffectEn = null;
+
+  for(let i = 0; i < effects.length; i++)
+  {
+    const e = effects[i];
+    if (!e || !e.language || !e.language.name) continue;
+
+    const txt = cleanText(e.effect || e.short_effect || "");
+    if (!esTextoValido(txt)) continue;
+
+    if(e.language.name === "en")
+    {
+      ultimaEffectEn = txt;
+    }
+  }
+
+  return ultimaEffectEn || null;
+}
+
+// ------------ Desc EN y ES del Objeto - FIN ------------
 
 function needsItemRefresh(record)
 {
@@ -405,7 +410,8 @@ async function main()
                 category: pickCategoryName(item),
                 attributes: getItemAttributes(item),
                 descES: getItemDescES(item),
-                descEN: getItemDescEN(item)
+                descEN: getItemDescEN(item),
+                efectoItemEN: getEfectoItemEN(item)
             };
 
             added++;

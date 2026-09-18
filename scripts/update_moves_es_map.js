@@ -115,7 +115,8 @@ const numberFieldOverrides =
         "infernal-parade": 65,
         "meteor-assault": 170,
         "snipe-shot": 85,
-        "slash": 80
+        "slash": 80,
+        "triple-dive": 35
     }
 };
 
@@ -229,6 +230,7 @@ function isMoveV2Record(record)
         hasOwn(record, "pp") &&
         hasOwn(record, "descES") &&
         hasOwn(record, "descEN") &&
+        hasOwn(record, "efectoMovEN") &&
         hasOwn(record, "machinesByGroup");
 }
 
@@ -270,8 +272,26 @@ function getShowdownMove(showdownIndex, pokeApiName)
     return showdownIndex[normalizeShowdownKey(pokeApiName)] || null;
 }
 
+const OVERRIDES_FLAGS_MOVES = {
+    "dire-claw": {
+        "slicing": true
+    },
+    "shadow-claw": {
+        "slicing": true
+    },
+    "dragon-claw": {
+        "slicing": true
+    },
+};
+
 function getShowdownFlag(showdownIndex, pokeApiName, flagName)
 {
+    const moveOverrides = OVERRIDES_FLAGS_MOVES[pokeApiName];
+    if(moveOverrides && Object.prototype.hasOwnProperty.call(moveOverrides, flagName))
+    {
+        return moveOverrides[flagName];
+    }
+
     const mv = getShowdownMove(showdownIndex, pokeApiName);
     const flags = mv && mv.flags ? mv.flags : null;
 
@@ -493,6 +513,29 @@ function descEn(raw)
     return buscarDescPorIdioma(raw, "en");
 }
 
+function getEfectoMovEN(raw)
+{
+    const arr = (raw && raw.effect_entries) ? raw.effect_entries : [];
+    const arrRev = arr.slice().reverse();
+
+    for(let i = 0; i < arrRev.length; i++)
+    {
+        const e = arrRev[i];
+        if(!e || !e.language || !e.language.name) continue;
+
+        const lang = String(e.language.name).trim().toLowerCase();
+        if(lang !== "en") continue;
+
+        const txt = limpiarTextoDesc(e.effect || e.short_effect || "");
+        if(!esTextoDescValido(txt)) continue;
+        if(esTextoDescartable(txt, lang)) continue;
+
+        return txt;
+    }
+
+    return "-";
+}
+
 // ------------ Desc Es y En del Mov - FIN -----------
 
 function buildMoveRecord(moveJson, showdownIndex, machineIndex)
@@ -517,6 +560,7 @@ function buildMoveRecord(moveJson, showdownIndex, machineIndex)
         pp: pickNumberField(moveJson, "pp", moveName),
         descES: descEs(moveJson),
         descEN: descEn(moveJson),
+        efectoMovEN: getEfectoMovEN(moveJson),
         machinesByGroup: buildMachinesByGroup(moveName, machineIndex, moveJson),
     };
 }

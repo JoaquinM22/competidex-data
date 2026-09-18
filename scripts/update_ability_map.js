@@ -118,7 +118,7 @@ function pickSpanishName(json)
     return null;
 }
 
-// ----------- Desc de Habs - INICIO ----------- 
+// ----------- Desc de Habs - INICIO -----------
 
 function normTextHab(s)
 {
@@ -128,75 +128,63 @@ function normTextHab(s)
     .trim();
 }
 
+function esTextoHabValido(txt)
+{
+  const s = normTextHab(txt);
+  return !!s && /[A-Za-zÁÉÍÓÚáéíóúÑñ]/.test(s);
+}
+
 function getHabDesc(json, lang)
 {
   const entries = (json && json.flavor_text_entries) ? json.flavor_text_entries : [];
-
-  function esTextoValido(txt)
-  {
-    const s = normTextHab(txt);
-    return !!s && /[A-Za-zÁÉÍÓÚáéíóúÑñ]/.test(s);
-  }
-
-  function findLastFlavor(langKey)
-  {
-    let ultimo = "";
-
-    for(let i = 0; i < entries.length; i++)
-    {
-      const it = entries[i];
-      if (!it || !it.language || it.language.name !== langKey) continue;
-
-      const txt = normTextHab(it.flavor_text || "");
-      if (!esTextoValido(txt)) continue;
-
-      ultimo = txt;
-    }
-
-    return ultimo;
-  }
-
-  function findLastEffect(langKey)
-  {
-    const effectEntries = (json && json.effect_entries) ? json.effect_entries : [];
-    let ultimo = "";
-
-    for(let i = 0; i < effectEntries.length; i++)
-    {
-      const e = effectEntries[i];
-      if (!e || !e.language || e.language.name !== langKey) continue;
-
-      const txt = normTextHab(e.effect || "");
-      if (!esTextoValido(txt)) continue;
-
-      ultimo = txt;
-    }
-
-    return ultimo;
-  }
-
   const langKey = String(lang || "es").trim().toLowerCase();
 
-  const flavor = findLastFlavor(langKey);
-  if (flavor) return flavor;
+  let ultimo = "";
 
-  const effect = findLastEffect(langKey);
-  if (effect) return effect;
+  for(let i = 0; i < entries.length; i++)
+  {
+    const it = entries[i];
+    if (!it || !it.language || it.language.name !== langKey) continue;
 
-  return "-";
+    const txt = normTextHab(it.flavor_text || "");
+    if (!esTextoHabValido(txt)) continue;
+
+    ultimo = txt;
+  }
+
+  return ultimo || "-";
+}
+
+function getEfectoHabEN(json)
+{
+  const effectEntries = (json && json.effect_entries) ? json.effect_entries : [];
+  let ultimo = "";
+
+  for(let i = 0; i < effectEntries.length; i++)
+  {
+    const e = effectEntries[i];
+    if (!e || !e.language || e.language.name !== "en") continue;
+
+    const txt = normTextHab(e.effect || e.short_effect || "");
+    if (!esTextoHabValido(txt)) continue;
+
+    ultimo = txt;
+  }
+
+  return ultimo || "-";
 }
 
 function getHabDescES(json)
 {
-    return getHabDesc(json, "es");
+  return getHabDesc(json, "es");
 }
 
 function getHabDescEN(json)
 {
-    return getHabDesc(json, "en");
+  return getHabDesc(json, "en");
 }
 
-// ----------- Desc de Habs - FIN ----------- 
+// ----------- Desc de Habs - FIN -----------
 
 function needsAbilityRefresh(record)
 {
@@ -358,7 +346,8 @@ async function main()
                 gen: gen,
                 display: display,
                 descES: getHabDescES(a),
-                descEN: getHabDescEN(a)
+                descEN: getHabDescEN(a),
+                efectoHabEN: getEfectoHabEN(a)
             };
 
             added++;
