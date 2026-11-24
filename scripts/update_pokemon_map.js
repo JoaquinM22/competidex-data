@@ -9,7 +9,7 @@
     - Si no hay mapa previo (bootstrap) => siempre continúa
   - Cada pokemon guarda
     id, types, generation, abilities, weight, height, stats,
-    malePercentage, femalePercentage, sinSexo (booleano), captureRate, puedeCriar (booleano),
+    malePercentage, femalePercentage, sinSexo (booleano), captureRate, baseHappiness, puedeCriar (booleano),
     color, hasMegaForms (booleano), hasGigaForm (booleano), eggGroups y categoryPkm
   - Los datos salen de /pokemon/{name} y /pokemon-species/{id or name}
   - Guarda en manifest.json la fecha del último rebuild completo
@@ -321,6 +321,7 @@ function buildPokemonRecord(raw, speciesRaw)
         femalePercentage: genderData.femalePercentage,
         sinSexo: genderData.sinSexo,
         captureRate: safeNumber(speciesRaw?.capture_rate),
+        baseHappiness: safeNumber(speciesRaw?.base_happiness),
         puedeCriar: canPokemonBreed(raw?.name, speciesRaw),
         color: getColorPkmByKey(apiName) || (safeText(speciesRaw?.color?.name) || ""),
         display: toPokemonDisplayName(apiName),
@@ -349,7 +350,8 @@ function hasPokemonRecordSchema(record)
         Object.prototype.hasOwnProperty.call(record, "malePercentage") &&
         Object.prototype.hasOwnProperty.call(record, "femalePercentage") &&
         Object.prototype.hasOwnProperty.call(record, "sinSexo") &&
-        Object.prototype.hasOwnProperty.call(record, "captureRate") &&
+        Object.prototype.hasOwnProperty.call(record, "captureRate") && 
+        Object.prototype.hasOwnProperty.call(record, "baseHappiness") &&
         Object.prototype.hasOwnProperty.call(record, "puedeCriar") &&
         Object.prototype.hasOwnProperty.call(record, "color") &&
         Object.prototype.hasOwnProperty.call(record, "hasMegaForms") &&
